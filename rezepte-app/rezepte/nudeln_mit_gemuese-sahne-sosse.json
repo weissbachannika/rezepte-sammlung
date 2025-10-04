@@ -2,27 +2,35 @@
   "id": "r10",
   "title": "Nudeln mit Gemüse-Sahne-Soße",
   "tags": [
-    "Hauptgericht"
+    "Hauptgericht", "Pasta", "Nudeln"
   ],
   "ingredients": [
-    "250 g Tagliatelle",
+    "250 g Nudeln deiner Wahl",
     "1 Zwiebel",
-    "1 Knoblauchzehe",
-    "1 Zucchini",
+    "2 Zucchinis",
     "ca. 200 g Champignons",
     "200 g Räuchertofu",
     "200-400 ml Pﬂanzensahne"
   ],
   "spices": [
+    "1 Knoblauchzehe",
     "3 EL Hefeﬂocken",
     "1-2 TL Muskatnuss",
     "Brühepulver",
     "Salz & Pfeffer"
   ],
   "steps": [
-    "Gemüse schneiden: Zwiebeln in halbe Ringe schneiden, Zucchini halbieren und in Halbmonde schneiden, Champignons in feine Scheiben schneiden und Knoblauch schälen und pressen Tofu vorbereiten: Tofu aus der Packung nehmen, zwischen ein paar Blätter Küchenrolle legen und überﬂüssige Flüssigkeit auspressen. Anschließend in kleine Würfel schneiden Nudeln kochen Alles anbraten: In einer Pfanne Öl erhitzen und Zwiebel darin anbraten. Nach etwa zwei Minuten Tofu und Knoblauch hinzugeben und weitere 3 Minuten anbraten. Dann das Gemüse hinzugeben und weiter anbraten, bis die Zucchini leicht glasig wird (etwa 5 Minuten).",
-    "Alles mit einem Schuss Sojasoße und Pﬂanzensahne ablöschen, mit Gewürzen abschmecken und ein paar Minuten köcheln, bis die Pﬂanzensahne durch ist"
+    "Zwiebel klein würfeln, Zucchini halbieren und in Scheiben schneiden, Champignons in Scheiben schneiden und Knoblauch schälen und pressen",
+    "Mit den Händen überﬂüssige Flüssigkeit aus dem Tofu auspressen",
+    "Anschließend in kleine Würfel schneiden", 
+    "Wasser für die Nudeln zum Kochen bringen und salzen und die Nudeln kochen", 
+    "In einer Pfanne Öl erhitzen und Zwiebel darin anbraten",
+    "Nach etwa zwei Minuten Tofu und Knoblauch hinzugeben und weitere 3 Minuten anbraten", 
+    "Dann das Gemüse hinzugeben und weiter anbraten, bis die Zucchini leicht glasig wird (etwa 5 Minuten).",
+    "Alles mit einem Schuss Sojasoße und der Pﬂanzensahne ablöschen, mit Gewürzen abschmecken und ein paar Minuten köcheln, bis alles durch ist"
   ],
-  "notes": "● Auch Erbsen oder Brokkoli passen gut dazu. Der Brokkoli braucht allerdings ein bisschen länger als die Pilze oder die Zucchini, falls du den benutzt, schneide ihn in kleine Röschen und gib ihn schon mit dem Tofu in die Pfanne, brate ihn 5 Minuten in",
+  "notes": [
+    "Auch Erbsen oder Brokkoli passen gut dazu. Der Brokkoli braucht allerdings etwas länger als die Pilze oder die Zucchini"
+  ],
   "image": ""
 }

@@ -14,14 +14,23 @@
     "1 Avocado",
     "3 Frühlingszwiebeln",
     "Sesam",
+    "[Erdnussdip](#erdnusssosse.json)"
+  ],
+  "spices": [
     "Chili Mayo",
     "Salz",
-    "Frische Minze oder (Thai)Basilikum",
-    "[Erdnusssauce](#erdnusssosse.json)"
+    "Frische Minze oder (Thai)Basilikum"
   ],
-  "spices": [],
   "steps": [
-    "Das Gemüse, die Avocado und den Tofu in feine Streifen schneiden und die Frühlingszwiebeln so wie immer schneiden Wasser für die Nudeln zum Kochen bringen und diese Kochen, wie auf der Packung beschrieben"
+    "Das Gemüse, die Avocado und den Tofu in feine Streifen schneiden und die Frühlingszwiebeln in Ringe schneiden",
+    "Wasser für die Nudeln zum Kochen bringen und diese kochen, wie auf der Packung beschrieben",
+    "Den [Erdnussdip](#erdnusssosse.json) zubereiten",
+    { "text": "Sommerrollen befüllen:", "sub": [
+    "Ein Reisepapier kurz in Wasser tunken (soll noch nicht weich werden im Wasser, das wird noch so weicher)",
+    "auf einer glatten Oberﬂäche ausbreiten und mit Zutaten deiner Wahl befüllen",
+    "Das Reispapier dann eng einrollen/falten"
+    ]},
+    "In die Erdnusssauce dippen und genießen"
   ],
   "notes": "",
   "image": ""
