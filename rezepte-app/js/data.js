@@ -3,7 +3,7 @@ export const recipeFileNames = [
   "japanisches_curry.json",
   "indische_linsensuppe.json",
   "erdnuss_nudeln_mit_gemuese.json",
-  "aubergine_und_tofu.json",
+  "gebratener_reis_mit_marinierter_aubergine_und_tofu",
   "rice_paper_dumplings.json",
   "grosser_teller_pfanne_oder_aehnliches_mit_wasser_zum_eintunken_von_reispapier.json",
   "spaghetti_bolognese.json",
