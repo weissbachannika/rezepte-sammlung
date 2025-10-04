@@ -26,11 +26,18 @@
     "¼ TL Gochujang (oder andere Schärfe)"
   ],
   "steps": [
-    "das Gemüse und so ganz fein hacken etwas Sesamöl erhitzen dann als erstes die Frühlingszwiebeln anbraten, dann Ingwer, Möhre und Knoblauch dazugeben und eine Weile gut anbraten währenddessen den Tofu gut auspressen (zwischen den Händen reicht eigentlich, sonst mit einem Küchentuch oder so noch Feuchtigkeit aufsaugen)",
-    "Den Tofu dann in die Pfanne bröseln dann auch die Pilze dazugeben und alles gut anbraten, bis die Möhren etwas weicher sind und der Tofu goldbraun dann alles mit Sojasoße ablöschen und wenn gewünscht mit anderen Gewürzen deiner Wahl abschmecken und den Herd ausmachen Reisepapiere befüllen: a. Ein Reisepapier kurz in Wasser tunken (soll noch nicht weich werden im Wasser, das wird noch so weicher)",
-    "b. auf einer glatten Oberﬂäche ausbreiten (mit etwas Sesam bestreuen) und etwas Füllung in die Mitte des Papiers geben (Menge ist abhängig von der Größe des Reispapiers)",
-    "c. Das Reispapier dann eng falten, wie eine Sommerrolle und wenn du stabilere 16 Dumplings haben willst das auch nochmal in einem zweiten Reispapier einwickeln (Sonst kann das schonmal in der Pfanne reißen)",
-    "Dann können die Taschen jetzt in ordentlich Öl gut von beiden Seiten angebraten"
+    "Das ganze Gemüse fein hacken",
+    "Etwas Sesamöl erhitzen und als erstes die Frühlingszwiebeln anbraten, dann Ingwer, Möhre und Knoblauch dazugeben und eine Weile gut anbraten",
+    "Währenddessen den Tofu gut auspressen (zwischen den Händen reicht eigentlich, sonst mit einem Küchentuch noch Feuchtigkeit aufsaugen)",
+    "Den Tofu dann in die Pfanne bröseln dann auch die Pilze dazugeben und alles gut anbraten, bis die Möhren etwas weicher sind und der Tofu goldbraun",
+    "Dann alles mit Sojasoße ablöschen und wenn gewünscht mit anderen Gewürzen deiner Wahl abschmecken und den Herd ausmachen",
+    { "text": "Reispapiere befüllen:", "sub": [
+    "Ein Reisepapier kurz in Wasser tunken (soll noch nicht weich werden im Wasser, das wird noch so weicher)",
+    "auf einer glatten Oberﬂäche ausbreiten (mit etwas Sesam bestreuen) und etwas Füllung in die Mitte des Papiers geben (Menge ist abhängig von der Größe des Reispapiers)",
+    "Das Reispapier dann eng falten, wie eine Sommerrolle und wenn du stabilere Dumplings haben willst das auch nochmal in einem zweiten Reispapier einwickeln (Sonst kann das schonmal in der Pfanne reißen)"
+    ]},
+    "Dann können die Taschen jetzt in ordentlich Öl gut von beiden Seiten angebraten werden",
+    "Für den Dip alle genannten Zutaten zusammen mixen und abschmecken, wie du es am liebsten magst"
   ],
   "notes": "",
   "image": ""

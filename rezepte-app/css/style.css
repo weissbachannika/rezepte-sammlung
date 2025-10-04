@@ -26,7 +26,7 @@ a:hover { text-decoration: underline; }
 
 .app {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 16px;
   max-width: 1400px;
   margin: 24px auto;
@@ -91,11 +91,16 @@ main { min-height: 60vh; display: grid; grid-template-rows: auto 1fr; gap: 16px;
   border-radius: var(--radius); padding: 10px; box-shadow: var(--shadow);
 }
 
-.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 .card {
-  grid-column: span 4;
   background: linear-gradient(180deg, #141720 0%, #10131b 100%);
-  border: 1px solid #1f2432; border-radius: var(--radius); overflow: clip;
+  border: 1px solid #1f2432;
+  border-radius: var(--radius);
+  overflow: clip;
   transition: transform 120ms ease, border-color 120ms ease;
 }
 .card:hover { transform: translateY(-3px); border-color: #2a3347; }
@@ -145,7 +150,6 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
   width: 100%;
 }
 
-/* Bild bleibt 4:3 und füllt die Breite */
 .modal-body .img {
   aspect-ratio: 3 / 2;
   background: #0b0e14;
@@ -162,11 +166,11 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
 /* Zwei Spalten nur für Zutaten | Gewürze */
 .ing-spices {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: start;
-  width: 100%;                
-  justify-content: stretch;  
+  width: 100%;
+  justify-content: stretch;
 }
 .ing-spices .box {
   background: #0f121a;
@@ -179,27 +183,87 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
   grid-template-columns: 1fr;
 }
 
-/* kleine Zwischenüberschrift innerhalb der Zutaten-/Gewürze-Listen */
+/* Kleine Zwischenüberschrift innerhalb der Listen */
 #modalIngredients .subsection,
-#modalSpices .subsection {
-  list-style: none;         /* kein Punkt */
-  margin: 10px 0 4px 0;     /* etwas Abstand */
+#modalSpices .subsection,
+#modalSteps .subsection {
+  list-style: none;         /* kein Bullet */
+  margin: 12px 0 6px 0;
   padding: 0;
   font-weight: 600;
   font-size: 14px;
   color: var(--subtext);
 }
 
+/* In der numerierten Steps-Liste: Subsections nicht zählen/anzeigen */
+#modalSteps.subsection,
+#modalSteps .subsection {
+  counter-increment: none;
+}
+#modalSteps .subsection::before {
+  content: none;            /* kein nummeriertes Badge */
+}
+
 .h { font-weight: 700; margin: 6px 0 6px; }
 ul { margin: 8px 0 12px 18px; padding: 0; }
 li { margin: 4px 0; }
-.steps { counter-reset: step; list-style: none; margin-left: 0; }
-.steps li { position: relative; padding-left: 34px; margin: 10px 0; }
-.steps li::before {
-  counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0;
-  width: 24px; height: 24px; display: grid; place-items: center;
-  border-radius: 8px; background: #182036; border: 1px solid #243154; color: var(--text); font-weight: 700; font-size: 12px;
+/* nur Top-Level-Schritte zählen */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  margin-left: 0;
 }
+/* nur direkte Kinder von .steps bekommen das Badge */
+.steps > li {
+  position: relative;
+  padding-left: 34px;
+  margin: 10px 0;
+}
+/* Badge + Zähler nur bei Top-Level-Schritten */
+.steps > li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #182036;
+  border: 1px solid #243154;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 12px;
+}
+/* Zwischenüberschriften in Steps: keine Nummer, kein Increment */
+#modalSteps .subsection {
+  list-style: none;
+  margin: 12px 0 6px 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--subtext);
+}
+#modalSteps .subsection::before {
+  content: none;
+}
+/* Untersteps (i, ii, iii …) – eigene Liste, nicht gezählt vom Hauptzähler */
+.substeps {
+  list-style: lower-roman;
+  margin: 8px 0 6px 28px;
+  padding: 0;
+}
+.substeps li {
+  margin: 4px 0;
+  padding-left: 0; /* kein Badge hier */
+}
+/* Subsections (Überschriften in Steps) bleiben ohne Nummer-Badge */
+#modalSteps .subsection::before {
+  content: none;
+}
+
 .notes {
   margin: 8px 0 12px 18px;
   padding: 0;
@@ -210,19 +274,15 @@ li { margin: 4px 0; }
 }
 
 
-/* Responsive */
-@media (max-width: 1100px) {
-  .card { grid-column: span 6; }
-  .modal-body { grid-template-columns: 1fr; }
-  aside { position: static; }
-  header { position: static; }
-}
+/* --- Responsive Layout --- */
+
+/* Sidebar bleibt so lange wie möglich rechts */
 @media (max-width: 680px) {
-  .app { grid-template-columns: 1fr; }
-  .card { grid-column: span 12; }
-}
-@media (max-width: 1100px) {
-  .ing-spices {
-    grid-template-columns: 1fr;
+  .app {
+    grid-template-columns: 1fr;   /* erst ab hier Sidebar unter Content */
+  }
+  aside {
+    position: static;
+    margin-top: 16px;
   }
 }

@@ -75,37 +75,74 @@ export function openModal(id) {
   const ulSp = $('#modalSpices');
   ulSp.innerHTML = '';
 
-  (r.spices || []).forEach(s => {
-    // ignoriert leere/null/undefined Items
-    if (typeof s === 'string' ? s.trim() : s) {
+  let realSpices = 0;
+  (r.spices || []).forEach(item => {
+    if (typeof item === 'string' && item.trim()) {
       const li = document.createElement('li');
-      li.textContent = typeof s === 'string' ? s : String(s);
+      li.textContent = item;
+      ulSp.appendChild(li);
+      realSpices++;
+    } else if (item && typeof item === 'object' && 'section' in item) {
+      const li = document.createElement('li');
+      li.className = 'subsection';   // kleine Überschrift, ohne Bullet
+      li.textContent = item.section;
       ulSp.appendChild(li);
     }
   });
 
   // Box-Elemente finden
-  const spicesBox = ulSp.closest('section.box');                 // Gewürze-Box
-  const ingSpicesWrap = document.querySelector('.ing-spices');   // 2-Spalten-Wrapper
+  const spicesBox = ulSp.closest('section.box');
+  const ingSpicesWrap = document.querySelector('.ing-spices');
 
-  const hasSpices = ulSp.children.length > 0;
+  // Gewürze-Box nur zeigen, wenn es echte Gewürze gibt (nicht nur Überschriften)
+  const hasRealSpices = realSpices > 0;
+  if (spicesBox) spicesBox.style.display = hasRealSpices ? '' : 'none';
 
-  // Gewürze-Box ein-/ausblenden
-  if (spicesBox) spicesBox.style.display = hasSpices ? '' : 'none';
+  // Layout umschalten: ohne Gewürze -> eine Spalte (Zutaten volle Breite)
+  if (ingSpicesWrap) ingSpicesWrap.classList.toggle('one-col', !hasRealSpices);
 
-  // Layout: wenn keine Gewürze -> Zutaten 1 Spalte (volle Breite), sonst 2 Spalten
-  if (ingSpicesWrap) {
-    if (hasSpices) ingSpicesWrap.classList.remove('one-col');
-    else ingSpicesWrap.classList.add('one-col');
-  }
-
-  // Steps
+  // Steps: unterstützt String, {section}, und {text, sub:[]}
   const olSteps = $('#modalSteps');
   olSteps.innerHTML = '';
-  (r.steps || []).forEach(s => {
-    const li = document.createElement('li');
-    li.textContent = s;
-    olSteps.appendChild(li);
+
+  function addSubsteps(liParent, subArr) {
+    if (!Array.isArray(subArr) || subArr.length === 0) return;
+    const ol = document.createElement('ol');
+    ol.className = 'substeps'; // CSS sorgt für i, ii, iii …
+    subArr.forEach(s => {
+      if (!s) return;
+      const li = document.createElement('li');
+      li.textContent = s;
+      ol.appendChild(li);
+    });
+    liParent.appendChild(ol);
+  }
+
+  (r.steps || []).forEach(item => {
+    // Fall 1: Zwischenüberschrift (nicht nummeriert)
+    if (item && typeof item === 'object' && 'section' in item) {
+      const li = document.createElement('li');
+      li.className = 'subsection';
+      li.textContent = item.section;
+      olSteps.appendChild(li);
+      return;
+    }
+
+    // Fall 2: Nummerierter Schritt mit Untersteps
+    if (item && typeof item === 'object' && 'text' in item) {
+      const li = document.createElement('li');
+      li.textContent = item.text || '';
+      olSteps.appendChild(li);
+      addSubsteps(li, item.sub);
+      return;
+    }
+
+    // Fall 3: Normaler Schritt (string)
+    if (typeof item === 'string' && item.trim()) {
+      const li = document.createElement('li');
+      li.textContent = item;
+      olSteps.appendChild(li);
+    }
   });
 
   // Notizen (deine renderNotesList-Version verwenden, falls vorhanden)
