@@ -64,7 +64,7 @@ function renderInline(text) {
 
 function renderNotesList(notes) {
   const arr = toArray(notes);
-  if (!arr.length) return '';
+  if (!arr.length) return '—';
   const items = arr.map(n => `<li>${renderInline(n)}</li>`).join('');
   return `<ul class="notes">${items}</ul>`;
 }
