@@ -6,7 +6,7 @@ const closeBtn = $('#modalClose');
 closeBtn.addEventListener('click', () => modal.close());
 modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
 
-// --- HELPERS: sicher & flexibel rendern ---
+// ---------------- Helpers ----------------
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;")
@@ -17,17 +17,53 @@ function escapeHtml(s) {
 function toArray(maybeArrayOrString) {
   if (!maybeArrayOrString) return [];
   if (Array.isArray(maybeArrayOrString)) return maybeArrayOrString.filter(Boolean);
-  // Falls noch alte JSONs mit String+Zeilenumbrüchen existieren:
   return String(maybeArrayOrString).split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+}
+
+// --- Link-Helpers: [Titel](#rezeptdatei.json) -> <a data-file="...">
+function slugifyTitle(s) {
+  return String(s)
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+    .replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g,'');
+}
+
+function renderInline(text) {
+  const str = String(text ?? '');
+  const re = /\[([^\]]+)\]\(#([^\)]+)\)/g;
+  let out = '', last = 0, m;
+  while ((m = re.exec(str))) {
+    out += escapeHtml(str.slice(last, m.index));   // normaler Text vorher
+    const title = escapeHtml(m[1]);
+    const file  = m[2].replace(/^#/, '').trim();
+    out += `<a href="#" class="recipe-link" data-file="${escapeHtml(file)}">${title}</a>`;
+    last = re.lastIndex;
+  }
+  out += escapeHtml(str.slice(last));
+  return out;
 }
 
 function renderNotesList(notes) {
   const arr = toArray(notes);
-  if (!arr.length) return '—';
-  const items = arr.map(n => `<li>${escapeHtml(n)}</li>`).join('');
+  if (!arr.length) return '';
+  const items = arr.map(n => `<li>${renderInline(n)}</li>`).join('');
   return `<ul class="notes">${items}</ul>`;
 }
 
+function addSubsteps(liParent, subArr) {
+  if (!Array.isArray(subArr) || subArr.length === 0) return;
+  const ol = document.createElement('ol');
+  ol.className = 'substeps'; // CSS macht i, ii, iii …
+  subArr.forEach(s => {
+    if (!s) return;
+    const li = document.createElement('li');
+    li.innerHTML = renderInline(s);
+    ol.appendChild(li);
+  });
+  liParent.appendChild(ol);
+}
+// --------------- Main ---------------
 export function openModal(id) {
   const r = RECIPES.find(x => x.id === id);
   if (!r) return;
@@ -37,7 +73,7 @@ export function openModal(id) {
   const modalBody = document.querySelector('#recipeModal .modal-body');
   const imgWrap   = $('#modalImg');
 
-  // Bild-Handling
+  // Bild-Handling: wenn kein Bild -> Container ausblenden
   imgWrap.innerHTML = '';
   if (r.image) {
     const img = document.createElement('img');
@@ -45,25 +81,22 @@ export function openModal(id) {
     img.alt = r.title;
     img.loading = 'lazy';
     imgWrap.appendChild(img);
-    imgWrap.style.display = '';           // sichtbar
-    modalBody.classList.remove('no-img'); // optional, falls du Styles daran knüpfen willst
+    imgWrap.style.display = '';
+    modalBody?.classList.remove('no-img');
   } else {
-    imgWrap.style.display = 'none';       // komplett aus dem Layout nehmen
-    modalBody.classList.add('no-img');    // optional
+    imgWrap.style.display = 'none';
+    modalBody?.classList.add('no-img');
   }
 
-  // Zutaten
+  // Zutaten (unterstützt Strings und {section:"…"})
   const ulIng = $('#modalIngredients');
   ulIng.innerHTML = '';
-
   (r.ingredients || []).forEach(item => {
     if (typeof item === 'string') {
-      // normaler Stichpunkt
       const li = document.createElement('li');
-      li.textContent = item;
+      li.innerHTML = renderInline(item);
       ulIng.appendChild(li);
     } else if (item && typeof item === 'object' && 'section' in item) {
-      // Abschnittsüberschrift (kleiner Titel, ohne Bullet)
       const li = document.createElement('li');
       li.className = 'subsection';
       li.textContent = item.section;
@@ -71,55 +104,33 @@ export function openModal(id) {
     }
   });
 
-  // Gewürze
+  // Gewürze (Strings / {section}) + Auto-Layout
   const ulSp = $('#modalSpices');
   ulSp.innerHTML = '';
-
   let realSpices = 0;
   (r.spices || []).forEach(item => {
     if (typeof item === 'string' && item.trim()) {
       const li = document.createElement('li');
-      li.textContent = item;
+      li.innerHTML = renderInline(item);
       ulSp.appendChild(li);
       realSpices++;
     } else if (item && typeof item === 'object' && 'section' in item) {
       const li = document.createElement('li');
-      li.className = 'subsection';   // kleine Überschrift, ohne Bullet
+      li.className = 'subsection';
       li.textContent = item.section;
       ulSp.appendChild(li);
     }
   });
-
-  // Box-Elemente finden
   const spicesBox = ulSp.closest('section.box');
   const ingSpicesWrap = document.querySelector('.ing-spices');
-
-  // Gewürze-Box nur zeigen, wenn es echte Gewürze gibt (nicht nur Überschriften)
   const hasRealSpices = realSpices > 0;
   if (spicesBox) spicesBox.style.display = hasRealSpices ? '' : 'none';
-
-  // Layout umschalten: ohne Gewürze -> eine Spalte (Zutaten volle Breite)
   if (ingSpicesWrap) ingSpicesWrap.classList.toggle('one-col', !hasRealSpices);
 
-  // Steps: unterstützt String, {section}, und {text, sub:[]}
+  // Steps: Strings, {section}, {text, sub:[]}
   const olSteps = $('#modalSteps');
   olSteps.innerHTML = '';
-
-  function addSubsteps(liParent, subArr) {
-    if (!Array.isArray(subArr) || subArr.length === 0) return;
-    const ol = document.createElement('ol');
-    ol.className = 'substeps'; // CSS sorgt für i, ii, iii …
-    subArr.forEach(s => {
-      if (!s) return;
-      const li = document.createElement('li');
-      li.textContent = s;
-      ol.appendChild(li);
-    });
-    liParent.appendChild(ol);
-  }
-
   (r.steps || []).forEach(item => {
-    // Fall 1: Zwischenüberschrift (nicht nummeriert)
     if (item && typeof item === 'object' && 'section' in item) {
       const li = document.createElement('li');
       li.className = 'subsection';
@@ -127,27 +138,37 @@ export function openModal(id) {
       olSteps.appendChild(li);
       return;
     }
-
-    // Fall 2: Nummerierter Schritt mit Untersteps
     if (item && typeof item === 'object' && 'text' in item) {
       const li = document.createElement('li');
-      li.textContent = item.text || '';
+      li.innerHTML = renderInline(item.text || '');
       olSteps.appendChild(li);
       addSubsteps(li, item.sub);
       return;
     }
-
-    // Fall 3: Normaler Schritt (string)
     if (typeof item === 'string' && item.trim()) {
       const li = document.createElement('li');
-      li.textContent = item;
+      li.innerHTML = renderInline(item);
       olSteps.appendChild(li);
     }
   });
 
-  // Notizen (deine renderNotesList-Version verwenden, falls vorhanden)
+  // Notizen
   const notesWrap = $('#modalNotes');
-  notesWrap.innerHTML = renderNotesList ? renderNotesList(r.notes) : '';
+  notesWrap.innerHTML = renderNotesList(r.notes);
 
   modal.showModal();
 }
+
+// --- Klickbare Rezept-Links im Modal (Delegation) ---
+modal.addEventListener('click', (e) => {
+  const a = e.target.closest('.recipe-link');
+  if (!a) return;
+  e.preventDefault();
+  const targetFile = a.dataset.file.replace(/^\#/, '').replace(/\.json$/,'').trim();
+  const hit = RECIPES.find(r => slugifyTitle(r.title) === targetFile);
+  if (hit) {
+    openModal(hit.id);
+  } else {
+    alert(`Rezept "${targetFile}" nicht gefunden 😕`);
+  }
+});

@@ -2,23 +2,22 @@
   "id": "r7",
   "title": "Sommerrollen",
   "tags": [
-    "Hauptgericht"
+    "Hauptgericht", "Asiatisch", "Fingerfood", "Beilage", "Vorspeise"
   ],
   "ingredients": [
-    "ca. 12 Reispapier (bei 20-22 cm",
-    "Durchmesser)",
+    "ca. 12 Reispapier (bei 20-22 cm Durchmesser)",
     "50 g Mie oder Glas Nudeln",
     "100 g Räuchertofu",
     "1 Möhre",
     "1 Gurke",
     "1 Paprika",
-    "1 Avocado ● 3 Frühlingszwiebeln",
+    "1 Avocado",
+    "3 Frühlingszwiebeln",
     "Sesam",
     "Chili Mayo",
     "Salz",
-    "Frische Minze, Koriander oder",
-    "(Thai)Basilikum",
-    "➔ Erdnussso ße"
+    "Frische Minze oder (Thai)Basilikum",
+    "[Erdnusssauce](#erdnusssosse.json)"
   ],
   "spices": [],
   "steps": [
