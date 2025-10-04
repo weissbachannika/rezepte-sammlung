@@ -1,5 +1,5 @@
 export const recipeFileNames = [
-  "one-pot_gemuese_curry.json",
+  "gemuese_curry.json",
   "japanisches_curry.json",
   "indische_linsensuppe.json",
   "erdnuss_nudeln_mit_gemuese.json",

@@ -2,7 +2,7 @@
   "id": "r4",
   "title": "Erdnuss Nudeln mit Gemüse",
   "tags": [
-    "Hauptgericht"
+    "Hauptgericht", "Asiatisch", "Nudeln"
   ],
   "ingredients": [
     "200 g Quick Cooking Noodles",
@@ -11,27 +11,38 @@
     "ein kleiner Bund Frühlingszwiebeln",
     "2-3 EL Erdnussbutter",
     "Sesamöl",
-    "Erdnussöl"
+    "Erdnussöl",
+    "Sojasoße",
+    "50-200 ml Wasser"
   ],
   "spices": [
-    "Sojasoße",
     "1 TL Knoblauch",
     "½ TL Ingwer",
     "1 TL Curry Paste",
-    "Sriracha (so viel wie es scharf sein",
-    "soll)",
+    "Sriracha (so viel wie es scharf sein soll)",
     "½ TL Kreuzkümmel",
     "je ½ TL Paprika Edelsüß/Rosenscharf",
     "1 TL Agavendicksaft",
     "½ TL Reisessig",
-    "vegan mushroom sauce"
+    "vegan mushroom sauce (opt.)"
   ],
   "steps": [
-    "Gemüse schnibbeln (Brokkoli in mundgerechte Stücke, die Pilze in Scheiben und Frühlingszwiebeln so wie immer halt)",
-    "Wasser kochen und salzen und während man die nächsten Schritte macht, die Nudeln kochen Die weißen Enden der Frühlingszwiebeln in etwas Öl anbraten Die Brokkoli Stücke dazugeben und einige Minuten anbraten Die Curry Paste und die anderen Gewürze dazu tun und unter gutem Rühren mit anbraten Das Ganze mit einem kleinen Schuss Sojasoße etwas ablöschen, damit die Gewürze nicht anbrennen und die Pilze dazu geben Wenn die auch ein bisschen angebraten sind und der Brokkoli langsam weicher wird, mit noch einem Schuss Sojasoße ablöschen und die restlichen Zutaten für die Soße 12 dazu geben und im Topf bzw. in der tiefen Pfanne zu einer cremigen Soße rühren (wenn nötig mit etwas heißem Wasser oder Nudelwasser verdünnen)",
-    "Wenn das Gemüse durch ist und die Nudeln fertig, diese abgießen und mit der Soße im Topf vermengen Auf den Tellern/Schüsseln kann das dann noch mit Sesam, (den grünen Teilen der)",
-    "Frühlingszwiebeln und etwas Chili Mayo getoppt werden"
+    "Brokkoli in mundgerechte Stücke schnibbeln, die Pilze und Frühlingszwiebeln in Scheiben schneiden (dabei weiße und grüne Teile der Zwiebeln trennen)",
+    "Wasser kochen und salzen und die Nudeln kochen lassen, während man die nächsten Schritte macht",
+    "Die weißen Enden der Frühlingszwiebeln in etwas Öl anbraten",
+    "Die Brokkoli Stücke dazugeben und einige Minuten anbraten",
+    "Die Curry Paste und die anderen Gewürze dazu tun und unter gutem Rühren mit anbraten",
+    "Das Ganze mit einem kleinen Schuss Sojasoße leicht ablöschen, damit die Gewürze nicht anbrennen und die Pilze dazu geben",
+    "Wenn die auch ein bisschen angebraten sind und der Brokkoli langsam weicher wird, mit noch einem Schuss Sojasoße ablöschen",
+    "Die restlichen Zutaten für die Soße dazu geben und im Topf bzw. in der tiefen Pfanne zu einer cremigen Soße rühren",
+    "Ggf. mit etwas mehr Wasser oder Nudelwasser verdünnen bis die soße deine präferierte Konsistenz hat",
+    "Das dann so lange leicht köcheln lassen bis das Gemüse durch ist und die Nudeln fertig sind",
+    "Diese abgießen und mit der Soße im Topf vermengen",
+    "Auf den Tellern/Schüsseln kann das dann noch mit Sesam und den grünen Teilen der Frühlingszwiebeln und etwas Chili Mayo getoppt werden"
   ],
-  "notes": "● Du kannst jedes Gemüse nehmen, was du willst. Ich mag die Kombi am liebsten, aber Paprika oder Pak Choi passen auch sehr gut ● Dazu kann man auch gut Crispy Tofu oder so als Beilage machen ○ dazu einen Block Naturtofu auspressen und Würfeln ○ die Würfel mit Speisestärke (und Gewürzen deiner Wahl) vermengen, sodass alle Stücke gut bedeckt sind ○ die dann in Öl gut anbraten und wenn",
+  "notes": [
+    "Du kannst jedes Gemüse nehmen, was du willst. Ich mag die Kombi am liebsten, aber Paprika oder Pak Choi passen auch sehr gut.", 
+    "Dazu kann man auch gut Crispy Tofu oder so als Beilage machen"
+  ],
   "image": ""
 }

@@ -35,14 +35,27 @@
       <button class="modal-close" id="modalClose" type="button">Schließen</button>
     </div>
     <div class="modal-body">
+      <!-- 1) Bild: volle Breite -->
       <div class="img" id="modalImg"></div>
-      <div class="content">
-        <div class="h">Zutaten</div>
-        <ul id="modalIngredients"></ul>
-        <div class="h">Gewürze</div>
-        <ul id="modalSpices"></ul>
+
+      <!-- 2) Zwei Spalten: Zutaten | Gewürze -->
+      <div class="ing-spices">
+        <section class="box">
+          <div class="h">Zutaten</div>
+          <ul id="modalIngredients"></ul>
+        </section>
+
+        <section class="box">
+          <div class="h">Gewürze</div>
+          <ul id="modalSpices"></ul>
+        </section>
+      </div>
+
+      <!-- 3) Steps & Notizen: wieder volle Breite -->
+      <div class="full">
         <div class="h">Zubereitung</div>
         <ol class="steps" id="modalSteps"></ol>
+
         <div class="h">Notizen</div>
         <div id="modalNotes" class="muted"></div>
       </div>

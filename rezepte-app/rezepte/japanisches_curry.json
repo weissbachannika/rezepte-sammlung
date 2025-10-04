@@ -2,7 +2,7 @@
   "id": "r2",
   "title": "Japanisches Curry",
   "tags": [
-    "Asiatisch", "Curry"
+    "Hauptgericht", "Asiatisch", "Curry", "Japanisch", "Reis", "Nudeln"
   ],
   "ingredients": [
     "Gemüse deiner Wahl ((Süß)Kartoffeln, Blumenkohl, Spinat, Pak Choi)",
@@ -12,9 +12,10 @@
     "1 kleines Stück Ingwer",
     "3 Zehen Knoblauch",
     "1 Dose Kokosmilch",
+    "Sojasoße",
     "300 ml Gemüsebrühe (und/oder mehr Kokosmilch/Sahne)",
-    "1-2 Tasse(n) Reis oder 100-200 g Nudeln (Bsp.: Mie Nudeln, dünne Udon Nudeln)",
-    "Sojasoße, Sesamöl, Erdnussöl, vegan mushroom sauce, Sriracha"
+    "1.5 Tasse(n) Reis oder 150 g Nudeln (Bsp.: Mie Nudeln, dünne Udon Nudeln)",
+    "Sesamöl, Erdnussöl, vegan mushroom sauce, Sriracha (opt.)"
   ],
   "spices": [
     "1-2 Block Golden Curry",

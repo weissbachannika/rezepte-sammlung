@@ -6,22 +6,53 @@ const closeBtn = $('#modalClose');
 closeBtn.addEventListener('click', () => modal.close());
 modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
 
+// --- HELPERS: sicher & flexibel rendern ---
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function toArray(maybeArrayOrString) {
+  if (!maybeArrayOrString) return [];
+  if (Array.isArray(maybeArrayOrString)) return maybeArrayOrString.filter(Boolean);
+  // Falls noch alte JSONs mit String+Zeilenumbrüchen existieren:
+  return String(maybeArrayOrString).split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+}
+
+function renderNotesList(notes) {
+  const arr = toArray(notes);
+  if (!arr.length) return '—';
+  const items = arr.map(n => `<li>${escapeHtml(n)}</li>`).join('');
+  return `<ul class="notes">${items}</ul>`;
+}
+
 export function openModal(id) {
   const r = RECIPES.find(x => x.id === id);
   if (!r) return;
 
   $('#modalTitle').textContent = r.title;
 
-  const imgWrap = $('#modalImg');
+  const modalBody = document.querySelector('#recipeModal .modal-body');
+  const imgWrap   = $('#modalImg');
+
+  // Bild-Handling
   imgWrap.innerHTML = '';
   if (r.image) {
     const img = document.createElement('img');
-    img.src = r.image; img.alt = r.title;
+    img.src = r.image;
+    img.alt = r.title;
+    img.loading = 'lazy';
     imgWrap.appendChild(img);
+    imgWrap.style.display = '';           // sichtbar
+    modalBody.classList.remove('no-img'); // optional, falls du Styles daran knüpfen willst
   } else {
-    imgWrap.textContent = 'Kein Bild';
+    imgWrap.style.display = 'none';       // komplett aus dem Layout nehmen
+    modalBody.classList.add('no-img');    // optional
   }
 
+  // Zutaten
   const ulIng = $('#modalIngredients');
   ulIng.innerHTML = '';
   (r.ingredients || []).forEach(s => {
@@ -30,6 +61,7 @@ export function openModal(id) {
     ulIng.appendChild(li);
   });
 
+  // Gewürze
   const ulSp = $('#modalSpices');
   ulSp.innerHTML = '';
   (r.spices || []).forEach(s => {
@@ -38,6 +70,7 @@ export function openModal(id) {
     ulSp.appendChild(li);
   });
 
+  // Steps
   const olSteps = $('#modalSteps');
   olSteps.innerHTML = '';
   (r.steps || []).forEach(s => {
@@ -46,6 +79,9 @@ export function openModal(id) {
     olSteps.appendChild(li);
   });
 
-  $('#modalNotes').textContent = r.notes || '—';
+  // Notizen (deine renderNotesList-Version verwenden, falls vorhanden)
+  const notesWrap = $('#modalNotes');
+  notesWrap.innerHTML = renderNotesList ? renderNotesList(r.notes) : '';
+
   modal.showModal();
 }

@@ -2,7 +2,7 @@
   "id": "r1",
   "title": "Gemüse Curry",
   "tags": [
-    "Asiatisch", "One-Pot", "Curry"
+    "Hauptgericht", "Asiatisch", "One-Pot", "Curry", "Indisch", "Reis"
   ],
   "ingredients": [
     "Gemüse deiner Wahl (Brokkoli, Paprika, Zucchini, Pilze,...)",
@@ -40,5 +40,5 @@
     "Circa 5 Minuten davor die Kichererbsen und/oder den Tofu untermischen und die restliche Zeit mit köcheln"
   ],
   "notes": "",
-  "image": ""
+  "image": "./images/erik.jpg"
 }

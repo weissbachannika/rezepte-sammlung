@@ -2,7 +2,7 @@
   "id": "r3",
   "title": "Indische Linsensuppe",
   "tags": [
-    "Hauptgericht"
+    "Hauptgericht", "Curry", "Asiatisch", "Indisch", "Suppe", "One-Pot"
   ],
   "ingredients": [
     "1 mittelgroße gelbe Zwiebel",
@@ -13,20 +13,27 @@
     "400 ml Gemüsebrühe",
     "30 g Tomatenmark",
     "ca. 30 g vegane Butter",
-    "etwas Zitronensaft (oder andere",
-    "Säure) Gewürze:",
+    "etwas Zitronensaft (oder andere Säure)",
+    "Baguette/Brot dazu passt sehr gut"
+  ],
+  "spices": [
     "1 TL (gelbes indisches) Currypulver",
     "(Paste geht natürlich auch)",
     "1 TL Kreuzkümmel",
     "1 TL Kurkuma",
     "1 TL Koriander",
-    "Salz, Pfeffer",
-    "➔ Baguette/Brot dazu passt sehr gut"
+    "Salz, Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Die Zwiebel, Knoblauch und Ingwer fein hacken Die Butter in einem Topf zerlassen und die Zwiebeln darin bei mittlerer Hitze glasig braten Den Knoblauch und Ingwer zu den Zwiebeln geben und 2-3 Minuten mitbraten Die Gewürze und das Tomatenmark dazugeben und ca. 30 Sekunden mitbraten Mit der Brühe ablöschen und die Kokosmilch und Linsen dazugeben Die Suppe zugedeckt für circa 30 Minuten auf kleiner Flamme köcheln lassen, bis die Linsen zerfallen sind Mit Zitronensaft, Salz & Pfeffer (und was du sonst noch so willst) abschmecken und"
+    "Die Zwiebel, Knoblauch und Ingwer fein hacken",
+    "Die Butter in einem Topf zerlassen und die Zwiebeln darin bei mittlerer Hitze glasig braten",
+    "Den Knoblauch und Ingwer zu den Zwiebeln geben und 2-3 Minuten mitbraten",
+    "Die Gewürze und das Tomatenmark dazugeben und ca. 30 Sekunden mitbraten",
+    "Mit der Brühe ablöschen und die Kokosmilch und Linsen dazugeben",
+    "Die Suppe zugedeckt für circa 30 Minuten auf kleiner Flamme köcheln lassen, bis die Linsen zerfallen sind",
+    "Mit Zitronensaft, Salz & Pfeffer (und was du sonst noch so willst) abschmecken und falls die Suppe zu dickflüssig ist mit etwas mehr Brühe verdünnen",
+    "Mit Brot servieren"
   ],
-  "notes": "",
+  "notes": "Die Suppe schmeckt am nächsten Tag vielleicht sogar noch ein bisschen besser",
   "image": ""
 }
