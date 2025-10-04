@@ -5,7 +5,7 @@ export const recipeFileNames = [
   "erdnuss_nudeln_mit_gemuese.json",
   "gebratener_reis_mit_marinierter_aubergine_und_tofu.json",
   "rice_paper_dumplings.json",
-  "grosser_teller_pfanne_oder_aehnliches_mit_wasser_zum_eintunken_von_reispapier.json",
+  "sommerrollen.json",
   "spaghetti_bolognese.json",
   "kleine_mittelgrosse_auaufform.json",
   "nudeln_mit_gemuese-sahne-sosse.json",
