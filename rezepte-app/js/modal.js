@@ -55,20 +55,49 @@ export function openModal(id) {
   // Zutaten
   const ulIng = $('#modalIngredients');
   ulIng.innerHTML = '';
-  (r.ingredients || []).forEach(s => {
-    const li = document.createElement('li');
-    li.textContent = s;
-    ulIng.appendChild(li);
+
+  (r.ingredients || []).forEach(item => {
+    if (typeof item === 'string') {
+      // normaler Stichpunkt
+      const li = document.createElement('li');
+      li.textContent = item;
+      ulIng.appendChild(li);
+    } else if (item && typeof item === 'object' && 'section' in item) {
+      // Abschnittsüberschrift (kleiner Titel, ohne Bullet)
+      const li = document.createElement('li');
+      li.className = 'subsection';
+      li.textContent = item.section;
+      ulIng.appendChild(li);
+    }
   });
 
   // Gewürze
   const ulSp = $('#modalSpices');
   ulSp.innerHTML = '';
+
   (r.spices || []).forEach(s => {
-    const li = document.createElement('li');
-    li.textContent = s;
-    ulSp.appendChild(li);
+    // ignoriert leere/null/undefined Items
+    if (typeof s === 'string' ? s.trim() : s) {
+      const li = document.createElement('li');
+      li.textContent = typeof s === 'string' ? s : String(s);
+      ulSp.appendChild(li);
+    }
   });
+
+  // Box-Elemente finden
+  const spicesBox = ulSp.closest('section.box');                 // Gewürze-Box
+  const ingSpicesWrap = document.querySelector('.ing-spices');   // 2-Spalten-Wrapper
+
+  const hasSpices = ulSp.children.length > 0;
+
+  // Gewürze-Box ein-/ausblenden
+  if (spicesBox) spicesBox.style.display = hasSpices ? '' : 'none';
+
+  // Layout: wenn keine Gewürze -> Zutaten 1 Spalte (volle Breite), sonst 2 Spalten
+  if (ingSpicesWrap) {
+    if (hasSpices) ingSpicesWrap.classList.remove('one-col');
+    else ingSpicesWrap.classList.add('one-col');
+  }
 
   // Steps
   const olSteps = $('#modalSteps');

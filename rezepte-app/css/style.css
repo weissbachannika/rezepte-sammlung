@@ -175,11 +175,19 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
   padding: 12px;
   width: 100%;
 }
-/* Responsive: auf kleineren Screens untereinander */
-@media (max-width: 1100px) {
-  .ing-spices {
-    grid-template-columns: 1fr;
-  }
+.ing-spices.one-col {
+  grid-template-columns: 1fr;
+}
+
+/* kleine Zwischenüberschrift innerhalb der Zutaten-/Gewürze-Listen */
+#modalIngredients .subsection,
+#modalSpices .subsection {
+  list-style: none;         /* kein Punkt */
+  margin: 10px 0 4px 0;     /* etwas Abstand */
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--subtext);
 }
 
 .h { font-weight: 700; margin: 6px 0 6px; }
@@ -201,6 +209,7 @@ li { margin: 4px 0; }
   margin: 4px 0;
 }
 
+
 /* Responsive */
 @media (max-width: 1100px) {
   .card { grid-column: span 6; }
@@ -211,4 +220,9 @@ li { margin: 4px 0; }
 @media (max-width: 680px) {
   .app { grid-template-columns: 1fr; }
   .card { grid-column: span 12; }
+}
+@media (max-width: 1100px) {
+  .ing-spices {
+    grid-template-columns: 1fr;
+  }
 }
