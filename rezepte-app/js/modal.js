@@ -3,8 +3,26 @@ import { $, RECIPES } from './state.js';
 const modal = $('#recipeModal');
 const closeBtn = $('#modalClose');
 
-closeBtn.addEventListener('click', () => modal.close());
-modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+let modalStack = [];
+let currentId = null;
+
+// statt direkt .close():
+function handleClose() {
+  if (modalStack.length > 0) {
+    const prevId = modalStack.pop();
+    openModal(prevId, { /* push */ push: false }); // zurück ohne erneut zu pushen
+  } else {
+    currentId = null;
+    modal.close();
+  }
+}
+
+closeBtn.addEventListener('click', handleClose);
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) handleClose(); // Klick auf den Backdrop = "zurück" oder schließen
+});
+// ESC abfangen → wie Close behandeln
+modal.addEventListener('cancel', (e) => { e.preventDefault(); handleClose(); });
 
 // ---------------- Helpers ----------------
 function escapeHtml(s) {
@@ -64,9 +82,16 @@ function addSubsteps(liParent, subArr) {
   liParent.appendChild(ol);
 }
 // --------------- Main ---------------
-export function openModal(id) {
+export function openModal(id, opts = {}) {
+  const { push = false, reset = false } = opts;
+
+  // Stack-Handling
+  if (reset || !modal.open) modalStack = [];
+  if (push && currentId) modalStack.push(currentId);
+
   const r = RECIPES.find(x => x.id === id);
   if (!r) return;
+  currentId = id;
 
   $('#modalTitle').textContent = r.title;
 
@@ -167,7 +192,7 @@ modal.addEventListener('click', (e) => {
   const targetFile = a.dataset.file.replace(/^\#/, '').replace(/\.json$/,'').trim();
   const hit = RECIPES.find(r => slugifyTitle(r.title) === targetFile);
   if (hit) {
-    openModal(hit.id);
+    openModal(hit.id, { push: true });  //beim Linkklick vorheriges Rezept merken
   } else {
     alert(`Rezept "${targetFile}" nicht gefunden 😕`);
   }

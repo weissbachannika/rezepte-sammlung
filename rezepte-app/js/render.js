@@ -53,9 +53,10 @@ export function renderGrid() {
     const card = document.createElement('article');
     card.className = 'card';
     card.setAttribute('tabindex', '0');
-    card.addEventListener('click', () => openModal(r.id));
-    card.addEventListener('keydown', (e) => { if (e.key === 'Enter') openModal(r.id); });
-
+    card.addEventListener('click', () => openModal(r.id, { reset: true }));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') openModal(r.id, { reset: true });
+    });
     const thumb = document.createElement('div');
     thumb.className = 'thumb';
     if (r.image) {
