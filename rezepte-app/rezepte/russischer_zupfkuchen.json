@@ -1,11 +1,9 @@
 {
   "id": "r61",
   "title": "Russischer Zupfkuchen",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Backen", "Kuchen", "Süßes"],
   "ingredients": [
-    "Teig:",
+    { "section": "Teig" },
     "300 g Mehl",
     "180 g Zucker",
     "1 Pck Vanillezucker",
@@ -13,19 +11,28 @@
     "50 g Backkakao",
     "1 Prise Salz",
     "200 g vegane Butter",
-    "Füllung:",
+    { "section": "Füllung" },
     "2 Becher veganer Vanille-Skyr",
     "2 Pck. Vanillepuddingpulver",
     "200 g Zucker",
     "30 g Zitronensaft",
     "½ Fläschchen Zitronenaroma",
-    "geriebene Schale von 1 Bio",
-    "Zitrone",
+    "geriebene Schale von 1 Bio Zitrone",
     "100 g vegane Butter"
   ],
   "spices": [],
   "steps": [
-    "Für den Teig: a. alle trockenen Zutaten gut vermischen b. die Butter hinzufügen und alles zu einem Teig verkneten Für die Füllung: a. in einer Schüssel den Skyr, Zucker, Zitronenschale, Zitronensaft, Zitronenaroma und geschmolzene Butter gut verrühren b. dann das Puddingpulver gut untermixen, dass es eine glatte Masse ohne Klümpchen wird ⅔ von dem Teig in der gefetteten Form verteilen und einen 2-3 cm hohen Rand bilden Die Füllung auf den Boden in der Springform gießen Das restliche Drittel Teig als Streusel auf der Füllung verteilen im Ofen für ca. 60 Minuten bei 170°C Ober-Unterhitze auf der mittleren Schiene backen Nach dem Backen im geöffneten Backofen vollständig auskühlen lassen und der Kuchen erst"
+    { "section": "Für den Teig" },
+    "Alle trockenen Zutaten gut vermischen.",
+    "Die Butter hinzufügen und alles zu einem Teig verkneten.",
+    { "section": "Für die Füllung" },
+    "In einer Schüssel den Skyr, Zucker, Zitronenschale, Zitronensaft, Zitronenaroma und geschmolzene Butter gut verrühren.",
+    "Dann das Puddingpulver gut untermixen, sodass eine glatte Masse ohne Klümpchen entsteht.",
+    "⅔ von dem Teig in der gefetteten 26 cm Springorm verteilen und einen 2–3 cm hohen Rand bilden.",
+    "Die Füllung auf den Boden in der Form gießen.",
+    "Das restliche Drittel Teig als Streusel auf der Füllung verteilen.",
+    "Im Ofen für ca. 60 Minuten bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
+    "Nach dem Backen im geöffneten Backofen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er völlig kalt ist."
   ],
   "notes": "",
   "image": ""

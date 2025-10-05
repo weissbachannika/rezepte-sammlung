@@ -1,15 +1,11 @@
 {
   "id": "r51",
   "title": "Tarte Tatin",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Nachtisch", "Backen", "Süßes"],
   "ingredients": [
     "100 g Zucker",
-    "das Mark von 1 Vanilleschote (oder",
-    "Vanilleextrakt)",
-    "100 ml Calvados (andere",
-    "Apfel-Spirituose geht auch)",
+    "das Mark von 1 Vanilleschote (oder Vanilleextrakt)",
+    "100 ml Calvados (andere Apfel-Spirituose geht auch)",
     "5 kleine Äpfel",
     "1 Pck. Blätterteig",
     "ca. 50 g Margarine",
@@ -17,11 +13,14 @@
   ],
   "spices": [],
   "steps": [
-    "Den Zucker und das Vanillemark zusammen mit dem Calvados in eine ofenfeste Pfanne geben und karamellisieren lassen, bis eine bräunliche, gut riechende zähe Flüssigkeit entstanden ist (bitte nicht mit den Fingern probieren, Verbrennungsgefahr!)",
-    "Die Äpfel schälen und halbieren oder dritteln (je nach Größe), das Kerngehäuse entfernen, nun in die Pfanne zum Calvados-Vanille-Zucker-Gemisch geben und darin wenden, bis sie beginnen, weich zu werden. Die Äpfel so in der Pfanne verteilen, dass diese ausgefüllt ist Nun die Butter auf den Äpfeln verteilen, den Blätterteig über den Pfanneninhalt legen und an den Seiten mit einem Löffel runterdrücken.",
-    "Das Ganze nun für 25 - 30 Minuten in den nach Packungsanweisung vorgeheizten Ofen geben (Umluft)",
-    "Danach die Pfanne mit einem Topﬂappen herausnehmen, einen großen Teller bzw. eine Dessertplatte nehmen, auf die Pfanne"
+    "Den Zucker und das Vanillemark zusammen mit dem Calvados in eine ofenfeste Pfanne geben und karamellisieren lassen, bis eine bräunliche, gut riechende zähe Flüssigkeit entstanden ist (bitte nicht mit den Fingern probieren, Verbrennungsgefahr!).",
+    "Die Äpfel schälen und halbieren oder dritteln (je nach Größe), das Kerngehäuse entfernen, nun in die Pfanne zum Calvados-Vanille-Zucker-Gemisch geben und darin wenden, bis sie beginnen, weich zu werden.",
+    "Die Äpfel so in der Pfanne verteilen, dass diese ausgefüllt ist.",
+    "Nun die Butter auf den Äpfeln verteilen, den Blätterteig über den Pfanneninhalt legen und an den Seiten mit einem Löffel runterdrücken.",
+    "Das Ganze nun für 25–30 Minuten in den nach Packungsanweisung vorgeheizten Ofen geben (Umluft).",
+    "Danach die Pfanne mit einem Topflappen herausnehmen, einen großen Teller bzw. eine Dessertplatte nehmen, auf die Pfanne legen und das Ganze vorsichtig stürzen.",
+    "Kurz abkühlen lassen und mit Vanilleeis servieren."
   ],
-  "notes": "",
+  "notes": "Ofenfeste Pfanne verwenden.",
   "image": ""
 }

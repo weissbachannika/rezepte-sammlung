@@ -1,23 +1,27 @@
 {
   "id": "r33",
   "title": "Scrambled Tofu",
-  "tags": [
-    "Frühstück"
-  ],
+  "tags": ["Frühstück", "Beilage", "low-effort"],
   "ingredients": [
     "1 Block Tofu",
-    "100 ml Pﬂanzenmilch",
-    "1 Zwiebel Gewürze:",
+    "100 ml Pflanzenmilch",
+    "1 Zwiebel"
+  ],
+  "spices": [
     "2 TL Gemüsebrühe",
     "½ TL Kurkuma (für die Farbe)",
-    "1-2 TL Kala Namak oder Salz"
+    "1–2 TL Kala Namak oder Salz"
   ],
-  "spices": [],
   "steps": [
-    "Mit etwas Küchenpapier die Feuchtigkeit aus dem Tofu pressen In einer Pfanne etwas Öl erhitzen und Zwiebeln darin 2 Minuten anbraten.",
+    "Mit etwas Küchenpapier die Feuchtigkeit aus dem Tofu pressen.",
+    "In einer Pfanne etwas Öl erhitzen und Zwiebeln darin 2 Minuten anbraten.",
     "Dann den Tofu in die Pfanne bröseln und weitere 5 Minuten anbraten.",
-    "Nach und nach etwas von der Pﬂanzenmilch hinzugeben und mit den Gewürzen verrühren"
+    "Nach und nach etwas von der Pflanzenmilch hinzugeben und mit den Gewürzen verrühren."
   ],
-  "notes": "● Wenn du magst, kannst du auch Champignons mit den Zwiebeln anbraten oder am Ende Kirschtomaten dazugeben ● Mit den Gewürzen kannst du ein bisschen ausprobieren, was dir am besten schmeckt.",
+  "notes": [
+    "Wenn du magst, kannst du auch Champignons mit den Zwiebeln anbraten oder am Ende Kirschtomaten dazugeben.",
+    "Mit den Gewürzen kannst du ein bisschen ausprobieren, was dir am besten schmeckt. Wichtig ist, dass du es gut salzt, damit der Tofu an Geschmack gewinnt, aber ansonsten bist du relativ frei.",
+    "Statt Pflanzenmilch kann man auch mit Joghurt oder Seidentofu die Konsistenz cremiger machen."
+  ],
   "image": ""
 }

@@ -1,24 +1,36 @@
 {
   "id": "r54",
   "title": "Zimtwecken",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Backen", "Süßes", "Gebäck", "Snack"],
   "ingredients": [
-    "270 ml Pﬂanzenmilch",
-    "½ - 1 Hefewürfel",
+    "270 ml Pflanzenmilch",
+    "½–1 Hefewürfel",
     "100 g Zucker",
     "100 g sehr weiche vegane Butter",
     "500 g Mehl",
     "1 Prise Salz",
-    "Füllung:",
+    { "section": "Füllung" },
     "100 g sehr weiche vegane Butter",
     "1 EL Zimt",
     "3 EL Zucker",
     "4 EL Rosinen"
   ],
   "spices": [],
-  "steps": [],
+  "steps": [
+    { "section": "Zubereitung – Hefeteig" },
+    "Hefe in eine Mulde im Mehl hineinbröckeln, 1 Teelöffel Zucker (von der Gesamtmenge abnehmen) über die Hefe streuen und mit warmer Milch übergießen.",
+    "Diesen Hefeansatz (Schüssel mit einem Trockentuch abgedeckt) dann im lauwarmen Backofen etwa 20 Minuten gehen lassen.",
+    "Danach die gegangene Hefe unter das Mehl mischen und die übrigen Zutaten hinzufügen.",
+    "Den Teig am besten in der Küchenmaschine mit Knethaken gut durchkneten, bis der Teig sich als Kugel von der Schüssel löst.",
+    "Diesen Teig nun wiederum abgedeckt in den lauwarmen Backofen stellen und ihn mindestens 30 Minuten gehen lassen (eventuell länger, der Teig muss sich deutlich vergrößert haben).",
+    { "section": "Zubereitung – Zimtwecken formen" },
+    "Den Teig auf einer bemehlten Fläche ausrollen (1–2 cm dick reicht), dann die weiche Butter auf die Teigfläche streichen.",
+    "Den Zimt mit dem Zucker mischen und über die Teigplatte streuen, ebenfalls die Rosinen darauf verteilen.",
+    "Dann die Teigplatte – untere Hälfte auf die obere Hälfte umschlagen. Aus der doppellagigen Platte etwa 1 cm dicke Streifen schneiden (von der kurzen Seite).",
+    "Zwei Backbleche mit Backpapier belegen, den Ofen auf 170°C vorheizen.",
+    "Die Streifen einmal verdrehen und zu einem Ring/Knoten zusammengelegt mit etwas Abstand voneinander auf ein Backblech legen.",
+    "Nach etwa 20 Minuten (Schnecken sollten leicht braun sein, aber nicht zu dunkel) die Zimtwecken aus dem Ofen nehmen."
+  ],
   "notes": "",
   "image": ""
 }

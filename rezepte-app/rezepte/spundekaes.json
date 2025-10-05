@@ -1,20 +1,23 @@
 {
   "id": "r50",
   "title": "Spundekäs",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Dip", "Hausmannskost", "Aufstrich", "Snack"],
   "ingredients": [
     "125 g vegane Butter",
     "200 g veganer (Kräuter) Frischkäse",
-    "1 kleine Zwiebel",
+    "1 kleine Zwiebel"
+  ],
+  "spices": [
     "1 EL Paprikapulver",
     "Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Die Butter rechtzeitig rausstellen, damit sie weich werden kann Die Butter mit dem Frischkäse und den Gewürzen vermischen Die Zwiebel fein würfeln und ebenfalls in die Buttermasse einmischen Mit Salz & Pfeffer abschmecken Dann noch mindestens 1h in den Kühlschrank stellen Dazu passt kleingeschnittenes Rohkost Gemüse und Brezeln oder Salzgebäck"
+    "Die Butter rechtzeitig rausstellen, damit sie weich werden kann.",
+    "Die Butter mit dem Frischkäse und den Gewürzen vermischen.",
+    "Die Zwiebel fein würfeln und ebenfalls in die Buttermasse einmischen.",
+    "Mit Salz & Pfeffer abschmecken.",
+    "Dann noch mindestens 1 Stunde in den Kühlschrank stellen."
   ],
-  "notes": "",
+  "notes": "Dazu passt kleingeschnittenes Rohkost-Gemüse und Brezeln oder Salzgebäck.",
   "image": ""
 }

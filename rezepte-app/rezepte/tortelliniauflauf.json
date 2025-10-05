@@ -1,28 +1,29 @@
 {
   "id": "r14",
   "title": "Tortelliniauflauf",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Hauptgericht", "Pasta", "Ofengericht", "low-effort"],
   "ingredients": [
     "500 g Tortellini",
     "1 Zwiebel",
     "400 g gehackte Tomaten",
     "200 g passierte Tomaten",
     "200 ml Hafersahne",
-    "100 g veganer Käse",
-    "vegane Speckwürfel Gewürze:",
-    "2-3 TL Brühe",
-    "Salz & Pfeffer",
-    "1-3 TL italienische Kräuter deiner",
-    "Wahl (Oregano, Basilikum,",
-    "Rosmarin, etc.)",
-    "1-2 Zehen Knoblauch",
-    "Etwas Tomatenmark"
+    "150 g veganer Käse",
+    "vegane Speckwürfel (opt.)"
   ],
-  "spices": [],
+  "spices": [
+    "2–3 TL Brühe",
+    "Salz & Pfeffer",
+    "1–3 TL italienische Kräuter deiner Wahl (Oregano, Basilikum, Rosmarin, etc.)",
+    "1–2 Zehen Knoblauch",
+    "etwas Tomatenmark (opt.)"
+  ],
   "steps": [
-    "Die Zwiebel in kleine Würfel schneiden Die Tortellini mit den Tomaten, Sahne, Zwiebeln und ggf. Speck in die Auﬂaufform geben und alles gut vermengen und würzen Die Tortellinis sollten alle bedeckt sein, also ggf. noch gehackte/passierte Tomaten oder Sahne nachgießen Die Auﬂaufform jetzt abdecken und bei 175°C für erstmal 15-20 min in den Ofen Dann die Auﬂaufform kurz rausholen und den Käse drüber streuen und das ganze"
+    "Die Zwiebel in kleine Würfel schneiden.",
+    "Die Tortellini mit den Tomaten, Sahne, Zwiebeln und ggf. Speck in eine 25 x 25 cm Auflaufform geben und alles gut vermengen und würzen.",
+    "Die Tortellinis sollten alle bedeckt sein, also ggf. noch gehackte/passierte Tomaten oder Sahne nachgießen.",
+    "Die Auflaufform jetzt abdecken und bei 175°C für erstmal 15–20 Minuten in den Ofen.",
+    "Dann die Auflaufform kurz rausholen und den Käse drüber streuen und das Ganze dann nochmal für 15–20 Minuten weiterbacken, dieses Mal ohne Deckel."
   ],
   "notes": "",
   "image": ""

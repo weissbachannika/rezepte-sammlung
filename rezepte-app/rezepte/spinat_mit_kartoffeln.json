@@ -1,29 +1,35 @@
 {
   "id": "r22",
   "title": "Spinat mit Kartoffeln",
-  "tags": [
-    "Kartoffelgerichte"
-  ],
+  "tags": ["Hauptgericht", "Hausmannskost"],
   "ingredients": [
     "400 g TK Spinat",
     "1 Zwiebel (fein gewürfelt)*",
     "40 g Margarine",
     "40 g Mehl",
-    "500 ml Pﬂanzenmilch",
+    "500 ml Pflanzenmilch",
     "500 g Kartoffeln",
-    "vegane Fischstäbchen (opt) Gewürze:",
+    "vegane Fischstäbchen (opt)"
+  ],
+  "spices": [
     "1 TL Brühe",
     "½ Muskatnuss",
     "½ TL Kreuzkümmel*",
     "1 TL Paprikapulver*",
-    "Salz & Pfeffer (viel Pfeffer*)",
-    "* für würzigen Spinat"
+    "Salz & Pfeffer (viel Pfeffer*)"
   ],
-  "spices": [],
   "steps": [
-    "Kartoffeln schälen und in relativ gleich große Hälften/Viertel schneiden und für ca. 20 Minuten kochen In einem großen Topf eine Béchamelsoße zubereiten (Für würzigen Spinat, brät man die Zwiebeln in der Margarine an, bevor man das Mehl dazu gibt)",
-    "Den Spinat in die Béchamelsoße geben und warten bis der Spinat ganz aufgetaut ist, sodass man den gut mit der Soße vermischen kann Den Spinat dann würzen und auf niedriger bis mittlerer Hitze ganz erhitzen In der Zeit die Fischstäbchen wie auf der Verpackung beschrieben zubereiten Wenn alles fertig ist, noch die Kartoffeln abgießen und fertig :)"
+    "Kartoffeln schälen und in relativ gleich große Hälften/Viertel schneiden und für ca. 20 Minuten kochen.",
+    "In einem großen Topf eine [Béchamelsoße](#bechamelsosse.json) zubereiten (für würzigen Spinat brät man die Zwiebeln in der Margarine an, bevor man das Mehl dazu gibt).",
+    "Den Spinat in die Béchamelsoße geben und warten, bis der Spinat ganz aufgetaut ist, sodass man ihn gut mit der Soße vermischen kann.",
+    "Den Spinat dann würzen und auf niedriger bis mittlerer Hitze ganz erhitzen.",
+    "In der Zeit die Fischstäbchen wie auf der Verpackung beschrieben zubereiten.",
+    "Wenn alles fertig ist, noch die Kartoffeln abgießen und fertig :)."
   ],
-  "notes": "",
+  "notes": [
+    "* für Würzigen Spinat",
+    "Statt Salzkartoffeln kann man auch sehr gut angebratene Gnocchi dazu machen.",
+    "Die Fischstäbchen kann man auch weglassen oder durch verschiedene andere Sachen ersetzen (z. B. [panierter Tofu](#panierter_tofu.json), vegane Schnitzel/Cordon Bleus, (vegane Spiegeleier), usw.)."
+  ],
   "image": ""
 }

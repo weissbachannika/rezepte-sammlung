@@ -1,13 +1,10 @@
 {
   "id": "r34",
   "title": "Panierter Tofu",
-  "tags": [
-    "Beilage"
-  ],
+  "tags": ["Beilage"],
   "ingredients": [
     "1 Block Tofu (am besten Natur)",
-    "4 EL Mehl oder Speisestärke (ca, wenn du den Tofu in kleinere Stücke schneidest,",
-    "brauchst du je nach dem ein bisschen mehr)",
+    "4 EL Mehl oder Speisestärke (ca., wenn du den Tofu in kleinere Stücke schneidest, brauchst du je nachdem ein bisschen mehr)",
     "25 g Paniermehl",
     "2 TL Salz",
     "1 TL Kreuzkümmel",
@@ -15,10 +12,13 @@
   ],
   "spices": [],
   "steps": [
-    "Tofu zwischen zwei Blättern Küchenrolle leicht auspressen und in die gewünschte Form schneiden (am besten mindestens einmal halbieren)",
-    "In einem tiefen Teller Mehl mit etwa doppelt so viel Wasser vermischen (es soll etwas klebrig werden) und Gewürze dazumischen In einem weiteren Teller Paniermehl verteilen und dann Tofu-Stücke erst mit der Mehlmischung bedecken und dann von allen Seiten mit Paniermehl bedecken.",
+    "Tofu zwischen zwei Blättern Küchenrolle leicht auspressen und in die gewünschte Form schneiden (am besten mindestens einmal halbieren).",
+    "In einem tiefen Teller Mehl mit etwa doppelt so viel Wasser vermischen (es soll etwas klebrig werden) und Gewürze dazumischen.",
+    "In einem weiteren Teller Paniermehl verteilen und dann Tofu-Stücke erst mit der Mehlmischung bedecken und dann von allen Seiten mit Paniermehl bedecken.",
     "Anschließend in einer Pfanne mit etwas Öl von allen Seiten goldbraun braten."
   ],
-  "notes": "● Du kannst den Tofu statt mit Paniermehl auch beispielsweise mit Sesam panieren ● Der Tofu selbst hat am Ende nicht viel Geschmack. Um dem entgegenzuwirken, gibt es verschiedene Optionen: ○ Wenn du den Tofu als Beilage zu einem anderen Gericht machst, dient er als gute Proteinquelle, ohne dass auffällt, dass der Tofu allein nicht viel Geschmack hat ○ Du kannst mehr Gewürze in die Marinade geben ○ Du kannst einen anderen Tofu wählen (zum Beispiel Räuchertofu, statt",
+  "notes": [
+    "Du kannst den Tofu statt mit Paniermehl auch (teilweise) mit Sesam panieren."
+  ],
   "image": ""
 }

@@ -1,26 +1,32 @@
 {
   "id": "r21",
   "title": "Überbackener Lauch mit Kartoffelpüree",
-  "tags": [
-    "Kartoffelgerichte"
-  ],
+  "tags": ["Hauptgericht", "Ofengericht", "Hausmannskost"],
   "ingredients": [
     "2 Stangen Lauch",
     "250 ml Hafersahne",
     "ca. 100 g veganer Reibekäse",
     "½ kg Kartoffeln (mehligkochend)",
     "ca. 3 EL vegane Butter/Margarine",
-    "ca. 60 ml Pﬂanzenmilch",
-    "(Raumtemperatur) Gewürze:",
+    "ca. 60 ml Pflanzenmilch (Raumtemperatur)"
+  ],
+  "spices": [
     "Brühepulver",
     "Muskatnuss",
     "Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Den Lauch gut waschen (die Stangen ggf. längs halbieren, um den Dreck besser entfernen zu können)",
-    "Dann die Stangen Lauch vierteln (also ca. 15 cm lange Stücke) und in Salzwasser für ca. 15 min kochen Währenddessen das Kartoffelpüree zubereiten In die Auﬂaufform dann die Sahne geben und mit Brühepulver (1-2 TL) und Muskatnuss (¼-½ Nuss) würzen Wenn der Lauch fertig gekocht ist, diesen abgießen und in der Auﬂaufform verteilen Den Käse* oben drauf streuen und das alles für ca. 30 min bei 180°C Umluft backen"
+    "Den Lauch gut waschen (die Stangen ggf. längs halbieren, um den Dreck besser entfernen zu können).",
+    "Dann die Stangen Lauch vierteln (also ca. 15 cm lange Stücke) und in Salzwasser für ca. 15 Minuten kochen.",
+    "Währenddessen das Kartoffelpüree zubereiten.",
+    "In die Auflaufform dann die Sahne geben und mit Brühepulver (1–2 TL) und Muskatnuss (¼–½ Nuss) würzen.",
+    "Wenn der Lauch fertig gekocht ist, diesen abgießen und in der Auflaufform verteilen.",
+    "Den Käse oben drauf streuen und das alles für ca. 30 Minuten bei 180°C Umluft backen."
   ],
-  "notes": "● Im Rezept meiner Mom werden die Lauch Stücke mit Kochschinken umwickelt, bevor sie gebacken werden, aber das geht ohne echtes Fleisch nicht gut, deswegen mache ich gerne eine vegane Fleisch Alternative wie die Cordon Bleus, Räuchertofu oder so",
+  "notes": [
+    "Im Rezept meiner Mom werden die Lauchstücke mit Kochschinken umwickelt, bevor sie gebacken werden, aber das geht ohne echtes Fleisch nicht gut, deswegen mache ich gerne eine vegane Fleischalternative wie Cordon Bleus oder Räuchertofu dazu.",
+    "Statt Lauch kann man das auch sehr gut mit grünem Spargel machen.",
+    "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner."
+  ],
   "image": ""
 }
