@@ -2,24 +2,30 @@
   "id": "r46",
   "title": "Basilikum Pesto",
   "tags": [
-    "Hauptgericht"
+    "Soße", "Italienisch", "Pasta", "Nudeln", "low-effort"
   ],
   "ingredients": [
     "2-3 Tassen frische Basilikumblätter",
     "35 g Pinienkerne",
-    "50g Cashewkerne (oder andere",
-    "Kerne/Nüsse/Samen)",
+    "50 g Cashewkerne (oder andere Kerne/Nüsse/Samen)",
     "2 Zehen Knoblauch",
-    "80 ml Olivenöl ● 1 EL Zitronensaft",
-    "2 EL Hefeﬂocken (und/oder",
-    "veganer Käse)",
+    "80 ml Olivenöl",
+    "1 EL Zitronensaft",
+    "2 EL Hefeflocken (und/oder veganer Käse)",
     "1 TL Salz",
     "¼ TL Pfeffer"
   ],
   "spices": [],
   "steps": [
-    "Pinienkerne und Cashewkerne in eine Pfanne geben und 2-3 Minuten rösten, dabei oft umrühren oder die Pfanne schwenken."
+    "Pinienkerne und Cashewkerne in eine Pfanne geben und 2-3 Minuten rösten, dabei oft umrühren oder die Pfanne schwenken.",
+    "Basilikum, Pinienkerne, Knoblauch und Hefeflocken in einen Mixer geben und pulsieren, bis sie gut zerkleinert sind, dabei zwischendurch die Seiten abschaben.",
+    "Bei laufender Küchenmaschine das Olivenöl und den Zitronensaft langsam eingießen.",
+    "So lange pulsieren, bis alles gut vermischt und relativ glatt ist.",
+    "Mit Salz und Pfeffer abschmecken."
   ],
-  "notes": "",
+  "notes": [
+    "Dazu Nudeln kochen oder Gnocchi anbraten",
+    "Auch gut auf gerösteten Brotscheiben unter [Bruschetta](#bruschetta.json)"
+  ],
   "image": ""
 }

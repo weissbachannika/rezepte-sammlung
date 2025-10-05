@@ -2,16 +2,18 @@
   "id": "r30",
   "title": "Burger Patties",
   "tags": [
-    "Beilagen"
+    "Beilage", "Hauptgericht", "Fingerfood"
   ],
   "ingredients": [
     "1 Zwiebel",
     "2 Knoblauchzehen",
     "70 g Sonnenblumenkerne",
-    "50 g Haferﬂocken",
+    "50 g Haferflocken",
     "300 g Kidneybohnen",
     "100 g Kichererbsen",
-    "20 g Tomatenmark Gewürze:",
+    "20 g Tomatenmark"
+  ],
+  "spices": [
     "3 TL geschrotete Leinsamen",
     "2 TL Gemüsebrühe",
     "1 TL Kreuzkümmel",
@@ -20,10 +22,12 @@
     "½ TL Curry",
     "Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Kidneybohnen und Kichererbsen durch ein Sieb abgießen und anschließend in einer Schüssel mit einer Gabel möglichst klein drücken Zwiebel und Knoblauch klein schneiden Alles zusammen in der Schüssel vermischen, bis eine einheitliche, klebrige Masse entsteht Aus dem “Teig” Burger Patties formen und von beiden Seiten in der Pfanne anbraten"
+    "Kidneybohnen und Kichererbsen durch ein Sieb abgießen und anschließend in einer Schüssel mit einer Gabel möglichst klein drücken.",
+    "Zwiebel und Knoblauch klein schneiden.",
+    "Alles zusammen in der Schüssel vermischen, bis eine einheitliche, klebrige Masse entsteht.",
+    "Aus dem “Teig” Burger Patties formen und von beiden Seiten in der Pfanne anbraten."
   ],
-  "notes": "● Das Verhältnis zwischen Kidneybohnen und Kichererbsen ist ﬂexibel. Je nach Geschmack kannst du also auch mehr von dem einen oder anderen nehmen ● Wenn du die Kidneybohnen / Kichererbsen nicht ganz klein quetschen willst, ist das kein Problem (hat sogar eine ganz angenehme Konsistenz am Ende), es sollte nur eine etwas klebrige Masse entstehen ● Die Patties schmecken auch ohne Burger gut, aber die einfachste Ergänzung zum vollständigen Burger ist mit simplen Burger Brötchen, Salat, Tomaten, (veganem Käse), Röstzwiebeln, sauren Gürkchen und einer Soße deiner Wahl, wie bspw. Ketchup und / oder veganer Mayo ● Die Patties lassen sich auch gut einfrieren, ansonsten halten sie sich etwa 2-3 Tage im Kühlschrank ● Das Tomatenmark dient nicht unbedingt dem Geschmack, sondern mehr der Optik, um der roten Farbe von Fleisch-Patties näher zu kommen, probiere also ein bisschen",
+  "notes": "Das Verhältnis zwischen Kidneybohnen und Kichererbsen ist flexibel. Je nach Geschmack kannst du also auch mehr von dem einen oder anderen nehmen. Wenn du die Kidneybohnen / Kichererbsen nicht ganz klein quetschen willst, ist das kein Problem (hat sogar eine ganz angenehme Konsistenz am Ende), es sollte nur eine etwas klebrige Masse entstehen. Die Patties schmecken auch ohne Burger gut, aber die einfachste Ergänzung zum vollständigen Burger ist mit simplen Burger Brötchen, Salat, Tomaten, (veganem Käse), Röstzwiebeln, sauren Gürkchen und einer Soße deiner Wahl, wie bspw. Ketchup und / oder veganer Mayo. Die Patties lassen sich auch gut einfrieren, ansonsten halten sie sich etwa 2–3 Tage im Kühlschrank. Das Tomatenmark dient nicht unbedingt dem Geschmack, sondern mehr der Optik, um der roten Farbe von Fleisch-Patties näher zu kommen, probiere also ein bisschen aus, was dir am besten gefällt. Falls dir der “Teig” zu flüssig ist, gib mehr Haferflocken hinzu, ist er zu trocken, kannst du etwas Pflanzenmilch hinzugeben, bis du eine angenehme Konsistenz erhältst.",
   "image": ""
 }

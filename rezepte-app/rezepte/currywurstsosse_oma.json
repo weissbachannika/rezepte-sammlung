@@ -1,25 +1,28 @@
 {
   "id": "r43",
   "title": "Currywurstsoße à la Oma",
-  "tags": [
-    "Dips & Soßen"
-  ],
+  "tags": ["Soße", "Beilage", "Deutsch"],
   "ingredients": [
     "1 (kleine) Zwiebel",
     "2 EL Margarine",
     "2 EL Mehl",
     "2-3 TL Tomatenmark",
     "100 ml Hafersahne",
-    "1 TL Senf ● ca. 300 ml Wasser",
+    "ca. 300 ml Wasser",
+    "1 EL Gewürz Ketchup"
+  ],
+  "spices": [
+    "1 TL Senf",
     "1-2 TL Currypulver",
-    "1 EL Gewürz Ketchup",
     "Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Die Zwiebel in kleine Würfel schneiden Die Margarine in einem kleinen Topf schmelzen lassen und die Zwiebel zusammen mit dem Currypulver darin anschwitzen Dann Mehl dazu geben und gut mixen, außerdem das Tomatenmark dazugeben und das ganze dann nach und nach mit Wasser ablöschen (dabei immer gut rühren, dass sich keine Klumpen bilden)",
-    "In einer kleinen Schüssel oder Ähnlichem die Sahne mit dem Senf gut vermischen und das auch dazu geben Das insgesamt circa 15 min köcheln lassen und zum Schluss noch mit Salz, Pfeffer"
+    "Die Zwiebel in kleine Würfel schneiden.",
+    "Die Margarine in einem kleinen Topf schmelzen lassen und die Zwiebel zusammen mit dem Currypulver darin anschwitzen.",
+    "Dann Mehl dazugeben und gut mixen, außerdem das Tomatenmark dazugeben und das Ganze dann nach und nach mit Wasser ablöschen (dabei immer gut rühren, dass sich keine Klumpen bilden).",
+    "In einer kleinen Schüssel oder Ähnlichem die Sahne mit dem Senf gut vermischen und das auch dazugeben.",
+    "Das insgesamt circa 15 min köcheln lassen und zum Schluss noch mit Salz, Pfeffer und dem Gewürz Ketchup abschmecken."
   ],
-  "notes": "",
+  "notes": "Mit veganer Bratwurst und Pommes oder [Kartoffelspalten](#kartoffelspalten.json) essen.",
   "image": ""
 }

@@ -2,32 +2,50 @@
   "id": "r13",
   "title": "Auberginen-Lasagne",
   "tags": [
-    "Hauptgericht"
+    "Hauptgericht", "Ofengericht", "Lasagne", "Italienisch", "Überbackenes", "Pasta"
   ],
   "ingredients": [
-    "Lasagneplatten (15-20",
-    "wahrscheinlich)",
-    "150 g Sojagranulat",
-    "400 g passierte Tomaten",
-    "2 Karotten",
-    "1 Zwiebel",
-    "2 Knoblauchzehen",
-    "1 Packung Crème Vega",
-    "veganer Reibekäse"
+    "3 große Auberginen",
+    "Olivenöl",
+    "125 ml Rotwein",
+    "2 Dosen gehackte Tomaten",
+    "300 g Lasagneplatten",
+    "125 g veganer Reibekäse",
+    "75 g veganer Parmesan / Hefeflocken",
+    "50 g Margarine + etwas extra zum Einfetten",
+    "50 g Mehl",
+    "800 ml Pflanzenmilch"
   ],
   "spices": [
-    "2 TL Oregano",
-    "2 TL Basilikum",
-    "3 TL Gemüsebrühe",
-    "1 TL Paprika edelsüß",
-    "1 TL Paprika rosenscharf",
-    "1 TL Zucker",
+    "1 EL Oregano",
+    "4 Knoblauchzehen (gehackt)",
+    "½ Bund Basilikum (Blätter abgezupft und Stiele fein gehackt)",
+    "Brühepulver",
+    "Muskatnuss",
     "Salz & Pfeffer"
   ],
   "steps": [
-    "Sojahack vorbereiten: Sojahack mit Gewürzen, 1 EL von den passierten Tomaten und 3-4 EL Wasser in einer Schüssel vermischen und kurz stehen lassen Soße vorbereiten: Gemüse klein schneiden, Zwiebeln in einer Pfanne kurz anbraten.",
-    "Dann das Sojahack dazugeben und nochmal etwa 5 Minuten anbraten, bevor der Knoblauch und das restliche Gemüse dazu kommen. Weitere 5 Minuten braten und dann mit passierten Tomaten ablöschen Dann in einer Backform abwechselnd Nudeln und Füllung schichten, dabei beliebig zwischen Crème Vega, Bolognese und Reibekäse wählen. Die letzte Schicht gut mit Käse* bedecken und für ca. 40 Minuten bei 200 ° C Ober-/Unterhitze backen"
+    "Die Auberginen waschen und in ca. 1 cm dicke Scheiben schneiden und in einer Lage auf mehrere Backbleche verteilen. Mit Olivenöl beträufeln, mit Salz und Pfeffer würzen und mit Oregano bestreuen.",
+    "Für 35-40 Minuten in dem auf 200°C Ober-/Unterhitze vorgeheizten Ofen rösten, bis sie gar sind.",
+    { "text": "Währenddessen die Soße zubereiten:", "sub": [
+      "1 Schuss Olivenöl in einen mittelgroßen Topf geben und auf mittlerer Stufe erhitzen.",
+      "Knoblauch und Basilikumstiele 1 Minute darin braten.",
+      "Dann Rotwein zugeben, Aufkochen und einige Minuten reduzieren lassen.",
+      "Danach die Tomaten zugeben, aufkochen und würzen (Salz, Pfeffer, Kräuter, …).",
+      "Dann die Hitze reduzieren und 10 Minuten köcheln lassen, bis die Soße leicht angedickt ist.",
+      "Die Basilikumblätter zugeben, dabei größere Blätter zerteilen und ggf. die Tomaten mit der Rückseite eines Löffels zerdrücken, dann beiseitestellen."
+    ]},
+    "Eine [Béchamelsoße](#bechamelsosse.json) machen und den Großteil des Parmesans zugeben.",
+    "Sobald alles fertig ist, die Auflaufform einfetten.",
+    { "text": "Dann die Lasagne schichten (insg. 3x):", "sub": [
+      "⅓ der Auberginen + ⅓ der Tomatensoße in die Form geben.",
+      "Mit Lasagneplatten bedecken.",
+      "Mit ⅓ der Béchamelsoße bestreichen.",
+      "Eine weitere Schicht Lasagneplatten darauflegen (bei der letzten Schicht nicht mehr)."
+    ]},
+    "Auf die letzte Schicht Béchamelsoße den restlichen Parmesan verteilen und danach den Reibekäse darüber streuen.",
+    "Die Lasagne 40-45 Minuten in den Ofen geben (200°C), bis sie goldbraun und gar ist."
   ],
-  "notes": "● Statt Creme Vega kann man natürlich auch traditionell eine Béchamelsoße machen",
+  "notes": "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner",
   "image": ""
 }

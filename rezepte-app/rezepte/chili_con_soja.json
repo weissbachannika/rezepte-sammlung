@@ -2,7 +2,7 @@
   "id": "r15",
   "title": "Chili con Soja",
   "tags": [
-    "Hauptgericht"
+    "Hauptgericht", "Mexikanisch", "One-Pot", "Low-effort", "Reis"
   ],
   "ingredients": [
     "80 g Sojahack",
@@ -13,23 +13,30 @@
     "400 g passierte Tomaten",
     "1 Dose Mais",
     "1 Dose Kidneybohnen",
-    "1 Packung Crème Vega Gewürze:",
+    "1 Packung Crème Vega (opt.)"
+  ],
+  "spices": [
     "1 TL Kreuzkümmel",
     "1 TL Gemüsebrühe",
-    "1 TL Chiliﬂocken",
+    "1 TL Chiliflocken",
     "1 TL Paprika edelsüß",
     "1 TL Paprika rosenscharf",
     "½ TL Zucker oder Agavendicksaft",
     "Salz und Pfeffer",
     "2 TL Sriracha / ½ TL Chilipulver"
   ],
-  "spices": [],
   "steps": [
-    "Das Sojahack mit 2 EL Wasser, der Sojasoße und den Gewürzen vermischen und kurz einweichen lassen In der Zwischenzeit die Zwiebel und die Paprika in kleine Würfel schneiden und den Knoblauch schälen In einer Pfanne etwas Öl erhitzen und die Zwiebel darin etwa 2 Minuten anbraten, bis sie leicht glasig wird. Dann das Sojahack dazugeben und weitere 5 Minuten anbraten. Dann den Knoblauch dazu pressen.",
-    "Mais und Kidneybohnen dazugeben und mit passierten Tomaten ablöschen Beim Servieren mit einem Löffel Crème Vega toppen. Fertig :)",
-    "Optional: Je nach Konsistenz kannst du mehr von den Tomaten dazugeben Mit den Chiliﬂocken und der Sriracha kannst du das Chili beliebig scharf machen.",
-    "Wenn du magst, kannst du auch eine Chilischote halbieren, entkernen, klein schneiden und mit der Zwiebel anbraten"
+    "Das Sojahack mit 2 EL Wasser, der Sojasoße und den Gewürzen vermischen und kurz einweichen lassen.",
+    "In der Zwischenzeit die Zwiebel und die Paprika in kleine Würfel schneiden und den Knoblauch schälen.",
+    "In einer Pfanne etwas Öl erhitzen und die Zwiebel darin etwa 2 Minuten anbraten, bis sie leicht glasig wird. Dann das Sojahack dazugeben und weitere 5 Minuten anbraten. Dann den Knoblauch dazu pressen.",
+    "Mais und Kidneybohnen dazugeben und mit passierten Tomaten ablöschen.",
+    "Beim Servieren mit einem Löffel Crème Vega toppen."
   ],
-  "notes": "",
+  "notes": [
+    "Mit Reis oder (Fladen-)Brot servieren.",
+    "Je nach gewünschter Konsistenz kannst du mehr gehackte oder passierte Tomaten dazugeben.",
+    "Mit den Chiliflocken und der Sriracha kannst du das Chili beliebig scharf machen.",
+    "Wenn du magst, kannst du auch eine Chilischote halbieren, entkernen, klein schneiden und mit der Zwiebel anbraten."
+  ],
   "image": ""
 }

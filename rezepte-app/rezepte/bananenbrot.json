@@ -2,22 +2,28 @@
   "id": "r58",
   "title": "Bananenbrot",
   "tags": [
-    "Kuchen", "Gebäck", "Nachtisch", "Frühstück", "Snacks", "low-effort"
+    "Kuchen", "Backen", "Frühstück", "Snacks", "low-effort"
   ],
   "ingredients": [
     "3-4 Bananen",
     "100 g vegane Butter",
     "160 g Zucker",
     "180 g Mehl",
-    "2 TL Backpulver ● 1 Prise Salz",
-    "50 g Schokodrops (opt)",
-    "½ TL Zimt (opt)",
-    "80 g gehackte Haselnüsse (opt)"
+    "2 TL Backpulver",
+    "1 Prise Salz",
+    "50 g Schokodrops (opt.)",
+    "½ TL Zimt (opt.)",
+    "80 g gehackte Haselnüsse (opt.)"
   ],
   "spices": [],
   "steps": [
-    "die Bananen mit einer Gabel zermatschen die vegane Butter mit dem Zucker schaumig schlagen danach Mehl, Bananen, Salz, Backpulver und wenn du willst Zimt und/oder Haselnüsse dazugeben und zu einem homogenen Teig rühren Optional: zum Schluss werden die Schokodrops untergehoben"
-  ],
-  "notes": "",
+    "die Bananen mit einer Gabel zermatschen",
+    "die vegane Butter mit dem Zucker schaumig schlagen",
+    "danach Mehl, Bananen, Salz, Backpulver und wenn du willst Zimt und/oder Haselnüsse dazugeben und zu einem homogenen Teig rühren",
+    "Ggf. zum Schluss werden die Schokodrops untergehoben",
+    "Die Kastenform mit Backpapier auslegen und den Teig hineingeben",
+    "Das Bananenbrot bei 180°C für circa 50-60 Minuten backen"
+    ],
+  "notes": "Bei weniger Teig kann man auch gut Muffins aus dem Teig machen, dann einfach nur 20-25 Minuten backen",
   "image": ""
 }
