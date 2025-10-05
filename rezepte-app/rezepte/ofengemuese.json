@@ -1,9 +1,7 @@
 {
   "id": "r17",
   "title": "Ofengemüse",
-  "tags": [
-    "Ofengerichte"
-  ],
+  "tags": ["Hauptgericht", "Beilage", "Ofengericht", "low-effort"],
   "ingredients": [
     "3 Kartoffeln",
     "1 Süßkartoffel",
@@ -13,7 +11,8 @@
     "1 Aubergine",
     "1 Dose Kichererbsen",
     "1 rote Zwiebel",
-    "Joghurt Dip"
+    "Olivenöl",
+    "[Joghurt Dip](#joghurt_dip.json)"
   ],
   "spices": [
     "1 TL Rosmarin",
@@ -22,12 +21,16 @@
     "2 TL Kräuter der Provence",
     "2 TL Paprikapulver",
     "1 TL Knoblauchpulver",
-    "Salz, Pfeffer",
-    "Olivenöl"
+    "Salz & Pfeffer"
   ],
   "steps": [
-    "Gemüse schneiden auf einem Backblech verteilen, mit Öl und Gewürzen vermischen alles für ca. 30-40 Minuten bei 200 ° C Ober-/Unterhitze backen."
+    "Gemüse schneiden.",
+    "Auf einem Backblech verteilen, mit Öl und Gewürzen vermischen.",
+    "Alles für ca. 30–40 Minuten bei 200 °C Ober-/Unterhitze backen."
   ],
-  "notes": "➔ Etwas frischen gewaschenen Babyspinat, etwas von dem Dip in einen tiefen Teller geben und das Ofengemüse darauf geben",
+  "notes": [
+    "Etwas frischen gewaschenen Babyspinat, etwas von dem Dip in einen tiefen Teller geben und das Ofengemüse darauf geben.",
+    "In Wraps mit Falafeln, Salat, Gurke, Avocado, Hummus und dem [Joghurt Dip](#joghurt_dip.json) servieren."
+  ],
   "image": ""
 }

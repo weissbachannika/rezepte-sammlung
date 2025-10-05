@@ -1,14 +1,11 @@
 {
   "id": "r16",
   "title": "Loaded Süßkartoffel",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Hauptgericht", "Ofengericht", "Mexikanisch"],
   "ingredients": [
-    "eine Halbe oder Kleinere",
-    "Süßkartoffel pro Person",
-    "➔ Joghurt Dip",
-    "Füllung:",
+    "eine halbe oder kleinere Süßkartoffel pro Person",
+    "[Joghurt Dip](#joghurt_dip.json)",
+    { "section": "Füllung" },
     "1 Zwiebel",
     "2 Paprika",
     "2 Dosen Kidneybohnen",
@@ -18,17 +15,38 @@
     "Sojasoße"
   ],
   "spices": [
-    "2/3 TL Knoblauch (oder frisch 2-3 Zehen)",
+    "2/3 TL Knoblauch (oder frisch 2–3 Zehen)",
     "1 TL Kreuzkümmel",
     "1 TL Paprika rosenscharf",
     "1 TL Paprika edelsüß",
     "1 TL Brühe",
     "2 TL Oregano (getrocknet)",
-    "(Chili Pulver)",
+    "Chili Pulver (opt.)",
     "Salz & Pfeffer"
   ],
   "steps": [
-    "Süßkartoffeln halbieren und mit Messerspitze bisschen durchlöchern Hälften mit einem kleinen bisschen Öl bestreichen und salzen bei Umluft 200°C ca. 40min backen Zwiebel und Paprika schnibbeln Soja-Granulat einweichen & würzen etwas Brühe oder/und Sojasoße, Tomatenmark und Gewürze deiner Wahl (die Gewürze, die sonst hier im Rezept benutzt werden, passen alle gut) mit dem Granulat gut vermischen und kurz beiseitestellen 28 Füllung in großer/tiefer Pfanne oder Topf Zwiebel in etwas Öl anbraten nach 1-2 min Paprika hinzufügen nach ein paar Minuten Herd etwas runter stellen Tomatenmark & Gewürze kurz mit anbraten mit einem Schuss Sojasoße ablöschen Soja-Granulat hinzufügen Solange braten, bis Paprika durch ist Kidneybohnen und Mais hinzufügen falls zu trocken etwas Wasser/Brühe hinzugeben Mit Salz und Pfeffer (und allen Gewürzen deiner Wahl) abschmecken"
+    { "section": "Süßkartoffeln" },
+    "Halbieren und mit Messerspitze ein bisschen durchlöchern.",
+    "Hälften mit einem kleinen bisschen Öl bestreichen und salzen.",
+    "Bei Umluft 200°C ca. 40 Minuten backen.",
+    { "section": "Füllung" },
+    "Zwiebel und Paprika schnibbeln.",
+    "Soja-Granulat einweichen & würzen.",
+    "Etwas Brühe oder/und Sojasoße, Tomatenmark und Gewürze deiner Wahl (die Gewürze, die sonst hier im Rezept benutzt werden, passen alle gut) mit dem Granulat gut vermischen und kurz beiseitestellen.",
+    "Füllung in großer/tiefer Pfanne oder Topf zubereiten:",
+    "Zwiebel in etwas Öl anbraten.",
+    "Nach 1–2 Minuten Paprika hinzufügen.",
+    "Nach ein paar Minuten Herd etwas runterstellen.",
+    "Tomatenmark & Gewürze kurz mit anbraten.",
+    "Mit einem Schuss Sojasoße ablöschen.",
+    "Soja-Granulat hinzufügen.",
+    "Solange braten, bis Paprika durch ist.",
+    "Kidneybohnen und Mais hinzufügen.",
+    "Falls zu trocken, etwas Wasser/Brühe hinzugeben.",
+    "Mit Salz und Pfeffer (und allen Gewürzen deiner Wahl) abschmecken.",
+    { "section": "Rest" },
+    "Alle Zutaten für den Dip in einer Schüssel mixen und mit Gewürzen abschmecken.",
+    "Mit Avocado und Frühlingszwiebeln garnieren (opt)."
   ],
   "notes": "",
   "image": ""

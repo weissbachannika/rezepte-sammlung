@@ -1,28 +1,35 @@
 {
   "id": "r62",
   "title": "Limetten-Mohnkuchen",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Backen", "Kuchen", "Süßes"],
   "ingredients": [
     "70 g vegane Butter",
     "160 g Zucker",
-    "200 ml Pﬂanzenmilch",
+    "200 ml Pflanzenmilch",
     "300 g Mehl",
-    "40g gemahlener Mohn",
+    "40 g gemahlener Mohn",
     "1 TL Natron",
     "1 Prise Salz",
     "1 Pck Vanillezucker",
     "Abrieb einer Limette",
     "Saft von 2 Limetten",
-    "Glasur:",
+    { "section": "Glasur" },
     "125 g Puderzucker",
     "Saft einer halben Limette"
   ],
   "spices": [],
   "steps": [
-    "Die Pﬂanzenmilch mit dem Limettensaft vermischen Für den Teig die (weiche) Butter mit dem Zucker und der Schale der Limette verrühren a. am besten erst die Schale der Limette abreiben, bevor du sie auspresst Alle trockenen Zutaten in einer Schüssel mixen Nun die trockenen Zutaten abwechselnd mit der Pﬂanzenmilch zu der Butter-Zucker-Mischung geben Die Kastenform mit Backpapier auslegen und den Teig hineingeben Das Ganze für ca. 50 Minuten bei 180°C Ober-/Unterhitze backen Den Kuchen vollständig abkühlen lassen Für die Glasur den Limettensaft mit dem (gesiebten) Puderzucker vermischen, sodass eine dickﬂüssige Masse entsteht. Diese auf euren Kuchen streichen und festwerden lassen Optional:"
+    "Die Pflanzenmilch mit dem Limettensaft vermischen.",
+    "Für den Teig die (weiche) Butter mit dem Zucker und der Schale der Limette verrühren.",
+    "Am besten erst die Schale der Limette abreiben, bevor du sie auspresst.",
+    "Alle trockenen Zutaten in einer Schüssel mixen.",
+    "Nun die trockenen Zutaten abwechselnd mit der Pflanzenmilch zu der Butter-Zucker-Mischung geben.",
+    "Die Kastenform mit Backpapier auslegen und den Teig hineingeben.",
+    "Das Ganze für ca. 50 Minuten bei 180°C Ober-/Unterhitze backen.",
+    "Den Kuchen vollständig abkühlen lassen.",
+    "Für die Glasur den Limettensaft mit dem (gesiebten) Puderzucker vermischen, sodass eine dickflüssige Masse entsteht.",
+    "Diese auf den Kuchen streichen und festwerden lassen."
   ],
-  "notes": "",
+  "notes": "Optional: Bevor die Glasur trocken ist, kann man noch ein paar gehobelte Mandeln darüber geben.",
   "image": ""
 }
