@@ -1,25 +1,42 @@
 {
   "id": "r59",
   "title": "Hefezopf",
-  "tags": [
-    "Kuchen & Gebäck"
-  ],
+  "tags": ["Backen", "Süßes", "Frühstück", "Gebäck"],
   "ingredients": [
     "½ Würfel frische Hefe (oder 1 Pck Trockenhefe)",
-    "280 ml Pﬂanzenmilch",
+    "280 ml Pflanzenmilch",
     "100 g Zucker",
     "80 g vegane Butter",
     "500 g Mehl",
     "1 TL Salz",
-    "2 TL Vanilleextrakt (oder Mark von 1",
-    "Vanilleschote)",
-    "Zum Bestreichen:",
-    "2 EL Pﬂanzensahne/-milch + 1 Prise Kurkuma",
-    "(opt)",
+    "2 TL Vanilleextrakt (oder Mark von 1 Vanilleschote)",
+    { "section": "Zum Bestreichen" },
+    "2 EL Pflanzensahne/-milch + 1 Prise Kurkuma (opt)",
     "30 g Hagelzucker (oder Mandelblättchen)"
   ],
   "spices": [],
-  "steps": [],
-  "notes": "",
+  "steps": [
+    { "section": "Hefeteig vorbereiten" },
+    "Die Hefe in eine kleine Schüssel bröseln. 120 ml der Pflanzenmilch (lauwarm) und 2 EL von dem Zucker hinzugeben und die Hefe darin auflösen. Etwa 5–10 Minuten beiseitestellen, bis die Hefe beginnt zu schäumen.",
+    "Währenddessen die vegane Butter in einem Topf schmelzen. Dann etwas abkühlen lassen (Butter und Milch dürfen nicht wärmer sein als 40°C, sonst stirbt die Hefe).",
+    "In einer Rührschüssel Mehl, restlichen Zucker und Salz vermischen.",
+    "Die restliche Pflanzenmilch (160 ml), flüssige Butter, Hefe-Mischung und Vanilleextrakt hinzufügen. Mit einem Holzlöffel verrühren, bis die Flüssigkeit vom Mehl aufgenommen wurde.",
+    "Dann auf eine Arbeitsfläche geben und 5–10 Minuten mit den Händen kneten (oder eine Küchenmaschine mit Knethaken verwenden).",
+    "Anschließend den Hefeteig in eine geölte Schüssel legen, mit einem feuchten Geschirrtuch oder Frischhaltefolie abdecken (damit der Teig nicht austrocknet) und 45–60 Minuten (oder über Nacht im Kühlschrank) gehen lassen, bis er sich verdoppelt hat.",
+    { "section": "Hefezopf flechten" },
+    "Nach der Gehzeit den Hefeteig nochmal kurz durchkneten. (Jetzt kann man entweder den ganzen Teig verwenden, um einen großen Hefezopf zu machen oder den Teig halbieren, um 2 kleine Hefezöpfe zu machen. Man kann den Teig aber auch für ein anderes Mal einfrieren).",
+    "Dann den Teig in 3 gleich große Stücke teilen. Die Stücke jeweils zu langen Strängen rollen und dann zu einem Zopf flechten, dabei das obere und untere Ende zusammendrücken.",
+    "Den geflochtenen Hefezopf auf ein mit Backpapier ausgelegtes Backblech setzen. Mit einem Geschirrtuch abdecken und weitere 30 Minuten bei Zimmertemperatur gehen lassen. (Damit der Hefeteig währenddessen nicht trocken wird, kann man ihn vorher mit etwas Wasser besprühen oder mit Pflanzenmilch bepinseln).",
+    "Nach 15–20 Minuten den Backofen auf 180°C Ober-/Unterhitze vorheizen.",
+    { "section": "Hefezopf backen" },
+    "Nach der Ruhezeit den Hefezopf nochmal mit etwas Pflanzensahne (+ Prise Kurkuma verrührt) bestreichen (damit er eine schöne Farbe bekommt) und mit Hagelzucker (oder Mandelblättchen) bestreuen.",
+    "Kleine Hefezöpfe etwa 20–25 Minuten und einen großen Hefezopf ca. 30–35 Minuten backen, bis die Oberfläche goldgelb ist oder ein Stäbchen sauber herauskommt.",
+    "Anschließend den Ofen ausschalten und den Hefezopf noch kurz bei leicht geöffneter Ofentür ruhen lassen.",
+    "Dann herausnehmen und auf einem Auskühlgitter komplett abkühlen lassen."
+  ],
+  "notes": [
+    "Der Hefezopf hält sich luftdicht verpackt und bei Zimmertemperatur gelagert 2–3 Tage.",
+    "Restlicher Hefeteig kann auch für bis zu 3 Monate und der fertig gebackene Hefezopf für bis zu 6 Monate eingefroren werden."
+  ],
   "image": ""
 }

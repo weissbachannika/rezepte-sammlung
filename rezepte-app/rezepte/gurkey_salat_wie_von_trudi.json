@@ -1,28 +1,23 @@
 {
   "id": "r37",
   "title": "Gurkey Salat (wie von Trudi)",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Salat", "Beilage", "Vorspeise", "Hausmannskost", "low-effort"],
   "ingredients": [
-    "Gurke",
+    "1 Gurke",
     "2-3 Frühlingszwiebeln",
     "3 gehäufte EL Creme Vega",
     "1 EL Essig",
-    "½ EL Sojasoße oder vegane",
-    "Worcestersauce",
-    "1 EL Wasser",
-    "Salz & Pfeffer Zubereitung:",
-    "1. Gurke würfeln (bisschen kleiner als",
-    "1x1cm Würfel) und",
-    "Frühlingszwiebeln in feine Ringe",
-    "schneiden",
-    "2. In einer Schüssel die Zutaten für",
-    "die Soße mit einer Gabel oder",
-    "Schneebesen gut mixen und mit"
+    "1 EL Wasser"
   ],
-  "spices": [],
-  "steps": [],
+  "spices": [
+    "½ EL Sojasoße oder vegane Worcestersauce",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Gurke würfeln (bisschen kleiner als 1x1 cm Würfel) und Frühlingszwiebeln in feine Ringe schneiden.",
+    "In einer Schüssel die Zutaten für die Soße mit einer Gabel oder einem Schneebesen gut mixen und mit Salz und Pfeffer abschmecken.",
+    "Die Gurke und Zwiebeln dazugeben und mit der Soße vermischen."
+  ],
   "notes": "",
   "image": ""
 }

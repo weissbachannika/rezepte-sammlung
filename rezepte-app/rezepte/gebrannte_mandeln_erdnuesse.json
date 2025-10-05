@@ -1,11 +1,9 @@
 {
   "id": "r56",
   "title": "Gebrannte Mandeln / Erdnüsse",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Snack", "Süßes", "Weihnachten", "low-effort"],
   "ingredients": [
-    "200 g Mandeln oder Erdnusskerne",
+    "200 g unbehandelte Mandeln oder Erdnusskerne",
     "80-100 g Zucker",
     "40-50 ml Wasser",
     "1 Pck. Vanillezucker",
@@ -13,7 +11,11 @@
   ],
   "spices": [],
   "steps": [
-    "Zucker, Vanillezucker und Zimt in eine Edelstahl Pfanne geben und etwas mischen Wasser zugeben und ohne umzurühren zum Kochen bringen Die Mandeln / Erdnusskerne dazugeben und unter ständigem Rühren auf hoher Stufe"
+    "Zucker, Vanillezucker und Zimt in eine Edelstahlpfanne geben und etwas mischen.",
+    "Wasser zugeben und ohne umzurühren zum Kochen bringen.",
+    "Die Mandeln / Erdnusskerne dazugeben und unter ständigem Rühren auf hoher Stufe weiterkochen, bis der Zucker trocken wird.",
+    "Dann die Temperatur auf mittlerer Stufe stellen und so lange rühren, bis der Zucker leicht gebräunt ist.",
+    "Dann die Mandeln / Erdnusskerne auf ein Backblech schütten und abkühlen lassen."
   ],
   "notes": "",
   "image": ""

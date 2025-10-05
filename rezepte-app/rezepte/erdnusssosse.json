@@ -1,9 +1,7 @@
 {
   "id": "r44",
   "title": "Erdnusssoße",
-  "tags": [
-    "Dips & Soßen"
-  ],
+  "tags": ["Soße", "Asiatisch", "Dip"],
   "ingredients": [
     "2 EL Erdnussbutter",
     "3 TL Sojasoße",
@@ -14,20 +12,24 @@
     "1-3 EL Wasser",
     "1 TL Sweetchilisoße (opt)",
     "½ TL Vegan mushroom sauce (opt)",
-    "1 TL Sesam (opt) Gewürze:",
+    "1 TL Sesam (opt)"
+  ],
+  "spices": [
     "1 TL Sriracha",
     "½ TL Chiliöl / Chili Crisp",
-    "⅓ TL Knoblauchpulver (oder fein",
-    "gehackt/gepresst)",
-    "¼ TL Ingwerpulver (oder fein",
-    "gehackt)",
+    "⅓ TL Knoblauchpulver (oder fein gehackt/gepresst)",
+    "¼ TL Ingwerpulver (oder fein gehackt)",
     "¼ TL Kreuzkümmel",
     "Brühepulver / Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Die Erdnussbutter in eine Schüssel geben und in der Mikrowelle leicht erwärmen, um das Mixen später leichter zu machen Die restlichen Zutaten dazugeben, gut mixen und falls die Soße noch zu dickﬂüssig ist mit Wasser verdünnen Mit den Gewürzen würzen und abschmecken"
+    "Die Erdnussbutter in eine Schüssel geben und in der Mikrowelle leicht erwärmen, um das Mixen später leichter zu machen.",
+    "Die restlichen Zutaten dazugeben, gut mixen und falls die Soße noch zu dickflüssig ist mit Wasser verdünnen.",
+    "Mit den Gewürzen würzen und abschmecken."
   ],
-  "notes": "",
+  "notes": [
+    "Als Dip für [Sommerrollen](#sommerrollen.json).",
+    "Udon Nudeln kochen, zu der Soße geben und mit Sesam, Frühlingszwiebeln und Chili Mayo garnieren."
+  ],
   "image": ""
 }

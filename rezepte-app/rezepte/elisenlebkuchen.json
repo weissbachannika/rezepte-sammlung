@@ -1,9 +1,7 @@
 {
   "id": "r69",
   "title": "Elisenlebkuchen",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Backen", "Weihnachten", "Süßes", "Gebäck"],
   "ingredients": [
     "500 g feinster Zucker",
     "250 ml Aquafaba",
@@ -11,16 +9,21 @@
     "250 g gemahlene Haselnüsse",
     "100 g Zitronat",
     "100 g Orangeat",
-    "20 g Zimt ● ½ Muskatnuss",
-    "die geriebene Schale von 2 Bio",
-    "Zitronen",
+    "20 g Zimt",
+    "½ Muskatnuss",
+    "die geriebene Schale von 2 Bio Zitronen",
     "Zartbitter Kuvertüre",
     "Oblaten"
   ],
   "spices": [],
   "steps": [
-    "Das Aquafaba und den Zucker schaumig rühren Das Zitronat und Orangeat zusammen mit den Mandeln und Haselnüssen im Mixer zerkleinern (damit das alleine nicht so verklebt)",
-    "In diese Mischung die Zitronenschalen hinzufügen und mit dem Zuckerschaum vorsichtig zu einem Teig vermischen Der Teig muss weich sein, darf aber nicht auseinanderlaufen. Falls der Teig zu dünn ist etwas mehr Mandeln/Haselnüsse/Paniermehl unterrühren Die Masse auf Oblaten streichen (ca, ½ cm dick) und diese mit etwas Abstand voneinander auf ein mit Backpapier ausgelegten Blech legen Das Ganze bei 150°C für 20-30 Minuten backen Die Kuvertüre in einem Wasserbad schmelzen und diese auf die noch heißen Lebkuchen streichen 90"
+    "Das Aquafaba und den Zucker schaumig rühren.",
+    "Das Zitronat und Orangeat zusammen mit den Mandeln und Haselnüssen im Mixer zerkleinern (damit das alleine nicht so verklebt).",
+    "In diese Mischung die Zitronenschalen hinzufügen und mit dem Zuckerschaum vorsichtig zu einem Teig vermischen.",
+    "Der Teig muss weich sein, darf aber nicht auseinanderlaufen. Falls der Teig zu dünn ist, etwas mehr Mandeln/Haselnüsse/Paniermehl unterrühren.",
+    "Die Masse auf Oblaten streichen (ca. ½ cm dick) und diese mit etwas Abstand voneinander auf ein mit Backpapier ausgelegtes Blech legen.",
+    "Das Ganze bei 150°C für 20–30 Minuten backen.",
+    "Die Kuvertüre in einem Wasserbad schmelzen und diese auf die noch heißen Lebkuchen streichen."
   ],
   "notes": "",
   "image": ""

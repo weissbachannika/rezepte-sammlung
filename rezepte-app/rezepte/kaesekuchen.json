@@ -1,15 +1,31 @@
 {
   "id": "r19",
   "title": "Käsekuchen",
-  "tags": [
-    
-  ],
+  "tags": ["Backen", "Kuchen", "Süßes"],
   "ingredients": [
-    
+    { "section": "Boden" },
+    "125 g vegane Butter",
+    "80 g Zucker",
+    "250 g Weizenmehl",
+    "2 TL Backpulver",
+    "1 Prise Salz",
+    "3 EL kaltes Wasser",
+    { "section": "Füllung" },
+    "125 g vegane Butter",
+    "150 g Zucker",
+    "1 kg veganer Joghurt",
+    "geriebene Schale von 1 Bio Zitrone",
+    "2 Pck. Vanillepuddingpulver"
   ],
   "spices": [],
   "steps": [
-    ],
+    "Die Zutaten für den Boden zu einem glatten Teig verkneten und für ca. 30 Minuten kühlen.",
+    "Für die Füllung den Joghurt mit dem Zucker, der abgeriebenen Schale der Zitrone und dem Puddingpulver verrühren. Die Margarine schmelzen und unterrühren.",
+    "Die 26 cm Springform fetten und den Teig darin gleichmäßig verteilen und mit einer Gabel ein paar kleine Löcher in den Teig stechen. Dabei einen Rand von 2–3 cm Höhe bilden.",
+    "Die Joghurtmasse in die Form füllen und den Kuchen im vorgeheizten Backofen (180°C Ober-/Unterhitze) circa 60 Minuten goldgelb backen.",
+    "Falls der Kuchen zu dunkel wird, mit Alufolie abdecken.",
+    "Nach dem Backen im geöffneten Backofen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er völlig kalt ist."
+  ],
   "notes": "",
   "image": ""
 }

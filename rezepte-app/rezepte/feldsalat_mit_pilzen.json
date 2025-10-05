@@ -1,9 +1,7 @@
 {
   "id": "r38",
   "title": "Feldsalat mit Pilzen",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Salat", "Beilage", "Vorspeise", "low-effort"],
   "ingredients": [
     "200 g Feldsalat",
     "200 g Champignons",
@@ -15,8 +13,12 @@
   ],
   "spices": [],
   "steps": [
-    "Feldsalat gut waschen, ev. die weißlichen Wurzelfäden abschneiden, in Salatschleuder trocken schleudern Die Champignons abbürsten und in Scheiben schneiden Für die Vinaigrette alle Zutaten in ein Schüttelglas (z.B. leeres Marmeladenglas)",
-    "geben und gut miteinander vermischen Kurz bevor der Salat serviert werden soll, etwas Margarine in einer großen Pfanne"
+    "Feldsalat gut waschen, evtl. die weißlichen Wurzelfäden abschneiden, in Salatschleuder trocken schleudern.",
+    "Die Champignons abbürsten und in Scheiben schneiden.",
+    "Für die Vinaigrette alle Zutaten in ein Schüttelglas (z. B. leeres Marmeladenglas) geben und gut miteinander vermischen.",
+    "Kurz bevor der Salat serviert werden soll, etwas Margarine in einer großen Pfanne zerlassen und die Pilz-Scheiben darin kurz anschmoren.",
+    "Den Feldsalat in eine große Salatschüssel geben, die Vinaigrette darüber gießen, vermischen und zum Schluss die warmen Pilze darauf geben.",
+    "Sofort servieren :)."
   ],
   "notes": "",
   "image": ""

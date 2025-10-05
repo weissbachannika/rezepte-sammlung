@@ -1,33 +1,32 @@
 {
   "id": "r29",
   "title": "Falafel",
-  "tags": [
-    "Beilagen"
-  ],
+  "tags": ["Beilage", "Hauptgericht", "Snack", "Fingerfood"],
   "ingredients": [
     "250 g Kichererbsen",
     "75 g Couscous",
     "1 kleine Zwiebel",
     "2 Zehen Knoblauch",
-    "1 EL Lein oder Kichererbsenmehl",
-    "(hab ich glaub ich tbh nie benutzt,",
-    "ist für die bessere Bindung, also tut",
-    "es Speisestärke oder so auch)",
-    "Olivenöl zum braten Gewürze:",
+    "1 EL Lein-/Kichererbsenmehl oder Speisestärke",
+    "Olivenöl zum Braten"
+  ],
+  "spices": [
     "1 ½ TL Kreuzkümmel",
     "1 ½ TL Koriander (gemahlen)",
     "½ TL Kurkuma",
     "Salz, Pfeffer"
   ],
-  "spices": [],
   "steps": [
     "Den Couscous in einem Topf mit etwas Salzwasser nach Packungsanweisung zubereiten, den Topf beiseitestellen.",
     "Währenddessen die Kichererbsen in ein Sieb geben, mit kaltem Wasser gut abspülen und abtropfen lassen.",
-    "Zwiebel und Knoblauch schälen und grob hacken Kichererbsen, Zwiebel, Knoblauch und Gewürze in einen hohen Becher oder in den Standmixer geben und pürieren.",
-    "Es muss keine feine Paste werden, die Zutaten sollen sich nur gut verbinden Die Kichererbsenmasse mit dem vorbereiteten Couscous gut verrühren, mit Salz und Pfeffer abschmecken Die Masse sollte leicht klebrig sein und sich gut formen lassen. Ist sie bröckelig, etwas heißes Wasser zufügen.",
-    "Jeweils 1 EL Teig abstechen, mit den Fingerspitzen zu Bällchen formen und leicht ﬂach drücken. (wenn man die Hände vorher nass macht, klebt der Teig nicht so sehr an den Fingern)",
-    "In einer Pfanne das Öl erhitzen und die Falafel in 6-8 Minuten goldbraun und knusprig"
+    "Zwiebel und Knoblauch schälen und grob hacken.",
+    "Kichererbsen, Zwiebel, Knoblauch und Gewürze in einen hohen Becher oder in den Standmixer geben und pürieren.",
+    "Es muss keine feine Paste werden, die Zutaten sollen sich nur gut verbinden.",
+    "Die Kichererbsenmasse mit dem vorbereiteten Couscous gut verrühren, mit Salz und Pfeffer abschmecken.",
+    "Die Masse sollte leicht klebrig sein und sich gut formen lassen. Ist sie bröckelig, etwas heißes Wasser zufügen.",
+    "Jeweils 1 EL Teig abstechen, mit den Fingerspitzen zu Bällchen formen und leicht flach drücken (wenn man die Hände vorher nass macht, klebt der Teig nicht so sehr an den Fingern).",
+    "In einer Pfanne das Öl erhitzen und die Falafel in 6–8 Minuten goldbraun und knusprig braten, dabei einmal wenden."
   ],
-  "notes": "",
+  "notes": "In Wraps mit Ofengemüse, Salat, Gurke, Avocado, Hummus und dem Joghurt-Dip servieren.",
   "image": ""
 }

@@ -1,27 +1,26 @@
 {
   "id": "r36",
   "title": "Gurkey Salat (asiatisch)",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Salat", "Asiatisch", "Beilage", "Vorspeise", "low-effort"],
   "ingredients": [
     "1 Gurke",
     "3 EL Sweet-Chili Soße",
-    "1 TL Reisessig (oder",
-    "Limetten/Zitronensaft)",
+    "1 TL Reisessig (oder Limetten/Zitronensaft)",
     "2 TL Sojasoße",
     "2 TL Sesamöl",
-    "½ TL Knoblauchpulver",
-    "Chili Crisp (oder Chiliöl und/oder",
-    "Chiliﬂocken)",
-    "Salz & Pfeffer",
-    "Sesam Zubereitung:",
-    "1. Gurke halbieren und in Halbmonde",
-    "schneiden",
-    "2. Alles verrühren"
+    "Sesam"
   ],
-  "spices": [],
-  "steps": [],
-  "notes": "Wenn du magst, kannst du die Gurke nach dem Halbieren noch ein bisschen mehr “kaputt machen”. Nimm dafür einfach ein",
+  "spices": [
+    "½ TL Knoblauchpulver",
+    "Chili Crisp (oder Chiliöl und/oder Chiliflocken)",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Gurke halbieren und mit der flachen Seite eines großen Messers vorsichtig von oben auf die Gurke drücken, bis sie etwas matschig wird.",
+    "Die Hälften dann in Halbmonde schneiden.",
+    "Alles verrühren oder in einem dichten Gefäß gut schütteln."
+  ],
+  "notes": [
+    ],
   "image": ""
 }

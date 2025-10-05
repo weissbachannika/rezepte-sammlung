@@ -1,28 +1,31 @@
 {
   "id": "r23",
-  "title": "Gemüse in Bechamelsoße mit Kartoffeln",
-  "tags": [
-    "Kartoffelgerichte"
-  ],
+  "title": "Gemüse in Béchamelsoße mit Kartoffeln",
+  "tags": ["Hauptgericht", "Hausmannskost", "Kartoffel"],
   "ingredients": [
-    "ca. 600 g Gemüse deiner Wahl*",
+    "ca. 600 g Gemüse deiner Wahl (Kohlrabi, Blumenkohl, Weißkohl, Wirsing,...)",
     "50 g Margarine",
     "50 g Mehl",
-    "750 ml Pﬂanzenmilch",
+    "750 ml Pflanzenmilch",
     "500 g Kartoffeln",
-    "veganes Schnitzel (opt) Gewürze:",
+    "veganes Schnitzel (opt)"
+  ],
+  "spices": [
     "1 TL Brühe",
     "⅔ Muskatnuss",
-    "Salz & Pfeffer",
-    "* Kohlrabi, Blumenkohl, Weißkohl,",
-    "Wirsing, …"
+    "Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Kartoffeln schälen und in relativ gleich große Hälften/Viertel schneiden und für ca. 20 Minuten kochen Das Gemüse deiner Wahl waschen, ggf. schälen, schneiden und in einem großen Topf in Salzwasser kochen (die genannten Gemüsesorten brauchen alle so ca. 15 Minuten)",
-    "Das Gemüse abgießen (etwas von dem Kochwasser auffangen) und in einem Durchschlag (oder so) beiseite stellen In dem jetzt wieder freien Topf eine Béchamelsoße zubereiten (dabei kann man einen Teil der Milch durch das aufgefangene Kochwasser ersetzen)",
-    "Wenn die Soße fertig ist das Gemüse dazugeben und alles gut vermischen, ggf. noch Brühe zugeben bis zur gewünschten Konsistenz und alles kurz warm werden lassen"
+    "Kartoffeln schälen und in relativ gleich große Hälften/Viertel schneiden und für ca. 20 Minuten kochen.",
+    "Das Gemüse deiner Wahl waschen, ggf. schälen, schneiden und in einem großen Topf in Salzwasser kochen (die genannten Gemüsesorten brauchen alle so ca. 15 Minuten).",
+    "Das Gemüse abgießen (etwas von dem Kochwasser auffangen) und in einem Durchschlag (oder so) beiseite stellen.",
+    "In dem jetzt wieder freien Topf eine [Béchamelsoße](#bechamelsosse.json) zubereiten (dabei kann man einen Teil der Milch durch das aufgefangene Kochwasser ersetzen).",
+    "Wenn die Soße fertig ist, das Gemüse dazugeben und alles gut vermischen, ggf. noch Brühe zugeben bis zur gewünschten Konsistenz und alles kurz warm werden lassen."
   ],
-  "notes": "● zu Wirsing passt es sehr gut wenn man bei der Béchamelsoße vor dem Mehl noch eine fein geschnittene weiße Zwiebel mit anbrät (und wenn man fancy sein will eine vegane Speck-Alternative) ● Schnitzel kann man auch weglassen oder durch verschiedene andere Sachen ersetzen (z.B. Panierter Tofu , vegane Cordon Bleus, Falafeln , usw.)",
+  "notes": [
+    "Zu Wirsing passt es sehr gut, wenn man bei der Béchamelsoße vor dem Mehl noch eine fein geschnittene weiße Zwiebel mit anbrät (und wenn man fancy sein will eine vegane Speck-Alternative).",
+    "Schnitzel kann man auch weglassen oder durch verschiedene andere Sachen ersetzen (z. B. [panierter Tofu](#panierter_tofu.json), vegane Cordon Bleus, [Falafeln](#falafel.json), usw.).",
+    "Statt Salzkartoffeln kann man auch gut [Kartoffelspalten](#kartoffelspalten.json) machen"
+  ],
   "image": ""
 }

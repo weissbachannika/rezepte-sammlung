@@ -1,29 +1,36 @@
 {
   "id": "r24",
-  "title": "Kürbissuppe",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "title": "(Roasted) Kürbissuppe",
+  "tags": ["Suppe", "Hauptgericht", "One-Pot", "Vorspeise"],
   "ingredients": [
-    "1 kleiner Hokkaido Kürbis (ca. 1kg)",
+    "1 kleiner Hokkaido Kürbis (ca. 1 kg)",
     "1 große Zwiebel",
-    "1 Daumengroßes Stück Ingwer",
-    "500-1000 ml Gemüsebrühe",
+    "500–1000 ml Gemüsebrühe",
     "Kokosmilch und/oder Hafersahne",
     "Brot oder Baguette dazu",
-    "Süßkartoffeln / Kartoffeln/Möhren Gewürze:",
+    "Süßkartoffeln / Kartoffeln / Möhren (opt.)",
+    "Kürbiskernöl als Topping"
+  ],
+  "spices": [
+    "1 daumengroßes Stück Ingwer",
     "Salz & Pfeffer",
     "Maggi",
     "Curry Paste",
     "Paprika rosenscharf",
-    "Cayennepfeffer, Chilipulver",
-    "Kürbiskernöl als Topping"
+    "Cayennepfeffer, Chilipulver (opt.)"
   ],
-  "spices": [],
   "steps": [
-    "Kürbis (und falls noch anderes Gemüse in die Suppe soll, das auch) waschen und grob schneiden Kerne entfernen Gemüse mit Öl und Salz im Ofen rösten (180-200°C für 30-40 min)",
-    "a. Gemüse muss nicht geröstet werden, es kann auch direkt kleiner geschnitten werden Kurz bevor der Kürbis fertig ist, die Zwiebel würfeln und in einem (großen)",
-    "Topf in etwas Öl anbraten und kurz danach den gehackten Ingwer dazu geben Den Herd etwas runter stellen und das im Ofen geröstete Gemüse etwas kleiner machen und mit in den Topf geben und kurz mit anbraten a. falls nicht geröstet: Länger mit anbraten Gewürze deiner Wahl hinzufügen und ebenfalls kurz mit anbraten Mit Brühe und Kokosmilch/Sahne ablöschen und kurz aufkochen a. falls nicht geröstet: alles für 20-30 min köcheln lassen"
+    "Kürbis (und falls noch anderes Gemüse in die Suppe soll, das auch) waschen und grob schneiden, Kerne entfernen.",
+    "Gemüse mit Öl und Salz im Ofen rösten (180–200°C für 30–40 Minuten).",
+    "Gemüse muss nicht geröstet werden, es kann auch direkt kleiner geschnitten werden.",
+    "Kurz bevor der Kürbis fertig ist, die Zwiebel würfeln und in einem (großen) Topf in etwas Öl anbraten und kurz danach den gehackten Ingwer dazugeben.",
+    "Den Herd etwas runterstellen und das im Ofen geröstete Gemüse etwas kleiner machen, mit in den Topf geben und kurz mit anbraten.",
+    "Falls nicht geröstet: länger mit anbraten.",
+    "Gewürze deiner Wahl hinzufügen und ebenfalls kurz mit anbraten.",
+    "Mit Brühe und Kokosmilch/Sahne ablöschen und kurz aufkochen.",
+    "Falls nicht geröstet: alles für 20–30 Minuten köcheln lassen.",
+    "Den Herd ausmachen und alles mit dem Stabmixer mixen und nochmal abschmecken und nachwürzen.",
+    "Brot dazu schneiden (und rösten)."
   ],
   "notes": "",
   "image": ""

@@ -1,27 +1,24 @@
 {
   "id": "r47",
   "title": "Guacamole",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Dip", "Mexikanisch", "Snack", "low-effort"],
   "ingredients": [
-    "3 weiche Avocados",
+    "2 weiche Avocados",
     "½ Zitrone/Limette",
-    "1 Tomate",
-    "1-2 Knoblauchzehen (je nach",
-    "Menge an Leuten, die du noch",
-    "sehen musst)",
-    "1-2 TL Salz",
-    "andere Gewürze, die gut passen:",
-    "Kreuzkümmel, Paprika, Pfeffer Zubereitung:",
-    "1. Avocados entkernen, mit einem",
-    "großen Löffel aus der Schale",
-    "nehmen und in eine Schüssel",
-    "geben. Mit einer Gabel klein",
-    "drücken"
+    "1 Tomate"
   ],
-  "spices": [],
-  "steps": [],
+  "spices": [
+    "1 Knoblauchzehe",
+    "½ TL Kreuzkümmel",
+    "½ TL Paprika", 
+    "Salz & Pfeffer",
+    "Cayennepfeffer oder Chili (opt.)"
+  ],
+  "steps": [
+    "Avocados entkernen, mit einem großen Löffel aus der Schale nehmen und in eine Schüssel geben. Mit einer Gabel klein drücken.",
+    "Zitrone auspressen, Knoblauch pressen und Tomate klein schneiden.",
+    "Alles vermischen und würzen."
+  ],
   "notes": "",
   "image": ""
 }

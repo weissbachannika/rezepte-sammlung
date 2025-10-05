@@ -1,42 +1,49 @@
 {
   "id": "r28",
-  "title": "Herzhafte Pfannkuchen mit Füllung",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "title": "Herzhafte Pfannkuchen mit “Füllung”",
+  "tags": ["Hauptgericht"],
   "ingredients": [
-    "Teig:",
+    { "section": "Teig" },
     "375 g Mehl",
-    "560 ml Pﬂanzenmilch",
+    "560 ml Pflanzenmilch",
     "1 TL Zucker",
-    "Füllung:",
+    { "section": "Füllung" },
     "1 Zwiebel",
     "30 g Soja Granulat",
     "1 Paprika",
     "½ Zucchini",
     "200 g Pilze",
     "¾ Glas Pesto Rosso",
-    "Sonst:",
+    { "section": "Sonst" },
     "200 g veganer Reibekäse",
     "1 Pck Creme Vega",
-    "Olivenöl zum Braten Gewürze:",
-    "Teig:",
+    "Olivenöl zum Braten"
+  ],
+  "spices": [
+    { "section": "Teig" },
     "Salz",
     "Paprika edelsüß & rosenscharf",
     "Knoblauchpulver",
     "Brühepulver",
     "Curry",
-    "Füllung:",
+    { "section": "Füllung" },
     "Sojasoße",
     "Brühepulver",
     "Paprika geräuchert",
     "Salz & Pfeffer",
     "Tomatenmark"
   ],
-  "spices": [],
   "steps": [
-    "Zutaten für den Teig mit einem Schneebesen glattrühren und ordentlich würzen Soja Granulat mit etwas heißem Wasser, Sojasoße, Tomatenmark und Gewürzen quellen lassen Gemüse schnibbeln In einer Pfanne die Pfannkuchen ausbacken, dabei etwas Käse auf den Pfannkuchen schmelzen lassen Parallel in einer großen (tiefen) Pfanne die Füllung braten a. Dafür zuerst die Zwiebel in etwas Öl anbraten und nach ein paar Minuten die Paprika und das Sojagranulat dazugeben b. Nach ein paar weiteren Minuten die Zucchini dazugeben, gut vermischen und dann können auch die Pilze mit angebraten werden c. Wenn das Gemüse leicht braun wird, kann das Pesto und die Gewürze dazu gegeben werden Wenn die Pfannkuchen fertig sind und das Gemüse in der Füllung durch ist, können die einzelnen Pfannkuchen mit etwas Füllung und etwas Creme Vega getoppt werden. Fertig :)"
+    "Zutaten für den Teig mit einem Schneebesen glattrühren und ordentlich würzen.",
+    "Soja Granulat mit etwas heißem Wasser, Sojasoße, Tomatenmark und Gewürzen quellen lassen.",
+    "Gemüse schnibbeln.",
+    "In einer Pfanne die Pfannkuchen ausbacken, dabei etwas Käse auf den Pfannkuchen schmelzen lassen.",
+    "Parallel in einer großen (tiefen) Pfanne die Füllung braten.",
+    "Dafür zuerst die Zwiebel in etwas Öl anbraten und nach ein paar Minuten die Paprika und das Sojagranulat dazugeben.",
+    "Nach ein paar weiteren Minuten die Zucchini dazugeben, gut vermischen und dann können auch die Pilze mit angebraten werden.",
+    "Wenn das Gemüse leicht braun wird, kann das Pesto und die Gewürze dazu gegeben werden.",
+    "Wenn die Pfannkuchen fertig sind und das Gemüse in der Füllung durch ist, können die einzelnen Pfannkuchen mit etwas Füllung und etwas Creme Vega getoppt werden."
   ],
-  "notes": "",
+  "notes": "Für 3–4 Personen.",
   "image": ""
 }

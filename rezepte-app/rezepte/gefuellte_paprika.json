@@ -1,40 +1,55 @@
 {
   "id": "r18",
   "title": "Gefüllte Paprika",
-  "tags": [
-    "Ofengerichte"
-  ],
+  "tags": ["Hauptgericht", "Ofengericht", "Beilage"],
   "ingredients": [
+    { "section": "Für die Füllung" },
     "2 (große) Paprikas",
     "200 g Naturtofu",
     "1 große Zwiebel",
     "4-5 getrocknete Tomaten",
     "80 g Mais",
     "2-3 EL Creme Vega",
-    "1-2 EL Tomatenmark Gewürze:",
-    "3 EL Sojasoße",
-    "2 TL vegan Mushroom Sauce",
-    "1 TL Sriracha",
-    "4 EL Hefeﬂocken",
+    "1-2 EL Tomatenmark",
+    { "section": "Für die Soße" },
     "200 ml passierte Tomaten",
     "200 ml vegane Sahne",
     "1 EL Tomatenmark",
-    "optional: ein Schuss Curry Gewürz",
-    "Ketchup (Hela) Gewürze:",
+    "einen Schuss Gewürz Ketchup (opt.)"
+  ],
+  "spices": [
+    { "section": "Für die Füllung" },
+    "3 EL Sojasoße",
+    "2 TL vegan Mushroom Sauce",
+    "1 TL Sriracha",
+    "4 EL Hefeflocken",
+    "1 TL Garam Masala (oder Curry)",
+    "1 TL Brühepulver (oder Salz)",
+    "½ TL Agavendicksaft (oder andere Süße)",
+    "Salz & Pfeffer",
+    { "section": "Für die Soße" },
     "1 TL Sriracha",
     "1 TL Garam Masala (oder Curry)",
     "2 TL Brühepulver (oder Salz)",
     "½ TL Muskatnuss",
     "2 TL Oregano",
-    "1-2 TL Agavendicksaft (oder",
-    "andere Süße)",
+    "1-2 TL Agavendicksaft (oder andere Süße)",
     "Salz & Pfeffer"
   ],
-  "spices": [],
   "steps": [
-    "Die Zwiebel fein würfeln, die Paprikas halbieren und den Strunk und das Gehäuse entfernen, die getrockneten Tomaten klein schneiden und den Tofu auspressen In einer Pfanne etwas Öl (ggf. von den getrockneten Tomaten) erhitzen und dann erst die Zwiebeln etwas anbraten und nach 2-3 Minuten den Tofu in die Pfanne bröseln Das ganze weitere 6-7 Minuten braten und währenddessen gut rühren und ggf. den Tofu 32 noch kleiner zerdrücken und dann noch die getrockneten Tomaten und Tomatenmark hinzufügen und noch eine Minute anbraten Das ganze jetzt mit Sojasoße und vegan Mushroom Sauce ablöschen und würzen und außerdem Creme Vega und den Mais dazugeben und gut vermischen und abschmecken und ggf. nachwürzen Die Paprikahälften mit der Tofu Mischung befüllen und in die Auﬂaufform legen In einer Schüssel oder einfach in der gerade benutzten Pfanne alle Zutaten und gewürze für die Soße gut vermischen (ggf. auch etwas Wasser zum verdünnen)",
-    "Die Soße über die Paprikahälften in die Auﬂaufform gießen"
+    "Die Zwiebel fein würfeln, die Paprikas halbieren und den Strunk und das Gehäuse entfernen, die getrockneten Tomaten klein schneiden und den Tofu auspressen.",
+    "In einer Pfanne etwas Öl (ggf. von den getrockneten Tomaten) erhitzen und dann erst die Zwiebeln etwas anbraten und nach 2–3 Minuten den Tofu in die Pfanne bröseln.",
+    "Das Ganze weitere 6–7 Minuten braten und währenddessen gut rühren und ggf. den Tofu noch kleiner zerdrücken und dann noch die getrockneten Tomaten und Tomatenmark hinzufügen und noch eine Minute anbraten.",
+    "Das Ganze jetzt mit Sojasoße und vegan Mushroom Sauce ablöschen und würzen und außerdem Creme Vega und den Mais dazugeben und gut vermischen und abschmecken und ggf. nachwürzen.",
+    "Die Paprikahälften mit der Tofu-Mischung befüllen und in die Auflaufform legen.",
+    "In einer Schüssel oder einfach in der gerade benutzten Pfanne alle Zutaten und Gewürze für die Soße gut vermischen (ggf. auch etwas Wasser zum Verdünnen).",
+    "Die Soße über die Paprikahälften in die Auflaufform gießen.",
+    "Das Ganze jetzt bei 180°C Umluft für 45–60 Minuten backen.",
+    "Während der Backzeit dann eine Beilage wie z. B. Couscous oder Kartoffelpüree zubereiten."
   ],
-  "notes": "",
+  "notes": [
+    "Kleine Auflaufform verwenden.",
+    "Perfekt mit Kartoffelpüree als Beilage."
+  ],
   "image": ""
 }

@@ -1,21 +1,23 @@
 {
   "id": "r32",
   "title": "Kartoffelpüree",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Beilage", "Hausmannskost", "Kartoffel"],
   "ingredients": [
     "½ kg Kartoffeln (mehligkochend)",
-    "ca 3 EL vegane Butter/Margarine",
-    "ca 100 ml Pﬂanzenmilch Gewürze:",
-    "Muskatnuss",
-    "Brühe, Salz & Pfeffer"
+    "ca. 3 EL vegane Butter/Margarine",
+    "ca. 100 ml Pflanzenmilch"
   ],
-  "spices": [],
+  "spices": [
+    "Muskatnuss",
+    "Brühe",
+    "Salz & Pfeffer"
+  ],
   "steps": [
-    "Die Kartoffeln schälen und in Stücke schneiden (also halbieren oder vierteln, sodass die Stücke circa gleich groß sind)",
-    "Die Kartoffeln in einen Topf mit gesalzenem Wasser geben und zum Kochen bringen (nachdem das Wasser kocht, noch 20 Minuten kochen lassen)",
-    "Wenn die Kartoffeln fertig sind, das Wasser abgießen und den Herd ausmachen Die Kartoffeln mit dem Stampfer kleiner machen und nach und nach die Pﬂanzenmilch (Raumtemperatur) und Margarine dazugeben und weiter stampfen, bis es die gewünschte Konsistenz hat Das Kartoffelpüree mit ca. ½ Muskatnuss, Brühepulver, Salz und Pfeffer würzen und"
+    "Die Kartoffeln schälen und in Stücke schneiden (also halbieren oder vierteln, sodass die Stücke circa gleich groß sind).",
+    "Die Kartoffeln in einen Topf mit gesalzenem Wasser geben und zum Kochen bringen (nachdem das Wasser kocht, noch 20 Minuten kochen lassen).",
+    "Wenn die Kartoffeln fertig sind, das Wasser abgießen und den Herd ausmachen.",
+    "Die Kartoffeln mit dem Stampfer kleiner machen und nach und nach die Pflanzenmilch (Raumtemperatur) und Margarine dazugeben und weiter stampfen, bis es die gewünschte Konsistenz hat.",
+    "Das Kartoffelpüree mit ca. ½ Muskatnuss, Brühepulver, Salz und Pfeffer würzen und abschmecken."
   ],
   "notes": "",
   "image": ""

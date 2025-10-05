@@ -1,19 +1,21 @@
 {
   "id": "r48",
   "title": "Joghurt Dip",
-  "tags": [
-    "Hauptgericht"
-  ],
+  "tags": ["Dip", "low-effort"],
   "ingredients": [
-    "ein Becher Hafer Joghurt",
-    "ein Becher Creme Vega",
-    "Saft einer halben Limette",
-    "2-3 EL (oder so) Schnittlauch",
-    "(frisch, getrocknet oder tk)",
-    "1 EL Sojasoße"
+    "400-500 g Hafer/Soja Joghurt",
+    "200 g Creme Vega",
+    "Saft einer halben Limette"
   ],
-  "spices": [],
-  "steps": [],
+  "spices": [
+    "2-3 EL (oder so) Schnittlauch (frisch, getrocknet oder tk)",
+    "1 EL Sojasoße",
+    "½ TL oder 1 Zehe Knoblauch",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Alle Zutaten für den Dip in einer Schüssel mixen und mit Gewürzen abschmecken."
+  ],
   "notes": "",
   "image": ""
 }
