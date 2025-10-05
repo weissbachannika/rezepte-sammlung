@@ -262,17 +262,34 @@ li { margin: 4px 0; }
 }
 /* Untersteps (i, ii, iii …) – eigene Liste, nicht gezählt vom Hauptzähler */
 .substeps {
-  list-style: lower-roman;
+  counter-reset: substep;
+  list-style: none;
   margin: 8px 0 6px 28px;
   padding: 0;
 }
+
 .substeps li {
-  margin: 4px 0;
-  padding-left: 0; /* kein Badge hier */
+  position: relative;
+  margin: 6px 0;
+  padding-left: 34px; /* Platz für das Badge */
 }
-/* Subsections (Überschriften in Steps) bleiben ohne Nummer-Badge */
-#modalSteps .subsection::before {
-  content: none;
+
+.substeps li::before {
+  counter-increment: substep;
+  content: counter(substep, upper-roman); /* römische Zahl */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: #182036;
+  border: 1px solid #243154;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 11px;
 }
 
 .notes {
