@@ -1,38 +1,31 @@
 import { $, state, getAllTags, matches, RECIPES } from './state.js';
 import { openModal } from './modal.js';
 
-export function renderFiltersBar() {
-  const wrap = $('#activeFilters');
-  wrap.innerHTML = '';
-  const addChip = (label, onClear) => {
-    const chip = document.createElement('button');
-    chip.className = 'chip active';
-    chip.innerHTML = `${label} <span class="x">×</span>`;
-    chip.addEventListener('click', onClear);
-    wrap.appendChild(chip);
-  };
-  state.tags.forEach(t => addChip(t, () => { state.tags.delete(t); renderAll(); }));
-  if (state.q) addChip(`Suche: “${state.q}”`, () => { state.q = ''; $('#q').value = ''; renderAll(); });
-  if (!wrap.children.length) {
-    const chip = document.createElement('div');
-    chip.className = 'chip';
-    chip.textContent = 'Keine aktiven Filter';
-    wrap.appendChild(chip);
-  }
-}
-
 export function renderSidebar() {
   const tagEl = $('#tags');
   tagEl.innerHTML = '';
+
   getAllTags(RECIPES).forEach(t => {
+    const selected = state.tags.has(t);
+
     const btn = document.createElement('button');
-    btn.className = 'chip' + (state.tags.has(t) ? ' active' : '');
-    btn.textContent = t;
+    btn.className = 'chip' + (selected ? ' active' : '');
+    btn.type = 'button';
+    btn.setAttribute('aria-pressed', selected ? 'true' : 'false');
+
+    // Wenn ausgewählt, wie die alten "Aktive Filter"-Chips: mit '×'
+    btn.innerHTML = selected ? `${t} <span class="x">×</span>` : t;
+
     btn.addEventListener('click', () => {
       if (state.tags.has(t)) state.tags.delete(t);
       else state.tags.add(t);
-      renderAll();
+
+      // Sidebar neu zeichnen, damit das '×' / active-Style direkt passt
+      renderSidebar();
+      // Grid neu filtern
+      renderGrid();
     });
+
     tagEl.appendChild(btn);
   });
 }
@@ -53,10 +46,9 @@ export function renderGrid() {
     const card = document.createElement('article');
     card.className = 'card';
     card.setAttribute('tabindex', '0');
-    card.addEventListener('click', () => openModal(r.id, { reset: true }));
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') openModal(r.id, { reset: true });
-    });
+    card.addEventListener('click', () => openModal(r.id));
+    card.addEventListener('keydown', (e) => { if (e.key === 'Enter') openModal(r.id); });
+
     const thumb = document.createElement('div');
     thumb.className = 'thumb';
     if (r.image) {
@@ -84,7 +76,7 @@ export function renderGrid() {
   });
 }
 
+// Oben gibt es keine aktive-Filter-Liste mehr.
 export function renderAll() {
-  renderFiltersBar();
   renderGrid();
 }
