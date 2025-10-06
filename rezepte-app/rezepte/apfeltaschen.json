@@ -9,7 +9,9 @@
     "2 Äpfel",
     "1 TL Zimt",
     "2-3 EL pﬂanzliche Sahne/Milch (opt)",
-    "ca. 150 g Puderzucker & 3-4 EL Zitronensaft/Wasser (opt)"
+    { "section": "Für den Zuckerguss"},
+    "ca. 150 g Puderzucker",
+    "3-4 EL Zitronensaft/Wasser"
   ],
   "spices": [],
   "steps": [
