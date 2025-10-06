@@ -24,6 +24,7 @@ export const recipeFileNames = [
   "gemuese_curry.json",
   "gemuese_in_bechamelsoße.json",
   "guacamole.json",
+  "gulasch.json",
   "gurkey_salat_asiatisch.json",
   "gurkey_salat_wie_von_trudi.json",
   "hefezopf.json",
@@ -69,3 +70,27 @@ export const recipeFileNames = [
   "ueberbackener_lauch.json",
   "zimtwecken.json"
 ];
+
+//last id = r71
+/* 
+{
+  "id": "rxy",
+  "title": "",
+  "tags": [
+    ""
+  ],
+  "ingredients": [
+    ""
+  ],
+  "spices": [
+    ""
+  ],
+  "steps": [
+    ""
+  ],
+  "notes": [
+    ""
+  ],
+  "image": "./images/xy.jpg"
+}
+*/

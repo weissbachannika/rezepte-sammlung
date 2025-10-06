@@ -1,0 +1,44 @@
+{
+  "id": "r71",
+  "title": "Gulasch",
+  "tags": ["Hauptgericht", "Hausmannskost", "High-Protein", "Nudeln"],
+  "ingredients": [
+    "70 g Sojawürfel/-streifen (getrocknet)",
+    { "section": "Für die Marinade" },
+    "2 EL Öl",
+    "30 ml Sojasoße",
+    "1 EL Tomatenmark",
+    "1 EL Balsamico Aceto",
+    "1 TL Zucker",
+    { "section": "Für die Soße" },
+    "1 EL Öl",
+    "1 Zwiebel",
+    "1 rote Paprika",
+    "1 EL Mehl",
+    "100 ml Rotwein oder Brühe",
+    "300 ml Brühe"
+  ],
+  "spices": [
+    "1 Knoblauchzehe",
+    "2 EL Tomatenmark",
+    "1 EL Sojasoße",
+    "1 TL Senf",
+    "1 TL Paprikapulver",
+    "Kräuter",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Sojawürfel 10–12 Minuten in heißem Wasser oder Brühe einweichen oder kochen.",
+    "Wasser abgießen. Flüssigkeit aus den Würfeln herausdrücken und trocken tupfen.",
+    "Marinade verrühren und mit den Würfeln vermengen.",
+    "Die Zwiebel und Knoblauchzehe klein hacken und die Paprika in Streifen schneiden",
+    "Öl in einer Pfanne erhitzen und die Sojawürfel etwa 10 Minuten darin anbraten.",
+    "Zwiebel, Paprika und Knoblauch hinzugeben und weitere 5 Minuten braten.",
+    "Tomatenmark unterrühren und kurz anrösten.",
+    "Mit Mehl bestäuben, gut vermischen und mit Rotwein ablöschen.",
+    "Dann Brühe, Sojasoße, Senf und Gewürze hinzugeben.",
+    "Bei geschlossenem Deckel etwa 20 bis 30 Minuten leicht köcheln lassen."
+  ],
+  "notes": "Servieren mit angebratenen Spätzle oder Nudeln deiner Wahl",
+  "image": "./images/Gulasch.jpg"
+}
