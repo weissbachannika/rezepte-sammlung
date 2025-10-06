@@ -11,7 +11,15 @@
     "50 g Haferflocken",
     "300 g Kidneybohnen",
     "100 g Kichererbsen",
-    "20 g Tomatenmark"
+    "20 g Tomatenmark",
+    {"section": "Für den Burger"},
+    "Burger Brötchen",
+    "veganer Käse",
+    "Tomate",
+    "Gurke",
+    "(Röst)Zwiebeln",
+    "Avokado",
+    "Soße(n) deiner Wahl"
   ],
   "spices": [
     "3 TL geschrotete Leinsamen",
@@ -28,6 +36,11 @@
     "Alles zusammen in der Schüssel vermischen, bis eine einheitliche, klebrige Masse entsteht.",
     "Aus dem “Teig” Burger Patties formen und von beiden Seiten in der Pfanne anbraten."
   ],
-  "notes": "Das Verhältnis zwischen Kidneybohnen und Kichererbsen ist flexibel. Je nach Geschmack kannst du also auch mehr von dem einen oder anderen nehmen. Wenn du die Kidneybohnen / Kichererbsen nicht ganz klein quetschen willst, ist das kein Problem (hat sogar eine ganz angenehme Konsistenz am Ende), es sollte nur eine etwas klebrige Masse entstehen. Die Patties schmecken auch ohne Burger gut, aber die einfachste Ergänzung zum vollständigen Burger ist mit simplen Burger Brötchen, Salat, Tomaten, (veganem Käse), Röstzwiebeln, sauren Gürkchen und einer Soße deiner Wahl, wie bspw. Ketchup und / oder veganer Mayo. Die Patties lassen sich auch gut einfrieren, ansonsten halten sie sich etwa 2–3 Tage im Kühlschrank. Das Tomatenmark dient nicht unbedingt dem Geschmack, sondern mehr der Optik, um der roten Farbe von Fleisch-Patties näher zu kommen, probiere also ein bisschen aus, was dir am besten gefällt. Falls dir der “Teig” zu flüssig ist, gib mehr Haferflocken hinzu, ist er zu trocken, kannst du etwas Pflanzenmilch hinzugeben, bis du eine angenehme Konsistenz erhältst.",
+  "notes": [
+    "Das Verhältnis zwischen Kidneybohnen und Kichererbsen ist flexibel.",
+    "Die Patties lassen sich auch gut einfrieren, ansonsten halten sie sich etwa 2–3 Tage im Kühlschrank.",
+    "Falls dir der “Teig” zu flüssig ist, gib mehr Haferflocken hinzu, ist er zu trocken, kannst du etwas Pflanzenmilch hinzugeben, bis du eine angenehme Konsistenz erhältst.",
+    "Gut kombinierbar mit [Kartoffelspalten](#kartoffelspalten.json) und/oder [Joghurt-Dip](#joghurt_dip.json)"
+  ],
   "image": ""
 }
