@@ -87,7 +87,7 @@ aside {
   position: sticky; top: calc(var(--header-top) + var(--header-h) + var(--gap)); align-self: start;
   background: var(--panel); border: 1px solid #1f2432;
   border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow);
-  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + var(--bottom-pad)));
+  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + var(--bottom-pad) + 15px));
   height: fit-content;
   overflow-y: auto;
 }
