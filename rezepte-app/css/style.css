@@ -162,7 +162,7 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
 }
 
 .modal-body .img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   background: #0b0e14;
   border: 1px solid #1f2432;
   border-radius: 12px;

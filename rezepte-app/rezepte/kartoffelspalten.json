@@ -17,6 +17,9 @@
     "Auf ein Backpapier verteilen, mit Öl bestreichen und Gewürze darüber verteilen. Alles einmal kurz vermischen.",
     "Für 30-40 Minuten bei 180°C Umluft im Ofen backen, bis die Kartoffeln goldbraun werden."
   ],
-  "notes": "Der [Joghurt-Dip](#joghurt_dip.json) passt sehr gut dazu",
+  "notes": [
+    "Der [Joghurt-Dip](#joghurt_dip.json) passt sehr gut dazu",
+    "Statt im Ofen kann man die natürlich auch im Airfryer machen"
+  ],
   "image": "./images/Kohlrabi.jpg"
 }
