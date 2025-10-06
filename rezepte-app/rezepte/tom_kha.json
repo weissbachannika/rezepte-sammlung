@@ -1,0 +1,46 @@
+{
+  "id": "r70",
+  "title": "Tom Kha Gai",
+  "tags": [
+    "Hauptgericht", "Asiatisch", "One-Pot", "Thai", "Nudeln"
+  ],
+  "ingredients": [
+    "Gemüse deiner Wahl (Pak Choi, Pilze, Paprika, Möhre, ...)",
+    "1 Block Naturtofu (200 g)",
+    "1 Zwiebel",
+    "3 Frühlingszwiebeln",
+    "1 Dose Kokosmilch",
+    "150 g dünne Udonnudeln",
+    "2-3 Tassen Gemüsebrühe",
+    "Sesam-/Erdnussöl",
+    "Sesam als Toppings"
+  ],
+  "spices": [
+    "1 kleines Stück Ingwer",
+    "2-3 Zehen Knoblauch",
+    "2 TL Tom Kha Paste",
+    "1 TL Currypulver",
+    "1 TL Kreuzkümmel",
+    "1 TL Paprika Edelsüß",
+    "Sojasoße",
+    "Sriracha",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Die Zwiebel, den Ingwer und Knoblauch fein hacken", 
+    "Das Gemüse in mundgerechte Stücke schneiden", 
+    "Den Tofu auspressen so gut wie es geht, dann in Würfel schneiden und für 2 Minuten in gesalzenem Wasser kochen",
+    "Den Tofu abgießen und beiseitestellen",
+    "Die Zwiebeln (inkl. weiße Teile der Frühlingszwiebeln) in Öl bei mittlerer Hitze glasig braten",
+    "Den Knoblauch und Ingwer zu den Zwiebeln geben und 2-3 Minuten mitbraten",
+    "Die Gewürze und Tom Kha Paste dazugeben und ca. 30 Sekunden mitbraten",
+    "Das Gemüse nacheinander mit in den Topf geben und mitbraten (Falls am Topfboden etwas fast anbrennt, mit etwas Sojasoße ablöschen)",
+    "Dann alles mit Kokosmilch und Brühe aufgießen und den Tofu dazugeben",
+    "Die Nudeln mit in den Topf geben, sodass sie ganz in der Flüssigkeit sind (ggf. noch mehr Brühe dazugeben)",
+    "Den Topf bedecken und für circa 7 Minuten köcheln lassen, bis die Nudeln durch ist",
+    "Das Ganze mit Salz, Pfeffer, Sriracha und co abschmecken",
+    "In Schüsseln geben und mit Sesam und den grünen Teilen der Frühlingszwiebel toppen"
+  ],
+  "notes": "",
+  "image": "./images/Tom_kha.jpg"
+}

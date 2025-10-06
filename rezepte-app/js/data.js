@@ -63,6 +63,7 @@ export const recipeFileNames = [
   "spinat_mit_kartoffeln.json",
   "spundekaes.json",
   "tarte_tatin.json",
+  "tom_kha.json",
   "tortelliniauflauf.json",
   "tzatziki.json",
   "ueberbackener_lauch.json",
