@@ -1,7 +1,7 @@
 {
   "id": "r18",
   "title": "Gefüllte Paprika",
-  "tags": ["Hauptgericht", "Ofengericht"],
+  "tags": ["Hauptgericht", "Ofengericht", "Beilage"],
   "ingredients": [
     { "section": "Für die Füllung" },
     "2 (große) Paprikas",
@@ -51,5 +51,5 @@
     "Kleine Auflaufform verwenden.",
     "Perfekt mit Kartoffelpüree als Beilage."
   ],
-  "image": ""
+  "image": "./images/Gefuellte_paprika.jpg"
 }
