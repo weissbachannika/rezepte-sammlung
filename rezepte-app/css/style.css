@@ -91,7 +91,7 @@ aside {
   height: fit-content;
   overflow-y: auto;
 }
-.section-title { font-size: 13px; color: var(--subtext); margin: 8px 0 4px; text-transform: uppercase; letter-spacing: 1px; }
+.section-title { font-size: 13px; color: var(--subtext); margin: 0px 0 12px; text-transform: uppercase; letter-spacing: 1px; }
 .section-title.sub { font-size: 11px;}
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; max-height: none; }
 

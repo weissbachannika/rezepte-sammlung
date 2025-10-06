@@ -5,33 +5,62 @@ export function renderSidebar() {
   const tagEl = $('#tags');
   tagEl.innerHTML = '';
 
-  // Tag-Häufigkeiten zählen
-  const counts = new Map();
-  for (const r of RECIPES) {
-    for (const t of (r.tags || [])) {
-      counts.set(t, (counts.get(t) || 0) + 1);
-    }
-  }
+  // aktuell ausgewählte Tags als Array
+  const selected = Array.from(state.tags);
 
-  // Alle Tags holen und: erst nach Häufigkeit (desc), dann alphabetisch (asc) sortieren
-  const allTags = getAllTags(RECIPES).sort((a, b) => {
-    const da = counts.get(a) || 0;
-    const db = counts.get(b) || 0;
-    if (db !== da) return db - da;          // häufiger → weiter oben
-    return a.localeCompare(b, 'de');        // Gleichstand → alphabetisch
+  // Helper: prüft, ob ein Rezept alle gegebenen Tags enthält
+  const recipeHasAll = (r, mustTags) => {
+    const rt = r.tags || [];
+    for (const tg of mustTags) if (!rt.includes(tg)) return false;
+    return true;
+  };
+
+  // Anzahl der Rezepte für:
+  // - keine Auswahl: globale Häufigkeit des Tags
+  // - mit Auswahl: bedingte Häufigkeit für (selected ∪ {tag})
+  const countFor = (tag) => {
+    if (selected.length === 0) {
+      let c = 0;
+      for (const r of RECIPES) if ((r.tags || []).includes(tag)) c++;
+      return c;
+    }
+    const need = state.tags.has(tag) ? selected : [...selected, tag];
+    let c = 0;
+    for (const r of RECIPES) if (recipeHasAll(r, need)) c++;
+    return c;
+  };
+
+  // Alle bekannten Tags aufnehmen und anreichern
+  const all = getAllTags(RECIPES).map(t => ({
+    tag: t,
+    selected: state.tags.has(t),
+    count: countFor(t)
+  }));
+
+  // Sichtbar sind:
+  // - immer: bereits ausgewählte Tags (damit man abwählen kann)
+  // - zusätzlich: nur Tags, die mit der aktuellen Auswahl noch Treffer liefern (count > 0)
+  const visible = all.filter(x => x.selected || x.count > 0);
+
+  // Sortierung: zuerst ausgewählte Tags nach oben, dann nach count (absteigend), dann alphabetisch
+  visible.sort((a, b) => {
+    if (a.selected !== b.selected) return a.selected ? -1 : 1;
+    if (b.count !== a.count) return b.count - a.count;
+    return a.tag.localeCompare(b.tag, 'de');
   });
 
-  // Flache Liste rendern (keine Überschrift, keine Gruppen)
+  // Flache Liste rendern
   const list = document.createElement('div');
   list.className = 'tag-list';
 
-  allTags.forEach((t) => {
-    const selected = state.tags.has(t);
+  visible.forEach(({ tag: t, selected, count }) => {
     const btn = document.createElement('button');
     btn.className = 'chip' + (selected ? ' active' : '');
     btn.type = 'button';
     btn.setAttribute('aria-pressed', selected ? 'true' : 'false');
-    btn.title = `${t} • ${counts.get(t) || 0} Rezepte`;
+    btn.title = selected && state.tags.size
+      ? `${t} • ${count} Rezepte (mit aktueller Auswahl)`
+      : `${t} • ${count} Rezepte`;
     btn.innerHTML = selected ? `${t} <span class="x">×</span>` : t;
 
     btn.addEventListener('click', () => {
