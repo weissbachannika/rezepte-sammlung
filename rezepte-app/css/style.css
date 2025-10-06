@@ -9,6 +9,10 @@
   --danger: #ff6b6b;
   --radius: 14px;
   --shadow: 0 8px 24px rgba(0,0,0,0.35);
+  --header-top: 12px;
+  --header-h: 56px;
+  --gap: 12px;
+  --bottom-pad: 16px;
 }
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -45,6 +49,8 @@ header {
   padding: 14px 16px;
   box-shadow: var(--shadow);
   position: sticky; top: 12px; z-index: 10;
+  min-height: var(--header-h);
+  height: var(--header-h);
 }
 .title { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; margin-right: auto; }
 
@@ -78,12 +84,15 @@ header {
 .chip .x { opacity: 0.7; font-weight: 700; }
 
 aside {
-  position: sticky; top: 72px; align-self: start;
+  position: sticky; top: calc(var(--header-top) + var(--header-h) + var(--gap)); align-self: start;
   background: var(--panel); border: 1px solid #1f2432;
   border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow);
+  height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + var(--bottom-pad)));
+  overflow-y: auto;
 }
 .section-title { font-size: 13px; color: var(--subtext); margin: 8px 0 4px; text-transform: uppercase; letter-spacing: 1px; }
-.tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.section-title.sub { font-size: 11px;}
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; max-height: none; }
 
 main { min-height: 60vh; display: grid; grid-template-rows: auto 1fr; gap: 16px; }
 .filters {

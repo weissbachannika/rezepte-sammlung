@@ -5,29 +5,46 @@ export function renderSidebar() {
   const tagEl = $('#tags');
   tagEl.innerHTML = '';
 
-  getAllTags(RECIPES).forEach(t => {
-    const selected = state.tags.has(t);
+  // Tag-Häufigkeiten zählen
+  const counts = new Map();
+  for (const r of RECIPES) {
+    for (const t of (r.tags || [])) {
+      counts.set(t, (counts.get(t) || 0) + 1);
+    }
+  }
 
+  // Alle Tags holen und: erst nach Häufigkeit (desc), dann alphabetisch (asc) sortieren
+  const allTags = getAllTags(RECIPES).sort((a, b) => {
+    const da = counts.get(a) || 0;
+    const db = counts.get(b) || 0;
+    if (db !== da) return db - da;          // häufiger → weiter oben
+    return a.localeCompare(b, 'de');        // Gleichstand → alphabetisch
+  });
+
+  // Flache Liste rendern (keine Überschrift, keine Gruppen)
+  const list = document.createElement('div');
+  list.className = 'tag-list';
+
+  allTags.forEach((t) => {
+    const selected = state.tags.has(t);
     const btn = document.createElement('button');
     btn.className = 'chip' + (selected ? ' active' : '');
     btn.type = 'button';
     btn.setAttribute('aria-pressed', selected ? 'true' : 'false');
-
-    // Wenn ausgewählt, wie die alten "Aktive Filter"-Chips: mit '×'
+    btn.title = `${t} • ${counts.get(t) || 0} Rezepte`;
     btn.innerHTML = selected ? `${t} <span class="x">×</span>` : t;
 
     btn.addEventListener('click', () => {
       if (state.tags.has(t)) state.tags.delete(t);
       else state.tags.add(t);
-
-      // Sidebar neu zeichnen, damit das '×' / active-Style direkt passt
       renderSidebar();
-      // Grid neu filtern
       renderGrid();
     });
 
-    tagEl.appendChild(btn);
+    list.appendChild(btn);
   });
+
+  tagEl.appendChild(list);
 }
 
 export function renderGrid() {

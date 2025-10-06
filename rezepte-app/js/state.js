@@ -40,3 +40,12 @@ export function matches(recipe) {
   }
   return true;
 }
+
+export const TAG_GROUPS = {
+  Art: ["Hauptgericht", "Beilage", "Vorspeise", "Nachtisch"],
+  Typ: ["Aufstrich", "Curry", "Dip", "Gebäck", "Kekse", "Kuchen", "Salat", "Snack", "Soße", "Suppe", "Süßes"],
+  Küche: ["Asiatisch", "Britisch", "Französisch", "Griechisch", "Hausmannskost", "Indisch", "Italienisch", "Japanisch", "Mexikanisch", "Schwedisch", "Thai"],
+  Basis: ["Kartoffeln","Nudeln", "Pasta", "Reis"],
+  "Zubereitung/Eigenschaft": ["Backen", "High-Protein", "Kalt", "Low-Effort", "One-Pot"],
+  Anlass: ["Frühstück", "Ostern", "Weihnachten"],
+};
