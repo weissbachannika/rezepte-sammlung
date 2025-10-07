@@ -87,7 +87,7 @@ aside {
   position: sticky; top: calc(var(--header-top) + var(--header-h) + var(--gap)); align-self: start;
   background: var(--panel); border: 1px solid #1f2432;
   border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow);
-  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + var(--bottom-pad) + 15px));
+  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + var(--bottom-pad) + 10px));
   height: fit-content;
   overflow-y: auto;
 }
@@ -117,7 +117,7 @@ main { min-height: 60vh; display: grid; grid-template-rows: auto 1fr; gap: 16px;
 }
 .card:hover { transform: translateY(-3px); border-color: #2a3347; }
 .thumb {
-  aspect-ratio: 1 / 1;              /* statt 16/9 jetzt 4:3 */
+  aspect-ratio: 1 / 1;            
   background: #0b0e14;
   display: grid;
   place-items: center;
