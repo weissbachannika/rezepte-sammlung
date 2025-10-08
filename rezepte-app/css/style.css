@@ -184,25 +184,6 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
   object-fit: cover;
   display: block;
 }
-/* Zwei Spalten nur für Zutaten | Gewürze */
-.ing-spices {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  align-items: start;
-  width: 100%;
-  justify-content: stretch;
-}
-.ing-spices .box {
-  background: #0f121a;
-  border: 1px solid #1f2432;
-  border-radius: 12px;
-  padding: 12px;
-  width: 100%;
-}
-.ing-spices.one-col {
-  grid-template-columns: 1fr;
-}
 
 /* Kleine Zwischenüberschrift innerhalb der Listen */
 #modalIngredients .subsection,
@@ -346,42 +327,6 @@ li { margin: 4px 0; }
   line-height: 1;
 }
 
-/* Materialien: inline nebeneinander, umbrechend, ohne Bulletpoints */
-.materials-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 18px;
-  padding-left: 20px;
-  margin-top: 6px;
-}
-
-/* Dezente Punkt-Trenner zwischen Items */
-.materials-list .item::after {
-  content: "·";
-  opacity: 0.6;
-  margin-left: 10px;
-  margin-right: 15px;
-}
-.materials-list .item:last-child::after {
-  content: "";
-  margin: 0;
-}
-
-.materials-list .sep {
-  display: inline-block;
-  font-size: 1.2em;
-  line-height: 0;
-  margin: 0 px;      /* engerer, natürlicher Abstand links/rechts */
-  opacity: 0.85;
-}
-
-/* Materialien-Block: etwas kleiner + Pfeil vor dem Text */
-#materialsBox {
-  margin-top: 10px;
-  margin-bottom: 14px;
-}
-
 #materialsBox .h {
   font-size: 0.9rem;       /* Überschrift kleiner */
   color: var(--text);
@@ -404,27 +349,6 @@ li { margin: 4px 0; }
   font-size: 1rem;
   line-height: 1.4;
   color:#33568a;
-}
-
-/* Boxen bleiben wie gehabt – nur falls du noch kein 1:1 Bild hattest: */
-#modalImg {
-  aspect-ratio: 1 / 1;
-  background: #0b0e14;
-  border: 1px solid #1f2432;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-#modalImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Wenn rechts leer, links volle Breite */
-.meta-grid.no-right {
-  grid-template-columns: 1fr;
 }
 
 /* --- Responsive Layout --- */
