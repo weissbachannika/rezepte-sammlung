@@ -304,7 +304,7 @@ li { margin: 4px 0; }
 /* Layout für oberen Bereich */
 .meta-grid {
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 16px;
   width: 100%;
 }
@@ -323,7 +323,7 @@ li { margin: 4px 0; }
   font-size: 0.95rem;         /* Textgröße unverändert schlank */
 }
 .time-chip .icon {
-  font-size: 1.4em;           /* Icon größer */
+  font-size: 1.5em;           /* Icon größer */
   line-height: 1;
 }
 
