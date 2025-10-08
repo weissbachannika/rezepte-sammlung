@@ -4,6 +4,13 @@
   "tags": [
     "Backen", "Kuchen", "Süßes"
   ],
+  "materials": 
+    "",
+
+  "time": {
+    "prep": "5 Min",
+    "total": "1 Std. 30 Min"
+  },
   "ingredients": [
     { "section": "Teig" },
     "300 g Mehl",

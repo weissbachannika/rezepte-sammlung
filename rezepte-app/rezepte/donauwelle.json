@@ -2,6 +2,12 @@
   "id": "r64",
   "title": "Donauwelle",
   "tags": ["Backen", "Kuchen", "Süßes"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Std."
+  },
   "ingredients": [
     { "section": "Kuchenteig" },
     "240 g Weizen- (oder Dinkel-)mehl",

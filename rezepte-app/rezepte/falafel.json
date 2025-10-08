@@ -2,6 +2,12 @@
   "id": "r29",
   "title": "Falafel",
   "tags": ["Beilage", "Hauptgericht", "Snack", "High-Protein"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     "250 g Kichererbsen",
     "75 g Couscous",

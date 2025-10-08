@@ -2,6 +2,12 @@
   "id": "r43",
   "title": "Currywurstsoße à la Oma",
   "tags": ["Soße", "Beilage", "Hausmannskost"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     "1 (kleine) Zwiebel",
     "2 EL Margarine",

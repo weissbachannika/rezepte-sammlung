@@ -2,6 +2,13 @@
   "id": "r65",
   "title": "Chocolate Chip Cookies",
   "tags": ["Backen", "Kekse", "Süßes", "Snack"],
+  "materials": 
+    "Rührschüssel",
+
+  "time": {
+    "prep": "5 Min",
+    "total": "30 Min + Zeit zum Kaltstellen"
+  },
   "ingredients": [
     "100 g Kokosöl",
     "100 g brauner Zucker",

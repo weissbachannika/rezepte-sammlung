@@ -4,6 +4,12 @@
   "tags": [
     "Snack", "Süßes", "Backen", "Low-Effort"
   ],
+  "materials": 
+    "Kartoffelstampfer, Backblech, Gabel, Pinsel (opt.)",
+
+  "time": {
+    "total": "1 Std. (+ Abkühlzeit)"
+  },
   "ingredients": [
     "1 Pck Blätterteig",
     "2 Äpfel",

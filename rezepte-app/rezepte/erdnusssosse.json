@@ -1,7 +1,13 @@
 {
   "id": "r44",
   "title": "Erdnusssoße",
-  "tags": ["Soße", "Asiatisch", "Dip"],
+  "tags": ["Soße", "Asiatisch", "Dip", "Low-Effort"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "5 Min"
+  },
   "ingredients": [
     "2 EL Erdnussbutter",
     "3 TL Sojasoße",

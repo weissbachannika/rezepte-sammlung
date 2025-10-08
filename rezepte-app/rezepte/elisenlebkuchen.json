@@ -2,6 +2,12 @@
   "id": "r69",
   "title": "Elisenlebkuchen",
   "tags": ["Backen", "Winter", "Süßes"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     "500 g feinster Zucker",
     "250 ml Aquafaba",

@@ -2,6 +2,12 @@
   "id": "r18",
   "title": "Gefüllte Paprika",
   "tags": ["Hauptgericht", "Backen", "Beilage", "High-Protein"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     { "section": "Für die Füllung" },
     "2 (große) Paprikas",

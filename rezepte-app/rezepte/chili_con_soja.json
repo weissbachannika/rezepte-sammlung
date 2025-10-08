@@ -4,6 +4,13 @@
   "tags": [
     "Hauptgericht", "Mexikanisch", "One-Pot", "Low-Effort", "Reis", "High-Protein"
   ],
+  "materials": 
+    "Geoßer Topf",
+
+  "time": {
+    "prep": "5 Min",
+    "total": "30 Min"
+  },
   "ingredients": [
     "80 g Sojahack",
     "2 EL Sojasoße",

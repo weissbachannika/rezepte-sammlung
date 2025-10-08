@@ -4,6 +4,15 @@
   "tags": [
     "Beilage", "Hauptgericht", "High-Protein"
   ],
+  "materials": 
+    "Große Schüssel, Gabel (oder Mixer), große Pfanne",
+
+  "time": {
+    "prep": "5 Min",
+    "total": "30 Min"
+  },
+  "amount":
+    "6 Patties",
   "ingredients": [
     "1 Zwiebel",
     "2 Knoblauchzehen",
@@ -12,6 +21,7 @@
     "300 g Kidneybohnen",
     "100 g Kichererbsen",
     "20 g Tomatenmark",
+    "3 TL geschrotete Leinsamen",
     {"section": "Für den Burger"},
     "Burger Brötchen",
     "veganer Käse",
@@ -22,7 +32,6 @@
     "Soße(n) deiner Wahl"
   ],
   "spices": [
-    "3 TL geschrotete Leinsamen",
     "2 TL Gemüsebrühe",
     "1 TL Kreuzkümmel",
     "1 TL Paprikapulver edelsüß",

@@ -4,6 +4,12 @@
   "tags": [
     "Süßes", "Backen"
   ],
+    "materials": 
+    "Auflaufform (25x25 cm), Rührschüssel, Handrührgerät (opt.), Zitronenpresse (opt.)",
+
+  "time": {
+    "total": "20 Min + 40 Min Backzeit "
+  },
   "ingredients": [
     { "section": "Für die Streusel" },
     "140 g Mehl",

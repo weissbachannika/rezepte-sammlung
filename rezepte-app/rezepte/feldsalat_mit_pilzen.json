@@ -2,6 +2,12 @@
   "id": "r38",
   "title": "Feldsalat mit Pilzen",
   "tags": ["Salat", "Beilage", "Vorspeise", "Low-Effort"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     "200 g Feldsalat",
     "200 g Champignons",

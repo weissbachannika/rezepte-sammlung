@@ -4,6 +4,14 @@
   "tags": [
     "Vorspeise", "Italienisch", "Snack", "Frühstück", "Low-Effort"
   ],
+  "materials": 
+    "Schüssel (mit Deckel), feines Sieb (opt.)",
+
+  "time": {
+    "prep": "5 Min",
+    "total": "30 Min + Rastzeit"
+  },
+
   "ingredients": [
     "1 Ciabatta (oder anderes Brot/Baguette)",
     "3 Rispentomaten",
