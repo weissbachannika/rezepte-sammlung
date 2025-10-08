@@ -1,17 +1,27 @@
 {
   "id": "r42",
   "title": "Béchamelsoße",
-  "tags": [
-    "Soße", "Hausmannskost"
-  ],
+  "tags": ["Soße", "Hausmannskost"],
+
+  "materials": 
+    "Kleiner Topf, Schneebesen, Messbecher, Kochlöffel",
+
+  "time": {
+    "prep": "5 Min",
+    "total": "15–20 Min"
+  },
+
   "ingredients": [
     "2 EL Margarine",
     "3 EL Mehl",
     "350 ml Pflanzenmilch (am besten schon Raumtemperatur)",
     "Muskatnuss",
-    "Brühepulver, Salz, Pfeffer"
+    "Brühepulver",
+    "Salz & Pfeffer"
   ],
+
   "spices": [],
+
   "steps": [
     "In einem Topf die Margarine bei hoher Hitze schmelzen.",
     "Dann das Mehl dazugeben und gut mit einem Schneebesen rühren (es sollten kleine Klümpchen entstehen).",
@@ -19,6 +29,8 @@
     "Das ganze so lange machen, bis die Soße die gewünschte Konsistenz hat (es kann auch mit etwas Brühe also Wasser verdünnt werden).",
     "Dann noch gut würzen, abschmecken und ein paar Minuten köcheln lassen."
   ],
+
   "notes": "Braucht man für [Lasagne](#lasagne.json), [Auberginen-Lasagne](#auberginen_lasagne.json), [Gemüse mit Kartoffeln](#gemuese_in_bechamelsosse.json), [Rahmspinat](#spinat_mit_kartoffeln.json), …",
+
   "image": "./images/Bechamelsosse.jpg"
 }

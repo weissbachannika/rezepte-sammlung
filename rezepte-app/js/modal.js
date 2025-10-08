@@ -82,10 +82,9 @@ function addSubsteps(liParent, subArr) {
   liParent.appendChild(ol);
 }
 // --------------- Main ---------------
+
 export function openModal(id, opts = {}) {
   const { push = false, reset = false } = opts;
-
-  // Stack-Handling
   if (reset || !modal.open) modalStack = [];
   if (push && currentId) modalStack.push(currentId);
 
@@ -95,26 +94,32 @@ export function openModal(id, opts = {}) {
 
   $('#modalTitle').textContent = r.title;
 
-  const modalBody = document.querySelector('#recipeModal .modal-body');
-  const imgWrap   = $('#modalImg');
+  const metaGrid    = $('#metaGrid');
+  const imgWrap     = $('#modalImg');
+  const spicesBox   = $('#spicesBox');
+  const ulSp        = $('#modalSpices');
+  const ingBox      = $('#ingredientsBox');
+  const ulIng       = $('#modalIngredients');
 
-  // Bild-Handling: wenn kein Bild -> Container ausblenden
-  imgWrap.innerHTML = '';
-  if (r.image) {
-    const img = document.createElement('img');
-    img.src = r.image;
-    img.alt = r.title;
-    img.loading = 'lazy';
-    imgWrap.appendChild(img);
-    imgWrap.style.display = '';
-    modalBody?.classList.remove('no-img');
+  const timeChip    = $('#timeChip');
+  const timeText    = $('#modalTimeText');
+
+  const matsBox     = $('#materialsBox');
+  const ulMat       = $('#modalMaterials');
+
+  // --- ZEIT (nur Gesamtzeit, ohne Überschrift) ---
+  // Unterstützt r.time.total oder r.totalTime
+  const total = r?.time?.total ?? r?.totalTime ?? '';
+  const hasTotal = Boolean(total && String(total).trim());
+  if (hasTotal) {
+    timeText.textContent = String(total).trim();
+    timeChip.style.display = 'flex';
   } else {
-    imgWrap.style.display = 'none';
-    modalBody?.classList.add('no-img');
+    timeText.textContent = '';
+    timeChip.style.display = 'none';
   }
 
-  // Zutaten (unterstützt Strings und {section:"…"})
-  const ulIng = $('#modalIngredients');
+  // --- Zutaten ---
   ulIng.innerHTML = '';
   (r.ingredients || []).forEach(item => {
     if (typeof item === 'string') {
@@ -129,8 +134,27 @@ export function openModal(id, opts = {}) {
     }
   });
 
-  // Gewürze (Strings / {section}) + Auto-Layout
-  const ulSp = $('#modalSpices');
+  // --- Bild (rechts) ---
+  imgWrap.innerHTML = '';
+  let hasImage = false;
+  if (r.image) {
+    const src = String(r.image).trim();
+    if (src) {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = r.title;
+      img.loading = 'lazy';
+      imgWrap.appendChild(img);
+      imgWrap.style.display = '';
+      hasImage = true;
+    } else {
+      imgWrap.style.display = 'none';
+    }
+  } else {
+    imgWrap.style.display = 'none';
+  }
+
+  // --- Gewürze (rechts unter Bild) ---
   ulSp.innerHTML = '';
   let realSpices = 0;
   (r.spices || []).forEach(item => {
@@ -146,13 +170,14 @@ export function openModal(id, opts = {}) {
       ulSp.appendChild(li);
     }
   });
-  const spicesBox = ulSp.closest('section.box');
-  const ingSpicesWrap = document.querySelector('.ing-spices');
-  const hasRealSpices = realSpices > 0;
-  if (spicesBox) spicesBox.style.display = hasRealSpices ? '' : 'none';
-  if (ingSpicesWrap) ingSpicesWrap.classList.toggle('one-col', !hasRealSpices);
+  const hasSpices = realSpices > 0;
+  spicesBox.style.display = hasSpices ? '' : 'none';
 
-  // Steps: Strings, {section}, {text, sub:[]}
+  // --- Rechte Spalte leer? -> linke volle Breite ---
+  const nothingRight = !hasImage && !hasSpices;
+  metaGrid.classList.toggle('no-right', nothingRight);
+
+  // --- Steps (unverändert) ---
   const olSteps = $('#modalSteps');
   olSteps.innerHTML = '';
   (r.steps || []).forEach(item => {
@@ -177,7 +202,18 @@ export function openModal(id, opts = {}) {
     }
   });
 
-  // Notizen
+  // --- MATERIALIEN (über Steps) ---
+  const matWrap = $('#modalMaterials');
+  matWrap.textContent = '';
+
+  if (typeof r.materials === 'string' && r.materials.trim()) {
+    matWrap.textContent = r.materials.trim();
+    matsBox.style.display = '';
+  } else {
+    matsBox.style.display = 'none';
+  }
+
+  // --- Notizen (unverändert) ---
   const notesWrap = $('#modalNotes');
   notesWrap.innerHTML = renderNotesList(r.notes);
 

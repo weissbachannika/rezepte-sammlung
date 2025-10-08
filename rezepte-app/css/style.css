@@ -309,6 +309,7 @@ li { margin: 4px 0; }
 }
 .notes li {
   margin: 4px 0;
+  color: var(--text);
 }
 /* Rezeptlinks im Modal */
 .recipe-link {
@@ -318,6 +319,112 @@ li { margin: 4px 0; }
 }
 .recipe-link:hover {
   color: #6495EF;
+}
+/* Layout für oberen Bereich */
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Zeit: nur Icon + Text, kein Rand/Badge */
+.time-chip {
+  display: none;              /* wird via JS auf display:flex gesetzt */
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px 0;
+  padding: 0;                 /* kein Chip-Rand/Background */
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--text);
+  font-size: 0.95rem;         /* Textgröße unverändert schlank */
+}
+.time-chip .icon {
+  font-size: 1.4em;           /* Icon größer */
+  line-height: 1;
+}
+
+/* Materialien: inline nebeneinander, umbrechend, ohne Bulletpoints */
+.materials-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+/* Dezente Punkt-Trenner zwischen Items */
+.materials-list .item::after {
+  content: "·";
+  opacity: 0.6;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.materials-list .item:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.materials-list .sep {
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 0;
+  margin: 0 px;      /* engerer, natürlicher Abstand links/rechts */
+  opacity: 0.85;
+}
+
+/* Materialien-Block: etwas kleiner + Pfeil vor dem Text */
+#materialsBox {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+#materialsBox .h {
+  font-size: 0.9rem;       /* Überschrift kleiner */
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+#modalMaterials {
+  position: relative;
+  font-size: 0.8rem;       /* Text ebenfalls kleiner */
+  color: var(--text);
+  padding-left: 25px;      /* Platz für den Pfeil, gleiche Einrückung wie Steps */
+}
+
+/* Pfeil-Symbol links vom Text, gleiche Linie wie Bullet-Badges der Steps */
+#modalMaterials::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color:#33568a;
+}
+
+/* Boxen bleiben wie gehabt – nur falls du noch kein 1:1 Bild hattest: */
+#modalImg {
+  aspect-ratio: 1 / 1;
+  background: #0b0e14;
+  border: 1px solid #1f2432;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+#modalImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Wenn rechts leer, links volle Breite */
+.meta-grid.no-right {
+  grid-template-columns: 1fr;
 }
 
 /* --- Responsive Layout --- */
@@ -331,4 +438,7 @@ li { margin: 4px 0; }
     position: static;
     margin-top: 16px;
   }
+}
+@media (max-width: 680px) {
+  .meta-grid { grid-template-columns: 1fr; }
 }
