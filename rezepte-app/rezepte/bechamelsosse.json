@@ -4,7 +4,7 @@
   "tags": ["Soße", "Hausmannskost"],
 
   "materials": 
-    "Kleiner Topf, Schneebesen, Messbecher, Kochlöffel",
+    "Kleiner Topf, Schneebesen, Kochlöffel",
 
   "time": {
     "prep": "5 Min",
@@ -14,13 +14,14 @@
   "ingredients": [
     "2 EL Margarine",
     "3 EL Mehl",
-    "350 ml Pflanzenmilch (am besten schon Raumtemperatur)",
+    "350 ml Pflanzenmilch (am besten schon Raumtemperatur)"
+  ],
+
+  "spices": [
     "Muskatnuss",
     "Brühepulver",
     "Salz & Pfeffer"
   ],
-
-  "spices": [],
 
   "steps": [
     "In einem Topf die Margarine bei hoher Hitze schmelzen.",
@@ -30,7 +31,7 @@
     "Dann noch gut würzen, abschmecken und ein paar Minuten köcheln lassen."
   ],
 
-  "notes": "Braucht man für [Lasagne](#lasagne.json), [Auberginen-Lasagne](#auberginen_lasagne.json), [Gemüse mit Kartoffeln](#gemuese_in_bechamelsosse.json), [Rahmspinat](#spinat_mit_kartoffeln.json), …",
+  "notes": "Braucht man für [Lasagne](#lasagne.json), [Auberginen-Lasagne](#auberginen_lasagne.json), [Gemüse mit Kartoffeln](#gemuese_in_bechamelsosse.json), [Rahmspinat](#spinat_mit_kartoffeln.json),…",
 
   "image": "./images/Bechamelsosse.jpg"
 }
