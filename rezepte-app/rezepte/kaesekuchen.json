@@ -2,6 +2,12 @@
   "id": "r19",
   "title": "Käsekuchen",
   "tags": ["Backen", "Kuchen", "Süßes"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     { "section": "Boden" },
     "125 g vegane Butter",

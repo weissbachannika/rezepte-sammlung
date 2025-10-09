@@ -1,37 +1,37 @@
 {
   "id": "r24",
-  "title": "(Roasted) Kürbissuppe",
-  "tags": ["Suppe", "Hauptgericht", "One-Pot", "Vorspeise", "Herbst"],
+  "title": "Roasted Kürbissuppe",
+  "tags": ["Suppe", "Hauptgericht", "One-Pot", "Vorspeise", "Herbst", "Low-Effort"],
+  "materials": 
+    "Backblech, Topf, Stabmixer",
+    
+  "time": {
+    "total": "20 Min + 30–40 Min Backzeit"
+  },
   "ingredients": [
     "1 kleiner Hokkaido Kürbis (ca. 1 kg)",
     "1 große Zwiebel",
     "500–1000 ml Gemüsebrühe",
-    "Kokosmilch und/oder Hafersahne",
+    "200 ml Kokosmilch und/oder Hafersahne",
     "Brot oder Baguette dazu",
     "Süßkartoffeln / Kartoffeln / Möhren (opt.)",
-    "Kürbiskernöl als Topping"
+    "Kürbiskernöl als Topping (opt.)"
   ],
   "spices": [
-    "1 daumengroßes Stück Ingwer",
+    "½ daumengroßes Stück Ingwer",
     "Salz & Pfeffer",
     "Maggi",
-    "Curry Paste",
-    "Paprika rosenscharf",
-    "Cayennepfeffer, Chilipulver (opt.)"
+    "Paprika (opt.)"
   ],
   "steps": [
     "Kürbis (und falls noch anderes Gemüse in die Suppe soll, das auch) waschen und grob schneiden, Kerne entfernen.",
     "Gemüse mit Öl und Salz im Ofen rösten (180–200°C für 30–40 Minuten).",
-    "Gemüse muss nicht geröstet werden, es kann auch direkt kleiner geschnitten werden.",
     "Kurz bevor der Kürbis fertig ist, die Zwiebel würfeln und in einem (großen) Topf in etwas Öl anbraten und kurz danach den gehackten Ingwer dazugeben.",
-    "Den Herd etwas runterstellen und das im Ofen geröstete Gemüse etwas kleiner machen, mit in den Topf geben und kurz mit anbraten.",
-    "Falls nicht geröstet: länger mit anbraten.",
-    "Gewürze deiner Wahl hinzufügen und ebenfalls kurz mit anbraten.",
+    "Den Herd auf niedrigste Stufe stellen und das im Ofen geröstete Gemüse mit in den Topf geben.",
     "Mit Brühe und Kokosmilch/Sahne ablöschen und kurz aufkochen.",
-    "Falls nicht geröstet: alles für 20–30 Minuten köcheln lassen.",
-    "Den Herd ausmachen und alles mit dem Stabmixer mixen und nochmal abschmecken und nachwürzen.",
+    "Den Herd ausmachen und alles mit dem Stabmixer mixen und würzen.",
     "Brot dazu schneiden (und rösten)."
   ],
-  "notes": "",
+  "notes": "Gemüse muss nicht geröstet werden, es kann auch direkt kleiner geschnitten werden und dann mit den Zwiebeln länger angebraten werden. Das dann noch in der Brühe 20 Min köcheln lassen.",
   "image": "./images/Kuerbissuppe.jpg"
 }

@@ -2,6 +2,12 @@
   "id": "r28",
   "title": "Herzhafte Pfannkuchen mit “Füllung”",
   "tags": ["Hauptgericht"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     { "section": "Teig" },
     "375 g Mehl",

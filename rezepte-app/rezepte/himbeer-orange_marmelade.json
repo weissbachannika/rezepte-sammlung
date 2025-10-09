@@ -2,6 +2,12 @@
   "id": "r57",
   "title": "Himbeer-Orange Marmelade",
   "tags": ["Aufstrich", "Frühstück", "Süßes"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     "1 kg Himbeeren (tk)",
     "2–3 Orangen (geschältes Fruchtfleisch oder frisch gepresster Saft daraus)",

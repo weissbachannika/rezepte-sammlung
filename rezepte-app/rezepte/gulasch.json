@@ -2,6 +2,12 @@
   "id": "r71",
   "title": "Gulasch",
   "tags": ["Hauptgericht", "Hausmannskost", "High-Protein", "Nudeln"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "50–60 Min"
+  },
   "ingredients": [
     "70 g Sojawürfel/-streifen (getrocknet)",
     { "section": "Für die Marinade" },

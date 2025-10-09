@@ -1,0 +1,42 @@
+{
+  "id": "r72",
+  "title": "Griechischer Salat",
+  "tags": [
+    "Salat", "Beilage", "Vorspeise", "Griechisch", "Sommer"
+  ],
+  "materials": 
+    "Salatschüssel, Schüttelglas (z.B. altes Marmeladenglas)",
+  "time": {
+    "prep": "",
+    "total": "15 Min"
+  },
+  "ingredients": [
+    "4 Tomaten",
+    "1 Salatgurke",
+    "1 rote Paprika",
+    "1 Rote Zwiebel",
+    "200 g veganer Feta",
+    "80 g schwarze Oliven",
+    "1–2 TL getrockneter Oregano",
+    "Salatblätter (op.)",
+    { "section": "Für die Vinaigrette"},
+    "80 ml Olivenöl",
+    "3–4 EL Zitronensaft oder Weißweinessig",
+    "Salz & Pfeffer"
+  ],
+  "spices": [
+    ""
+  ],
+  "steps": [
+    "Den Feta in kleine Würfel schneiden und mit etwas Olivenöl und Oregano bestreuen",
+    "Das Gemüse waschen und die Gurke in kleine Würfel, die Paprika in kurze Streifen und die Tomaten in Viertel oder Achtel schneiden",
+    "Die Zwiebel schälen und in halbe Ringe schneiden (ggf. in kaltem Wasser abwaschen",
+    "Alle vorbereitetn Zutaten in einer großen Schüssel vorsichtig vermengen",
+    "Alle Zutaten fürs Dressing in das Glas geben und gut schütteln (oder in einer Schüssel gut verrühren)",
+    "Das Dressing über den Salat geben und noch mit Oregano bestreuen"
+  ],
+  "notes": [
+    ""
+  ],
+  "image": ""
+}

@@ -2,6 +2,12 @@
   "id": "r47",
   "title": "Guacamole",
   "tags": ["Dip", "Mexikanisch", "Snack", "Low-Effort", "Snack"],
+  "materials": 
+    "Schüssel, Gabel, Zitronenpresse (opt.)",
+    
+  "time": {
+    "total": "10 Min"
+  },
   "ingredients": [
     "2 weiche Avocados",
     "½ Zitrone/Limette",

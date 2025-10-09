@@ -2,6 +2,12 @@
   "id": "r59",
   "title": "Hefezopf",
   "tags": ["Backen", "Süßes", "Frühstück", "Ostern"],
+  "materials": 
+    "",
+    
+  "time": {
+    "total": "X Min"
+  },
   "ingredients": [
     "½ Würfel frische Hefe (oder 1 Pck Trockenhefe)",
     "280 ml Pflanzenmilch",

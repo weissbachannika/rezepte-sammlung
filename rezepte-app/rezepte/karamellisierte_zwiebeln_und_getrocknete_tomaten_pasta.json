@@ -4,6 +4,12 @@
   "tags": [
     "Hauptgericht", "Pasta", "Low-Effort", "Backen", "Nudeln", "Italienisch"
   ],
+  "materials": 
+    "Auflaufform mit Deckel/Alufolie, großer Topf",
+    
+  "time": {
+    "total": "15 Min + 1 h Backzeit"
+  },
   "ingredients": [
     "5 kleine gelbe Zwiebeln (oder 3 große)",
     "ein Glas getrocknete Tomaten in Öl (280g)",
@@ -11,7 +17,7 @@
     "200 g Farfalle",
     "100 g frischen Baby Spinat (opt.)",
     "eine Hand voll frischen Basilikum (opt.)",
-    "Saft einer halben Zitrone"
+    "Saft einer halben Zitrone (opt.)"
   ],
   "spices": [
     "3 Zehen Knoblauch",
