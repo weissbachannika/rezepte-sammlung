@@ -4,6 +4,8 @@ import { openModal } from './modal.js';
 export function renderSidebar() {
   const tagEl = $('#tags');
   tagEl.innerHTML = '';
+    
+  tagEl.classList.toggle('expanded', state.tagsExpanded);
 
   // aktuell ausgewählte Tags als Array
   const selected = Array.from(state.tags);
@@ -52,6 +54,7 @@ export function renderSidebar() {
   // Flache Liste rendern
   const list = document.createElement('div');
   list.className = 'tag-list';
+  if (state.tagsExpanded) list.classList.add('expanded');
 
   visible.forEach(({ tag: t, selected, count }) => {
     const btn = document.createElement('button');
