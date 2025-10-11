@@ -1,11 +1,144 @@
 import { $, state, getAllTags, matches, RECIPES } from './state.js';
 import { openModal } from './modal.js';
 
+// ---- Tags UI helpers: single source of truth for collapse/expand + overflow hiding ----
+// This module-scope state persists across re-renders of the tag list.
+const __tagsUI = {
+  initialized: false,
+  expanded: false,
+  list: null,   // current .tag-list element
+};
+
+function __showAllChips(listEl) {
+  if (!listEl) return;
+  Array.from(listEl.children).forEach(c => { c.style.display = ''; });
+}
+
+function __hideOverflowingChips(listEl, scrollEl) {
+  if (!listEl || !scrollEl) return;
+  // make all visible first
+  __showAllChips(listEl);
+
+  const chips = Array.from(listEl.children);
+  const cs = getComputedStyle(listEl);
+  const gap = parseFloat(cs.gap || '0');
+  const maxW = scrollEl.clientWidth;
+
+  let used = 0;
+  for (const chip of chips) {
+    const w = chip.offsetWidth;
+    const next = used === 0 ? w : used + gap + w;
+    if (next <= maxW) {
+      used = next;
+    } else {
+      chip.style.display = 'none'; // completely hide chips that do not fully fit
+    }
+  }
+}
+
+function __setExpanded(on) {
+  const btn = $('#tagsToggle');
+  const scroll = $('#tagsScroll');
+  const list = __tagsUI.list;
+
+  __tagsUI.expanded = !!on;
+  if (btn) btn.setAttribute('aria-expanded', String(__tagsUI.expanded));
+  if (!list || !scroll) return;
+
+  const mobile = isMobile();
+
+  if (mobile && __tagsUI.expanded) {
+    // Mobile: ausgeklappt = mehrere Zeilen sichtbar, kein innerer Scroll
+    list.classList.add('expanded');
+    list.style.flexWrap = 'wrap';
+    scroll.classList.add('expanded');
+    scroll.style.overflow = 'visible';
+    __showAllChips(list);
+  } else if (mobile && !__tagsUI.expanded) {
+    // Mobile: eingeklappt = exakt eine Zeile, überstehende Chips komplett ausblenden
+    list.classList.remove('expanded');
+    list.style.flexWrap = 'nowrap';
+    scroll.classList.remove('expanded');
+    scroll.style.overflow = 'hidden';
+    __hideOverflowingChips(list, scroll);
+  } else {
+    // Desktop: immer offen halten, Button-Zustand nur der Vollständigkeit halber
+    list.classList.add('expanded');
+    list.style.flexWrap = 'wrap';
+    scroll.classList.add('expanded');
+    scroll.style.overflow = 'visible';
+    __showAllChips(list);
+  }
+}
+
+const isMobile = () => window.matchMedia('(max-width: 680px)').matches;
+
+function __applyMode() {
+  const btn = $('#tagsToggle');
+  const scroll = $('#tagsScroll');
+  const list = __tagsUI.list;
+  if (!list || !scroll) return;
+
+  if (!isMobile()) {
+    // Desktop: immer offen, Button verstecken
+    __tagsUI.expanded = true;
+    if (btn) { btn.style.display = 'none'; btn.setAttribute('aria-expanded', 'true'); }
+    list.classList.add('expanded');
+    list.style.flexWrap = 'wrap';
+    scroll.classList.add('expanded');
+    scroll.style.overflow = 'visible';
+    __showAllChips(list);
+    return;
+  }
+
+  // Mobile: Button zeigen
+  if (btn) btn.style.display = '';
+
+  // Prüfen, ob eine Zeile reicht; wenn nicht, eingeklappt starten
+  const prevWrap = list.style.flexWrap;
+  __showAllChips(list);
+  list.style.flexWrap = 'nowrap';
+  const need = list.scrollWidth;
+  const avail = scroll.clientWidth;
+  const shouldCollapse = need > avail;
+  list.style.flexWrap = prevWrap || '';
+
+  __setExpanded(!shouldCollapse);
+}
+
+function __initTagsUI() {
+  if (__tagsUI.initialized) return;
+  const btn = $('#tagsToggle');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      if (!isMobile()) return; // Button nur mobil wirksam
+      __setExpanded(!__tagsUI.expanded);
+    }, { passive: true });
+  }
+  window.addEventListener('resize', () => {
+    if (!__tagsUI.list) return;
+    __applyMode();
+    if (isMobile() && !__tagsUI.expanded) {
+      const scroll = $('#tagsScroll');
+      __hideOverflowingChips(__tagsUI.list, scroll);
+    }
+  });
+  __tagsUI.initialized = true;
+}
+
+function __updateTagsLayout(listEl) {
+  __initTagsUI();
+  __tagsUI.list = listEl;
+  __applyMode();
+}
+// ---- end tags helpers ----
+
 export function renderSidebar() {
   const tagEl = $('#tags');
   tagEl.innerHTML = '';
     
   tagEl.classList.toggle('expanded', state.tagsExpanded);
+  // Always start collapsed via __updateTagsLayout below; CSS class here only reflects legacy state.
 
   // aktuell ausgewählte Tags als Array
   const selected = Array.from(state.tags);
@@ -77,6 +210,7 @@ export function renderSidebar() {
   });
 
   tagEl.appendChild(list);
+  __updateTagsLayout(list);
 }
 
 export function renderGrid() {

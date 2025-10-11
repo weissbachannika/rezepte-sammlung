@@ -63,7 +63,7 @@ async function main() {
       const expand = !listEl.classList.contains('expanded');
       listEl.classList.toggle('expanded', expand);
       tagsToggle.setAttribute('aria-expanded', String(expand));
-      tagsToggle.textContent = expand ? '✕' : '⌵';
+      tagsToggle.textContent = expand ? '⌵' : '✕';
     });
   }
 
