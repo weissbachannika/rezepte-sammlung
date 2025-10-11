@@ -14,6 +14,7 @@
     "1 Pck Blätterteig",
     "2 Äpfel",
     "1 TL Zimt",
+    "etwas Zucker (opt.)",
     "2–3 EL pﬂanzliche Sahne/Milch (opt)",
     { "section": "Für den Zuckerguss"},
     "ca. 150 g Puderzucker",
@@ -23,7 +24,7 @@
   "steps": [
     "Äpfel waschen und/oder schälen. Dann vierteln und das Gehäuse entfernen und die Äpfel in kleine Würfel schneiden",
     "Die Apfelstücke in einen kleinen Topf geben und bei niedriger bis mittlerer Hitze mit einem kleinen Schuss Wasser (oder Apfelsaft) köcheln/anbraten bis sie etwas weicher werden",
-    "Die Äpfel mit einem Kartoffelstampfer zerdrücken (muss nicht super fein sein) und mit Zimt abschmecken, sodass ein grobes Apfelmus entsteht",
+    "Die Äpfel mit einem Kartoffelstampfer zerdrücken (muss nicht super fein sein) und den Zimt (und wenn du möchtest etwas Zucker) dazu geben, sodass ein grobes Apfelmus entsteht",
     "Das Apfelmus abkühlen lassen (über Nacht oder wie lange auch immer man Zeit hat)",
     "Den Blätterteig ausrollen und erst der Länge nach halbieren und die Hälften dann je vierteln",
     { "text": "Die Apfeltaschen befüllen:", "sub": [
@@ -41,5 +42,5 @@
     "Statt Zuckerguss kann man die Apfeltaschen auch nur mit Puderzucker bestäuben",
     "Man kann auch einfach gekauftes Apfelmus nehmen, schmeckt aber meiner Meinung nach längst nicht so gut (geschmacklich und Konsistenz)"
   ],
-  "image": ""
+  "image": "./images/Apfeltaschen.jpg"
 }
