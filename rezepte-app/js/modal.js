@@ -230,7 +230,7 @@ export function openModal(id, opts = {}) {
   const creditsHeader = $('#creditsHeader');
   const creditsWrap = $('#modalCredits');
   if (typeof r.credits === 'string' && r.credits.trim()) {
-    creditsWrap.textContent = r.credits.trim();
+    creditsWrap.textContent = `→ ${r.credits.trim()}`;
     creditsHeader.style.display = '';
     creditsWrap.style.display = '';
   } else {
