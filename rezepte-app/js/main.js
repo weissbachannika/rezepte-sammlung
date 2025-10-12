@@ -63,7 +63,8 @@ async function main() {
     if (!searchBox || !searchBox.classList.contains('open')) return;
     const within = searchBox.contains(ev.target);
     const inHeader = ev.target.closest && ev.target.closest('header');
-    if (!within && !inHeader) {
+    const hasText = qInput && qInput.value.trim().length > 0;
+    if (!within && !inHeader && !hasText) {
       closeMobileSearch();
     }
   });
@@ -72,7 +73,8 @@ async function main() {
   document.addEventListener('keydown', (ev) => {
     if (!isNarrow()) return;
     if (ev.key === 'Escape') {
-      closeMobileSearch();
+      const hasText = qInput && qInput.value.trim().length > 0;
+      if (!hasText) closeMobileSearch();
     }
   });
 
