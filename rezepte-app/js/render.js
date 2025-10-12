@@ -7,6 +7,8 @@ const __tagsUI = {
   initialized: false,
   expanded: false,
   list: null,   // current .tag-list element
+  mode: null,
+  mobileInitDone: false,
 };
 
 function __showAllChips(listEl) {
@@ -69,6 +71,7 @@ function __setExpanded(on) {
     scroll.style.overflow = 'visible';
     __showAllChips(list);
   }
+  __updateToggleButton();
 }
 
 const isMobile = () => window.matchMedia('(max-width: 680px)').matches;
@@ -79,31 +82,49 @@ function __applyMode() {
   const list = __tagsUI.list;
   if (!list || !scroll) return;
 
-  if (!isMobile()) {
-    // Desktop: immer offen, Button verstecken
+  const mobile = isMobile();
+  const currentMode = mobile ? 'mobile' : 'desktop';
+  if (__tagsUI.mode !== currentMode) {
+    __tagsUI.mode = currentMode;
+    __tagsUI.mobileInitDone = false; // einmalige Neuentscheidung erlauben
+  }
+
+  if (!mobile) {
+    // Desktop: immer offen, kein Inner-Scroll
     __tagsUI.expanded = true;
     if (btn) { btn.style.display = 'none'; btn.setAttribute('aria-expanded', 'true'); }
-    list.classList.add('expanded');
-    list.style.flexWrap = 'wrap';
-    scroll.classList.add('expanded');
-    scroll.style.overflow = 'visible';
+    list.classList.add('expanded'); list.style.flexWrap = 'wrap';
+    scroll.classList.add('expanded'); scroll.style.overflow = 'visible';
     __showAllChips(list);
+    __updateToggleButton();
     return;
   }
 
-  // Mobile: Button zeigen
-  if (btn) btn.style.display = '';
+  // Mobile: Button anzeigen
+  if (btn) { btn.style.display = ''; btn.setAttribute('aria-expanded', String(__tagsUI.expanded)); }
 
-  // Prüfen, ob eine Zeile reicht; wenn nicht, eingeklappt starten
-  const prevWrap = list.style.flexWrap;
-  __showAllChips(list);
-  list.style.flexWrap = 'nowrap';
-  const need = list.scrollWidth;
-  const avail = scroll.clientWidth;
-  const shouldCollapse = need > avail;
-  list.style.flexWrap = prevWrap || '';
+  if (!__tagsUI.mobileInitDone) {
+    // Nur beim ersten Setup auf Mobile anhand der Breite entscheiden
+    __showAllChips(list);
+    const need = list.scrollWidth;
+    const avail = scroll.clientWidth;
+    const shouldCollapse = need > avail;
+    __tagsUI.expanded = !shouldCollapse;
+    __tagsUI.mobileInitDone = true;
+  }
 
-  __setExpanded(!shouldCollapse);
+  // Ab hier wird der Zustand nie mehr von selbst geändert
+  if (__tagsUI.expanded) {
+    list.classList.add('expanded'); list.style.flexWrap = 'wrap';
+    scroll.classList.add('expanded'); scroll.style.overflow = 'visible';
+    __showAllChips(list);
+    __updateToggleButton();
+  } else {
+    list.classList.remove('expanded'); list.style.flexWrap = 'nowrap';
+    scroll.classList.remove('expanded'); scroll.style.overflow = 'hidden';
+    __hideOverflowingChips(list, scroll);
+    __updateToggleButton();
+  }
 }
 
 function __initTagsUI() {
@@ -117,7 +138,13 @@ function __initTagsUI() {
   }
   window.addEventListener('resize', () => {
     if (!__tagsUI.list) return;
+    const now = isMobile() ? 'mobile' : 'desktop';
+    if (__tagsUI.mode !== now) {
+      __tagsUI.mode = now;
+      __tagsUI.mobileInitDone = false;   // beim Wechsel neu initialisieren
+    }
     __applyMode();
+    __updateToggleButton();
     if (isMobile() && !__tagsUI.expanded) {
       const scroll = $('#tagsScroll');
       __hideOverflowingChips(__tagsUI.list, scroll);
@@ -126,12 +153,72 @@ function __initTagsUI() {
   __tagsUI.initialized = true;
 }
 
+// ---- tag label helper: prevent line breaks inside hyphenated words ----
+function __renderTagLabel(label) {
+  return label.replace(/-/g, '\u2011');
+}
+
+function __canExpand(listEl, scrollEl) {
+  if (!listEl || !scrollEl) return false;
+
+  // Zustand sichern
+  const prevWrap = listEl.style.flexWrap;
+  const prevExpanded = listEl.classList.contains('expanded');
+  const prevDisplays = Array.from(listEl.children).map(ch => ch.style.display);
+
+  // Für Messung: alles zeigen, einzeilig erzwingen
+  __showAllChips(listEl);
+  listEl.classList.remove('expanded');
+  listEl.style.flexWrap = 'nowrap';
+
+  const need = listEl.scrollWidth;
+  const avail = scrollEl.clientWidth;
+  const can = need > avail;
+
+  // Zustand zurücksetzen
+  prevDisplays.forEach((v, i) => { listEl.children[i].style.display = v; });
+  if (prevExpanded) listEl.classList.add('expanded');
+  listEl.style.flexWrap = prevWrap;
+
+  return can;
+}
+
+function __updateToggleButton() {
+  const btn = $('#tagsToggle');
+  const scroll = $('#tagsScroll');
+  const list = __tagsUI.list;
+  if (!btn || !list || !scroll) return;
+
+  if (!isMobile()) { btn.style.display = 'none'; return; }
+
+  const can = __canExpand(list, scroll);
+
+  // Button nur anzeigen, wenn Ausklappen sinnvoll ist
+  if (!can) {
+    btn.style.display = 'none';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.textContent = '⌵';
+    return;
+  }
+
+  btn.style.display = '';
+  if (__tagsUI.expanded) {
+    btn.textContent = '✕';
+    btn.setAttribute('aria-expanded', 'true');
+  } else {
+    btn.textContent = '⌵';
+    btn.setAttribute('aria-expanded', 'false');
+  }
+}
+
 function __updateTagsLayout(listEl) {
   __initTagsUI();
   __tagsUI.list = listEl;
   __applyMode();
+  __updateToggleButton();
 }
 // ---- end tags helpers ----
+
 
 export function renderSidebar() {
   const tagEl = $('#tags');
@@ -194,10 +281,23 @@ export function renderSidebar() {
     btn.className = 'chip' + (selected ? ' active' : '');
     btn.type = 'button';
     btn.setAttribute('aria-pressed', selected ? 'true' : 'false');
+
+    const label = __renderTagLabel(t);
+
     btn.title = selected && state.tags.size
-      ? `${t} • ${count} Rezepte (mit aktueller Auswahl)`
-      : `${t} • ${count} Rezepte`;
-    btn.innerHTML = selected ? `${t} <span class="x">×</span>` : t;
+      ? `${label} • ${count} Rezepte (mit aktueller Auswahl)`
+      : `${label} • ${count} Rezepte`;
+
+    if (selected) {
+      // Text + schließ-Icon als separates Span, verhindert HTML-Injection und Umbrüche
+      btn.append(document.createTextNode(label + ' '));
+      const x = document.createElement('span');
+      x.className = 'x';
+      x.textContent = '×';
+      btn.appendChild(x);
+    } else {
+      btn.textContent = label;
+    }
 
     btn.addEventListener('click', () => {
       if (state.tags.has(t)) state.tags.delete(t);
@@ -211,6 +311,7 @@ export function renderSidebar() {
 
   tagEl.appendChild(list);
   __updateTagsLayout(list);
+  __updateToggleButton();
 }
 
 export function renderGrid() {

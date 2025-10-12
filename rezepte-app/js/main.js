@@ -53,20 +53,6 @@ async function main() {
     if (ev.key === 'Escape') searchBox && searchBox.classList.remove('open');
   });
 
-  // Tags ein-/ausklappen (Button ist nur mobil sichtbar)
-  const tagsEl = $('#tags');
-  const tagsToggle = document.querySelector('#tagsToggle');
-  if (tagsEl && tagsToggle) {
-    tagsToggle.addEventListener('click', () => {
-      const listEl = document.querySelector('#tags .tag-list');
-      if (!listEl) return;
-      const expand = !listEl.classList.contains('expanded');
-      listEl.classList.toggle('expanded', expand);
-      tagsToggle.setAttribute('aria-expanded', String(expand));
-      tagsToggle.textContent = expand ? '⌵' : '✕';
-    });
-  }
-
   // Suche
   $('#q').addEventListener('input', (e) => {
     state.q = e.target.value.trim();
