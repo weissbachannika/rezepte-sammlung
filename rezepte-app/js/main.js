@@ -20,19 +20,40 @@ async function main() {
   const searchBox = document.querySelector('.search');
   const qInput = $('#q');
   const isNarrow = () => window.matchMedia('(max-width:680px)').matches;
+  const closeSearchBtn = $('#closeSearch');
+
+  function closeMobileSearch() {
+    if (!isNarrow()) return;
+    if (searchBox) searchBox.classList.remove('open');
+    if (closeSearchBtn) closeSearchBtn.style.display = 'none';
+    if (qInput) qInput.blur();
+  }
 
   // Icon-Only Suche: auf Handy als Popover öffnen/schließen
   if (searchBox) {
     searchBox.addEventListener('click', (ev) => {
+      if (ev.target === closeSearchBtn) return;
       if (!isNarrow()) return;                    // Desktop: nichts ändern
       if (ev.target === qInput) return;           // direkter Klick ins Input -> kein Toggle
       if (!searchBox.classList.contains('open')) {
         searchBox.classList.add('open');
+        if (closeSearchBtn) closeSearchBtn.style.display = '';
         requestAnimationFrame(() => qInput && qInput.focus());
       } else {
         // Bereits offen -> einfach Fokus setzen, nicht schließen
         requestAnimationFrame(() => qInput && qInput.focus());
       }
+    });
+  }
+
+  if (closeSearchBtn) {
+    closeSearchBtn.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      ev.stopPropagation();           // verhindert Re-Öffnen durch den Container-Handler
+      if (qInput) qInput.value = '';  // Suchfeld leeren
+      state.q = '';                   // Filter zurücksetzen
+      renderAll(); 
+      closeMobileSearch();
     });
   }
 
@@ -42,15 +63,19 @@ async function main() {
     if (!searchBox || !searchBox.classList.contains('open')) return;
     const within = searchBox.contains(ev.target);
     const inHeader = ev.target.closest && ev.target.closest('header');
-    if (!within && !inHeader) {
-      searchBox.classList.remove('open');
+    const hasText = qInput && qInput.value.trim().length > 0;
+    if (!within && !inHeader && !hasText) {
+      closeMobileSearch();
     }
   });
 
   // ESC schließt Popover-Suche (nur mobil)
   document.addEventListener('keydown', (ev) => {
     if (!isNarrow()) return;
-    if (ev.key === 'Escape') searchBox && searchBox.classList.remove('open');
+    if (ev.key === 'Escape') {
+      const hasText = qInput && qInput.value.trim().length > 0;
+      if (!hasText) closeMobileSearch();
+    }
   });
 
   // Suche
@@ -75,6 +100,12 @@ async function main() {
       renderAll();
     }
   } catch { /* noop */ }
+
+  window.addEventListener('resize', () => {
+    if (!isNarrow() && closeSearchBtn) {
+      closeSearchBtn.style.display = 'none';
+    }
+  });
 }
 
 main();
