@@ -1,0 +1,16 @@
+.chip{
+    display:inline-flex;align-items:center;gap:8px;border:1px solid #232a3c;background:#121622;
+    padding:6px 10px;border-radius:999px;font-size:12px;color:var(--subtext);cursor:pointer;user-select:none;
+}
+.chip.active{color:var(--text);border-color:var(--accent);background:#162238}
+.chip .x{opacity:.7;font-weight:700}
+
+/* einzelne Tags nie umbrechen */
+.tag,.tag-chip{
+    display:inline-flex;white-space:nowrap;word-break:keep-all;overflow-wrap:normal;hyphens:none;min-width:max-content;
+}
+
+/* Tag-Leiste */
+.tag-scroller{overflow:visible;max-height:none}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px}
+.tags-toggle{display:none}

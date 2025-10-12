@@ -1,0 +1,70 @@
+/* <= 680px */
+@media (max-width:680px){
+    .app{grid-template-columns:1fr}
+    aside{position:static;margin-top:16px}
+
+    .meta-grid{
+        grid-template-columns:1fr;
+        grid-template-areas:
+      "right"
+      "left";
+    }
+    .meta-grid .left-col{grid-area:left}
+    .meta-grid .right-col{grid-area:right}
+
+    header .title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+    .grid{gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+    .card-title{font-size:14px}
+    .thumb{aspect-ratio:1/1}
+
+    .tags-bar{display:flex;align-items:flex-start;gap:8px}
+    .tag-scroller{flex:1 1 auto;min-width:0}
+    .tag-list{flex-wrap:nowrap}
+    .tag-scroller{overflow:hidden;max-height:40px}
+    .tag-list.expanded{flex-wrap:wrap}
+    .tag-scroller.expanded{overflow:visible;max-height:none}
+
+    .tags-toggle{
+        display:inline-flex;align-items:center;height:auto;padding:4px 8px;border-radius:999px;
+        border:1px solid #232a3c;background:#121622;color:var(--subtext);font-size:12px;
+    }
+}
+
+/* Mobile-Popover-Suche <= 420px */
+@media (max-width:420px){
+    header{position:sticky}
+    .app{gap:6px}
+
+    .search{flex:0 0 auto;width:36px;padding:8px;justify-content:center}
+    .search input{display:none}
+    .search svg{flex:0 0 auto}
+    .search.open{
+        position:absolute;left:16px;right:16px;top:calc(100% + 8px);
+        width:auto;padding:8px 12px;display:flex;gap:10px;z-index:20;
+    }
+    .search.open input{display:block;flex:1}
+    .search.open svg{margin-right:2px}
+
+    .section-title{display:none}
+    aside{padding:10px 10px;margin-top:4px;margin-bottom:4px}
+    .tag-list{gap:2px}
+    .tags-bar{margin-top:0}
+    .chip{font-size:11px}
+
+    .grid{grid-template-columns:1fr}
+    .card-title{font-size:11px;margin:0 0 6px}
+
+    /* Karte horizontal */
+    .card{display:flex;align-items:center;gap:12px}
+    .thumb{
+        flex:0 0 96px;width:96px;height:96px;aspect-ratio:auto;border-bottom:0;border-right:1px solid #1f2432;
+    }
+    .card-body{padding:0}
+}
+
+/* sehr klein <= 360px */
+@media (max-width:360px){
+    .grid{grid-template-columns:repeat(auto-fit,minmax(135px,1fr))}
+    .card-title{font-size:13px}
+}
