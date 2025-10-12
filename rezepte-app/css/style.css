@@ -319,6 +319,7 @@ li { margin: 4px 0; }
 .meta-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
+  grid-template-areas: "left right";
   gap: 16px;
   width: 100%;
 }
@@ -385,8 +386,16 @@ li { margin: 4px 0; }
     position: static;
     margin-top: 16px;
   }
-  .meta-grid { grid-template-columns: 1fr; 
+  .meta-grid { 
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "right"
+      "left";
   }
+
+  .meta-grid .left-col  { grid-area: left; }
+  .meta-grid .right-col { grid-area: right; }
+
   /* Title einzeilig halten, kein Umbrechen beim Öffnen der Suche */
   header .title {
     white-space: nowrap;
