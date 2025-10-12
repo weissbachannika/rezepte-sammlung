@@ -67,6 +67,7 @@ header {
   background: transparent; border: none; color: var(--text);
   outline: none; font-size: 15px;
 }
+#closeSearch { display: none; }
 
 .chip {
   display: inline-flex;
@@ -396,6 +397,28 @@ li { margin: 4px 0; }
 
 /* --- Responsive Layout --- */
 @media (max-width: 680px) {
+  /* Nur mobil: Browser-Clear-Button im Suchfeld ausblenden */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration,
+  input[type="search"]::-moz-search-clear,
+  input[type="search"]::-ms-clear {
+    display: none !important;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+  /* extra Spezifität für dein konkretes Feld */
+  #q::-webkit-search-cancel-button { display: none !important; }
+  #q::-moz-search-clear          { display: none !important; }
+  #q::-ms-clear                  { display: none !important; }
+
   .app {
     grid-template-columns: 1fr;   /* erst ab hier Sidebar unter Content */
   }
@@ -465,6 +488,7 @@ li { margin: 4px 0; }
   }
 }
 @media (max-width: 420px){
+
   /* Suche: Icon-only im Header, Popover öffnet sich darunter */
   header { position: sticky; } /* sticky wirkt wie relative -> Anker für .search.open */
   .search {
@@ -480,10 +504,11 @@ li { margin: 4px 0; }
      ohne den Header umzubrechen. */
   .search.open {
     position: absolute;
-    left: 16px;
-    right: 16px;
-    top: calc(100% + 8px);   /* unter dem Header */
-    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* exakt zentrieren */
+    width: calc(100% - 20px);         /* etwas Rand links/rechts */
+    max-width: 500px;                 /* optional Begrenzung */
     padding: 8px 12px;
     display: flex;
     gap: 10px;
@@ -494,6 +519,19 @@ li { margin: 4px 0; }
     flex: 1;
   }
   .search.open svg { margin-right: 2px; }
+
+  .search.open #closeSearch {
+  display: block;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 6px;
+  flex: 0 0 auto;
+}
 }
 @media (max-width: 420px) {
   .app { gap: 6px; }
