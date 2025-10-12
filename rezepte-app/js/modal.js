@@ -214,9 +214,29 @@ export function openModal(id, opts = {}) {
   }
 
   // --- Notizen (unverändert) ---
+  const notesHeader = $('#notesHeader');
   const notesWrap = $('#modalNotes');
   notesWrap.innerHTML = renderNotesList(r.notes);
+  if (typeof r.notes === 'string' && r.notes.trim()) {
+    notesWrap.textContent = r.notes.trim();
+    notesHeader.style.display = '';
+    notesWrap.style.display = '';
+  } else {
+    notesHeader.style.display = 'none';
+    notesWrap.style.display = 'none';
+  }
 
+  // --- Credits ---
+  const creditsHeader = $('#creditsHeader');
+  const creditsWrap = $('#modalCredits');
+  if (typeof r.credits === 'string' && r.credits.trim()) {
+    creditsWrap.textContent = r.credits.trim();
+    creditsHeader.style.display = '';
+    creditsWrap.style.display = '';
+  } else {
+    creditsHeader.style.display = 'none';
+    creditsWrap.style.display = 'none';
+  }
   modal.showModal();
 }
 

@@ -99,6 +99,7 @@ export const recipeFileNames = [
   "notes": [
     ""
   ],
+  "credits": "",
   "image": "./images/xy.jpg"
 }
 */

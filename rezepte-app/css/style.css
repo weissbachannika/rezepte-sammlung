@@ -355,6 +355,17 @@ li { margin: 4px 0; }
   color:#33568a;
 }
 
+.credits {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  margin-top: 6px;
+}
+.h.small {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  margin-top: 6px;
+}
+
 /* --- Responsive Layout --- */
 @media (max-width: 680px) {
   .app {
