@@ -84,9 +84,10 @@ function __applyMode() {
 
   const mobile = isMobile();
   const currentMode = mobile ? 'mobile' : 'desktop';
-  if (__tagsUI.mode !== currentMode) {
-    __tagsUI.mode = currentMode;
-    __tagsUI.mobileInitDone = false; // einmalige Neuentscheidung erlauben
+  if (!__tagsUI.mobileInitDone) {
+    // Mobile: Default = eingeklappt, keine Auto-Logik
+    __tagsUI.expanded = false;
+    __tagsUI.mobileInitDone = true;
   }
 
   if (!mobile) {
