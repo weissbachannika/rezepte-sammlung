@@ -35,7 +35,6 @@ export function matches(recipe) {
       ...(recipe.ingredients || []),
       ...(recipe.spices || []),
       ...(recipe.tags || []),
-      ...(recipe.materials || [])
     ].join(' ').toLowerCase();
     if (!hay.includes(q.toLowerCase())) return false;
   }
