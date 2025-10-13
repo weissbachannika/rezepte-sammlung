@@ -81,6 +81,24 @@ function addSubsteps(liParent, subArr) {
   });
   liParent.appendChild(ol);
 }
+
+function renderExternalLinks(text) {
+  const s = String(text ?? '');
+
+  // 1) Markdown-Links [Text](https://example.com)
+  const md = s.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    (_, label, url) =>
+      `<a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`
+  );
+
+  // 2) Reine URLs zu Links machen
+  return md.replace(
+    /(https?:\/\/[^\s]+)/g,
+    (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+  );
+}
+
 // --------------- Main ---------------
 
 export function openModal(id, opts = {}) {
@@ -213,12 +231,16 @@ export function openModal(id, opts = {}) {
     matsBox.style.display = 'none';
   }
 
-  // --- Notizen (unverändert) ---
+  // --- Notizen ---
   const notesHeader = $('#notesHeader');
   const notesWrap = $('#modalNotes');
-  notesWrap.innerHTML = renderNotesList(r.notes);
-  if (typeof r.notes === 'string' && r.notes.trim()) {
-    notesWrap.textContent = r.notes.trim();
+
+  // sowohl String als auch Array unterstützen -> immer Liste rendern
+  const notesArr = toArray(r.notes); // split bei \n, filtert Leerzeilen
+  if (notesArr.length) {
+    notesWrap.innerHTML = `<ul class="notes">${notesArr
+      .map(n => `<li>${renderInline(n)}</li>`)
+      .join('')}</ul>`;
     notesHeader.style.display = '';
     notesWrap.style.display = '';
   } else {
@@ -230,7 +252,7 @@ export function openModal(id, opts = {}) {
   const creditsHeader = $('#creditsHeader');
   const creditsWrap = $('#modalCredits');
   if (typeof r.credits === 'string' && r.credits.trim()) {
-    creditsWrap.textContent = `→ ${r.credits.trim()}`;
+    creditsWrap.innerHTML = renderExternalLinks(r.credits.trim()); // <-- neu
     creditsHeader.style.display = '';
     creditsWrap.style.display = '';
   } else {

@@ -227,6 +227,7 @@ dialog::backdrop { background: rgba(0,0,0,0.6); }
   font-weight: 600;
   font-size: 14px;
   color: var(--subtext);
+  left: 20px;
 }
 
 /* In der numerierten Steps-Liste: Subsections nicht zählen/anzeigen */
@@ -250,7 +251,7 @@ li { margin: 4px 0; }
 /* nur direkte Kinder von .steps bekommen das Badge */
 .steps > li {
   position: relative;
-  padding-left: 34px;
+  padding-left: 20px;
   margin: 10px 0;
 }
 /* Badge + Zähler nur bei Top-Level-Schritten */
@@ -258,7 +259,7 @@ li { margin: 4px 0; }
   counter-increment: step;
   content: counter(step);
   position: absolute;
-  left: 0;
+  left: -14px;
   top: 0;
   width: 24px;
   height: 24px;
@@ -287,21 +288,21 @@ li { margin: 4px 0; }
 .substeps {
   counter-reset: substep;
   list-style: none;
-  margin: 8px 0 6px 28px;
+  margin: 14px 0 6px 14px;
   padding: 0;
 }
 
 .substeps li {
   position: relative;
   margin: 6px 0;
-  padding-left: 34px; /* Platz für das Badge */
+  padding-left: 20px; /* Platz für das Badge */
 }
 
 .substeps li::before {
   counter-increment: substep;
   content: counter(substep, upper-roman); /* römische Zahl */
   position: absolute;
-  left: 0;
+  left: -14px;
   top: 0;
   width: 22px;
   height: 22px;
@@ -579,4 +580,10 @@ li { margin: 4px 0; }
   .card-body {
     padding: 0;               /* globales Padding überschreiben */
   }
+  .steps > li { padding-left: 0; }
+  .steps > li::before { left: -40px; }
+  .substeps { margin-left: 0; }
+  .substeps li { padding-left: 20px; }
+  .substeps li::before { left: -14px; }
+  #modalSteps .subsection { left: 0; }
 }
