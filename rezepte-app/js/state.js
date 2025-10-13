@@ -29,14 +29,18 @@ export function matches(recipe) {
     if (!recipe.tags) return false;
     for (const t of tags) if (!recipe.tags.includes(t)) return false;
   }
-  if (q) {
+  const query = (q || '').trim().toLowerCase();
+  if (query) {
+    const tokens = query.split(/\s+/).filter(Boolean);
     const hay = [
       recipe.title,
       ...(recipe.ingredients || []),
-      ...(recipe.spices || []),
+      //...(recipe.spices || []),
       ...(recipe.tags || []),
     ].join(' ').toLowerCase();
-    if (!hay.includes(q.toLowerCase())) return false;
+    for (const tok of tokens) {
+      if (!hay.includes(tok)) return false;
+    }
   }
   return true;
 }
