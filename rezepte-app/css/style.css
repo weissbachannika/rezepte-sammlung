@@ -396,7 +396,7 @@ li { margin: 4px 0; }
 }
 
 /* --- Responsive Layout --- */
-@media (max-width: 680px) {
+@media (max-width: 690px) {
   /* Nur mobil: Browser-Clear-Button im Suchfeld ausblenden */
   input[type="search"]::-webkit-search-cancel-button,
   input[type="search"]::-webkit-search-decoration,
