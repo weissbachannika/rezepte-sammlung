@@ -86,17 +86,27 @@ function renderExternalLinks(text) {
   const s = String(text ?? '');
 
   // 1) Markdown-Links [Text](https://example.com)
-  const md = s.replace(
+  let html = s.replace(
     /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
     (_, label, url) =>
-      `<a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`
+      `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`
   );
 
-  // 2) Reine URLs zu Links machen
-  return md.replace(
-    /(https?:\/\/[^\s]+)/g,
-    (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
-  );
+  // 2) Autolinks außerhalb vorhandener <a>
+  const urlRe = /(https?:\/\/[^\s<]+)/g;
+  html = html
+    .split(/(<a\b[^>]*>.*?<\/a>)/gis)
+    .map((part, i) =>
+      i % 2
+        ? part
+        : part.replace(
+            urlRe,
+            (u) => `<a href="${u}" target="_blank" rel="noopener noreferrer">${u}</a>`
+          )
+    )
+    .join('');
+
+  return html;
 }
 
 // --------------- Main ---------------

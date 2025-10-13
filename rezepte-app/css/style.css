@@ -376,7 +376,7 @@ li { margin: 4px 0; }
 
 /* Pfeil-Symbol links vom Text, gleiche Linie wie Bullet-Badges der Steps */
 #modalMaterials::before {
-  content: "➜";
+  content: "→";
   position: absolute;
   left: 0;
   top: 0;
@@ -389,6 +389,16 @@ li { margin: 4px 0; }
   font-size: 0.8rem;
   color: #FFFFFF;
   margin-top: 6px;
+  position: relative;
+  padding-left: 1.4em;
+}
+#modalCredits::before {
+  content: "→";
+  font-size: 0.9rem;
+  position: absolute;
+  left: 0;
+  top: -1.5px;
+  color: var(--subtext);  
 }
 .h.small {
   font-size: 0.85rem;
