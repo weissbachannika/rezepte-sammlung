@@ -551,13 +551,13 @@ li { margin: 4px 0; }
     margin-top: 0;
   }
   .chip {
-    font-size: 11px;
+    font-size: 12px;
   }
   .grid {
     grid-template-columns: 1fr;
   }
   .card-title { 
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 0 6px;
   }
   /* Karte horizontal: Bild links, Text rechts */
