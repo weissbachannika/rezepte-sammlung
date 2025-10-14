@@ -5,10 +5,10 @@
   "tags": ["Soße", "Beilage", "Hausmannskost"],
   "materials": 
     "",
-    
   "time": {
-    "total": "X Min"
+    "total": "25 Min"
   },
+  "amount": 6,
   "ingredients": [
     "1 (kleine) Zwiebel",
     "2 EL Margarine",

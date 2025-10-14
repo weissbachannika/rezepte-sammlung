@@ -3,13 +3,19 @@
   "file": "pancakes.json",
   "title": "Pancakes",
   "tags": ["Frühstück", "Süßes", "Low-Effort"],
+  "time": {
+    "total": "insg. 40 Min"
+  },
+  "amount": "12 Stk.",
   "ingredients": [
     "400 g Mehl",
     "1 TL Backpulver",
     "600 ml Pflanzenmilch",
     "1 Prise Salz",
     "50 g Zucker",
-    "optional: Apfelmus"
+    "200 ml Mineralwasser (opt. für dünne Pfannkuchen",
+    "optional: Apfelmus",
+    "Rapsöl zum Braten"
   ],
   "spices": [],
   "steps": [
@@ -21,6 +27,6 @@
     "Nach Belieben mit Apfelmus, Ahornsirup, Beeren und Kokosraspeln oder anderen Toppings nach Wahl servieren."
   ],
   "notes": "",
-  "credits": "edeka.de",
+  "credits": "[edeka.de](http://edeka.de/rezeptwelt/rezepte/vegane-pfannkuchen/)",
   "image": ""
 }

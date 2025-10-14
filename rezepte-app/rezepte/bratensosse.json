@@ -10,9 +10,9 @@
 
   "time": {
     "prep": "",
-    "total": "2 Std."
+    "total": "1,5h"
   },
-
+  "amount": 4,
   "ingredients": [
     "2 Zwiebeln",
     "2 Möhren",
@@ -45,6 +45,6 @@
     "Noch einmal mit Salz, Pfeffer, Sojasoße und ggf. etwas Süße abschmecken"
   ],
   "notes": "Wenn du magst, kannst du auch noch etwas Balsamico oder einen Schuss Hafersahne zum Schluss reingeben.",
-  "credits": "",
+  "credits": "ChatGPT",
   "image": "./images/Bratensosse_Kartoffelpueree.jpg"
 }

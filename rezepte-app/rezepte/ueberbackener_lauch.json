@@ -3,10 +3,11 @@
   "file": "ueberbackener_lauch.json",
   "title": "Überbackener Lauch mit Kartoffelpüree",
   "tags": ["Hauptgericht", "Backen", "Hausmannskost", "Kartoffeln"],
-  "materials": "Auflaufform ca 25 x 30 cm",
+  "materials": "Auflaufform 25x25 cm",
   "time": {
-    "total": ""
+    "total": "50 Min"
   },
+  "amount": 2,
   "ingredients": [
     "2 Stangen Lauch",
     "250 ml Hafersahne",
@@ -23,7 +24,7 @@
   "steps": [
     "Den Lauch gut waschen (die Stangen ggf. längs halbieren, um den Dreck besser entfernen zu können).",
     "Dann die Stangen Lauch vierteln (also ca. 15 cm lange Stücke) und in Salzwasser für ca. 15 Minuten kochen.",
-    "Währenddessen das [Kartoffelpüree](#kartoffelpueree.json) zubereiten.",
+    "Währenddessen anfangen das [Kartoffelpüree](#kartoffelpueree.json) zubereiten.",
     "In die Auflaufform dann die Sahne geben und mit Brühepulver (1–2 TL) und Muskatnuss (¼–½ Nuss) würzen.",
     "Wenn der Lauch fertig gekocht ist, diesen abgießen und in der Auflaufform verteilen.",
     "Den Käse oben drauf streuen und das alles für ca. 30 Minuten bei 180°C Umluft backen."

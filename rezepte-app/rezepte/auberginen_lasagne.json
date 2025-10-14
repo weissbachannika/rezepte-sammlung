@@ -6,11 +6,12 @@
     "Hauptgericht", "Backen", "Italienisch", "Pasta", "Nudeln"
   ],
   "materials": 
-    "",
+    "25x25 cm Auflaufform",
 
   "time": {
-    "total": "X Min"
+    "total": "1h + 45 Min Backzeit"
   },
+  "amount": 4,
   "ingredients": [
     "3 große Auberginen",
     "Olivenöl",
