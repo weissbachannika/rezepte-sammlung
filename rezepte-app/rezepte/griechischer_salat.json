@@ -11,15 +11,16 @@
     "prep": "",
     "total": "15 Min"
   },
+  "amount": 4,
   "ingredients": [
     "4 Tomaten",
-    "1 Salatgurke",
+    "½ Salatgurke",
     "1 rote Paprika",
     "1 Rote Zwiebel",
     "200 g veganer Feta",
     "80 g schwarze Oliven",
     "1–2 TL getrockneter Oregano",
-    "Salatblätter (op.)",
+    "4–5 Salatblätter (opt)",
     { "section": "Für die Vinaigrette"},
     "80 ml Olivenöl",
     "3–4 EL Zitronensaft oder Weißweinessig",
@@ -36,8 +37,6 @@
     "Alle Zutaten fürs Dressing in das Glas geben und gut schütteln (oder in einer Schüssel gut verrühren)",
     "Das Dressing über den Salat geben und noch mit Oregano bestreuen"
   ],
-  "notes": [
-    ""
-  ],
+  "notes": [""],
   "image": ""
 }

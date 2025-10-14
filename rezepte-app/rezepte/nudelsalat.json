@@ -3,6 +3,12 @@
   "file": "nudelsalat.json",
   "title": "Nudelsalat",
   "tags": ["Salat", "Hauptgericht", "Pasta", "Nudeln", "Sommer"],
+  "materials": 
+    "",
+  "time": {
+    "total": "30 Min"
+  },
+  "amount": 8,
   "ingredients": [
     "500 g Nudeln (z.B. Fusilli Tricolore)",
     "1 Dose Mais",
@@ -33,5 +39,6 @@
   "notes": [
     "Statt frischem Basilikum kannst du auch 2 EL Basilikumpesto und etwas weniger Öl (auch ca. 2 EL) nehmen und alles gut verrühren."
   ],
+  "credits": "[zuckerjagdwurst](https://www.zuckerjagdwurst.com/de/rezepte/veganer-sommer-nudelsalat)",
   "image": "./images/Nudelsalat.jpg"
 }

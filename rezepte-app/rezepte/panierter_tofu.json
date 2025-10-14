@@ -3,6 +3,12 @@
   "file": "panierter_tofu.json",
   "title": "Panierter Tofu",
   "tags": ["Beilage", "High-Protein"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "30 Min"
+  },
+  "amount": 2,
   "ingredients": [
     "1 Block Tofu (am besten Natur)",
     "4 EL Mehl oder Speisestärke (ca., wenn du den Tofu in kleinere Stücke schneidest, brauchst du je nachdem ein bisschen mehr)",

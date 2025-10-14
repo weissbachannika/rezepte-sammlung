@@ -6,13 +6,13 @@
     "Hauptgericht", "Asiatisch", "One-Pot", "Nudeln"
   ],
   "materials": 
-    "mittelgroßer Topf",
-
+    "",
   "time": {
     "total": "20-30 Min"
   },
+  "amount": 4,
   "ingredients": [
-    "Gemüse deiner Wahl (Pak Choi, Pilze, Paprika, Möhre, ...)",
+    "500 g Gemüse deiner Wahl (Pak Choi, Pilze, Paprika, Möhre, ...)",
     "1 Block Naturtofu (200 g)",
     "1 Zwiebel",
     "3 Frühlingszwiebeln",

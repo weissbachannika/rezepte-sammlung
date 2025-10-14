@@ -49,7 +49,6 @@ export const recipeFileNames = [
   "nudelsalat.json",
   "ofengemuese.json",
   "olivenoel-kekse.json",
-  "orangen-schoko-plaetzchen.json",
   "pancakes.json",
   "panierter_tofu.json",
   "penne_in_pikanter_gemuesesosse.json",
@@ -58,6 +57,7 @@ export const recipeFileNames = [
   "rice_paper_dumplings.json",
   "russischer_zupfkuchen.json",
   "scrambled_tofu.json",
+  "orangen-schoko-plaetzchen.json",
   "sheperds_pie.json",
   "sommerrollen.json",
   "spaghetti_bolognese.json",
@@ -80,13 +80,12 @@ export const recipeFileNames = [
   "tags": [
     ""
   ],
-  "materials": 
-    "",
-
+  "materials": "",
   "time": {
     "prep": "",
     "total": ""
   },
+  "amount": x,
   "ingredients": [
     ""
   ],

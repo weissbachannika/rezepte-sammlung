@@ -3,6 +3,12 @@
   "file": "olivenoel-kekse.json",
   "title": "Olivenöl-Kekse",
   "tags": ["Backen", "Kekse", "Süßes", "Low-Effort", "Winter"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "15 Min + 15 Min Backzeit"
+  },
+  "amount": 12,
   "ingredients": [
     "100 ml natives Olivenöl",
     "3 EL Puderzucker + 3 EL zum Bestäuben",

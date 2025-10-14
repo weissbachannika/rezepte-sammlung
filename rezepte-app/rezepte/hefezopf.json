@@ -5,10 +5,10 @@
   "tags": ["Backen", "Süßes", "Frühstück", "Ostern"],
   "materials": 
     "",
-    
   "time": {
-    "total": ""
+    "total": "1 Std + 1 Std 30 Min Ruhezeit"
   },
+  "amount": 16,
   "ingredients": [
     "½ Würfel frische Hefe (oder 1 Pck Trockenhefe)",
     "280 ml Pflanzenmilch",
@@ -45,6 +45,6 @@
     "Der Hefezopf hält sich luftdicht verpackt und bei Zimmertemperatur gelagert 2–3 Tage.",
     "Restlicher Hefeteig kann auch für bis zu 3 Monate und der fertig gebackene Hefezopf für bis zu 6 Monate eingefroren werden."
   ],
-  "credits": "",
+  "credits": "[biancazapatka](https://biancazapatka.com/de/veganer-hefezopf/)",
   "image": "./images/Hefezopf.jpg"
 }

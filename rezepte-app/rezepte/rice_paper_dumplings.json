@@ -5,6 +5,12 @@
   "tags": [
     "Hauptgericht", "Asiatisch", "Beilage", "Vorspeise"
   ],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "45 Min"
+  },
+  "amount": 12,
   "ingredients": [
     "Reispapier (ca. 12 Blatt)",
     "200 g Naturtofu",
@@ -41,5 +47,6 @@
     "Für den Dip alle genannten Zutaten zusammen mixen und abschmecken, wie du es am liebsten magst"
   ],
   "notes": "",
+  "credits": "",
   "image": "./images/Ricepaper_dumplings.jpg"
 }

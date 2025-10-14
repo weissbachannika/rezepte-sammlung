@@ -3,6 +3,12 @@
   "file": "ofengemuese.json",
   "title": "Ofengemüse",
   "tags": ["Hauptgericht", "Beilage", "Backen", "Low-Effort", "Kartoffeln"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "20 Min + 40 Min Backzeit"
+  },
+  "amount": 2,
   "ingredients": [
     "3 Kartoffeln",
     "1 Süßkartoffel",

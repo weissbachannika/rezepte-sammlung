@@ -3,6 +3,12 @@
   "file": "marzipan-husarenkrapfen.json",
   "title": "Marzipan-Husarenkrapfen",
   "tags": ["Backen", "Winter", "Süßes", "Kekse"],
+  "materials": 
+    "",
+  "time": {
+    "total": "40 Min + 30 Min Ruhen + 15 Min Backzeit"
+  },
+  "amount": 20,
   "ingredients": [
     "250 g Mehl",
     "125 g Zucker",
@@ -25,6 +31,7 @@
     "In die noch warmen Plätzchen wird nun die Marmelade gefüllt.",
     "Sind die Husarenkrapfen abgekühlt, können sie noch mit Puderzucker bestäubt werden."
   ],
-  "notes": "",
+  "notes": "Innerhalb von ein paar Tagen verzehren",
+  "credits": "[chefkoch.de](https://www.chefkoch.de/rezepte/3338421495901849/Vegane-Marzipan-Husarenkrapfen.html)",
   "image": "./images/Marzipan_kekse.jpg"
 }

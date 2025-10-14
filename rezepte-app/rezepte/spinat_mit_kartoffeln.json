@@ -3,6 +3,12 @@
   "file": "spinat_mit_kartoffeln.json",
   "title": "Spinat mit Kartoffeln",
   "tags": ["Hauptgericht", "Hausmannskost", "Kartoffeln"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "30 Min"
+  },
+  "amount": 2,
   "ingredients": [
     "400 g TK Spinat",
     "1 Zwiebel (fein gewürfelt)*",
@@ -32,5 +38,6 @@
     "Statt Salzkartoffeln kann man auch sehr gut angebratene Gnocchi dazu machen.",
     "Die Fischstäbchen kann man auch weglassen oder durch verschiedene andere Sachen ersetzen (z. B. [panierter Tofu](#panierter_tofu.json), vegane Schnitzel/Cordon Bleus, (vegane Spiegeleier), usw.)."
   ],
+  "credits": "Mamsi",
   "image": ""
 }

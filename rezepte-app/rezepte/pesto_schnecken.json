@@ -3,6 +3,12 @@
   "file": "pesto_schnecken.json",
   "title": "Pesto Schnecken",
   "tags": ["Snack", "Backen", "Low-Effort"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "10 Min + 20 Min Backzeit"
+  },
+  "amount": 16,
   "ingredients": [
     "1 Pck. Blätterteig",
     "ca. 3 EL Pesto",
@@ -17,6 +23,6 @@
     "Das jetzt wie auf der Blätterteigpackung beschrieben backen (200°C für 20 Minuten)."
   ],
   "notes": "",
-  "credits": "instagram: Minimalara",
+  "credits": "[instagram: Minimalara](https://www.instagram.com/minimalara/)",
   "image": ""
 }

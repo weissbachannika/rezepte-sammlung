@@ -3,6 +3,12 @@
   "file": "tzatziki.json",
   "title": "Tzatziki",
   "tags": ["Dip", "Griechisch"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "30 Min"
+  },
+  "amount": 5,
   "ingredients": [
     "500 g Hafer Joghurt (ungesüßt)",
     "½ Gurke",
@@ -21,5 +27,6 @@
     "Den Tzatziki mindestens 90 Minuten im Kühlschrank stehen lassen. Vor dem Servieren nochmals abschmecken."
   ],
   "notes": "",
+  "credits": "[Zucker & Jagdwurst](https://www.zuckerjagdwurst.com/de/rezepte/veganer-tzatziki)",
   "image": ""
 }

@@ -6,16 +6,17 @@
     "Hauptgericht", "Pasta", "Low-Effort", "Backen", "Nudeln", "Italienisch"
   ],
   "materials": 
-    "Auflaufform mit Deckel/Alufolie, großer Topf",
+    "25x25 cm Auflaufform mit Deckel/Alufolie",
     
   "time": {
     "total": "15 Min + 1 h Backzeit"
   },
+  "amount": 4,
   "ingredients": [
-    "5 kleine gelbe Zwiebeln (oder 3 große)",
+    "3 große gelbe Zwiebeln",
     "ein Glas getrocknete Tomaten in Öl (280g)",
     "200 ml Hafersahne",
-    "200 g Farfalle",
+    "250 g Farfalle",
     "100 g frischen Baby Spinat (opt.)",
     "eine Hand voll frischen Basilikum (opt.)",
     "Saft einer halben Zitrone (opt.)"
@@ -41,5 +42,6 @@
   "notes": [
     "Wenn du keinen Ofen hast, kannst du die Zwiebeln auch in einem Topf lange auf mittel hoher Stufe anbraten und so die Soße machen"
   ],
+  "credits":"[plantyou](https://plantyou.com/one-pan-caramelized-onion-pasta/)",
   "image": "./images/Karamellisierte_zwiebeln_pasta.jpg"
 }

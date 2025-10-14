@@ -3,8 +3,14 @@
   "file": "lasagne.json",
   "title": "Lasagne",
   "tags": ["Hauptgericht", "Backen", "Italienisch", "Pasta", "Nudeln"],
+  "materials": 
+    "Auflaufform 30x30 cm",
+  "time": {
+    "total": "30 Min + 40 Min Backzeit"
+  },
+  "amount": 4,
   "ingredients": [
-    "Lasagneplatten (15–20 wahrscheinlich)",
+    "Lasagneplatten (15–20)",
     "150 g Sojagranulat",
     "400 g passierte Tomaten",
     "2 Karotten",

@@ -3,6 +3,12 @@
   "file": "scrambled_tofu.json",
   "title": "Scrambled Tofu",
   "tags": ["Frühstück", "Beilage", "Low-Effort", "High-Protein"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "15 Min"
+  },
+  "amount": 2,
   "ingredients": [
     "1 Block Tofu",
     "100 ml Pflanzenmilch",

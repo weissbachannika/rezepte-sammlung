@@ -3,6 +3,12 @@
   "file": "spaetzle-pilz-pfanne.json",
   "title": "Spätzle-Pilz-Pfanne",
   "tags": ["Hauptgericht", "Hausmannskost", "One-Pot", "Nudeln", "Low-Effort"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "25 Min"
+  },
+  "amount": 2,
   "ingredients": [
     "500 g vegane Spätzle (z. B. Vemondo)",
     "250 g Champignons",

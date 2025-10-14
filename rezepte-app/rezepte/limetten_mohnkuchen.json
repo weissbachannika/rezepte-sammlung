@@ -3,6 +3,12 @@
   "file": "limetten_mohnkuchen.json",
   "title": "Limetten-Mohnkuchen",
   "tags": ["Backen", "Kuchen", "Süßes"],
+  "materials": 
+    "Kastenform 20 cm",
+  "time": {
+    "total": "20 Min + 50 Min Backzeit"
+  },
+  "amount": 12,
   "ingredients": [
     "70 g vegane Butter",
     "160 g Zucker",

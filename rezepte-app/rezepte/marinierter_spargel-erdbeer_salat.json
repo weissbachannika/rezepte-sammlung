@@ -3,6 +3,12 @@
   "file": "marinierter_spargel-erdbeer_salat.json",
   "title": "Marinierter Spargel-Erdbeer Salat",
   "tags": ["Salat", "Vorspeise", "Beilage", "Sommer"],
+  "materials": 
+    "",
+  "time": {
+    "total": "45 Min"
+  },
+  "amount": 8,
   "ingredients": [
     "500 g grüner Spargel",
     "500 g weißer Spargel",
@@ -34,5 +40,6 @@
     "Das alles mit der Kresse aus dem zweiten Kästchen und den Pinienkernen bestreuen."
   ],
   "notes": "",
+  "credits": "[chefkoch.de](https://www.chefkoch.de/rezepte/1055961210832992/Marinierter-Spargel-Erdbeersalat.html)",
   "image": "./images/Spargel_erdbeer_salat.jpg"
 }

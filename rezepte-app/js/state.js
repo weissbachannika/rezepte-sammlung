@@ -37,6 +37,7 @@ export function matches(recipe) {
       ...(recipe.ingredients || []),
       //...(recipe.spices || []),
       ...(recipe.tags || []),
+      ...(recipe.notes || []),
     ].join(' ').toLowerCase();
     for (const tok of tokens) {
       if (!hay.includes(tok)) return false;

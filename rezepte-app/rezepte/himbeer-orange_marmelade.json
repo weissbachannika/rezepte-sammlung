@@ -4,14 +4,14 @@
   "title": "Himbeer-Orangen Marmelade",
   "tags": ["Aufstrich", "Frühstück", "Süßes"],
   "materials": 
-    "",
-    
+    "ca 10 Marmeladengläser",
   "time": {
-    "total": "X Min"
+    "total": "20 Min + 1 Std Ruhezeit + Zeit zum Auskühlen"
   },
+  "amount": 10,
   "ingredients": [
     "1 kg Himbeeren (tk)",
-    "2–3 Orangen (geschältes Fruchtfleisch oder frisch gepresster Saft daraus)",
+    "2–3 Orangen (filetiertes Fruchtfleisch oder frisch gepresster Saft daraus)",
     "ca. 600 g Gelierzucker (1:2 Verhältnis)"
   ],
   "spices": [],
@@ -20,7 +20,8 @@
     "Die Mischung etwa 1 h durchziehen lassen.",
     "Unter gelegentlichem Umrühren zum Kochen bringen.",
     "Sprudelnd etwa 3 Minuten kochen lassen (Achtung, die Mischung kocht leicht über!).",
-    "Die Marmelade in heiß ausgewaschene Gläser und Deckel füllen und fest zumachen."
+    "Die Marmelade in heiß ausgewaschene Gläser und Deckel füllen und fest zumachen, am Besten ohne die Finger zu verbrennen.",
+    "Die Gläser verkehrt herum zurseite stellen und ganz auskühlen lassen"
   ],
   "notes": "",
   "credits": "Oma",

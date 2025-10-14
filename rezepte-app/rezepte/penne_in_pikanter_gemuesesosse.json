@@ -5,6 +5,12 @@
   "tags": [
     "Hauptgericht", "Pasta", "Nudeln", "Backen"
   ],
+  "materials": "(Stab)mixer",
+  "time": {
+    "prep": "",
+    "total": ""
+  },
+  "amount": 2,
     "ingredients": [
     "250 g Penne",
     "1 rote Zwiebel",
@@ -34,6 +40,6 @@
     "Mit restlichen Pinienkernen toppen."
   ],
   "notes": "",
-  "credits": "Jojo & Hello Fresh",
+  "credits": "Jojo (Hello Fresh)",
   "image": ""
 }

@@ -1,8 +1,14 @@
 {
   "id": "r66",
   "file": "orangen-schoko-plaetzchen.json",
-  "title": "Orangen-Schoko-Plätzchen",
+  "title": "Schoko-Orangen-Plätzchen",
   "tags": ["Backen", "Kekse", "Winter", "Süßes"],
+  "materials": "feine Küchenreibe",
+  "time": {
+    "prep": "",
+    "total": "30 Min + 30 Min kaltstellen + 10 Min Backzeit"
+  },
+  "amount": 30,
   "ingredients": [
     "200 g Mehl",
     "60 g Speisestärke",
@@ -25,6 +31,6 @@
     "Die Kuvertüre in einem Wasserbad schmelzen und die Plätzchen sprenkeln."
   ],
   "notes": "",
-  "credits": "rewe.de",
+  "credits": "[rewe.de](https://www.rewe.de/rezepte/schoko-orangen-kipferl)",
   "image": "./images/Schoko_orangen_kekse.jpeg"
 }

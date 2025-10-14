@@ -5,6 +5,12 @@
   "tags": [
     "Hauptgericht", "Pasta", "Italienisch", "Nudeln", "Low-Effort"
   ],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "30 Min"
+  },
+  "amount": 4,
   "ingredients": [
     "250 g Spaghetti",
     "100 g Sojagranulat",
@@ -43,5 +49,6 @@
     "Wenn du magst, kannst du natürlich auch frischen Basilikum verwenden",
     "Statt Zucker kann man auch einen kleinen Schuss (Gewürz)Ketchup nehmen um die Säure der Tomaten auszugleichen"
   ],
+  "credits": "Mamsi",
   "image": ""
 }

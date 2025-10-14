@@ -3,8 +3,14 @@
   "file": "loaded_suesskartoffel.json",
   "title": "Loaded Süßkartoffel",
   "tags": ["Hauptgericht", "Backen", "Mexikanisch", "Kartoffeln"],
+  "materials": 
+    "",
+  "time": {
+    "total": "45 Min"
+  },
+  "amount": 4,
   "ingredients": [
-    "eine halbe oder kleinere Süßkartoffel pro Person",
+    "2 große oder 4 kleine Süßkartoffeln",
     "[Joghurt Dip](#joghurt_dip.json)",
     { "section": "Füllung" },
     "1 Zwiebel",

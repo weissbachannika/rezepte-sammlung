@@ -3,6 +3,12 @@
   "file": "ratatouille.json",
   "title": "Ratatouille (mit Gnocchi)",
   "tags": ["Hauptgericht", "One-Pot", "Hausmannskost"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "30 Min"
+  },
+  "amount": 2,
   "ingredients": [
     "1 große Zwiebel",
     "1 Zucchini",
@@ -39,5 +45,6 @@
     "Zum Servieren das Ratatouille in eine Schüssel oder einen tiefen Teller geben und ein paar Gnocchi als crispy Topping oben drauf."
   ],
   "notes": "",
+  "credits": "Franzi",
   "image": "./images/Ratatouille.jpg"
 }

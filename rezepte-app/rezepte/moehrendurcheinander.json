@@ -3,6 +3,12 @@
   "file": "moehrendurcheinander.json",
   "title": "Möhrendurcheinander",
   "tags": ["Hauptgericht", "One-Pot", "Hausmannskost", "Low-Effort", "Suppe"],
+  "materials": 
+    "",
+  "time": {
+    "total": "45 Min"
+  },
+  "amount": 4,
   "ingredients": [
     "600 g Möhren",
     "300 g Kartoffeln",
@@ -24,5 +30,6 @@
     "Dazu eignet sich getoastetes Brot, Croutons, vegane Wiener Würstchen oder angebratener Räuchertofu."
   ],
   "notes": "",
+  "credits": "Mamsi",
   "image": ""
 }

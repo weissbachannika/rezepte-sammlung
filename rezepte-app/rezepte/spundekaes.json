@@ -3,6 +3,12 @@
   "file": "spundekaes.json",
   "title": "Spundekäs",
   "tags": ["Dip", "Hausmannskost", "Aufstrich", "Snack"],
+  "materials": "",
+  "time": {
+    "prep": "",
+    "total": "10 Min"
+  },
+  "amount": 6,
   "ingredients": [
     "125 g vegane Butter",
     "200 g veganer (Kräuter) Frischkäse",
@@ -20,5 +26,6 @@
     "Dann noch mindestens 1 Stunde in den Kühlschrank stellen."
   ],
   "notes": "Dazu passt kleingeschnittenes Rohkost-Gemüse und Brezeln oder Salzgebäck.",
+  "credits": "Mamsi",
   "image": ""
 }

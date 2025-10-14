@@ -5,10 +5,10 @@
   "tags": ["Hauptgericht"],
   "materials": 
     "",
-    
   "time": {
-    "total": "X Min"
+    "total": "1 Std"
   },
+  "amount": 6,
   "ingredients": [
     { "section": "Teig" },
     "375 g Mehl",
@@ -51,7 +51,7 @@
     "Wenn das Gemüse leicht braun wird, kann das Pesto und die Gewürze dazu gegeben werden.",
     "Wenn die Pfannkuchen fertig sind und das Gemüse in der Füllung durch ist, können die einzelnen Pfannkuchen mit etwas Füllung und etwas Creme Vega getoppt werden."
   ],
-  "notes": "Für 3–4 Personen.",
+  "notes": "",
   "credits": "",
   "image": ""
 }
