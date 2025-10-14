@@ -371,7 +371,7 @@ li { margin: 4px 0; }
   position: relative;
   font-size: 0.8rem;       /* Text ebenfalls kleiner */
   color: var(--text);
-  padding-left: 25px;      /* Platz für den Pfeil, gleiche Einrückung wie Steps */
+  padding-left: 20px;      /* Platz für den Pfeil, gleiche Einrückung wie Steps */
 }
 
 /* Pfeil-Symbol links vom Text, gleiche Linie wie Bullet-Badges der Steps */
@@ -379,10 +379,10 @@ li { margin: 4px 0; }
   content: "→";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1px;
   font-size: 1rem;
   line-height: 1.4;
-  color:#33568a;
+  color: var(--subtext);
 }
 
 .credits {
@@ -397,7 +397,7 @@ li { margin: 4px 0; }
   font-size: 0.9rem;
   position: absolute;
   left: 0;
-  top: -1.5px;
+  top: -1.4px;
   color: var(--subtext);  
 }
 .h.small {

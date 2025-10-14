@@ -1,5 +1,6 @@
 {
   "id": "r55",
+  "file": "pancakes.json",
   "title": "Pancakes",
   "tags": ["Frühstück", "Süßes", "Low-Effort"],
   "ingredients": [
@@ -20,5 +21,6 @@
     "Nach Belieben mit Apfelmus, Ahornsirup, Beeren und Kokosraspeln oder anderen Toppings nach Wahl servieren."
   ],
   "notes": "",
+  "credits": "edeka.de",
   "image": ""
 }

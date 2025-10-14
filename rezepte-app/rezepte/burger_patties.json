@@ -1,11 +1,12 @@
 {
   "id": "r30",
+  "file": "burger_patties.json",
   "title": "Burger Patties",
   "tags": [
     "Beilage", "Hauptgericht", "High-Protein"
   ],
   "materials": 
-    "Große Schüssel, Gabel (oder Mixer), große Pfanne",
+    "Große Schüssel, Gabel (oder Mixer)",
 
   "time": {
     "prep": "5 Min",

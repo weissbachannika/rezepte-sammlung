@@ -1,5 +1,6 @@
 {
   "id": "r66",
+  "file": "orangen-schoko-plaetzchen.json",
   "title": "Orangen-Schoko-Plätzchen",
   "tags": ["Backen", "Kekse", "Winter", "Süßes"],
   "ingredients": [
@@ -24,5 +25,6 @@
     "Die Kuvertüre in einem Wasserbad schmelzen und die Plätzchen sprenkeln."
   ],
   "notes": "",
+  "credits": "rewe.de",
   "image": "./images/Schoko_orangen_kekse.jpeg"
 }

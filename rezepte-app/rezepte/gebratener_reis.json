@@ -1,5 +1,6 @@
 {
   "id": "r5",
+  "file": "gebratener_reis.json",
   "title": "Gebratener Reis mit marinierter Aubergine & Tofu",
   "tags": [
     "Hauptgericht", "Asiatisch", "Reis"
@@ -8,7 +9,7 @@
     "",
     
   "time": {
-    "total": "X Min"
+    "total": ""
   },
   "ingredients": [
     "1 Aubergine",

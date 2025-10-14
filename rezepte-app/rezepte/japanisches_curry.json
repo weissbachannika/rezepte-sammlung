@@ -1,5 +1,6 @@
 {
   "id": "r2",
+  "file": "japanisches_curry.json",
   "title": "Japanisches Curry",
   "tags": [
     "Hauptgericht", "Asiatisch", "Reis", "Nudeln", "Curry"
@@ -50,5 +51,6 @@
     "Das abgedeckt so lange köcheln lassen, bis das gewählte Gemüse durch ist"
   ],
   "notes": "",
+  "credits": "",
   "image": "./images/Japanisches_curry1.jpg"
 }

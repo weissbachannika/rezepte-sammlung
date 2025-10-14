@@ -1,11 +1,12 @@
 {
   "id": "r52",
+  "file": "apple_crumble.json",
   "title": "Apple Crumble",
   "tags": [
     "Süßes", "Backen"
   ],
     "materials": 
-    "Auflaufform (25x25 cm), Rührschüssel, Handrührgerät (opt.), Zitronenpresse (opt.)",
+    "Auflaufform (25x25 cm), Zitronenpresse (opt.)",
 
   "time": {
     "total": "20 Min + 40 Min Backzeit "
@@ -30,7 +31,7 @@
   "steps": [
     "Mehl, Haferﬂocken, Zucker und Salz in einer Schüssel vermengen",
     "Vegane Butter dazugeben und mit den Händen zu einem krümeligen Teig kneten",
-    "Streusel für 20–30 Minuten kaltstellen",
+    "Streusel für 20–30 Minuten kaltstellen (opt.)",
     "Anschließend Äpfel schälen und vierteln. Das Gehäuse entfernen und die Äpfel in ungefähr 2 cm große Würfel schneiden",
     "Die Äpfel mit Zitronensaft, Zucker, Vanillezucker und Zimt mischen",
     "Die Auﬂaufform mit etwas veganer Butter ausstreichen",

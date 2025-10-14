@@ -1,7 +1,12 @@
 {
   "id": "r54",
+  "file": "zimtwecken.json",
   "title": "Zimtwecken",
   "tags": ["Backen", "Süßes", "Snack"],
+  "materials": "",
+  "time": {
+    "total": ""
+  },
   "ingredients": [
     "270 ml Pflanzenmilch",
     "½–1 Hefewürfel",
@@ -32,5 +37,6 @@
     "Nach etwa 20 Minuten (Schnecken sollten leicht braun sein, aber nicht zu dunkel) die Zimtwecken aus dem Ofen nehmen."
   ],
   "notes": "",
+  "credits": "Mamsi",
   "image": "./images/Zimtwecken.jpg"
 }

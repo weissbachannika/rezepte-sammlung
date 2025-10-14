@@ -1,6 +1,7 @@
 {
   "id": "r57",
-  "title": "Himbeer-Orange Marmelade",
+  "file": "himbeer-orange_marmelade.json",
+  "title": "Himbeer-Orangen Marmelade",
   "tags": ["Aufstrich", "Frühstück", "Süßes"],
   "materials": 
     "",
@@ -22,5 +23,6 @@
     "Die Marmelade in heiß ausgewaschene Gläser und Deckel füllen und fest zumachen."
   ],
   "notes": "",
+  "credits": "Oma",
   "image": ""
 }

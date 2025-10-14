@@ -1,11 +1,12 @@
 {
   "id": "r15",
+  "file": "chili_con_soja.json",
   "title": "Chili con Soja",
   "tags": [
     "Hauptgericht", "Mexikanisch", "One-Pot", "Low-Effort", "Reis", "High-Protein"
   ],
   "materials": 
-    "Geoßer Topf",
+    "",
 
   "time": {
     "prep": "5 Min",

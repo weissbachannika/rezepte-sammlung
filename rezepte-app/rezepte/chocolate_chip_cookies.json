@@ -1,13 +1,14 @@
 {
   "id": "r65",
+  "file": "chocolate_chip_cookies.json",
   "title": "Chocolate Chip Cookies",
   "tags": ["Backen", "Kekse", "Süßes", "Snack"],
   "materials": 
-    "Rührschüssel",
+    "",
 
   "time": {
     "prep": "5 Min",
-    "total": "30 Min + Zeit zum Kaltstellen"
+    "total": "20 Min + 13 Min Backzeit + Abkühlzeit"
   },
   "ingredients": [
     "100 g Kokosöl",

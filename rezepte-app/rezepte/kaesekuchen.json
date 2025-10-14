@@ -1,12 +1,12 @@
 {
   "id": "r19",
+  "file": "kaesekuchen.json",
   "title": "Käsekuchen",
   "tags": ["Backen", "Kuchen", "Süßes"],
   "materials": 
-    "",
-    
+    "Springform 26 cm, feine Küchenreibe, Alufolie (opt.)",
   "time": {
-    "total": "X Min"
+    "total": "30 Min + 1h Backzeit"
   },
   "ingredients": [
     { "section": "Boden" },
@@ -25,13 +25,14 @@
   ],
   "spices": [],
   "steps": [
-    "Die Zutaten für den Boden zu einem glatten Teig verkneten und für ca. 30 Minuten kühlen.",
+    "Die Zutaten für den Boden zu einem glatten Teig verkneten (und für ca. 30 Minuten kühlen).",
     "Für die Füllung den Joghurt mit dem Zucker, der abgeriebenen Schale der Zitrone und dem Puddingpulver verrühren. Die Margarine schmelzen und unterrühren.",
-    "Die 26 cm Springform fetten und den Teig darin gleichmäßig verteilen und mit einer Gabel ein paar kleine Löcher in den Teig stechen. Dabei einen Rand von 2–3 cm Höhe bilden.",
+    "Die Springform fetten und den Teig darin gleichmäßig verteilen und mit einer Gabel ein paar kleine Löcher in den Teig stechen. Dabei einen Rand von 2–3 cm Höhe bilden.",
     "Die Joghurtmasse in die Form füllen und den Kuchen im vorgeheizten Backofen (180°C Ober-/Unterhitze) circa 60 Minuten goldgelb backen.",
     "Falls der Kuchen zu dunkel wird, mit Alufolie abdecken.",
     "Nach dem Backen im geöffneten Backofen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er völlig kalt ist."
   ],
   "notes": "",
+  "credits": "[rewe.de](https://www.rewe.de/rezepte/veganer-kaesekuchen/)",
   "image": ""
 }

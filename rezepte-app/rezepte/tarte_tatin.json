@@ -1,7 +1,12 @@
 {
   "id": "r51",
+  "file": "tarte_tatin.json",
   "title": "Tarte Tatin",
   "tags": ["Backen", "Süßes"],
+  "materials": "Ofenfeste Pfanne, großer Teller",
+  "time": {
+    "total": "15 Min + 30 Min Backzeit"
+  },
   "ingredients": [
     "100 g Zucker",
     "das Mark von 1 Vanilleschote (oder Vanilleextrakt)",
@@ -21,6 +26,7 @@
     "Danach die Pfanne mit einem Topflappen herausnehmen, einen großen Teller bzw. eine Dessertplatte nehmen, auf die Pfanne legen und das Ganze vorsichtig stürzen.",
     "Kurz abkühlen lassen und mit Vanilleeis servieren."
   ],
-  "notes": "Ofenfeste Pfanne verwenden.",
+  "notes": "",
+  "credits": "[chefkoch.de](http://chefkoch.de/rezepte/1930271314437205/Tarte-Tatin.html)",
   "image": "./images/Tarte_tatin.jpg"
 }

@@ -1,7 +1,12 @@
 {
   "id": "r14",
+  "file": "tortelliniauflauf.json",
   "title": "Tortelliniauflauf",
   "tags": ["Hauptgericht", "Pasta", "Nudeln", "Backen", "Low-Effort"],
+  "materials": "25x25 cm Auflaufform mit Deckel oder Alufolie",
+  "time": {
+    "total": "10 Min + 40 Min Backzeit"
+  },
   "ingredients": [
     "500 g Tortellini",
     "1 Zwiebel",
@@ -20,11 +25,12 @@
   ],
   "steps": [
     "Die Zwiebel in kleine Würfel schneiden.",
-    "Die Tortellini mit den Tomaten, Sahne, Zwiebeln und ggf. Speck in eine 25 x 25 cm Auflaufform geben und alles gut vermengen und würzen.",
+    "Die Tortellini mit den Tomaten, Sahne, Zwiebeln und ggf. Speck in eine Auflaufform geben und alles gut vermengen und würzen.",
     "Die Tortellinis sollten alle bedeckt sein, also ggf. noch gehackte/passierte Tomaten oder Sahne nachgießen.",
     "Die Auflaufform jetzt abdecken und bei 175°C für erstmal 15–20 Minuten in den Ofen.",
     "Dann die Auflaufform kurz rausholen und den Käse drüber streuen und das Ganze dann nochmal für 15–20 Minuten weiterbacken, dieses Mal ohne Deckel."
   ],
   "notes": "",
+  "credits": "Mamsi",
   "image": "./images/Tortelliniauflauf.jpg"
 }

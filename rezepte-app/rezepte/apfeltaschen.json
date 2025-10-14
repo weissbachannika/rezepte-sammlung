@@ -1,11 +1,12 @@
 {
   "id": "r53",
+  "file": "apfeltaschen.json",
   "title": "Apfeltaschen",
   "tags": [
     "Snack", "Süßes", "Backen", "Low-Effort"
   ],
   "materials": 
-    "Kartoffelstampfer, Backblech, Gabel, Pinsel (opt.)",
+    "Kartoffelstampfer, Pinsel (opt.)",
 
   "time": {
     "total": "insg. 1 Std. (+ Abkühlzeit zwischendurch)"

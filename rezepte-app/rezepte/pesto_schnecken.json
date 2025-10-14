@@ -1,5 +1,6 @@
 {
   "id": "r41",
+  "file": "pesto_schnecken.json",
   "title": "Pesto Schnecken",
   "tags": ["Snack", "Backen", "Low-Effort"],
   "ingredients": [
@@ -16,5 +17,6 @@
     "Das jetzt wie auf der Blätterteigpackung beschrieben backen (200°C für 20 Minuten)."
   ],
   "notes": "",
+  "credits": "instagram: Minimalara",
   "image": ""
 }

@@ -1,5 +1,6 @@
 {
   "id": "r3",
+  "file": "indische_linsensuppe.json",
   "title": "Indische Linsensuppe",
   "tags": [
     "Hauptgericht", "Asiatisch", "Indisch", "Suppe", "One-Pot", "Curry", "High-Protein", "Low-Effort"
@@ -41,5 +42,6 @@
     "Mit Brot servieren"
   ],
   "notes": "Die Suppe schmeckt am nächsten Tag vielleicht sogar noch ein bisschen besser",
+  "credits": "Opa",
   "image": "./images/Linsensuppe.jpg"
 }

@@ -42,8 +42,8 @@ function toArray(maybeArrayOrString) {
 function slugifyTitle(s) {
   return String(s)
     .toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g,'');
 }
 
@@ -278,7 +278,8 @@ modal.addEventListener('click', (e) => {
   if (!a) return;
   e.preventDefault();
   const targetFile = a.dataset.file.replace(/^\#/, '').replace(/\.json$/,'').trim();
-  const hit = RECIPES.find(r => slugifyTitle(r.title) === targetFile);
+  const sameBase = (s) => !!s && s.replace(/^\.\/?/, '').replace(/^rezepte\//, '').replace(/\.json$/,'').trim() === targetFile;
+  const hit = RECIPES.find(r => sameBase(r.file) || slugifyTitle(r.title) === targetFile);
   if (hit) {
     openModal(hit.id, { push: true });  //beim Linkklick vorheriges Rezept merken
   } else {

@@ -1,5 +1,6 @@
 {
   "id": "r67",
+  "file": "olivenoel-kekse.json",
   "title": "Olivenöl-Kekse",
   "tags": ["Backen", "Kekse", "Süßes", "Low-Effort", "Winter"],
   "ingredients": [
@@ -17,5 +18,6 @@
     "Die leicht warmen Plätzchen mit Puderzucker bestreuen."
   ],
   "notes": "",
+  "credits": "Backkurs von der Volkshochschule Berlin",
   "image": ""
 }

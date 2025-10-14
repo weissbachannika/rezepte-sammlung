@@ -1,12 +1,13 @@
 {
   "id": "r59",
+  "file": "hefezopf.json",
   "title": "Hefezopf",
   "tags": ["Backen", "Süßes", "Frühstück", "Ostern"],
   "materials": 
     "",
     
   "time": {
-    "total": "X Min"
+    "total": ""
   },
   "ingredients": [
     "½ Würfel frische Hefe (oder 1 Pck Trockenhefe)",
@@ -44,5 +45,6 @@
     "Der Hefezopf hält sich luftdicht verpackt und bei Zimmertemperatur gelagert 2–3 Tage.",
     "Restlicher Hefeteig kann auch für bis zu 3 Monate und der fertig gebackene Hefezopf für bis zu 6 Monate eingefroren werden."
   ],
+  "credits": "",
   "image": "./images/Hefezopf.jpg"
 }

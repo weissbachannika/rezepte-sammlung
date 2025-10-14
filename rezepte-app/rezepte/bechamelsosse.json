@@ -1,10 +1,11 @@
 {
   "id": "r42",
+  "file": "bechamelsosse.json",
   "title": "Béchamelsoße",
   "tags": ["Soße", "Hausmannskost"],
 
   "materials": 
-    "(Kleiner) Topf, Schneebesen",
+    "Schneebesen",
 
   "time": {
     "prep": "5 Min",

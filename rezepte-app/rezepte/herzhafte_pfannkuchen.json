@@ -1,5 +1,6 @@
 {
   "id": "r28",
+  "file": "herzhafte_pfannkuchen.json",
   "title": "Herzhafte Pfannkuchen mit “Füllung”",
   "tags": ["Hauptgericht"],
   "materials": 
@@ -51,5 +52,6 @@
     "Wenn die Pfannkuchen fertig sind und das Gemüse in der Füllung durch ist, können die einzelnen Pfannkuchen mit etwas Füllung und etwas Creme Vega getoppt werden."
   ],
   "notes": "Für 3–4 Personen.",
+  "credits": "",
   "image": ""
 }

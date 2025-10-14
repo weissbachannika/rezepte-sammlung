@@ -1,11 +1,12 @@
 {
   "id": "r46",
+  "file": "basilikum_pesto.json",
   "title": "Basilikum Pesto",
   "tags": [
     "Soße", "Italienisch", "Pasta", "Nudeln", "Low-Effort"
   ],
   "materials": 
-    "Mixer/Food Processor, beschichtete Pfanne",
+    "Mixer/Food Processor",
 
   "time": {
     "total": "15 Min"

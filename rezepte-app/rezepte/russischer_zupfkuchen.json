@@ -1,7 +1,14 @@
 {
   "id": "r61",
+  "file": "russischer_zupfkuchen.json",
   "title": "Russischer Zupfkuchen",
   "tags": ["Backen", "Kuchen", "Süßes"],
+  "materials": 
+    "Springform 26 cm, feine Küchenreibe",
+
+  "time": {
+    "total": "30 Min + 1h Backzeit"
+  },
   "ingredients": [
     { "section": "Teig" },
     "300 g Mehl",
@@ -16,7 +23,7 @@
     "2 Pck. Vanillepuddingpulver",
     "200 g Zucker",
     "30 g Zitronensaft",
-    "½ Fläschchen Zitronenaroma",
+    "½ Fläschchen Zitronenaroma (opt.)",
     "geriebene Schale von 1 Bio Zitrone",
     "100 g vegane Butter"
   ],
@@ -28,12 +35,13 @@
     { "section": "Für die Füllung" },
     "In einer Schüssel den Skyr, Zucker, Zitronenschale, Zitronensaft, Zitronenaroma und geschmolzene Butter gut verrühren.",
     "Dann das Puddingpulver gut untermixen, sodass eine glatte Masse ohne Klümpchen entsteht.",
-    "⅔ von dem Teig in der gefetteten 26 cm Springorm verteilen und einen 2–3 cm hohen Rand bilden.",
+    "⅔ von dem Teig in der gefetteten Springorm verteilen und einen 2–3 cm hohen Rand bilden.",
     "Die Füllung auf den Boden in der Form gießen.",
     "Das restliche Drittel Teig als Streusel auf der Füllung verteilen.",
     "Im Ofen für ca. 60 Minuten bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
     "Nach dem Backen im geöffneten Backofen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er völlig kalt ist."
   ],
   "notes": "",
+  "credits": "[Veggie Einhorn](https://veggie-einhorn.de/veganer-russischer-zupfkuchen/)",
   "image": "./images/Zupfkuchen.jpg"
 }

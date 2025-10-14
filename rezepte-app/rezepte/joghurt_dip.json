@@ -1,5 +1,6 @@
 {
   "id": "r48",
+  "file": "joghurt_dip.json",
   "title": "Joghurt Dip",
   "tags": ["Dip", "Low-Effort"],
   "materials": 
@@ -23,5 +24,6 @@
     "Alle Zutaten für den Dip in einer Schüssel mixen und mit Gewürzen abschmecken."
   ],
   "notes": "",
+  "credits": "Bella",
   "image": ""
 }
