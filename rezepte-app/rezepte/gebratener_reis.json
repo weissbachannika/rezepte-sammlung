@@ -6,16 +6,17 @@
     "Hauptgericht", "Asiatisch", "Reis"
   ],
   "materials": 
-    "",
+    "2 Tupperdosen zum Marinieren, 3 Pfannen",
     
   "time": {
-    "total": ""
+    "total": "45 Min"
   },
+  "amount": 2,
   "ingredients": [
     "1 Aubergine",
-    "ca 200 g Reis vom Vortag",
+    "ca 200 g gekochter Reis vom Vortag",
     "2 Frühlingszwiebeln",
-    "1 Block Natur Tofu",
+    "200 g Natur Tofu",
     "1 gehäufter TL Speisestärke",
     "Sesam",
     "1 EL Sesamöl",

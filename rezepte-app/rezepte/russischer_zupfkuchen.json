@@ -5,10 +5,10 @@
   "tags": ["Backen", "Kuchen", "Süßes"],
   "materials": 
     "Springform 26 cm, feine Küchenreibe",
-
   "time": {
-    "total": "30 Min + 1h Backzeit"
+    "total": "30 Min + 1 Std Backzeit"
   },
+  "amount": 12,
   "ingredients": [
     { "section": "Teig" },
     "300 g Mehl",

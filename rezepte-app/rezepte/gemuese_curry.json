@@ -6,21 +6,21 @@
     "Hauptgericht", "Asiatisch", "One-Pot", "Indisch", "Reis", "Curry"
   ],
   "materials": 
-    "Großer Topf",
-    
+    "",
   "time": {
     "total": "30–40 Min"
   },
+  "amount": 4,
   "ingredients": [
-    "Gemüse deiner Wahl (Brokkoli, Paprika, Zucchini, Pilze,...)",
+    "ca 500 g Gemüse deiner Wahl (Brokkoli, Paprika, Zucchini, Pilze,...)",
     "1 Dose Kichererbsen",
-    "1 Block Naturtofu (200 g)",
+    "200 g Naturtofu (opt)",
     "1 Zwiebel",
     "1 kleines Stück Ingwer",
     "3–5 Zehen Knoblauch",
     "1 Dose Kokosmilch",
-    "1–2 Tasse(n) Reis (abhängig von wie viel Gemüse du nimmst und für wie viele Leute)",
-    "2–4 Tassen Gemüsebrühe (abhängig von Reismenge und gewünschter Konsistenz)",
+    "1 Tasse(n) Reis",
+    "2 Tassen Gemüsebrühe",
     "Sojasoße, Sesamöl, Erdnussöl, vegan mushroom sauce , Sriracha",
     "Frühlingszwiebeln, Chili Mayo, Sesam als Toppings"
   ],
@@ -30,8 +30,7 @@
     "1 TL Kreuzkümmel",
     "1 TL Paprika Edelsüß",
     "½ TL Kurkuma",
-    "Brühepulver",
-    "Salz, Pfeffer"
+    "Salz & Pfeffer"
   ],
   "steps": [
     "Die Zwiebel, den Ingwer und Knoblauch fein hacken", 

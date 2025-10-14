@@ -5,10 +5,10 @@
   "tags": ["Beilage", "Hauptgericht", "Snack", "High-Protein"],
   "materials": 
     "",
-    
   "time": {
-    "total": "X Min"
+    "total": "30 Min"
   },
+  "amount": 10,
   "ingredients": [
     "250 g Kichererbsen",
     "75 g Couscous",

@@ -4,14 +4,15 @@
   "title": "Donauwelle",
   "tags": ["Backen", "Kuchen", "Süßes"],
   "materials": 
-    "",
+    "22 cm Springform (oder 30x40 cm Backblech für doppelte Menge)",
     
   "time": {
-    "total": "X Std."
+    "total": "1 Std"
   },
+  "amount": 12,
   "ingredients": [
     { "section": "Kuchenteig" },
-    "240 g Weizen- (oder Dinkel-)mehl",
+    "240 g Mehl",
     "2 EL Vanillepuddingpulver",
     "2 TL Backpulver",
     "½ TL Natron (oder 1 TL mehr Backpulver)",
@@ -54,6 +55,7 @@
     "Dann vorsichtig über den abgekühlten Kuchen gießen.",
     "Für das wellenförmige Donauwellen-Muster mit einer Gabel wellenförmig durch die Schokolade fahren."
   ],
-  "notes": "Für 22 cm Springform (für ein Backblech 30x40, einfach alles verdoppeln).",
+  "notes": "",
+  "credits": "[biancazapatka](https://biancazapatka.com/de/vegane-donauwelle/)",
   "image": "./images/Donauwelle.jpg"
 }

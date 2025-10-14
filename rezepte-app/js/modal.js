@@ -128,6 +128,7 @@ export function openModal(id, opts = {}) {
   const ulSp        = $('#modalSpices');
   const ingBox      = $('#ingredientsBox');
   const ulIng       = $('#modalIngredients');
+  const servings = $('#servings');
 
   const timeChip    = $('#timeChip');
   const timeText    = $('#modalTimeText');
@@ -145,6 +146,16 @@ export function openModal(id, opts = {}) {
   } else {
     timeText.textContent = '';
     timeChip.style.display = 'none';
+  }
+
+  const amt = Number(r?.amount);
+  if (Number.isFinite(amt) && amt > 0) {
+    const label = amt === 1 ? 'Portion' : 'Portionen';
+    servings.textContent = `${amt} ${label}`;
+    servings.style.display = '';
+  } else {
+    servings.textContent = '';
+    servings.style.display = 'none';
   }
 
   // --- Zutaten ---

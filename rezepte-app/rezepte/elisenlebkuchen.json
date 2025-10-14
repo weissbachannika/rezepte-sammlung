@@ -4,11 +4,11 @@
   "title": "Elisenlebkuchen",
   "tags": ["Backen", "Winter", "Süßes"],
   "materials": 
-    "",
-    
+    "Mixer (opt), feine Küchenreibe, Handrührgerät",
   "time": {
-    "total": "X Min"
+    "total": "45 Min + 25 Min Backzeit"
   },
+  "amount": 20,
   "ingredients": [
     "500 g feinster Zucker",
     "250 ml Aquafaba",
@@ -34,5 +34,5 @@
   ],
   "notes": "",
   "credits": "Trudi",
-  "image": ""
+  "image": "./images/Lebkuchen.jpg"
 }
