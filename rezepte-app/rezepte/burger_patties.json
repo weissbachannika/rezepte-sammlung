@@ -42,7 +42,7 @@
   "steps": [
     "Kidneybohnen und Kichererbsen durch ein Sieb abgießen und anschließend in einer Schüssel mit einer Gabel möglichst klein drücken.",
     "Zwiebel und Knoblauch klein schneiden.",
-    "Alles zusammen in der Schüssel vermischen, bis eine einheitliche, klebrige Masse entsteht.",
+    "Alle Zutaten zusammen in der Schüssel vermischen, bis eine einheitliche, klebrige Masse entsteht.",
     "Aus dem “Teig” Burger Patties formen und von beiden Seiten in der Pfanne anbraten."
   ],
   "notes": [
@@ -51,6 +51,6 @@
     "Falls dir der “Teig” zu flüssig ist, gib mehr Haferflocken hinzu, ist er zu trocken, kannst du etwas Pflanzenmilch hinzugeben, bis du eine angenehme Konsistenz erhältst.",
     "Gut kombinierbar mit [Kartoffelspalten](#kartoffelspalten.json) und/oder [Joghurt-Dip](#joghurt_dip.json)"
   ],
-  "credits": "Jojo",
+  "credits": "[biancazapatka](https://biancazapatka.com/de/das-beste-vegane-burger-rezept/#recipe)",
   "image": "./images/Burger.jpg"
 }
