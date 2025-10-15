@@ -383,7 +383,7 @@ li { margin: 4px 0; }
   content: "→";
   position: absolute;
   left: 0;
-  top: -1px;
+  top: -3px;
   font-size: 1rem;
   line-height: 1.4;
   color: var(--subtext);
@@ -401,7 +401,7 @@ li { margin: 4px 0; }
   font-size: 0.9rem;
   position: absolute;
   left: 0;
-  top: -1.4px;
+  top: -1.5px;
   color: var(--subtext);  
 }
 .h.small {

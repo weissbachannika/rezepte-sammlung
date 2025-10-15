@@ -3,7 +3,7 @@
   "file": "sheperds_pie.json",
   "title": "Shepherd's Pie",
   "tags": ["Hauptgericht", "Backen", "Hausmannskost", "Kartoffeln"],
-  "materials": "",
+  "materials": "20 x 25 cm Auflaufform (tief)",
   "time": {
     "prep": "",
     "total": "30 Min + 30 Min Backzeit"
@@ -41,7 +41,7 @@
     "Ein paar Margarineflocken auf das Kartoffelpüree geben und mit einer Gabel verteilen.",
     "Das Ganze dann noch für ca. 30 Minuten bei 180°C Umluft backen."
   ],
-  "notes": "Tiefe Auflaufform (ca. 20 × 25 cm) verwenden.",
+  "notes": "",
   "credits": "Mamsi",
   "image": "./images/Sheperds_pie.jpg"
 }
