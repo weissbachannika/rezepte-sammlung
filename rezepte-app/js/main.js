@@ -107,19 +107,42 @@ async function main() {
     }
   });
 
-  function updateAsideBottomGap() {
-    const f = document.getElementById('siteFooter');
-    if (!f) return;
+  function capTagList() {
+    const aside = document.querySelector('aside');
+    const scroll = document.getElementById('tagsScroll');
+    const footer = document.getElementById('siteFooter');
+    if (!aside || !scroll || !footer) return;
 
-    const r = f.getBoundingClientRect();
-    const visible = Math.max(0, Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0));
-    const gap = visible > 0 ? Math.min(visible, r.height) + 32 : 0; // 8px Puffer
+    const asideRect  = aside.getBoundingClientRect();
+    const footerRect = footer.getBoundingClientRect();
 
-    document.documentElement.style.setProperty('--aside-gap', `${gap}px`);
+    // sichtbarer Footer-Anteil
+    const footerVisible = Math.max(
+      0,
+      Math.min(footerRect.bottom, window.innerHeight) - Math.max(footerRect.top, 0)
+    );
+
+    // Abstand, der unter der Liste frei bleiben soll
+    const gapBottom = 60; // px
+
+    // verfügbare Höhe ab Oberkante Aside bis Viewport-Unterkante, abzüglich sichtbarem Footer + Gap
+    const availableAside = Math.max(0, window.innerHeight - asideRect.top - footerVisible - gapBottom);
+
+    // "Chrome" oberhalb der Scrollfläche im Aside (Titelzeile, Padding usw.)
+    const chromeTop = document.querySelector('.section-title') 
+        ? document.querySelector('.section-title').getBoundingClientRect().bottom - asideRect.top
+        : 0;
+    const padBottom = parseFloat(getComputedStyle(aside).paddingBottom) || 0;
+
+    const availableForScroll = Math.max(0, availableAside - chromeTop - padBottom);
+
+    scroll.style.maxHeight = `${availableForScroll}px`;
   }
-  window.addEventListener('scroll', updateAsideBottomGap, { passive: true });
-  window.addEventListener('resize', updateAsideBottomGap);
-  updateAsideBottomGap();
+
+  window.addEventListener('scroll', capTagList, { passive: true });
+  window.addEventListener('resize', capTagList);
+  document.addEventListener('DOMContentLoaded', capTagList);
+  capTagList();
 }
 
 main();

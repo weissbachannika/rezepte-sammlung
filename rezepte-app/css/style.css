@@ -99,14 +99,12 @@ header {
 aside {
   position: sticky; 
   top: calc(var(--header-top) + var(--header-h) + var(--gap)); 
-  bottom: var(--footer-gap);
   align-self: start;
   background: var(--panel); 
   border: 1px solid #1f2432;
   border-radius: var(--radius); 
   padding: 16px; 
   box-shadow: var(--shadow);
-  margin-bottom: var(--aside-gap);
   max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + 8px));
   height: fit-content;
   overflow-y: auto;
@@ -118,6 +116,10 @@ aside {
 .tag-scroller { overflow: visible; max-height: none; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags-toggle { display: none; }
+#tagsScroll{
+  overflow-y: auto;
+  max-height: none; /* wird per JS gesetzt */
+}
 
 main { min-height: 60vh; display: grid; grid-template-rows: auto 1fr; gap: 16px; }
 .filters {
