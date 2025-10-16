@@ -1,6 +1,7 @@
 import { $, RECIPES } from './state.js';
 
 const modal = $('#recipeModal');
+if (modal && modal.style) modal.style.overscrollBehavior = 'contain';
 const closeBtn = $('#modalClose');
 
 let modalStack = [];
@@ -13,6 +14,7 @@ function handleClose() {
     openModal(prevId, { /* push */ push: false }); // zurück ohne erneut zu pushen
   } else {
     currentId = null;
+    unlockBodyScroll();
     modal.close();
   }
 }
@@ -107,6 +109,21 @@ function renderExternalLinks(text) {
     .join('');
 
   return html;
+}
+
+function __resetModalScroll() {
+  // reset scroll position of the dialog and its inner body
+  if (modal) modal.scrollTop = 0;
+  const body = modal && modal.querySelector('.modal-body');
+  if (body) body.scrollTop = 0;
+}
+
+function lockBodyScroll() {
+  document.documentElement.style.overflow = 'hidden';
+}
+
+function unlockBodyScroll() {
+  document.documentElement.style.overflow = '';
 }
 
 // --------------- Main ---------------
@@ -280,7 +297,12 @@ export function openModal(id, opts = {}) {
     creditsHeader.style.display = 'none';
     creditsWrap.style.display = 'none';
   }
+  // ensure we start at the top when switching recipes
+  __resetModalScroll();
+  lockBodyScroll();
   modal.showModal();
+  // enforce again on next frame in case layout shifts
+  requestAnimationFrame(__resetModalScroll);
 }
 
 // --- Klickbare Rezept-Links im Modal (Delegation) ---
@@ -297,3 +319,5 @@ modal.addEventListener('click', (e) => {
     alert(`Rezept "${targetFile}" nicht gefunden 😕`);
   }
 });
+
+modal.addEventListener('close', unlockBodyScroll);

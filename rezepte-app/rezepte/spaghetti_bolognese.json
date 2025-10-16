@@ -14,7 +14,7 @@
   "ingredients": [
     "250 g Spaghetti",
     "100 g Sojagranulat",
-    "1 Zwiebel",
+    "2 Zwiebeln",
     "2 Karotten (opt.)",
     "350 g passierte Tomaten",
     "1 Dose gehackte Tomaten (opt.)",
@@ -50,5 +50,5 @@
     "Statt Zucker kann man auch einen kleinen Schuss (Gewürz)Ketchup nehmen um die Säure der Tomaten auszugleichen"
   ],
   "credits": "Mamsi",
-  "image": ""
+  "image": "./images/Bolognese.jpg"
 }
