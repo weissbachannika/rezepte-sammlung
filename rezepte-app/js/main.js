@@ -106,6 +106,20 @@ async function main() {
       closeSearchBtn.style.display = 'none';
     }
   });
+
+  function updateAsideBottomGap() {
+    const f = document.getElementById('siteFooter');
+    if (!f) return;
+
+    const r = f.getBoundingClientRect();
+    const visible = Math.max(0, Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0));
+    const gap = visible > 0 ? Math.min(visible, r.height) + 32 : 0; // 8px Puffer
+
+    document.documentElement.style.setProperty('--aside-gap', `${gap}px`);
+  }
+  window.addEventListener('scroll', updateAsideBottomGap, { passive: true });
+  window.addEventListener('resize', updateAsideBottomGap);
+  updateAsideBottomGap();
 }
 
 main();

@@ -5,14 +5,16 @@
   --text: #e8eaf0;
   --subtext: #a9b1c3;
   --accent: #6ea8fe;
-  --accent-2: #9beddc;
+  --accent-2: #4872c0;
   --danger: #ff6b6b;
   --radius: 14px;
   --shadow: 0 8px 24px rgba(0,0,0,0.35);
   --header-top: 12px;
   --header-h: 56px;
   --gap: 12px;
-  --bottom-pad: 16px;
+  --aside-gap: 0px;
+  --footer-h: 0px;      /* reale Footerhöhe (anpassen, falls nötig) */
+  --footer-gap: 0px;    /* Abstand der Tag-Liste über dem Footer */
 }
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -35,7 +37,7 @@ a:hover { text-decoration: underline; }
   gap: 16px;
   max-width: 1400px;
   margin: 24px auto;
-  padding: 0 16px 24px;
+  padding: 0 16px 16px;
 }
 header {
   grid-column: 1 / -1;
@@ -95,10 +97,17 @@ header {
 }
 
 aside {
-  position: sticky; top: calc(var(--header-top) + var(--header-h) + var(--gap)); align-self: start;
-  background: var(--panel); border: 1px solid #1f2432;
-  border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow);
-  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + var(--bottom-pad) + 10px));
+  position: sticky; 
+  top: calc(var(--header-top) + var(--header-h) + var(--gap)); 
+  bottom: var(--footer-gap);
+  align-self: start;
+  background: var(--panel); 
+  border: 1px solid #1f2432;
+  border-radius: var(--radius); 
+  padding: 16px; 
+  box-shadow: var(--shadow);
+  margin-bottom: var(--aside-gap);
+  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + 8px));
   height: fit-content;
   overflow-y: auto;
 }
@@ -123,6 +132,19 @@ main { min-height: 60vh; display: grid; grid-template-rows: auto 1fr; gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
   justify-content: start;
 }
+
+.footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--subtext);
+  font-size: 0.85rem;
+  padding: 8px 0;
+  border-top: 1px solid #1f2432;
+  min-height: 0;
+}
+.footer a { color: var(--accent); }
+.footer a:hover { color: var(--accent-2); }
+
 .card {
   background: linear-gradient(180deg, #141720 0%, #10131b 100%);
   border: 1px solid #1f2432;
@@ -336,7 +358,7 @@ li { margin: 4px 0; }
   cursor: pointer;
 }
 .recipe-link:hover {
-  color: #6495EF;
+  color: var(--accent-2);
 }
 /* Layout für oberen Bereich */
 .meta-grid {
