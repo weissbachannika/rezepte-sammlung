@@ -458,6 +458,16 @@ li { margin: 4px 0; }
   min-width: 0;
 }
 
+a.chip {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.chip:hover {
+  text-decoration: none;
+  color: #FFFFFF; 
+}
+
 /* --- Responsive Layout --- */
 @media (max-width: 690px) {
   /* Nur mobil: Browser-Clear-Button im Suchfeld ausblenden */
