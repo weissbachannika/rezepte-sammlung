@@ -123,7 +123,7 @@ async function main() {
     );
 
     // Abstand, der unter der Liste frei bleiben soll
-    const gapBottom = 60; // px
+    const gapBottom = 46; // px
 
     // verfügbare Höhe ab Oberkante Aside bis Viewport-Unterkante, abzüglich sichtbarem Footer + Gap
     const availableAside = Math.max(0, window.innerHeight - asideRect.top - footerVisible - gapBottom);
