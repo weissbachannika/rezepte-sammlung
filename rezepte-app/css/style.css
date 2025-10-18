@@ -440,6 +440,8 @@ li { margin: 4px 0; }
 }
 
 .impressum-main {
+  max-width: 900px;
+  margin: 0 auto;
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
@@ -449,7 +451,6 @@ li { margin: 4px 0; }
 }
 
 .impressum-main section {
-  max-width: 800px;
   width: 100%;
 }
 

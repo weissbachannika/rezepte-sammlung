@@ -32,12 +32,14 @@ export function matches(recipe) {
   const query = (q || '').trim().toLowerCase();
   if (query) {
     const tokens = query.split(/\s+/).filter(Boolean);
+    const notesText = Array.isArray(recipe.notes) ? recipe.notes.join(' ') : String(recipe.notes || ''); // String ODER Array unterstützen
     const hay = [
       recipe.title,
       ...(recipe.ingredients || []),
       //...(recipe.spices || []),
       ...(recipe.tags || []),
       ...(recipe.notes || []),
+      notesText,
     ].join(' ').toLowerCase();
     for (const tok of tokens) {
       if (!hay.includes(tok)) return false;
