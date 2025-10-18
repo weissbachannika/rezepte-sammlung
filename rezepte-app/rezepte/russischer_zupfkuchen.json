@@ -30,16 +30,17 @@
   "spices": [],
   "steps": [
     { "section": "Für den Teig" },
-    "Alle trockenen Zutaten gut vermischen.",
+    "Alle trockenen Zutaten miteinander vermengen.",
     "Die Butter hinzufügen und alles zu einem Teig verkneten.",
     { "section": "Für die Füllung" },
     "In einer Schüssel den Skyr, Zucker, Zitronenschale, Zitronensaft, Zitronenaroma und geschmolzene Butter gut verrühren.",
-    "Dann das Puddingpulver gut untermixen, sodass eine glatte Masse ohne Klümpchen entsteht.",
+    "Dann das Puddingpulver gut unterrühren, sodass eine glatte Masse ohne Klumpen entsteht.",
+    { "section": "Kuchen bauen" },    
     "⅔ von dem Teig in der gefetteten Springorm verteilen und einen 2–3 cm hohen Rand bilden.",
     "Die Füllung auf den Boden in der Form gießen.",
     "Das restliche Drittel Teig als Streusel auf der Füllung verteilen.",
-    "Im Ofen für ca. 60 Minuten bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
-    "Nach dem Backen im geöffneten Backofen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er völlig kalt ist."
+    "Im Ofen für circa 1 Std bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
+    "Nach dem Backen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er ganz kalt ist."
   ],
   "notes": "",
   "credits": "[Veggie Einhorn](https://veggie-einhorn.de/veganer-russischer-zupfkuchen/)",

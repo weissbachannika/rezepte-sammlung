@@ -6,19 +6,25 @@
   "materials": 
     "30x30 cm Auflaufform",
   "time": {
-    "total": "30 Min + 40 Min Backzeit"
+    "total": "45 Min + 35 Min Backzeit"
   },
-  "amount": 4,
+  "amount": 6,
   "ingredients": [
-    "Lasagneplatten (15–20)",
+    "Lasagneplatten (12-15)",
+    {"section": "Für die Tomatensoßen"},
     "150 g Sojagranulat",
     "400 g passierte Tomaten",
-    "2 Karotten",
+    "1 Karotte",
     "1 Zwiebel",
-    "[Béchamelsoße](#bechamelsosse.json) oder 1 Packung Crème Vega",
-    "veganer Reibekäse"
+    "2 EL Tomatenmark",   
+    {"section": "Für die Béchamelsoße"},
+    "4 EL Margarine",
+    "6 EL Mehl",
+    "600 ml Hafermilch",
+    "150 g veganer Reibekäse"
   ],
   "spices": [
+    {"section": "Für die Tomatensoßen"},
     "2 Knoblauchzehen",
     "2 TL Oregano",
     "2 TL Basilikum",
@@ -26,20 +32,26 @@
     "1 TL Paprika edelsüß",
     "1 TL Paprika rosenscharf",
     "1 TL Zucker",
+    "Salz & Pfeffer",
+    {"section": "Für die Béchamelsoße"},
+    "1/4 Muskatnus",
+    "2 TL Brühepulver",
+    "4 EL Hefeflocken",
     "Salz & Pfeffer"
   ],
   "steps": [
-    "Sojahack vorbereiten: Sojahack mit Gewürzen, 1 EL von den passierten Tomaten und 3–4 EL Wasser in einer Schüssel vermischen und kurz stehen lassen.",
-    "Gemüse klein schneiden",
-    "Zwiebeln in einer Pfanne kurz anbraten.",
-    "Dann das Sojahack dazugeben und nochmal etwa 5 Minuten anbraten, bevor der Knoblauch und das restliche Gemüse dazu kommen.",
-    "Weitere 5 Minuten braten und dann mit passierten Tomaten ablöschen.",
-    "Ggf. jetzt die [Béchamelsoße](#bechamelsosse.json) machen",
-    "Dann in einer Backform abwechselnd Nudeln und Füllung schichten, dabei beliebig zwischen Béchamelsoße/Creme Vega, Bolognese und Reibekäse wächseln.",
-    "Die letzte Schicht gut mit Käse bedecken und für ca. 40 Minuten bei 200 °C Ober-/Unterhitze backen."
+    "Sojahack vorbereiten: Sojahack mit Gewürzen, 1 EL Tomatenmark und 3–4 EL heißes Wasser in einer Schüssel vermischen und kurz stehen lassen.",
+    "Die Zwiebel & Möhre klein schneiden und in einer tiefen Pfanne für ein paar Minuten anbraten.",
+    "Dann das Sojahack dazugeben und nochmal etwa 5 Minuten anbraten, bevor der Knoblauch dazu kommt.",
+    "Weitere 5 Minuten braten und dann mit passierten Tomaten ablöschen und mit Gewürzen deiner Wahl abschmecken und die Herdplatte ausmachen.",
+    "Jetzt die [Béchamelsoße](#bechamelsosse.json) zubereiten, dabei die Hefeflocken dazugeben",
+    "Dann in einer Backform abwechselnd Tomatensoße, Nudelplatten und Béchamelsoße schichten.",
+    "Die letzte Schicht gut mit Käse bedecken und für 30–40 Minuten bei 180°C Umluft backen."
   ],
   "notes": [
-    "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner."
+    "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner.",
+    "Statt Béchamelsoße kann man auch Creme Vega nehmen, um weniger Aufwand zu haben",
+    "In die Tomatensoße kannst du auch noch mehr Gemüse deiner Wahl geben"
   ],
-  "image": "./images/Mexikanische_lasagne.jpg"
+  "image": "./images/Lasagne1.jpg"
 }

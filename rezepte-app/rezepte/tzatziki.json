@@ -3,28 +3,29 @@
   "file": "tzatziki.json",
   "title": "Tzatziki",
   "tags": ["Dip", "Griechisch"],
-  "materials": "",
+  "materials": "grobe Küchenreibe, feines Sieb",
   "time": {
     "prep": "",
-    "total": "30 Min"
+    "total": "15 Min + Wartezeit"
   },
   "amount": 5,
   "ingredients": [
     "500 g Hafer Joghurt (ungesüßt)",
     "½ Gurke",
-    "2 Zehen Knoblauch",
     "2 EL Olivenöl",
-    "1 EL Weinessig",
-    "Salz & Pfeffer",
-    "optional: frischer Dill"
+    "1 EL Weißweinessig"
   ],
-  "spices": [],
+  "spices": [
+    "2 Zehen Knoblauch",
+    "Salz & Pfeffer"
+  ],
   "steps": [
-    "Gurke waschen und grob reiben. Nun die Raspeln in ein feines Sieb geben, über eine Schüssel oder die Spüle hängen und abtropfen lassen.",
-    "1 TL Salz hinzugeben, unterrühren und mindestens 20 Minuten stehen lassen. Anschließend mit einem Löffel die restliche Flüssigkeit ausdrücken.",
-    "Joghurt in eine Schüssel geben. Knoblauch schälen und zum Joghurt pressen.",
-    "Olivenöl, Weinessig und die Gurkenraspeln ebenfalls unterrühren. Mit Salz und Pfeffer abschmecken.",
-    "Den Tzatziki mindestens 90 Minuten im Kühlschrank stehen lassen. Vor dem Servieren nochmals abschmecken."
+    "Gurke waschen und reiben und die Raspeln in das Sieb geben und abtropfen lassen.",
+    "1 TL Salz hinzugeben und mindestens 20 Minuten stehen lassen. Anschließend die restliche Flüssigkeit ausdrücken.",
+    "Knoblauch schälen und klein hacken oder pressen und mit dem Joghurt in einer Schüssel vermischen.",
+    "Die Gurkenraspeln, Olivenöl und Weißweinessig ebenfalls unterrühren.", 
+    "Mit Salz und Pfeffer abschmecken.",
+    "Das Tzatziki mindestens 90 Minuten im Kühlschrank stehen lassen und vor dem Servieren nochmal abschmecken."
   ],
   "notes": "",
   "credits": "[Zucker & Jagdwurst](https://www.zuckerjagdwurst.com/de/rezepte/veganer-tzatziki)",

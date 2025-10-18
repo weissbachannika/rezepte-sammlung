@@ -3,7 +3,7 @@
   "file": "tarte_tatin.json",
   "title": "Tarte Tatin",
   "tags": ["Backen", "Süßes"],
-  "materials": "Ofenfeste Pfanne, großer Teller",
+  "materials": "Ofenfeste Pfanne, großer Teller oder Platte",
   "time": {
     "total": "15 Min + 30 Min Backzeit"
   },
@@ -19,13 +19,14 @@
   ],
   "spices": [],
   "steps": [
-    "Den Zucker und das Vanillemark zusammen mit dem Calvados in eine ofenfeste Pfanne geben und karamellisieren lassen, bis eine bräunliche, gut riechende zähe Flüssigkeit entstanden ist (bitte nicht mit den Fingern probieren, Verbrennungsgefahr!).",
-    "Die Äpfel schälen und halbieren oder dritteln (je nach Größe), das Kerngehäuse entfernen, nun in die Pfanne zum Calvados-Vanille-Zucker-Gemisch geben und darin wenden, bis sie beginnen, weich zu werden.",
-    "Die Äpfel so in der Pfanne verteilen, dass diese ausgefüllt ist.",
-    "Nun die Butter auf den Äpfeln verteilen, den Blätterteig über den Pfanneninhalt legen und an den Seiten mit einem Löffel runterdrücken.",
-    "Das Ganze nun für 25–30 Minuten in den nach Packungsanweisung vorgeheizten Ofen geben (Umluft).",
-    "Danach die Pfanne mit einem Topflappen herausnehmen, einen großen Teller bzw. eine Dessertplatte nehmen, auf die Pfanne legen und das Ganze vorsichtig stürzen.",
-    "Kurz abkühlen lassen und mit Vanilleeis servieren."
+    "Zucker, Vanillemark und Calvados in eine ofenfeste Pfanne geben und unter Rühren erhitzen, bis eine goldbraune, zähflüssige Karamellmasse entsteht.",
+    "Äpfel schälen, halbieren oder dritteln und das Kerngehäuse entfernen.",
+    "Die Stücke in das Karamell geben, kurz darin wenden und einige Minuten garen, bis sie leicht weich werden.",
+    "Die Apfelstücke gleichmäßig in der Pfanne verteilen, sodass der Boden bedeckt ist.",
+    "Butter in kleinen Stücken auf den Äpfeln verteilen. Den Blätterteig darüberlegen und die Ränder mit einem Löffel leicht andrücken.",
+    "Im vorgeheizten Ofen (nach Packungsangabe) etwa 25–30 Minuten backen, bis der Teig goldbraun ist.",
+    "Die Pfanne mit einem Topflappen herausnehmen, einen großen Teller oder eine Platte darauflegen und die Tarte vorsichtig stürzen.",
+    "Kurz abkühlen lassen und nach Belieben mit Vanilleeis servieren."
   ],
   "notes": "",
   "credits": "[chefkoch.de](http://chefkoch.de/rezepte/1930271314437205/Tarte-Tatin.html)",
