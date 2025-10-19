@@ -74,7 +74,7 @@ function __setExpanded(on) {
   __updateToggleButton();
 }
 
-const isMobile = () => window.matchMedia('(max-width: 680px)').matches;
+const isMobile = () => window.matchMedia('(max-width: 690px)').matches;
 
 function __applyMode() {
   const btn = $('#tagsToggle');

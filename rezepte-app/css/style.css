@@ -536,7 +536,7 @@ a.chip:hover {
   }
   aside {
     position: static;
-    margin-top: 16px;
+    margin-top: 0px;
   }
   .meta-grid { 
     grid-template-columns: 1fr; 
