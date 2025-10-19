@@ -220,13 +220,47 @@ function __updateTagsLayout(listEl) {
 }
 // ---- end tags helpers ----
 
+function renderCategoryBar() {
+  const wrap = $('#catBar');
+  if (!wrap) return;
+  wrap.innerHTML = '';
+
+  const buttons = [
+    { key: 'all',    label: 'Alles' },
+    { key: 'savory', label: 'Herzhaftes' },
+    { key: 'sweet',  label: 'Süßes' },
+  ];
+
+  buttons.forEach(b => {
+    const div = document.createElement('div');
+    div.className = 'category-item' + (state.category === b.key ? ' active' : '');
+    div.textContent = b.label;
+    div.addEventListener('click', () => {
+      state.category = b.key;
+      renderSidebar();
+      renderAll();
+    });
+    wrap.appendChild(div);
+  });
+}
 
 export function renderSidebar() {
   const tagEl = $('#tags');
   tagEl.innerHTML = '';
     
+  // Always start collapsed via __updateTagsLayout below
   tagEl.classList.toggle('expanded', state.tagsExpanded);
-  // Always start collapsed via __updateTagsLayout below; CSS class here only reflects legacy state.
+
+  // Basisdaten auf Kategorie einschränken
+  const inCategory = (r) => {
+    const SWEET_TAG = 'Süßes';
+    const isSweet = (r.tags || []).includes(SWEET_TAG);
+    if (state.category === 'sweet')  return isSweet;
+    if (state.category === 'savory') return !isSweet;
+    return true;
+  };
+
+  const BASE = RECIPES.filter(inCategory);
 
   // aktuell ausgewählte Tags als Array
   const selected = Array.from(state.tags);
@@ -244,20 +278,22 @@ export function renderSidebar() {
   const countFor = (tag) => {
     if (selected.length === 0) {
       let c = 0;
-      for (const r of RECIPES) if ((r.tags || []).includes(tag)) c++;
+      for (const r of BASE) if ((r.tags || []).includes(tag)) c++;
       return c;
     }
     const need = state.tags.has(tag) ? selected : [...selected, tag];
     let c = 0;
-    for (const r of RECIPES) if (recipeHasAll(r, need)) c++;
+    for (const r of BASE) if (recipeHasAll(r, need)) c++;
     return c;
   };
 
   // Alle bekannten Tags aufnehmen und anreichern
-  const all = getAllTags(RECIPES).map(t => ({
-    tag: t,
-    selected: state.tags.has(t),
-    count: countFor(t)
+  const all = getAllTags(BASE)
+    .filter(t => t !== 'Süßes')  // "Süßes" ausblenden
+    .map(t => ({
+      tag: t,
+      selected: state.tags.has(t),
+      count: countFor(t)
   }));
 
   // Sichtbar sind:
@@ -344,6 +380,8 @@ export function renderGrid() {
       thumb.textContent = 'Kein Bild';
     }
 
+    const visibleTags = (r.tags || []).filter(t => t !== 'Süßes');
+
     const body = document.createElement('div');
     body.className = 'card-body';
     const title = document.createElement('h3');
@@ -351,7 +389,7 @@ export function renderGrid() {
     title.textContent = r.title;
     const meta = document.createElement('div');
     meta.className = 'muted';
-    meta.textContent = (r.tags || []).join(' • ');
+    meta.textContent = (visibleTags || []).join(' • ');
 
     body.appendChild(title);
     body.appendChild(meta);
@@ -363,5 +401,6 @@ export function renderGrid() {
 
 // Oben gibt es keine aktive-Filter-Liste mehr.
 export function renderAll() {
+  renderCategoryBar();
   renderGrid();
 }

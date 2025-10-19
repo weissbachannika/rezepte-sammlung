@@ -1,5 +1,7 @@
 // Zentraler Zustand & Utilities
-export const state = { q: '', tags: new Set() };
+export const state = { q: '', tags: new Set(), category: 'all' };
+
+const SWEET_TAG = 'Süßes';
 
 // Element-Selector (knackig)
 export const $ = (sel) => document.querySelector(sel);
@@ -24,7 +26,14 @@ export function getAllTags(data) {
 
 // Filterfunktion
 export function matches(recipe) {
-  const { q, tags } = state;
+  const { q, tags, category } = state;
+
+  // Kategorie-Filter
+  const rtags = recipe.tags || [];
+  const isSweet = rtags.includes(SWEET_TAG);
+  if (category === 'sweet' && !isSweet) return false;
+  if (category === 'savory' && isSweet) return false;
+
   if (tags.size) {
     if (!recipe.tags) return false;
     for (const t of tags) if (!recipe.tags.includes(t)) return false;
