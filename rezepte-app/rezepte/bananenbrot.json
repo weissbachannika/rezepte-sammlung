@@ -1,7 +1,7 @@
 {
   "id": "r58",
   "file": "bananenbrot.json",
-  "title": "Bananenbrot",
+  "title": "Bananenbrot(-Muffins)",
   "tags": [
     "Backen", "Kuchen", "Frühstück", "Snack", "Low-Effort", "Süßes"
   ],
@@ -33,5 +33,5 @@
     ],
   "notes": "Man auch gut Muffins aus dem Teig machen, dann einfach nur 20–25 Minuten backen",
   "credits": "[instagram: Annibacktvegan](https://www.instagram.com/p/CSzeIN4qBdW/?utm_source=ig_web_copy_link)",
-  "image": ""
+  "image": "./images/Bananenbrot_muffins.jpg"
 }
