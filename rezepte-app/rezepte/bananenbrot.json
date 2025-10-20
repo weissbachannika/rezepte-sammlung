@@ -31,7 +31,10 @@
     "Die Kastenform mit Backpapier auslegen und den Teig hineingeben",
     "Das Ganze bei 180°C für circa 50–60 Minuten backen"
     ],
-  "notes": "Man auch gut Muffins aus dem Teig machen, dann einfach nur 20–25 Minuten backen",
+  "notes": [
+    "Man auch gut Muffins aus dem Teig machen, dann einfach nur 20–25 Minuten backen",
+    "Wenn der Teig zu fest sein sollte, kann man den auch noch mit etwas Hafermilch verdünnen"
+  ],
   "credits": "[instagram: Annibacktvegan](https://www.instagram.com/p/CSzeIN4qBdW/?utm_source=ig_web_copy_link)",
   "image": "./images/Bananenbrot_muffins.jpg"
 }
