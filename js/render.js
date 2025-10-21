@@ -198,16 +198,16 @@ function __updateToggleButton() {
   if (!can) {
     btn.style.display = 'none';
     btn.setAttribute('aria-expanded', 'false');
-    btn.textContent = '⌵';
+    btn.innerHTML = '<i class="fa-solid fa-caret-down"></i>';
     return;
   }
 
   btn.style.display = '';
   if (__tagsUI.expanded) {
-    btn.textContent = '✕';
+    btn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     btn.setAttribute('aria-expanded', 'true');
   } else {
-    btn.textContent = '⌵';
+    btn.innerHTML = '<i class="fa-solid fa-caret-down"></i>';
     btn.setAttribute('aria-expanded', 'false');
   }
 }

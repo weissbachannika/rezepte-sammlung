@@ -592,13 +592,16 @@ a.chip:hover {
   .tags-toggle { 
     display: inline-flex; 
     align-items: center;
-    height: auto; 
-    padding: 4px 8px; 
-    border-radius: 999px;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    height: 28px; 
+    padding: 0; 
+    border-radius: 50%;
     border: 1px solid #232a3c; 
     background:#121622; 
     color: var(--subtext); 
     font-size: 12px;
+    cursor: pointer;
   }
 }
 @media (max-width: 420px){
