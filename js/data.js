@@ -22,7 +22,7 @@ export const recipeFileNames = [
   "gebratener_reis.json",
   "gefuellte_paprika.json",
   "gemuese_curry.json",
-  "gemuese_in_bechamelsoße.json",
+  "gemuese_in_bechamelsosse.json",
   "griechischer_salat.json",
   "guacamole.json",
   "gulasch.json",
