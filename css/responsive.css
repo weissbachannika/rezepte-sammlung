@@ -1,0 +1,230 @@
+
+
+
+/* [R-690] RESPONSIVE ≤690px --------------------------------------------- */
+@media (max-width: 690px) {
+  /* Hide native clear buttons on mobile search fields */
+  /* Nur mobil: Browser-Clear-Button im Suchfeld ausblenden */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration,
+  input[type="search"]::-moz-search-clear,
+  input[type="search"]::-ms-clear {
+    display: none !important;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+  /* extra Spezifität für dein konkretes Feld */
+  #q::-webkit-search-cancel-button { 
+    display: none !important;
+  }
+  #q::-moz-search-clear { 
+    display: none !important; 
+  }
+  #q::-ms-clear { 
+    display: none !important; 
+  }
+
+  .app {
+    grid-template-columns: 1fr;   /* erst ab hier Sidebar unter Content */
+  }
+  aside {
+    position: static;
+    margin-top: 0px;
+  }
+  .meta-grid { 
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      "right"
+      "left";
+  }
+
+  .meta-grid .left-col { 
+    grid-area: left; 
+  }
+  .meta-grid .right-col { 
+    grid-area: right; 
+  }
+
+  /* Title einzeilig halten, kein Umbrechen beim Öffnen der Suche */
+  header .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Cards grid tweaks on narrow screens */
+  .grid {
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .card-title { 
+    font-size: 14px; 
+  }
+  .thumb { 
+    aspect-ratio: 1 / 1; 
+  }
+
+  .tags-bar { 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 8px; 
+    width: 100%;
+  }
+  .tag-scroller { 
+    flex: 1 1 auto; 
+    width: 100%;
+    min-width: 0; 
+  }
+
+  .tag-list { 
+    flex-wrap: nowrap; 
+  }
+  .tag-scroller { 
+    overflow: hidden; 
+    max-height: 40px; 
+  } 
+
+  .tag-list.expanded { 
+    flex-wrap: wrap; 
+  }
+  .tag-scroller.expanded { 
+    overflow: visible; 
+    max-height: none; 
+  }
+
+  .tags-toggle { 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    height: 28px; 
+    padding: 0px; 
+    border-radius: 50%;
+    border: 1px solid #232a3c; 
+    background:#121622; 
+    color: var(--subtext); 
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+/* [R-420A] RESPONSIVE ≤420px — search popover in header ----------------- */
+@media (max-width: 420px){
+
+  /* Suche: Icon-only im Header, Popover öffnet sich darunter */
+  header { 
+    position: sticky; /* sticky wirkt wie relative -> Anker für .search.open */
+  } 
+  .search {
+    flex: 0 0 auto;
+    width: 36px;
+    padding: 8px;
+    justify-content: center;
+  }
+  .search input { 
+    display: none; 
+  }
+  .search svg { 
+    flex: 0 0 auto; 
+  }
+
+  /* Wenn geöffnet, wird die Suche als Popover unter dem Header platziert,
+     ohne den Header umzubrechen. */
+  .search.open {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* exakt zentrieren */
+    width: calc(100% - 20px);         /* etwas Rand links/rechts */
+    max-width: 500px;                 /* optional Begrenzung */
+    padding: 8px 12px;
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+  }
+  .search.open input {
+    display: block;          /* Eingabe anzeigen */
+    flex: 1;
+  }
+  .search.open svg { 
+    margin-right: 2px; 
+  }
+
+  .search.open #closeSearch {
+  display: block;
+  background: none;
+  border: 0;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 6px;
+  flex: 0 0 auto;
+}
+}
+/* [R-420B] RESPONSIVE ≤420px — card layout + steps badges -------------- */
+@media (max-width: 420px) {
+  .app { gap: 6px; }
+  .section-title { display: none; } 
+  aside {
+    padding: 8px 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .tag-list {
+    gap: 7px;
+  }
+  .tags-bar {
+    margin-top: 0;
+  }
+  .chip {
+    font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card-title { 
+    font-size: 15px;
+    margin: 0 0 6px;
+  }
+  /* Switch cards to horizontal layout on very small screens */
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 5px;
+  }
+  /* Fixed left thumbnail for horizontal cards */
+  .thumb {
+    flex: 0 0 96px;
+    width: 96px;
+    height: 96px;
+    aspect-ratio: auto;       /* überschreibt 1/1 aus global */
+    border-bottom: 0;         /* statt unten -> rechts trennen */
+    border-right: 1px solid #1f2432;
+  }
+  /* Textblock rechts kompakter */
+  .card-body {
+    padding: 0;               /* globales Padding überschreiben */
+  }
+  .steps > li { padding-left: 0; }
+  .steps > li::before { left: -40px; }
+  .substeps { margin-left: 0; }
+  .substeps li { padding-left: 20px; }
+  .substeps li::before { left: -14px; }
+  #modalSteps .subsection { left: 0; }
+
+  .category-item {
+    font-size: 12px;
+    padding: 5px 0;
+    font-weight: 600;
+  }
+}

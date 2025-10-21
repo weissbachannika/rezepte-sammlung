@@ -1,0 +1,304 @@
+/* MODAL CORE -------------------------------------------------------- */
+dialog {
+  width: min(900px, 92vw);
+  border: 1px solid #1f2432; 
+  background: #0f121a; 
+  color: var(--text);
+  border-radius: 16px; 
+  box-shadow: var(--shadow); 
+  padding: 0;
+}
+dialog::backdrop { 
+  background: rgba(0,0,0,0.6); 
+}
+.modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 10px;
+  padding: 12px 14px; 
+  border-bottom: 1px solid #1f2432; 
+  background: #121622;
+}
+.modal-title { 
+  font-size: 18px; 
+  font-weight: 800; 
+  letter-spacing: .2px; 
+}
+.modal-close { 
+  border: 1px solid #273148; 
+  background: #141a29; 
+  color: var(--text); 
+  border-radius: 10px; 
+  padding: 8px 10px; 
+  cursor: pointer; 
+}
+/* Modal-Layout: vertikal stapeln */
+.modal-body {
+  display: grid;
+  grid-template-columns: 1fr;  
+  grid-auto-rows: auto;
+  gap: 18px;
+  padding: 16px;
+  width: 100%;
+}
+
+.modal-body .img {
+  aspect-ratio: 1 / 1;
+  background: #0b0e14;
+  border: 1px solid #1f2432;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.modal-body .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.servings{
+  margin: 4px 0 6px;
+  color: var(--subtext);
+  font-size: 0.9rem;
+}
+/* Kleine Zwischenüberschrift innerhalb der Listen */
+#modalIngredients .subsection,
+#modalSpices .subsection,
+#modalSteps .subsection {
+  list-style: none;         /* kein Bullet */
+  margin: 12px 0 6px 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--subtext);
+  left: 20px;
+}
+
+/* In der numerierten Steps-Liste: Subsections nicht zählen/anzeigen */
+#modalSteps.subsection,
+#modalSteps .subsection {
+  counter-increment: none;
+}
+#modalSteps .subsection::before {
+  content: none;            /* kein nummeriertes Badge */
+}
+
+/* MODAL TYPOGRAPHY + LISTS ----------------------------------------- */
+.h { 
+  font-weight: 700; 
+  margin: 6px 0 6px; 
+}
+ul { 
+  margin: 8px 0 12px 18px; 
+  padding: 0; 
+}
+li { 
+  margin: 4px 0; 
+}
+/* Steps (numbered, top-level only) */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  margin-left: 0;
+}
+/* nur direkte Kinder von .steps bekommen das Badge */
+.steps > li {
+  position: relative;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+/* Badge + Zähler nur bei Top-Level-Schritten */
+.steps > li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #182036;
+  border: 1px solid #243154;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 12px;
+}
+/* Zwischenüberschriften in Steps: keine Nummer, kein Increment */
+#modalSteps .subsection {
+  list-style: none;
+  margin: 12px 0 6px 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--subtext);
+}
+#modalSteps .subsection::before {
+  content: none;
+}
+/* Substeps (roman numerals) */
+.substeps {
+  counter-reset: substep;
+  list-style: none;
+  margin: 14px 0 6px 14px;
+  padding: 0;
+}
+
+ .substeps li {
+  position: relative;
+  margin: 6px 0;
+  padding-left: 20px; /* Platz für das Badge */
+}
+
+ .substeps li::before {
+  counter-increment: substep;
+  content: counter(substep, upper-roman); /* römische Zahl */
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: #182036;
+  border: 1px solid #243154;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 11px;
+}
+
+/* Notes list */
+.notes {
+  margin: 8px 0 12px 18px;
+  padding: 0;
+  list-style-type: disc;  /* klassische Striche/Punkte */
+}
+.notes li {
+  margin: 4px 0;
+  color: var(--text);
+}
+/* Rezeptlinks im Modal */
+.recipe-link {
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.recipe-link:hover {
+  color: var(--accent-2);
+}
+/* [13] MODAL META (layout areas left/right) ----------------------------- */
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-areas: "left right";
+  gap: 16px;
+  width: 100%;
+}
+
+/* Time chip (icon + text, no chip visuals) */
+.time-chip {
+  display: none;              /* wird via JS auf display:flex gesetzt */
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px 0;
+  padding: 0;                 /* kein Chip-Rand/Background */
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--text);
+  font-size: 0.95rem;         /* Textgröße unverändert schlank */
+}
+.time-chip .icon {
+  font-size: 1.5em;           /* Icon größer */
+  line-height: 1;
+}
+
+/* Materials header style */
+#materialsBox .h {
+  font-size: 0.9rem;       /* Überschrift kleiner */
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+/* Materials list text */
+#modalMaterials {
+  position: relative;
+  font-size: 0.8rem;       /* Text ebenfalls kleiner */
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* Materials arrow marker (aligned with step badges) */
+#modalMaterials::before {
+  content: "→";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  position: static;
+  transform: translateY(-1px);
+  font-size: 1em;
+  line-height: 1;
+  color: var(--subtext);
+}
+
+/* Credits block */
+.credits {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  margin-top: 6px;
+  position: relative;
+  line-height: 1.4;
+}
+/* Credits arrow marker */
+#modalCredits::before {
+  content: "→";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  position: static;
+  transform: translateY(-1px);
+  font-size: 1em;
+  line-height: 1;
+  color: var(--subtext);
+}
+.h.small {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  margin-top: 6px;
+}
+
+/* IMPRESSUM / GENERIC LINKS ---------------------------------------- */
+.impressum-main {
+  max-width: 900px;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 24px;
+}
+
+.impressum-main section {
+  width: 100%;
+}
+
+.impressum-main a.chip {
+  width: fit-content;
+  min-width: 0;
+}
+
+a.chip {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.chip:hover {
+  text-decoration: none;
+  color: #FFFFFF; 
+}
