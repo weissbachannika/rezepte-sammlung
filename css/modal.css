@@ -191,7 +191,7 @@ li {
 .recipe-link:hover {
   color: var(--accent-2);
 }
-/* [13] MODAL META (layout areas left/right) ----------------------------- */
+/* MODAL META (layout areas left/right) ----------------------------- */
 .meta-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
