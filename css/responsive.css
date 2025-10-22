@@ -192,6 +192,9 @@
   .grid {
     grid-template-columns: 1fr;
   }
+  .grid {
+    align-content: start;  /* verhindert vertikales Strecken bei wenigen Treffern */
+  }
   .card-title { 
     font-size: 15px;
     margin: 0 0 6px;
@@ -199,9 +202,11 @@
   /* Switch cards to horizontal layout on very small screens */
   .card {
     display: flex;
-    align-items: center;
     gap: 12px;
     padding-right: 5px;
+    align-items: stretch;   /* gleiche Höhe wie Thumbnail */
+    height: 96px;           /* fix auf Thumbnail-Höhe */
+    overflow: hidden;       /* Überschuss abschneiden */
   }
   /* Fixed left thumbnail for horizontal cards */
   .thumb {
@@ -215,6 +220,10 @@
   /* Textblock rechts kompakter */
   .card-body {
     padding: 0;               /* globales Padding überschreiben */
+    display: flex;            /* Inhalt vertikal zentrieren */
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;         /* Textabschnitt beschneiden, falls zu hoch */
   }
   .steps > li { padding-left: 0; }
   .steps > li::before { left: -40px; }
@@ -227,5 +236,10 @@
     font-size: 12px;
     padding: 5px 0;
     font-weight: 600;
+  }
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* Titel auf eine Zeile begrenzen */
   }
 }
