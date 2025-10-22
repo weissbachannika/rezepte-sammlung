@@ -351,10 +351,47 @@ export function renderSidebar() {
   __updateToggleButton();
 }
 
+function __searchTier(recipe, tokens) {
+  if (!tokens || tokens.length === 0) return 99;
+  const lc = (s) => String(s || '').toLowerCase();
+  const title = lc(recipe.title);
+  const tags = (recipe.tags || []).map(lc);
+  const ingText = (recipe.ingredients || [])
+    .map(x => typeof x === 'string' ? x : '')
+    .join(' ') 
+    .toLowerCase();
+  const notesText = Array.isArray(recipe.notes)
+    ? recipe.notes.join(' ').toLowerCase()
+    : lc(recipe.notes);
+
+  // For each token, find the best field it matches; take the best across tokens
+  let best = 99;
+  for (const tok of tokens) {
+    const t = tok.toLowerCase();
+    let tier = 99;
+    if (title.includes(t)) tier = Math.min(tier, 1);
+    else if (tags.some(tag => tag.includes(t))) tier = Math.min(tier, 2);
+    else if (ingText.includes(t)) tier = Math.min(tier, 3);
+    else if (notesText.includes(t)) tier = Math.min(tier, 4);
+    best = Math.min(best, tier);
+  }
+  return best;
+}
+
 export function renderGrid() {
   const wrap = $('#grid');
   wrap.innerHTML = '';
   const items = RECIPES.filter(matches);
+  const q = (state.q || '').trim().toLowerCase();
+  const tokens = q ? q.split(/\s+/).filter(Boolean) : [];
+  if (tokens.length) {
+    items.sort((a, b) => {
+      const ta = __searchTier(a, tokens);
+      const tb = __searchTier(b, tokens);
+      if (ta !== tb) return ta - tb;                   // 1:title, 2:tags, 3:ingredients, 4:notes
+      return a.title.localeCompare(b.title, 'de');     // tie-breaker: A–Z
+    });
+  }
   if (!items.length) {
     const empty = document.createElement('div');
     empty.className = 'muted';
