@@ -6,7 +6,8 @@
   "materials": 
     "30x30 cm Auflaufform",
   "time": {
-    "total": "45 Min + 35 Min Backzeit"
+    "prep": 45,
+    "total": 80
   },
   "amount": 6,
   "ingredients": [
@@ -46,7 +47,7 @@
     "Weitere 5 Minuten braten und dann mit passierten Tomaten ablöschen und mit Gewürzen deiner Wahl abschmecken und die Herdplatte ausmachen.",
     "Jetzt die [Béchamelsoße](#bechamelsosse.json) zubereiten, dabei die Hefeflocken dazugeben",
     "Dann in einer Backform abwechselnd Tomatensoße, Nudelplatten und Béchamelsoße schichten.",
-    "Die letzte Schicht gut mit Käse bedecken und für 30–40 Minuten bei 180°C Umluft backen."
+    "Die letzte Schicht gut mit Käse bedecken und für **30–40 Minuten** bei 180°C Umluft backen."
   ],
   "notes": [
     "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner.",

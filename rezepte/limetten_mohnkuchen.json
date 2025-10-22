@@ -6,7 +6,8 @@
   "materials": 
     "20 cm Kastenform",
   "time": {
-    "total": "20 Min + 50 Min Backzeit"
+    "prep": 25,
+    "total": 75
   },
   "amount": 12,
   "ingredients": [
@@ -32,8 +33,8 @@
     "Alle trockenen Zutaten in einer Schüssel mixen.",
     "Dann die trockenen Zutaten abwechselnd mit der Pflanzenmilch zu der Butter-Zucker-Mischung geben.",
     "Die Kastenform mit Backpapier auslegen und den Teig hineingeben.",
-    "Das Ganze für ca. 50 Minuten bei 180°C Ober-/Unterhitze backen.",
-    "Den Kuchen vollständig abkühlen lassen.",
+    "Das Ganze für ca. **50 Minuten** bei 180°C Ober-/Unterhitze backen.",
+    "Am besten den Kuchen vollständig abkühlen lassen.",
     "Für die Glasur den Limettensaft mit dem (gesiebten) Puderzucker vermischen, sodass eine dickflüssige Masse entsteht.",
     "Diese auf den Kuchen streichen und trocknen lassen."
   ],

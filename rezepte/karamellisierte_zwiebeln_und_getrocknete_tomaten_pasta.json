@@ -9,7 +9,8 @@
     "25x25 cm Auflaufform mit Deckel/Alufolie",
     
   "time": {
-    "total": "15 Min + 1 h Backzeit"
+    "prep": 15,
+    "total": 75
   },
   "amount": 4,
   "ingredients": [

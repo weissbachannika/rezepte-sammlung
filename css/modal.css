@@ -202,7 +202,7 @@ li {
 
 /* Time chip (icon + text, no chip visuals) */
 .time-chip {
-  display: none;              /* wird via JS auf display:flex gesetzt */
+  display: flex;              /* wird via JS auf display:flex gesetzt */
   align-items: center;
   gap: 8px;
   margin: 0 0 12px 0;
@@ -212,6 +212,9 @@ li {
   border-radius: 0;
   color: var(--text);
   font-size: 0.95rem;         /* Textgröße unverändert schlank */
+}
+#modalPrepText {
+  margin-right: 18px; /* größerer Abstand zwischen Prep- und Total-Zeit */
 }
 .time-chip .icon {
   font-size: 1.5em;           /* Icon größer */

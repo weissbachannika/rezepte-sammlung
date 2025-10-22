@@ -5,8 +5,8 @@
   "tags": ["Hauptgericht", "Backen", "Hausmannskost", "Kartoffeln"],
   "materials": "20 x 25 cm Auflaufform (tief)",
   "time": {
-    "prep": "",
-    "total": "30 Min + 30 Min Backzeit"
+    "prep": 30,
+    "total": 60
   },
   "amount": 4,
   "ingredients": [
@@ -28,7 +28,7 @@
     "Agavendicksaft"
   ],
   "steps": [
-    "Die Kartoffeln schälen, schneiden und in Salzwasser für ca. 20 Minuten kochen.",
+    "Die Kartoffeln schälen, schneiden und in Salzwasser für ca. **20 Minuten** kochen.",
     "Währenddessen das Soja Granulat in etwas heißer Brühe und Sojasoße einweichen und mit Paprikapulver und Pfeffer würzen.",
     "Die Zwiebel in kleine Würfel schneiden.",
     "Die Zwiebel und das Soja Granulat anbraten und nach ca. 5 Minuten das Tomatenmark und die Worcestershire Sauce dazugeben und gut unterrühren.",
@@ -39,7 +39,7 @@
     "Danach die Erbsen- und Möhrenmischung auf dem Hack verteilen.",
     "Als letzte Schicht das Kartoffelpüree in die Auflaufform geben.",
     "Ein paar Margarineflocken auf das Kartoffelpüree geben und mit einer Gabel verteilen.",
-    "Das Ganze dann noch für ca. 30 Minuten bei 180°C Umluft backen."
+    "Das Ganze dann noch für ca. **30 Minuten** bei 180°C Umluft backen."
   ],
   "notes": "",
   "credits": "Mamsi",

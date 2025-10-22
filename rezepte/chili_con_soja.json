@@ -9,8 +9,8 @@
     "",
 
   "time": {
-    "prep": "5 Min",
-    "total": "30 Min"
+    "prep": 25,
+    "total": 35
   },
   "amount": 4,
   "ingredients": [
@@ -38,7 +38,7 @@
     "Das Sojahack mit 2 EL Wasser, der Sojasoße und den Gewürzen vermischen und kurz einweichen lassen.",
     "In der Zwischenzeit die Zwiebel und die Paprika in kleine Würfel schneiden und den Knoblauch schälen.",
     "In einer Pfanne etwas Öl erhitzen und die Zwiebel darin etwa 2 Minuten anbraten, bis sie leicht glasig wird. Dann das Sojahack dazugeben und weitere 5 Minuten anbraten. Dann den Knoblauch dazu pressen.",
-    "Mais und Kidneybohnen dazugeben und mit passierten Tomaten ablöschen.",
+    "Mais und Kidneybohnen dazugeben und mit passierten Tomaten ablöschen und circa **10 Minuten** köcheln lassen.",
     "Beim Servieren mit einem Löffel Crème Vega toppen."
   ],
   "notes": [

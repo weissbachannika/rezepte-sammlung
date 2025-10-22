@@ -5,8 +5,7 @@
   "tags": ["Hauptgericht", "Hausmannskost", "Kartoffeln"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 3,
   "ingredients": [

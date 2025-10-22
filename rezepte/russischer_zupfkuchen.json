@@ -6,7 +6,8 @@
   "materials": 
     "26 cm Springform, feine Küchenreibe",
   "time": {
-    "total": "30 Min + 1 Std Backzeit"
+    "prep": 30,
+    "total": 90
   },
   "amount": 12,
   "ingredients": [
@@ -39,7 +40,7 @@
     "⅔ von dem Teig in der gefetteten Springorm verteilen und einen 2–3 cm hohen Rand bilden.",
     "Die Füllung auf den Boden in der Form gießen.",
     "Das restliche Drittel Teig als Streusel auf der Füllung verteilen.",
-    "Im Ofen für circa 1 Std bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
+    "Im Ofen für circa **1 Stunde** bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
     "Nach dem Backen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er ganz kalt ist."
   ],
   "notes": "",

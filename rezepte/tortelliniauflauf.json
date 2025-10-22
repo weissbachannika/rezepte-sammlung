@@ -5,7 +5,8 @@
   "tags": ["Hauptgericht", "Pasta", "Nudeln", "Backen", "Low-Effort"],
   "materials": "25x25 cm Auflaufform mit Deckel oder Alufolie",
   "time": {
-    "total": "10 Min + 40 Min Backzeit"
+    "prep": 10,
+    "total": 50
   },
   "amount": 3,
   "ingredients": [
@@ -28,8 +29,8 @@
     "Die Zwiebel in kleine Würfel schneiden.",
     "Die Tortellini mit den Tomaten, Sahne, Zwiebeln und ggf. Speck in eine Auflaufform geben und alles gut vermengen und würzen.",
     "Die Tortellinis sollten alle bedeckt sein, also ggf. noch gehackte/passierte Tomaten oder Sahne nachgießen.",
-    "Die Auflaufform jetzt abdecken und bei 175°C für erstmal 15–20 Minuten in den Ofen.",
-    "Dann die Auflaufform kurz rausholen und den Käse drüber streuen und das Ganze dann nochmal für 15–20 Minuten weiterbacken, dieses Mal ohne Deckel."
+    "Die Auflaufform jetzt abdecken und bei 175°C für **erstmal 15–20 Minuten** in den Ofen.",
+    "Dann die Auflaufform kurz rausholen und den Käse drüber streuen und das Ganze dann nochmal für **15–20 Minuten** weiterbacken, dieses Mal ohne Deckel."
   ],
   "notes": "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner",
   "credits": "Mamsi",

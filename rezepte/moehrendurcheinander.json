@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "45 Min"
+    "prep": 15,
+    "total": 35
   },
   "amount": 4,
   "ingredients": [
@@ -25,7 +26,7 @@
     "Die Zwiebel würfeln und Möhren und Kartoffeln waschen und in Stückchen schneiden.",
     "Etwas Öl in einem Topf erhitzen und die Zwiebel ein paar Minuten anbraten.",
     "Danach das Gemüse dazugeben und solange anbraten, bis es “brutzelt”.",
-    "Das Gemüse mit der Gemüsebrühe ablöschen und für 20 Minuten köcheln lassen.",
+    "Das Gemüse mit der Gemüsebrühe ablöschen und für **20 Minuten** köcheln lassen.",
     "Danach alles zusammen cremig mixen und abschmecken.",
     "Dazu eignet sich getoastetes Brot, Croutons, vegane Wiener Würstchen oder angebratener Räuchertofu."
   ],

@@ -1,7 +1,7 @@
 {
   "id": "r43",
   "file": "currywurstsosse_oma.json",
-  "title": "Currywurstsoße à la Oma",
+  "title": "Currywurstsoße",
   "tags": ["Soße", "Beilage", "Hausmannskost"],
   "materials": 
     "",
@@ -28,7 +28,7 @@
     "Die Margarine in einem kleinen Topf schmelzen lassen und die Zwiebel zusammen mit dem Currypulver darin anschwitzen.",
     "Dann Mehl dazugeben und gut mixen, außerdem das Tomatenmark dazugeben und das Ganze dann nach und nach mit Wasser ablöschen (dabei immer gut rühren, dass sich keine Klumpen bilden).",
     "In einer kleinen Schüssel oder Ähnlichem die Sahne mit dem Senf gut vermischen und das auch dazugeben.",
-    "Das insgesamt circa 15 min köcheln lassen und zum Schluss noch mit Salz, Pfeffer und dem Gewürz Ketchup abschmecken."
+    "Das insgesamt circa **15 Min** köcheln lassen und zum Schluss noch mit Salz, Pfeffer und dem Gewürz Ketchup abschmecken."
   ],
   "notes": "Mit veganer Bratwurst und Pommes oder [Kartoffelspalten](#kartoffelspalten.json) essen.",
   "credits": "Oma",

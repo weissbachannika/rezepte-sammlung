@@ -9,7 +9,8 @@
     "Kartoffelstampfer, Pinsel (opt.)",
 
   "time": {
-    "total": "insg. 1 Std (+ Abkühlzeit zwischendurch)"
+    "prep": 40,
+    "total": 240
   },
   "amount": 10,
   "ingredients": [
@@ -28,7 +29,7 @@
     "Die Apfelstücke in einen kleinen Topf geben und bei niedriger bis mittlerer Hitze mit einem kleinen Schuss Wasser (oder Apfelsaft) köcheln/anbraten bis sie etwas weicher werden",
     "Die Äpfel mit einem Kartoffelstampfer zerdrücken (muss nicht super fein sein) und den Zimt (und wenn du möchtest etwas Zucker) dazu geben, sodass ein grobes Apfelmus entsteht",
     "Das Apfelmus abkühlen lassen (über Nacht oder wie lange auch immer man Zeit hat)",
-    "Den Blätterteig ausrollen und erst der Länge nach halbieren und die Hälften dann je vierteln",
+    "Den Blätterteig ausrollen und erst der Länge nach halbieren und die Hälften dann je fünfteln",
     { "text": "Die Apfeltaschen befüllen:", "sub": [
       "Ein Stück von dem Blätterteig nehmen und mit einem Nudelholz noch ein kleines Bisschen dünner rollen (muss man aber auch nicht)",
       "Jetzt auf eine Hälfte des Stücks 1–2 EL vom Apfelmus tun",
@@ -36,7 +37,7 @@
       "Die Ränder jetzt aufeinander Drücken und mit einer Gabel kleine Rillen eindrücken, um die Tasche sicher zu verschließen",
       "Die Tasche jetzt auf ein mit Backpapier ausgelegtes Blech legen"
     ]},
-    "Wenn alle Taschen auf dem Backblech (mit etwas Abstand voneinander) liegen kann man diese noch mit etwas Pﬂanzensahne/-milch bestreichen, für die Farbe am Ende Das jetzt wie auf der Blätterteigpackung beschrieben backen (200°C für 20 min)",
+    "Wenn alle Taschen auf dem Backblech (mit etwas Abstand voneinander) liegen kann man diese noch mit etwas Pﬂanzensahne/-milch bestreichen. Das jetzt bei 200°C für **20 Minuten** backen.",
     "Die jetzt wieder kurz abkühlen lassen (sind frisch aus dem Ofen viel zu heiß, aber sehr lecker, wenn sie noch etwas warm sind)",
     "Wenn man möchte, kann man dann jetzt einen Zuckerguss aus dem Puderzucker und Zitronensaft mischen und die Apfeltaschen damit bestreichen (und nochmal etwas trocknen lassen)"
   ],

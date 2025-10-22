@@ -7,8 +7,8 @@
     "",
 
   "time": {
-    "prep": "5 Min",
-    "total": "20 Min + 13 Min Backzeit + Abkühlzeit"
+    "prep": 15,
+    "total": 60
   },
   "amount": 10,
   "ingredients": [
@@ -26,9 +26,9 @@
     "Das Kokosöl mit dem Zucker gut vermischen und dann die Milch mit einrühren.",
     "Das Mehl, Backpulver und Salz in den Teig sieben und gut verkneten.",
     "Als Letztes die Schokostückchen in den Teig kneten.",
-    "Den Teig abdecken und für ca. 1h kühl stellen.",
+    "Den Teig abdecken und für mindestens 30 Min kalt stellen.",
     "Den Ofen auf 180°C Umluft vorheizen und aus dem Teig ca. 2–3 cm große Kugeln formen und mit relativ großem Abstand zueinander auf ein mit Backpapier ausgelegtes Blech legen.",
-    "Die Cookies dann für 10–13 Minuten backen und rausholen, wenn sie so aussehen, als wären sie fast fertig (sie backen außerhalb des Ofens noch etwas weiter).",
+    "Die Cookies dann für **10–13 Minuten** backen und rausholen, wenn sie so aussehen, als wären sie fast fertig (sie backen außerhalb des Ofens noch etwas weiter).",
     "Etwas abkühlen lassen, aber noch leicht warm genießen."
   ],
   "notes": [

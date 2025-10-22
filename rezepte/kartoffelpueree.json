@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "35 Min"
+    "prep": 15,
+    "total": 35
   },
   "amount": 2,
   "ingredients": [
@@ -21,10 +22,10 @@
   ],
   "steps": [
     "Die Kartoffeln schälen und in Stücke schneiden (also halbieren oder vierteln, sodass die Stücke circa gleich groß sind).",
-    "Die Kartoffeln in einen Topf mit gesalzenem Wasser geben und zum Kochen bringen (nachdem das Wasser kocht, noch 20 Minuten kochen lassen).",
+    "Die Kartoffeln in einen Topf mit gesalzenem Wasser geben und zum Kochen bringen (nachdem das Wasser kocht, noch **20 Minuten** kochen lassen).",
     "Wenn die Kartoffeln fertig sind, das Wasser abgießen und den Herd ausmachen.",
     "Die Kartoffeln mit dem Stampfer kleiner machen und nach und nach die Pflanzenmilch (Raumtemperatur) und Margarine dazugeben und weiter stampfen, bis es die gewünschte Konsistenz hat.",
-    "Das Kartoffelpüree mit ca. ½ Muskatnuss, Brühepulver, Salz und Pfeffer würzen und abschmecken."
+    "Das Kartoffelpüree mit Muskatnuss, Brühepulver, Salz und Pfeffer würzen und abschmecken."
   ],
   "notes": "",
   "image": "./images/Bratensoße_Kartoffelpueree.jpg"

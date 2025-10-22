@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "45 Min"
+    "prep": 25,
+    "total": 45
   },
   "amount": 4,
   "ingredients": [
@@ -22,7 +23,7 @@
     "Sojasoße"
   ],
   "spices": [
-    "2/3 TL Knoblauch (oder frisch 2–3 Zehen)",
+    "2 TL Knoblauch (oder frisch 2 Zehen)",
     "1 TL Kreuzkümmel",
     "1 TL Paprika rosenscharf",
     "1 TL Paprika edelsüß",
@@ -35,7 +36,7 @@
     { "section": "Süßkartoffeln" },
     "Halbieren und mit Messerspitze ein bisschen durchlöchern.",
     "Hälften mit einem kleinen bisschen Öl bestreichen und salzen.",
-    "Bei Umluft 200°C ca. 40 Minuten backen.",
+    "Bei Umluft 200°C ca. **40 Minuten** backen.",
     { "section": "Füllung" },
     "Zwiebel und Paprika schnibbeln.",
     "Soja-Granulat einweichen & würzen.",

@@ -5,7 +5,8 @@
   "tags": ["Backen", "Süßes"],
   "materials": "Ofenfeste Pfanne, großer Teller oder Platte",
   "time": {
-    "total": "15 Min + 30 Min Backzeit"
+    "prep": 15,
+    "total": 45
   },
   "amount": 4,
   "ingredients": [
@@ -24,7 +25,7 @@
     "Die Stücke in das Karamell geben, kurz darin wenden und einige Minuten garen, bis sie leicht weich werden.",
     "Die Apfelstücke gleichmäßig in der Pfanne verteilen, sodass der Boden bedeckt ist.",
     "Butter in kleinen Stücken auf den Äpfeln verteilen. Den Blätterteig darüberlegen und die Ränder mit einem Löffel leicht andrücken.",
-    "Im vorgeheizten Ofen (nach Packungsangabe) etwa 25–30 Minuten backen, bis der Teig goldbraun ist.",
+    "Im vorgeheizten Ofen (nach Packungsangabe) etwa **25–30 Minuten** backen, bis der Teig goldbraun ist.",
     "Die Pfanne mit einem Topflappen herausnehmen, einen großen Teller oder eine Platte darauflegen und die Tarte vorsichtig stürzen.",
     "Kurz abkühlen lassen und nach Belieben mit Vanilleeis servieren."
   ],

@@ -5,8 +5,7 @@
   "tags": ["Hauptgericht", "One-Pot", "Hausmannskost"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 4,
   "ingredients": [
@@ -40,8 +39,8 @@
     "Nach ein paar Minuten das restliche Gemüse nacheinander dazugeben und mit anbraten (empfohlene Reihenfolge: Aubergine, Paprika, Zucchini).",
     "Nach weiteren 3–5 Minuten das Tomatenmark dazugeben und gut vermischen.",
     "Das Ganze dann mit den gehackten Tomaten ablöschen, würzen und alles gut umrühren.",
-    "Während die Gemüsemischung dann noch etwas köchelt, können die Gnocchi noch angebraten werden.",
-    "Wenn dann das Gemüse ganz durch ist (also du nicht mehr von der Paprika stirbst) und die Gnocchi goldbraun sind, bist du fertig :).",
+    "Während die Gemüsemischung dann noch ca. **10 Minuten** köchelt, können die Gnocchi noch angebraten werden.",
+    "Wenn dann das Gemüse ganz durch ist und die Gnocchi goldbraun sind, bist du fertig :).",
     "Zum Servieren das Ratatouille in eine Schüssel oder einen tiefen Teller geben und ein paar Gnocchi als crispy Topping oben drauf."
   ],
   "notes": "",

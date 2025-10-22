@@ -7,7 +7,8 @@
     "25x25 cm Auflaufform",
     
   "time": {
-    "total": "30 Min + 1 Std Backzeit"
+    "prep": 20,
+    "total": 80
   },
   "amount": 4,
   "ingredients": [
@@ -16,9 +17,9 @@
     "200 g Naturtofu",
     "1 große Zwiebel",
     "4–5 getrocknete Tomaten",
-    "80 g Mais",
-    "2–3 EL Creme Vega",
-    "1–2 EL Tomatenmark",
+    "3 EL Creme Vega / Joghurt",
+    "2 EL Tomatenmark",
+    "80 g Mais (opt.)",
     { "section": "Für die Soße" },
     "200 ml passierte Tomaten",
     "200 ml vegane Sahne",
@@ -33,15 +34,15 @@
     "4 EL Hefeflocken",
     "1 TL Garam Masala (oder Curry)",
     "1 TL Brühepulver (oder Salz)",
-    "½ TL Agavendicksaft (oder andere Süße)",
+    "½ TL Agavendicksaft",
     "Salz & Pfeffer",
     { "section": "Für die Soße" },
     "1 TL Sriracha",
     "1 TL Garam Masala (oder Curry)",
-    "2 TL Brühepulver (oder Salz)",
+    "2 TL Brühepulver",
     "½ TL Muskatnuss",
     "2 TL Oregano",
-    "1–2 TL Agavendicksaft (oder andere Süße)",
+    "1–2 TL Agavendicksaft",
     "Salz & Pfeffer"
   ],
   "steps": [
@@ -52,12 +53,13 @@
     "Die Paprikahälften mit der Tofu-Mischung befüllen und in die Auflaufform legen.",
     "In einer Schüssel oder einfach in der gerade benutzten Pfanne alle Zutaten und Gewürze für die Soße gut vermischen (ggf. auch etwas Wasser zum Verdünnen).",
     "Die Soße über die Paprikahälften in die Auflaufform gießen.",
-    "Das Ganze jetzt bei 180°C Umluft für 45–60 Minuten backen.",
+    "Das Ganze jetzt bei 200°C Umluft für **45 Minuten** backen.",
     "Während der Backzeit dann eine Beilage wie z. B. Couscous oder Kartoffelpüree zubereiten."
   ],
   "notes": [
-    "Kleine Auflaufform verwenden.",
-    "Perfekt mit Kartoffelpüree als Beilage."
+    "Bei der Soße kann man auch auf die passierten Tomaten und Sahne verzichten und stattdessen Brühe nehmen",
+    "Perfekt mit Kartoffelpüree als Beilage (Bulgur, Couscous oder Reis geht aber auch gut)",
+    "Wenn der Tofu oben zu braun werden sollte, die Auflaufform irgendwie abdecken (dafür kann man auch ein Backblech in die Schiene direkt darüber tun)."
   ],
   "image": "./images/Gefuellte_paprika.jpg"
 }

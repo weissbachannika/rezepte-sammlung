@@ -9,7 +9,8 @@
     "25x25 cm Auflaufform, Zitronenpresse (opt.)",
 
   "time": {
-    "total": "20 Min + 40 Min Backzeit "
+    "prep": 20,
+    "total": 60
   },
   "amount": 4,
   "ingredients": [
@@ -32,12 +33,12 @@
   "steps": [
     "Die trockenen Zutaten für die Streusel in einer Schüssel vermischen",
     "Die Butter dazugeben und zu einem krümeligen Teig kneten",
-    "Streusel für circa 30 Minuten kaltstellen",
+    "Streusel für circa 30 Minuten kaltstellen (Opt.)",
     "Währenddessen Äpfel schälen und vierteln. Das Gehäuse entfernen und die Äpfel in circa 2 cm große Würfel schneiden",
     "Die Äpfel mit den restlichen Zutaten vermischen",
     "Die Auﬂaufform mit etwas Margarine ausstreichen (opt.)",
     "Die Äpfel in die Form geben und die Streusel gleichmäßig darauf verteilen",
-    "Auf der mittleren Schiene 35–40 Minuten bei 190°C Umluft backen, bis die Streusel leicht goldbraun sind",
+    "Auf der mittleren Schiene **35–40 Minuten** bei 190°C Umluft backen, bis die Streusel leicht goldbraun sind",
     "Aus dem Ofen nehmen und am besten noch warm und mit einer Kugel veganem Vanilleeis oder frischer Vanillesoße servieren"
   ],
   "notes": "Statt Apfel kann man auch anderes Obst wie Pflaumen, Birnen oder Blaubeeren nehmen.",

@@ -5,8 +5,8 @@
   "tags": ["Snack", "Backen", "Low-Effort"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "10 Min + 20 Min Backzeit"
+    "prep": 10,
+    "total": 30
   },
   "amount": 16,
   "ingredients": [

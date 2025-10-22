@@ -1,12 +1,12 @@
 {
   "id": "r37",
   "file": "gurkey_salat_wie_von_trudi.json",
-  "title": "Gurken Salat (wie von Trudi)",
+  "title": "Gurken Salat",
   "tags": ["Salat", "Beilage", "Vorspeise", "Hausmannskost", "Low-Effort"],
   "materials": 
     "",
   "time": {
-    "total": "15 Min"
+    "total": 15
   },
   "amount": 4,
   "ingredients": [

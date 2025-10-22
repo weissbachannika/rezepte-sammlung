@@ -5,8 +5,8 @@
   "tags": ["Dip", "Griechisch"],
   "materials": "grobe Küchenreibe, feines Sieb",
   "time": {
-    "prep": "",
-    "total": "15 Min + Wartezeit"
+    "prep": 20,
+    "total": 90
   },
   "amount": 5,
   "ingredients": [
@@ -25,7 +25,7 @@
     "Knoblauch schälen und klein hacken oder pressen und mit dem Joghurt in einer Schüssel vermischen.",
     "Die Gurkenraspeln, Olivenöl und Weißweinessig ebenfalls unterrühren.", 
     "Mit Salz und Pfeffer abschmecken.",
-    "Das Tzatziki mindestens 90 Minuten im Kühlschrank stehen lassen und vor dem Servieren nochmal abschmecken."
+    "Das Tzatziki mindestens 1 Stunde im Kühlschrank stehen lassen und vor dem Servieren nochmal abschmecken."
   ],
   "notes": "",
   "credits": "[Zucker & Jagdwurst](https://www.zuckerjagdwurst.com/de/rezepte/veganer-tzatziki)",
