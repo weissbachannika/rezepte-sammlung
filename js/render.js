@@ -380,7 +380,11 @@ export function renderGrid() {
       thumb.textContent = 'Kein Bild';
     }
 
-    const visibleTags = (r.tags || []).filter(t => t !== 'Süßes');
+    const visibleTags = (r.tags || []).filter(t => {
+      if (state.tags.has(t)) return false;
+      if (state.category === 'sweet' && t === 'Süßes') return false;
+      return true;
+    });
 
     const body = document.createElement('div');
     body.className = 'card-body';
