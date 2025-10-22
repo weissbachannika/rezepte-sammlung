@@ -9,7 +9,8 @@
     "Pürierstab, feines Sieb(tuch)",
 
   "time": {
-    "total": "1 Std 30 Min"
+    "prep": 60,
+    "total": 90
   },
   "amount": 4,
   "ingredients": [
@@ -38,7 +39,7 @@
     "Wenn das Gemüse gut gebräunt ist, die Champignons dazugeben und weiterbraten, bis sie Wasser verlieren und ebenfalls etwas bräunen.",
     "Tomatenmark zugeben und mitrösten, bis es leicht karamellisiert (ca. 1–2 Minuten).",
     "Mit dem Rotwein ablöschen, kurz aufkochen und 1–2 Minuten einkochen lassen.",
-    "Sojasoße, Senf, Gewürze (Thymian, Rosmarin, Lorbeer), etwas Salz, Pfeffer und Zucker zugeben. Mit Brühe auffüllen. Dann alles mindestens 30 Minuten sanft köcheln lassen.",
+    "Sojasoße, Senf, Gewürze (Thymian, Rosmarin, Lorbeer), etwas Salz, Pfeffer und Zucker zugeben. Mit Brühe auffüllen. Dann alles **mindestens 30 Minuten** sanft köcheln lassen.",
     "Nach dem Kochen Lorbeer entfernen. Dann entweder pürieren und durch ein Sieb streichen (für eine glatte Soße) oder direkt durch ein Sieb abgießen und das Gemüse ausdrücken.",
     "Falls die Soße zu dünn ist: mit in Wasser angerührter Stärke/Mehl leicht abbinden.",
     "Noch einmal mit Salz, Pfeffer, Sojasoße und ggf. etwas Süße abschmecken"

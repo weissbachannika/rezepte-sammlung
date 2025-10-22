@@ -6,7 +6,8 @@
   "materials": 
     "Mixer (opt), feine Küchenreibe, Handrührgerät",
   "time": {
-    "total": "45 Min + 25 Min Backzeit"
+    "prep": 45,
+    "total": 70
   },
   "amount": 20,
   "ingredients": [
@@ -29,7 +30,7 @@
     "In diese Mischung die Zitronenschalen hinzufügen und mit dem Zuckerschaum vorsichtig zu einem Teig vermischen.",
     "Der Teig muss weich sein, darf aber nicht auseinanderlaufen. Falls der Teig zu dünn ist, etwas mehr Mandeln/Haselnüsse/Paniermehl unterrühren.",
     "Die Masse auf Oblaten streichen (ca. ½ cm dick) und diese mit etwas Abstand voneinander auf ein mit Backpapier ausgelegtes Blech legen.",
-    "Das Ganze bei 150°C für 20–30 Minuten backen.",
+    "Das Ganze bei 150°C für **20–30 Minuten** backen.",
     "Die Kuvertüre in einem Wasserbad schmelzen und diese auf die noch heißen Lebkuchen streichen."
   ],
   "notes": "",

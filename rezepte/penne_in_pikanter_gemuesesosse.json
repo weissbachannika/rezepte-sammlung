@@ -7,8 +7,8 @@
   ],
   "materials": "(Stab)mixer",
   "time": {
-    "prep": "",
-    "total": ""
+    "prep": 15,
+    "total": 25
   },
   "amount": 2,
     "ingredients": [
@@ -30,7 +30,7 @@
     "Salz & Pfeffer"
   ],
   "steps": [
-    "Paprika entkernen und Paprika und Zwiebel vierteln, auf ein mit Backpapier ausgelegtes Backblech geben und bei 230 °C Umluft für ca. 10–15 Minuten rösten, bis sie leicht braun werden.",
+    "Paprika entkernen und Paprika und Zwiebel vierteln, auf ein mit Backpapier ausgelegtes Backblech geben und bei 230 °C Umluft für ca. **10–15 Minuten** rösten, bis sie leicht braun werden.",
     "In der letzten Minute Pinienkerne hinzugeben.",
     "Nudeln kochen und währenddessen Tomaten vierteln und Oliven klein schneiden",
     "Nach dem Kochen etwa 50 ml Nudelwasser auffangen.",

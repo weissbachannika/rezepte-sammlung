@@ -9,7 +9,8 @@
     "25x25 cm Auflaufform",
 
   "time": {
-    "total": "1 Std + 45 Min Backzeit"
+    "prep": 60,
+    "total": 105
   },
   "amount": 6,
   "ingredients": [
@@ -35,7 +36,7 @@
   "steps": [
     "Die Auberginen waschen und in ca. 1 cm dicke Scheiben schneiden und in einer Lage auf mehrere Backbleche verteilen.",
     "Mit Olivenöl beträufeln, mit Salz und Pfeffer würzen und mit Oregano bestreuen.",
-    "Für 35–40 Minuten in dem auf 200°C Ober-/Unterhitze vorgeheizten Ofen rösten, bis sie gar sind.",
+    "Für **35–40 Minuten** in dem auf 180°C Umluft vorgeheizten Ofen rösten, bis sie gar sind.",
     { "text": "Währenddessen die Soße zubereiten:", "sub": [
       "1 Schuss Olivenöl in einen mittelgroßen Topf geben und auf mittlerer Stufe erhitzen.",
       "Knoblauch und Basilikumstiele 1 Minute darin braten.",
@@ -52,7 +53,7 @@
       "Mit ⅓ der Béchamelsoße bestreichen."
     ]},
     "Auf die letzte Schicht Béchamelsoße den restlichen Parmesan verteilen und danach den Reibekäse darüber streuen.",
-    "Die Lasagne 40–45 Minuten in den Ofen geben (200°C), bis sie goldbraun und gar ist."
+    "Die Lasagne **40–45 Minuten** in den Ofen geben (180°C Umluft), bis sie goldbraun und gar ist."
   ],
   "notes": "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner",
   "credits": "Trudi",

@@ -6,7 +6,8 @@
   "materials": 
     "26 cm Springform, feine Küchenreibe, Alufolie (opt.)",
   "time": {
-    "total": "30 Min + 1 Std Backzeit"
+    "prep": 30,
+    "total": 90
   },
   "amount": 12,
   "ingredients": [
@@ -29,7 +30,7 @@
     "Die Zutaten für den Boden zu einem glatten Teig verkneten (und für ca. 30 Minuten kühlen).",
     "Für die Füllung den Joghurt mit dem Zucker, der abgeriebenen Schale der Zitrone und dem Puddingpulver verrühren. Die Margarine schmelzen und unterrühren.",
     "Die Springform einfetten und den Teig darin gleichmäßig verteilen und mit einer Gabel ein paar kleine Löcher in den Teig stechen. Dabei einen Rand von 2–3 cm Höhe bilden.",
-    "Die Joghurtmasse in die Form füllen und den Kuchen im vorgeheizten Ofen (180°C Ober-/Unterhitze) circa 60 Minuten backen (sollte am ende goldgelb sein).",
+    "Die Joghurtmasse in die Form füllen und den Kuchen im vorgeheizten Ofen (180°C Ober-/Unterhitze) circa **60 Minuten** backen (sollte am ende goldgelb sein).",
     "Falls der Kuchen zu dunkel wird, mit Alufolie abdecken.",
     "Nach dem Backen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er völlig kalt ist."
   ],

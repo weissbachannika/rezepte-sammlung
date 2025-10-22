@@ -6,7 +6,8 @@
   "materials": 
     "Stabmixer",
   "time": {
-    "total": "20 Min + 30–40 Min Backzeit"
+    "prep": 15,
+    "total": 50
   },
   "amount": 4,
   "ingredients": [
@@ -26,7 +27,7 @@
   ],
   "steps": [
     "Kürbis (und falls noch anderes Gemüse in die Suppe soll, das auch) waschen und grob schneiden, Kerne entfernen.",
-    "Gemüse mit Öl und Salz im Ofen rösten (180–200°C für 30–40 Minuten).",
+    "Gemüse mit Öl und Salz im Ofen bei 200°C für **30–40 Minuten** rösten.",
     "Kurz bevor der Kürbis fertig ist, die Zwiebel würfeln und in einem (großen) Topf in etwas Öl anbraten und kurz danach den gehackten Ingwer dazugeben.",
     "Den Herd auf niedrigste Stufe stellen und das im Ofen geröstete Gemüse mit in den Topf geben.",
     "Mit Brühe und Kokosmilch/Sahne ablöschen und kurz aufkochen.",

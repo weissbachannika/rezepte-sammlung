@@ -49,18 +49,25 @@ function slugifyTitle(s) {
     .replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g,'');
 }
 
+function formatInlineEscaped(s) {
+  // erst escapen, dann Markdown-Bold einsetzen
+  return escapeHtml(s)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/__([^_]+)__/g, '<strong>$1</strong>');
+}
+
 function renderInline(text) {
   const str = String(text ?? '');
   const re = /\[([^\]]+)\]\(#([^\)]+)\)/g;
   let out = '', last = 0, m;
   while ((m = re.exec(str))) {
-    out += escapeHtml(str.slice(last, m.index));   // normaler Text vorher
-    const title = escapeHtml(m[1]);
+    out += formatInlineEscaped(str.slice(last, m.index));   // normaler Text
+    const title = formatInlineEscaped(m[1]);
     const file  = m[2].replace(/^#/, '').trim();
     out += `<a href="#" class="recipe-link" data-file="${escapeHtml(file)}">${title}</a>`;
     last = re.lastIndex;
   }
-  out += escapeHtml(str.slice(last));
+  out += formatInlineEscaped(str.slice(last));
   return out;
 }
 
@@ -126,6 +133,15 @@ function unlockBodyScroll() {
   document.documentElement.style.overflow = '';
 }
 
+function formatMinutes(min) {
+  const m = Number(min);
+  if (!Number.isFinite(m) || m <= 0) return '';
+  if (m < 60) return `${m} Min`;
+  const h = Math.floor(m / 60);
+  const r = m % 60;
+  return r ? `${h} Std ${r} Min` : `${h} Std`;
+}
+
 // --------------- Main ---------------
 
 export function openModal(id, opts = {}) {
@@ -145,25 +161,40 @@ export function openModal(id, opts = {}) {
   const ulSp        = $('#modalSpices');
   const ingBox      = $('#ingredientsBox');
   const ulIng       = $('#modalIngredients');
-  const servings = $('#servings');
+  const servings    = $('#servings');
 
   const timeChip    = $('#timeChip');
-  const timeText    = $('#modalTimeText');
+  const prepText    = $('#modalPrepText');
+  const totalText   = $('#modalTotalText');
+  const prepIcon    = $('#prepIcon');
+  const totalIcon   = $('#totalIcon');
 
   const matsBox     = $('#materialsBox');
   const ulMat       = $('#modalMaterials');
 
-  // --- ZEIT (nur Gesamtzeit, ohne Überschrift) ---
-  // Unterstützt r.time.total oder r.totalTime
-  const total = r?.time?.total ?? r?.totalTime ?? '';
-  const hasTotal = Boolean(total && String(total).trim());
-  if (hasTotal) {
-    timeText.textContent = String(total).trim();
-    timeChip.style.display = 'flex';
-  } else {
-    timeText.textContent = '';
-    timeChip.style.display = 'none';
+  // --- ZEIT (Prep + Gesamtzeit in einer Zeile, ohne Überschrift) ---
+  // Unterstützt ints in Minuten. Prep wird nur angezeigt wenn vorhanden.
+  const prepMin  = r?.time?.prep  ?? r?.prepTime ?? null;
+  const totalMin = r?.time?.total ?? r?.totalTime ?? null;
+
+  const prepStr  = formatMinutes(prepMin);
+  const totalStr = formatMinutes(totalMin);
+
+  const showPrep  = !!prepStr;
+  const showTotal = !!totalStr;
+
+  if (prepIcon)  prepIcon.style.display  = showPrep  ? '' : 'none';
+  if (prepText)  {
+    prepText.textContent = showPrep ? prepStr : '';
+    prepText.style.display = showPrep ? '' : 'none';
   }
+  if (totalIcon) totalIcon.style.display = showTotal ? '' : 'none';
+  if (totalText) {
+    totalText.textContent = showTotal ? totalStr : '';
+    totalText.style.display = showTotal ? '' : 'none';
+  }
+
+  timeChip.style.display = (showPrep || showTotal) ? 'flex' : 'none';
 
   const amt = Number(r?.amount);
   if (Number.isFinite(amt) && amt > 0) {

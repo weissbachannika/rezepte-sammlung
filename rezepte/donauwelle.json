@@ -7,7 +7,8 @@
     "22 cm Springform (oder 30x40 cm Backblech für doppelte Menge)",
     
   "time": {
-    "total": "1 Std + 40 Min Backzeit + Abkühlzeit"
+    "prep": 90,
+    "total": 600
   },
   "amount": 12,
   "ingredients": [
@@ -42,7 +43,7 @@
     "Etwa die Hälfte des Teigs in die Backform geben und glattstreichen.",
     "In einer kleinen Schüssel Kakao in etwas heißer Milch auflösen und unter die restliche Teigmenge rühren.",
     "Den dunklen Teig auf den hellen geben, die abgetropften Kirschen darauf verteilen und leicht eindrücken.",
-    "Den Kuchen auf der mittleren Schiene etwa 40 Min backen und anschließend in der Form vollständig auskühlen lassen.",
+    "Den Kuchen auf der mittleren Schiene etwa **40 Min** backen und anschließend in der Form vollständig auskühlen lassen.",
     { "section": "Pudding-Creme-Füllung" },
     "Etwa 80 ml Milch mit dem Puddingpulver verrühren, bis keine Klümpchen mehr vorhanden sind.",
     "Die restliche Milch in einem Topf erhitzen. Sobald sie kocht, Zucker und die Puddingmischung unter ständigem Rühren zugeben.",

@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "40 Min + 30 Min Ruhen + 15 Min Backzeit"
+    "prep": 45,
+    "total": 90
   },
   "amount": 20,
   "ingredients": [
@@ -27,7 +28,7 @@
     "Den fertigen Teig abgedeckt mindestens 30 Minuten im Kühlschrank ruhen lassen.",
     "Danach den Teig kurz durchkneten und kleine Kugeln formen.",
     "In jede Kugel eine Vertiefung drücken, z. B. mit dem Stiel eines Kochlöffels oder dem Daumen. Die Mulden sollten deutlich ausgeprägt sein, da der Teig beim Backen aufgeht.",
-    "Die Kugeln mit ausreichend Abstand auf ein mit Backpapier belegtes Blech setzen und bei 180 °C etwa 15 Minuten backen, bis sie goldgelb sind.",
+    "Die Kugeln mit ausreichend Abstand auf ein mit Backpapier belegtes Blech setzen und bei 180 °C etwa **15 Minuten** backen, bis sie goldgelb sind.",
     "Die noch warmen Plätzchen vorsichtig mit Marmelade füllen.",
     "Nach dem Abkühlen nach Belieben mit Puderzucker bestäuben."
   ],

@@ -8,7 +8,8 @@
   "materials": 
     "",
   "time": {
-    "total": "40 Min"
+    "prep": 10,
+    "total": 40
   },
   "amount": 4,
   "ingredients": [

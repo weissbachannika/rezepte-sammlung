@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "20 Min"
+    "prep": 20,
+    "total": 40
   },
   "amount": 4,
   "ingredients": [

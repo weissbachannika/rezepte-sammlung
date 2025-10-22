@@ -9,8 +9,8 @@
     "40x30 cm Backblech",
 
   "time": {
-    "prep": "5 Min",
-    "total": "1 Std 30 Min"
+    "prep": 60,
+    "total": 90
   },
   "amount": 12,
   "ingredients": [
@@ -34,9 +34,9 @@
     "Für den Teig Mehl mit Backpulver in eine verschließbare Schüssel (3-Liter-Inhalt) sieben, mit Zucker und Vanillin-Zucker mischen.",
     "Ei-Ersatz und die Sojamilch-Mischung hinzufügen, die Schüssel mit dem Deckel fest verschließen. Mehrmals ein paar Sekunden kräftig schütteln, so dass alle Zutaten gut vermischt sind.",
     "Alles mit einem Schneebesen/Löffel nochmals sorgfältig durchrühren, damit vor allem trockene Zutaten vom Rand mit untergerührt werden.",
-    "Teig auf ein Backblech (mit Backpapier ausgelegt/gefettet) streichen und dann in den Backofen schieben und bei 160 °C Umluft für ca. 10 Minuten vorbacken.",
+    "Teig auf ein Backblech (mit Backpapier ausgelegt/gefettet) streichen und dann in den Backofen schieben und bei 160 °C Umluft für ca. **10 Minuten** vorbacken.",
     "Für den Belag die Butter in einem kleinen Topf schmelzen lassen und dann zusammen mit dem Zucker und den Mandeln aufkochen lassen.",
-    "Die Masse auf den vorgebackenen Boden streichen. Backblech wieder in den Backofen schieben und für weitere 15 Minuten backen."
+    "Die Masse auf den vorgebackenen Boden streichen. Backblech wieder in den Backofen schieben und für weitere **15 Minuten** backen."
   ],
   "notes": "Als Ei-Ersatz eignet sich z. B. Apfelmus (2 EL/Ei), veganer Joghurt (2 EL/Ei) oder leicht schaumig geschlagenes Aquafaba (3 EL/Ei). Ich habe das etwas gemischt und 4 EL Aquafaba, 2 EL Sojajoghurt und 1 TL Öl genommen.",
   "credits": "Mamsi",

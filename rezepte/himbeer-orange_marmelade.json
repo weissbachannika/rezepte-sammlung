@@ -6,7 +6,8 @@
   "materials": 
     "ca 10 Marmeladengläser",
   "time": {
-    "total": "20 Min + 1 Std Ruhezeit + Zeit zum Auskühlen"
+    "prep": 20,
+    "total": 80
   },
   "amount": 10,
   "ingredients": [
@@ -17,9 +18,9 @@
   "spices": [],
   "steps": [
     "Himbeeren (auftauen lassen und) in einem mindestens 5 l großen Topf, zusammen mit dem Orangen-Fruchtfleisch und dem dazu gewogenen Gelierzucker im richtigen Verhältnis vermischen.",
-    "Die Mischung etwa 1 h durchziehen lassen.",
+    "Die Mischung etwa **1 Stunde** durchziehen lassen.",
     "Unter gelegentlichem Umrühren zum Kochen bringen.",
-    "Sprudelnd etwa 3 Minuten kochen lassen (Achtung, die Mischung kocht leicht über!).",
+    "Sprudelnd etwa **3 Minuten** kochen lassen (Achtung, die Mischung kocht leicht über!).",
     "Die Marmelade in heiß ausgewaschene Gläser und Deckel füllen und fest zumachen, am Besten ohne die Finger zu verbrennen.",
     "Die Gläser verkehrt herum zurseite stellen und ganz auskühlen lassen"
   ],

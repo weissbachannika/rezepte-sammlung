@@ -5,8 +5,8 @@
   "tags": ["Backen", "Kekse", "Süßes", "Low-Effort", "Winter"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "15 Min + 15 Min Backzeit"
+    "prep": 15,
+    "total": 30
   },
   "amount": 12,
   "ingredients": [
@@ -20,7 +20,7 @@
     "Nun langsam das Mehl in kleinen Portionen hinzugeben und alles gut durchkneten.",
     "Aus dem Teig 4 cm kleine Kugeln formen und leicht flachdrücken.",
     "In den nicht vorgeheizten Ofen auf die mittlere Schiene schieben.",
-    "Den Ofen auf 175°C Ober-/Unterhitze stellen und die Plätzchen 15 Minuten backen (sie dürfen nicht gebräunt sein).",
+    "Den Ofen auf 175°C Ober-/Unterhitze stellen und die Plätzchen **15 Minuten** backen (sie dürfen nicht gebräunt sein).",
     "Die leicht warmen Plätzchen mit Puderzucker bestreuen."
   ],
   "notes": "",

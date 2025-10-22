@@ -8,8 +8,7 @@
   "materials": 
     "Salatschüssel, Schüttelglas (z.B. altes Marmeladenglas)",
   "time": {
-    "prep": "",
-    "total": "15 Min"
+    "total": 15
   },
   "amount": 4,
   "ingredients": [
@@ -20,7 +19,7 @@
     "200 g veganer Feta",
     "80 g schwarze Oliven",
     "2 TL getrockneter Oregano",
-    "4 Salatblätter (opt)",
+    "4 Salatblätter (opt.)",
     { "section": "Für die Vinaigrette"},
     "80 ml Olivenöl",
     "4 EL Zitronensaft oder Weißweinessig",

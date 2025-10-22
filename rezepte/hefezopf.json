@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "1 Std + 1 Std 30 Min Ruhezeit"
+    "prep": 85,
+    "total": 180
   },
   "amount": 16,
   "ingredients": [
@@ -29,7 +30,7 @@
     "Mehl, restlichen Zucker und Salz in einer großen Schüssel mischen.",
     "Dann die übrigen 160 ml Pflanzenmilch, die Butter, die Hefemischung und den Vanilleextrakt dazugeben. Mit einem Holzlöffel vermengen, bis das Mehl die Flüssigkeit vollständig aufgenommen hat.",
     "Den Teig auf eine Arbeitsfläche geben und etwa 5–10 Minuten kräftig durchkneten, bis er glatt und elastisch ist. (Ggf. eine Küchenmaschine mit Knethaken nutzen)",
-    "Den Teig in eine geölte Schüssel legen, abdecken (mit feuchtem Tuch oder Folie) und 45–60 Minuten an einem warmen Ort ruhen lassen – oder über Nacht im Kühlschrank, bis er sich circa verdoppelt hat.",
+    "Den Teig in eine geölte Schüssel legen, abdecken (mit feuchtem Tuch oder Folie) und **45–60 Minuten** an einem warmen Ort ruhen lassen – oder über Nacht im Kühlschrank, bis er sich circa verdoppelt hat.",
     { "section": "Hefezopf flechten" },
     "Den aufgegangenen Teig kurz durchkneten. Nach Belieben den ganzen Teig für einen großen Zopf verwenden oder teilen, um zwei kleinere Zöpfe zu backen.",
     "Den Teig in drei gleich große Stücke teilen, zu langen Strängen rollen und locker zu einem Zopf flechten, dabei die Enden gut zusammendrücken.",

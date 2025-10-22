@@ -5,8 +5,8 @@
   "tags": ["Hauptgericht", "Beilage", "Backen", "Low-Effort", "Kartoffeln"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "20 Min + 40 Min Backzeit"
+    "prep": 20,
+    "total": 60
   },
   "amount": 4,
   "ingredients": [
@@ -33,7 +33,7 @@
   "steps": [
     "Gemüse schneiden.",
     "Auf einem Backblech verteilen, mit Öl und Gewürzen vermischen.",
-    "Alles für ca. 30–40 Minuten bei 200 °C Ober-/Unterhitze backen."
+    "Alles für ca. **30–40 Minuten** bei 200 °C Ober-/Unterhitze backen."
   ],
   "notes": [
     "Etwas frischen gewaschenen Babyspinat, etwas von dem Dip in einen tiefen Teller geben und das Ofengemüse darauf geben.",

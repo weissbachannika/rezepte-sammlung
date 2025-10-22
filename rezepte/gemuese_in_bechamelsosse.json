@@ -6,7 +6,8 @@
   "materials": 
     "",
   "time": {
-    "total": "30–35 Min"
+    "prep": 30,
+    "total": 40
   },
   "amount": 4,
   "ingredients": [
@@ -23,8 +24,8 @@
     "Salz & Pfeffer"
   ],
   "steps": [
-    "Kartoffeln schälen und in relativ gleich große Hälften/Viertel schneiden und für ca. 20 Minuten kochen.",
-    "Das Gemüse deiner Wahl waschen, ggf. schälen, schneiden und in einem großen Topf in Salzwasser kochen (die genannten Gemüsesorten brauchen alle so ca. 15 Minuten).",
+    "Kartoffeln schälen und in relativ gleich große Hälften/Viertel schneiden und für **15–20 Minuten** kochen.",
+    "Das Gemüse deiner Wahl waschen, ggf. schälen, schneiden und in einem großen Topf in Salzwasser kochen (die genannten Gemüsesorten brauchen alle ca. **15 Minuten**).",
     "Das Gemüse abgießen (etwas von dem Kochwasser auffangen) und in einem Durchschlag (oder so) beiseite stellen.",
     "In dem jetzt wieder freien Topf eine [Béchamelsoße](#bechamelsosse.json) zubereiten (dabei kann man einen Teil der Milch durch das aufgefangene Kochwasser ersetzen).",
     "Wenn die Soße fertig ist, das Gemüse dazugeben und alles gut vermischen, ggf. noch Brühe zugeben bis zur gewünschten Konsistenz und alles kurz warm werden lassen."
