@@ -53,7 +53,7 @@
     "Falls zu trocken, etwas Wasser/Brühe hinzugeben.",
     "Mit Salz und Pfeffer (und allen Gewürzen deiner Wahl) abschmecken.",
     { "section": "Rest" },
-    "Alle Zutaten für den Dip in einer Schüssel mixen und mit Gewürzen abschmecken.",
+    "Den [Joghurt Dip](#joghurt_dip.json) anrühren.",
     "Mit Avocado und Frühlingszwiebeln garnieren (opt)."
   ],
   "notes": "",
