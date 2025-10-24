@@ -244,7 +244,7 @@ function renderCategoryBar() {
   });
 }
 
-const getPrep  = (r) => Number(r?.time?.prep ?? NaN);
+const getPrep  = (r) => Number(r?.time?.prep ?? r?.time?.total ?? r?.totalTime ?? NaN);
 const getTotal = (r) => Number(r?.time?.total ?? r?.totalTime ?? NaN);
 function fmtMinutes(min) {
   const n = Number(min);

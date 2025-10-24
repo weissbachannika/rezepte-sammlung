@@ -132,12 +132,12 @@ header {
 .time-section-title { 
   font-size: 13px; 
   color: var(--subtext); 
-  margin: 0px 0 12px; 
+  margin: 0px 0 8px; 
   text-transform: uppercase; 
   letter-spacing: 1px; 
 }
 .time-filter {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 #timeSlider, #prepSlider {
   width: 95%;

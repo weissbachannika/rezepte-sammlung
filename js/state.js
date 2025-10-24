@@ -43,7 +43,7 @@ export function matchesWith(recipe, opts = {}) {
     if (!Number.isFinite(total) || total > maxTotal) return false;
   }
   if (Number.isFinite(maxPrep)) {
-    const prep = Number(recipe?.time?.prep ?? NaN);
+    const prep = Number(recipe?.time?.prep ?? recipe?.time?.total ?? recipe?.totalTime ?? NaN);
     if (!Number.isFinite(prep) || prep > maxPrep) return false;
   }
 
