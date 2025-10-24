@@ -43,7 +43,7 @@ a:hover {
 /* LAYOUT ------------------------------------------------------------- */
 .app {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 18% 1fr;
   gap: 16px;
   max-width: 1400px;
   margin: 24px auto;
