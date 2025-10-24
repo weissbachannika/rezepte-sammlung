@@ -255,18 +255,14 @@ function fmtMinutes(min) {
   return m ? `${h} Std ${m} Min` : `${h} Std`;
 }
 
-function renderNumericSlider({ sliderSel, labelSel, stateKey, overrideKey, getVal }) {
+function renderNumericSlider({ sliderSel, labelSel, stateKey, getVal }) {
   const slider = document.querySelector(sliderSel);
   const label  = document.querySelector(labelSel);
   if (!slider || !label) return;
 
-  // Basis = alle aktuell gültigen Rezepte, aber DIESE eine Grenze ignorieren
-  const overrides = {};
-  overrides[stateKey] = null; // diese Grenze temporär ignorieren
-  const BASE = RECIPES.filter(r => matchesWith(r, overrides));
-
+  // Schritte IMMER aus allen Rezepten
   const steps = Array.from(
-    new Set(BASE.map(getVal).filter(Number.isFinite))
+    new Set(RECIPES.map(getVal).filter(Number.isFinite))
   ).sort((a, b) => a - b);
 
   const maxIdx = Math.max(steps.length - 1, 0);
@@ -275,7 +271,7 @@ function renderNumericSlider({ sliderSel, labelSel, stateKey, overrideKey, getVa
   slider.step = '1';
   slider.disabled = steps.length === 0;
 
-  // Default: wenn noch kein Wert gesetzt -> größter Wert (= keine Einschränkung)
+  // Default: größter Wert (= keine Einschränkung)
   if (!Number.isFinite(state[stateKey])) {
     state[stateKey] = steps.length ? steps[maxIdx] : null;
   }
@@ -298,8 +294,7 @@ function renderNumericSlider({ sliderSel, labelSel, stateKey, overrideKey, getVa
     const val = steps.length ? steps[i] : null;
     state[stateKey] = val;
     label.textContent = steps.length ? fmtMinutes(val) : '—';
-    renderGrid();           // Grid neu nachziehen
-    renderSidebar();        // beide Slider erneut an neue Menge anpassen
+    renderGrid(); // Filter anwenden, Steps bleiben global
   };
 }
 

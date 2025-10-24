@@ -155,7 +155,7 @@ aside {
   border-radius: var(--radius); 
   padding: 16px; 
   box-shadow: var(--shadow);
-  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + 8px));
+  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap)));
   height: fit-content;
   overflow-y: auto;
 }
