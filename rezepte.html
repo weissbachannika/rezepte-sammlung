@@ -23,12 +23,21 @@
     </header>
 
     <aside>
-      <!-- Zeitfilter -->
+      <!-- Prep Zeitfilter -->
+       <div class="time-filter">
+        <div class="time-section-title">
+          <img src="./icons/chef_hat_white.svg" alt="" width="16" height="16" style="vertical-align:-3px;margin-right:6px;">
+          Arbeitszeit bis zu <span id="prepSel">—</span>
+        </div>
+        <input id="prepSlider" type="range" min="0" value="0" aria-label="Max Arbeitszeit in Minuten">
+      </div>
+      <!-- total Zeitfilter -->
       <div class="time-filter">
         <div class="time-section-title">
+          <i class="fa-regular fa-alarm-clock"></i>
           FERTIG IN <span id="timeSel">—</span>
         </div>
-        <input id="timeSlider" type="range" min="0" value="0" step="5" aria-label="Fertig in Minuten">
+        <input id="timeSlider" type="range" min="0" value="0" aria-label="Fertig in Minuten">
       </div>
       <div class="section-title">TAGS</div>
       <div class="tags-bar">
@@ -55,6 +64,8 @@
       </p>
     </footer>
   </div>
+
+<!------------ MODAL ------------>
 
   <dialog id="recipeModal" aria-label="Rezeptdetails">
     <div class="modal-header">

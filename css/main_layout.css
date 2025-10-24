@@ -139,7 +139,7 @@ header {
 .time-filter {
   margin-bottom: 18px;
 }
-#timeSlider {
+#timeSlider, #prepSlider {
   width: 95%;
   accent-color: var(--accent-2);
   color: var(--subtext);
