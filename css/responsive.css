@@ -56,6 +56,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  
+  .time-filter {
+    display: none;
+  }
 
   /* Cards grid tweaks on narrow screens */
   .grid {
@@ -112,6 +116,8 @@
     cursor: pointer;
   }
 }
+
+
 /* [R-420A] RESPONSIVE ≤420px — search popover in header ----------------- */
 @media (max-width: 420px){
 
@@ -165,10 +171,7 @@
   padding: 4px;
   margin-left: 6px;
   flex: 0 0 auto;
-}
-}
-/* [R-420B] RESPONSIVE ≤420px — card layout + steps badges -------------- */
-@media (max-width: 420px) {
+  }
   .app { 
     gap: 6px; 
   }

@@ -1,5 +1,5 @@
 // Zentraler Zustand & Utilities
-export const state = { q: '', tags: new Set(), category: 'all' };
+export const state = { q: '', tags: new Set(), category: 'all', maxTime: null };
 
 const SWEET_TAG = 'Süßes';
 
@@ -26,13 +26,19 @@ export function getAllTags(data) {
 
 // Filterfunktion
 export function matches(recipe) {
-  const { q, tags, category } = state;
+  const { q, tags, category, maxTime } = state;
 
   // Kategorie-Filter
   const rtags = recipe.tags || [];
   const isSweet = rtags.includes(SWEET_TAG);
   if (category === 'sweet' && !isSweet) return false;
   if (category === 'savory' && isSweet) return false;
+
+  // Zeitfilter (<= maxTime)
+  if (Number.isFinite(maxTime)) {
+    const total = Number(recipe?.time?.total ?? recipe?.totalTime ?? NaN);
+    if (!Number.isFinite(total) || total > maxTime) return false;
+  }
 
   if (tags.size) {
     if (!recipe.tags) return false;

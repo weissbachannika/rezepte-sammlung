@@ -39,10 +39,8 @@
     "Bei Umluft 200°C ca. **40 Minuten** backen.",
     { "section": "Füllung" },
     "Zwiebel und Paprika schnibbeln.",
-    "Soja-Granulat einweichen & würzen.",
-    "Etwas Brühe oder/und Sojasoße, Tomatenmark und Gewürze deiner Wahl (die Gewürze, die sonst hier im Rezept benutzt werden, passen alle gut) mit dem Granulat gut vermischen und kurz beiseitestellen.",
-    "Füllung in großer/tiefer Pfanne oder Topf zubereiten:",
-    "Zwiebel in etwas Öl anbraten.",
+    "Etwas Brühe oder/und Sojasoße, Tomatenmark und Gewürze deiner Wahl mit dem Soja-Granulat gut vermischen und kurz beiseitestellen.",
+    "In einer großen Pfanne die Zwiebel in etwas Öl anbraten.",
     "Nach 1–2 Minuten Paprika hinzufügen.",
     "Nach ein paar Minuten Herd etwas runterstellen.",
     "Tomatenmark & Gewürze kurz mit anbraten.",
@@ -52,10 +50,9 @@
     "Kidneybohnen und Mais hinzufügen.",
     "Falls zu trocken, etwas Wasser/Brühe hinzugeben.",
     "Mit Salz und Pfeffer (und allen Gewürzen deiner Wahl) abschmecken.",
-    { "section": "Rest" },
-    "Den [Joghurt Dip](#joghurt_dip.json) anrühren.",
-    "Mit Avocado und Frühlingszwiebeln garnieren (opt)."
+    { "section": "Dip" },
+    "Den [Joghurt Dip](#joghurt_dip.json) anrühren."
   ],
-  "notes": "",
+  "notes": "Optional alles am Ende mit Avocado und/oder Frühlingszwiebeln garnieren",
   "image": "./images/Loaded_suesskartoffel.jpg"
 }

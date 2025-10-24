@@ -244,8 +244,70 @@ function renderCategoryBar() {
   });
 }
 
+const getTotal = (r) => Number(r?.time?.total ?? r?.totalTime ?? NaN);
+function fmtMinutes(min) {
+  const n = Number(min);
+  if (!Number.isFinite(n)) return '—';
+  if (n < 60) return `${n} Min`;
+  const h = Math.floor(n / 60);
+  const m = n % 60;
+  return m ? `${h} Std ${m} Min` : `${h} Std`;
+}
+
+function renderTimeFilter() {
+  const slider = $('#timeSlider');
+  const label = $('#timeSel');
+  if (!slider || !label) return;
+
+  // alle total-Zeiten einsammeln, bereinigen, sortieren, eindeutige Werte
+  const steps = Array.from(
+    new Set(
+      RECIPES
+        .map(r => Number(r?.time?.total ?? r?.totalTime ?? NaN))
+        .filter(Number.isFinite)
+    )
+  ).sort((a, b) => a - b);
+
+  const maxIdx = Math.max(steps.length - 1, 0);
+
+  // Slider auf Indexbereich abbilden
+  slider.min = '0';
+  slider.max = String(maxIdx);
+  slider.step = '1';
+
+  // Default: falls noch kein Wert gesetzt -> größter Wert (= keine Einschränkung)
+  if (!Number.isFinite(state.maxTime)) {
+    state.maxTime = steps.length ? steps[maxIdx] : 0;
+  }
+
+  // aktuellen Index zum bestehenden Wert finden (falls Wert nicht exakt existiert: nächsten nehmen)
+  const idxFromVal = (val) => {
+    if (!steps.length) return 0;
+    let i = steps.indexOf(val);
+    if (i !== -1) return i;
+    // nächstkleineren Index suchen, sonst 0
+    i = steps.findIndex(x => x >= val);
+    return i === -1 ? maxIdx : i;
+  };
+
+  const clampIdx = (i) => Math.min(Math.max(0, i|0), maxIdx);
+
+  const curIdx = clampIdx(idxFromVal(state.maxTime));
+  slider.value = String(curIdx);
+  label.textContent = fmtMinutes(steps.length ? steps[curIdx] : 0);
+
+  slider.oninput = (e) => {
+    const i = clampIdx(Number(e.target.value));
+    const val = steps.length ? steps[i] : 0;
+    state.maxTime = val;
+    label.textContent = fmtMinutes(val);
+    renderGrid();
+  };
+}
+
 export function renderSidebar() {
   const tagEl = $('#tags');
+  renderTimeFilter();
   tagEl.innerHTML = '';
     
   // Always start collapsed via __updateTagsLayout below
