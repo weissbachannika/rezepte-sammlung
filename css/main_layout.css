@@ -7,6 +7,7 @@
   --subtext: #a9b1c3;
   --accent: #6ea8fe;
   --accent-2: #4872c0;
+  --accent-3: #214484;
   --danger: #ff6b6b;
   --radius: 14px;
   --shadow: 0 8px 24px rgba(0,0,0,0.35);
@@ -132,7 +133,7 @@ header {
 .time-section-title { 
   font-size: 13px; 
   color: var(--subtext); 
-  margin: 0px 0 8px; 
+  margin: 0px 0 10px; 
   text-transform: uppercase; 
   letter-spacing: 1px; 
 }
@@ -141,8 +142,7 @@ header {
 }
 #timeSlider, #prepSlider {
   width: 95%;
-  accent-color: var(--accent-2);
-  color: var(--subtext);
+  accent-color: var(--accent-3);
 }
 
 /* TAG LIST / SIDEBAR ------------------------------------------------- */
