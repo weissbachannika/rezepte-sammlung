@@ -51,7 +51,7 @@
   }
 
   .app {
-    grid-template-columns: 1fr;   /* erst ab hier Sidebar unter Content */
+    grid-template-columns: 1fr;   /* erst ab hier Sidebar über Content */
   }
   aside {
     position: static;
@@ -77,10 +77,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   
-  .time-filter {
-    display: none;
-  }
 
   /* Cards grid tweaks on narrow screens */
   .grid {
@@ -136,8 +134,22 @@
     font-size: 12px;
     cursor: pointer;
   }
-}
 
+  /* Slider: unter Tags und nur sichtbar, wenn Tag-Liste ausgeklappt ist */
+  .time-filter-wrapper {
+    display: none;            /* standardmäßig verstecken */
+    margin-top: 16px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .time-filter-wrapper .time-filter {
+    flex: 1;
+  }
+  .time-filter-wrapper .section-title,
+  .time-filter-wrapper .time-section-title {
+    font-size: 12px;
+  }
+}
 
 /* [R-420A] RESPONSIVE ≤420px — search popover in header ----------------- */
 @media (max-width: 420px){
@@ -197,7 +209,8 @@
     gap: 6px; 
   }
   .section-title { 
-    display: none; 
+    margin-left: 6px; 
+    margin-bottom: 4px;
   } 
   aside {
     padding: 8px 8px;

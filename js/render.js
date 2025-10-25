@@ -72,6 +72,7 @@ function __setExpanded(on) {
     __showAllChips(list);
   }
   __updateToggleButton();
+  positionTimeFilters();
 }
 
 const isMobile = () => window.matchMedia('(max-width: 690px)').matches;
@@ -313,9 +314,38 @@ function renderTimeFilters() {
   });
 }
 
+function positionTimeFilters() {
+  const wrap = document.querySelector('.time-filter-wrapper');
+  const tagsBar = document.querySelector('.tags-bar');
+  const scroller = document.querySelector('.tag-scroller');
+  const aside = document.querySelector('aside');
+  if (!wrap || !tagsBar || !scroller || !aside) return;
+
+  const isMobile = window.matchMedia('(max-width: 690px)').matches;
+
+  if (isMobile) {
+    // Mobile: Wrapper direkt NACH der gesamten Tags-Bar platzieren
+    if (tagsBar.nextElementSibling !== wrap) {
+      tagsBar.parentNode.insertBefore(wrap, tagsBar.nextSibling);
+    }
+    // Nur anzeigen, wenn die Tag-Liste ausgeklappt ist
+    const expanded = scroller.classList.contains('expanded');
+    wrap.style.display = expanded ? 'flex' : 'none';
+  } else {
+    // Desktop: oben im aside, immer sichtbar
+    if (aside.firstElementChild !== wrap) {
+      aside.insertBefore(wrap, aside.firstChild);
+    }
+    wrap.style.display = ''; // CSS übernimmt Layout
+  }
+}
+
+window.addEventListener('resize', positionTimeFilters);
+
 export function renderSidebar() {
   const tagEl = $('#tags');
   renderTimeFilters();
+  positionTimeFilters();
   tagEl.innerHTML = '';
     
   // Always start collapsed via __updateTagsLayout below
