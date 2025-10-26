@@ -8,25 +8,25 @@
     "prep": 25,
     "total": 50
   },
-  "amount": 3,
+  "amount": 2,
   "ingredients": [
-    "2 Stangen Lauch",
-    "250 ml Hafersahne",
+    "1 große Stange Lauch",
+    "200 ml Hafersahne",
     "ca. 100 g veganer Reibekäse",
     "½ kg Kartoffeln (mehligkochend)",
     "ca. 3 EL vegane Butter/Margarine",
     "ca. 60 ml Pflanzenmilch (Raumtemperatur)"
   ],
   "spices": [
-    "Brühepulver",
-    "Muskatnuss",
+    "2 TL Brühepulver",
+    "½ Muskatnuss",
     "Salz & Pfeffer"
   ],
   "steps": [
     "Den Lauch gut waschen (die Stangen ggf. längs halbieren, um den Dreck besser entfernen zu können).",
     "Dann die Stangen Lauch vierteln (also ca. 15 cm lange Stücke) und in Salzwasser für ca. **15 Minuten** kochen.",
     "Währenddessen anfangen das [Kartoffelpüree](#kartoffelpueree.json) zubereiten.",
-    "In die Auflaufform dann die Sahne geben und mit Brühepulver (1–2 TL) und Muskatnuss (¼–½ Nuss) würzen.",
+    "In die Auflaufform dann die Sahne geben und mit Brühepulver und Muskatnuss (¼–½ Nuss) würzen.",
     "Wenn der Lauch fertig gekocht ist, diesen abgießen und in der Auflaufform verteilen.",
     "Den Käse oben drauf streuen und das alles für ca. **30 Minuten** bei 180°C Umluft backen."
   ],
