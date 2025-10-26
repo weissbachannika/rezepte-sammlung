@@ -7,6 +7,7 @@
   --subtext: #a9b1c3;
   --accent: #6ea8fe;
   --accent-2: #4872c0;
+  --accent-3: #214484;
   --danger: #ff6b6b;
   --radius: 14px;
   --shadow: 0 8px 24px rgba(0,0,0,0.35);
@@ -43,7 +44,7 @@ a:hover {
 /* LAYOUT ------------------------------------------------------------- */
 .app {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 18% 1fr;
   gap: 16px;
   max-width: 1400px;
   margin: 24px auto;
@@ -128,6 +129,26 @@ header {
   min-width: max-content;        /* Chip passt sich seiner Länge an */
 }
 
+/* TIME FILTER (Slider) ------------------------------------------------ */
+.time-section-title { 
+  font-size: 13px; 
+  color: var(--subtext); 
+  margin: 0px 0 10px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+.time-filter {
+  margin-bottom: 14px;
+}
+#timeSlider, #prepSlider {
+  width: 95%;
+  accent-color: var(--accent-3);
+}
+#prepSel, #timeSel {
+  font-weight: 450;
+  color: #FFFFFF;
+}
+
 /* TAG LIST / SIDEBAR ------------------------------------------------- */
 aside {
   position: sticky; 
@@ -138,7 +159,7 @@ aside {
   border-radius: var(--radius); 
   padding: 16px; 
   box-shadow: var(--shadow);
-  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap) + 8px));
+  max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap)));
   height: fit-content;
   overflow-y: auto;
 }

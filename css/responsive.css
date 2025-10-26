@@ -1,4 +1,22 @@
-/* [R-690] RESPONSIVE ≤690px --------------------------------------------- */
+/* [R-690] RESPONSIVE ≤1300px ---- */
+@media (max-width: 1300px) {
+  .app {
+    grid-template-columns: 22% 1fr;
+  }
+}
+/* [R-690] RESPONSIVE ≤1100px ----- */
+@media (max-width: 1100px) {
+  .app {
+    grid-template-columns: 26% 1fr;
+  }
+}
+/* [R-690] RESPONSIVE ≤940px ----- */
+@media (max-width: 940px) {
+  .app {
+    grid-template-columns: 30% 1fr;
+  }
+}
+/* [R-690] RESPONSIVE ≤690px ----- */
 @media (max-width: 690px) {
   /* Hide native clear buttons on mobile search fields */
   /* Nur mobil: Browser-Clear-Button im Suchfeld ausblenden */
@@ -18,7 +36,6 @@
     opacity: 0;
     pointer-events: none;
   }
-  /* extra Spezifität für dein konkretes Feld */
   #q::-webkit-search-cancel-button { 
     display: none !important;
   }
@@ -30,7 +47,7 @@
   }
 
   .app {
-    grid-template-columns: 1fr;   /* erst ab hier Sidebar unter Content */
+    grid-template-columns: 1fr;  
   }
   aside {
     position: static;
@@ -50,14 +67,12 @@
     grid-area: right; 
   }
 
-  /* Title einzeilig halten, kein Umbrechen beim Öffnen der Suche */
   header .title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  /* Cards grid tweaks on narrow screens */
   .grid {
     gap: 12px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -111,13 +126,33 @@
     font-size: 12px;
     cursor: pointer;
   }
-}
-/* [R-420A] RESPONSIVE ≤420px — search popover in header ----------------- */
-@media (max-width: 420px){
 
-  /* Suche: Icon-only im Header, Popover öffnet sich darunter */
+  .time-filter-wrapper {
+    display: flex;           
+    margin-top: 16px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .time-filter-wrapper .time-filter {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+  .time-filter-wrapper .section-title,
+  .time-filter-wrapper .time-section-title {
+    font-size: 12px;
+  }
+}
+
+/* [R-420A] RESPONSIVE ≤420px — search popover in header ----- */
+@media (max-width: 420px){
+  .app { 
+    gap: 6px; 
+  }
   header { 
-    position: sticky; /* sticky wirkt wie relative -> Anker für .search.open */
+    position: sticky; 
   } 
   .search {
     flex: 0 0 auto;
@@ -132,22 +167,20 @@
     flex: 0 0 auto; 
   }
 
-  /* Wenn geöffnet, wird die Suche als Popover unter dem Header platziert,
-     ohne den Header umzubrechen. */
   .search.open {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* exakt zentrieren */
-    width: calc(100% - 20px);         /* etwas Rand links/rechts */
-    max-width: 500px;                 /* optional Begrenzung */
+    transform: translate(-50%, -50%); 
+    width: calc(100% - 20px);  
+    max-width: 500px;   
     padding: 8px 12px;
     display: flex;
     gap: 10px;
     z-index: 20;
   }
   .search.open input {
-    display: block;          /* Eingabe anzeigen */
+    display: block;
     flex: 1;
   }
   .search.open svg { 
@@ -165,15 +198,10 @@
   padding: 4px;
   margin-left: 6px;
   flex: 0 0 auto;
-}
-}
-/* [R-420B] RESPONSIVE ≤420px — card layout + steps badges -------------- */
-@media (max-width: 420px) {
-  .app { 
-    gap: 6px; 
   }
   .section-title { 
-    display: none; 
+    margin-left: 6px; 
+    margin-bottom: 6px;
   } 
   aside {
     padding: 8px 8px;
@@ -186,6 +214,16 @@
   .tags-bar {
     margin-top: 0;
   }
+  .time-filter-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+  .time-filter-wrapper .time-filter {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 15px;
+  }
   .chip {
     font-size: 12px;
   }
@@ -193,37 +231,37 @@
     grid-template-columns: 1fr;
   }
   .grid {
-    align-content: start;  /* verhindert vertikales Strecken bei wenigen Treffern */
+    align-content: start; 
   }
   .card-title { 
     font-size: 15px;
     margin: 0 0 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
   }
-  /* Switch cards to horizontal layout on very small screens */
   .card {
     display: flex;
     gap: 12px;
     padding-right: 5px;
-    align-items: stretch;   /* gleiche Höhe wie Thumbnail */
-    height: 96px;           /* fix auf Thumbnail-Höhe */
-    overflow: hidden;       /* Überschuss abschneiden */
+    align-items: stretch;  
+    height: 96px;  
+    overflow: hidden;    
   }
-  /* Fixed left thumbnail for horizontal cards */
   .thumb {
     flex: 0 0 96px;
     width: 96px;
     height: 96px;
-    aspect-ratio: auto;       /* überschreibt 1/1 aus global */
-    border-bottom: 0;         /* statt unten -> rechts trennen */
+    aspect-ratio: auto;     
+    border-bottom: 0;      
     border-right: 1px solid #1f2432;
   }
-  /* Textblock rechts kompakter */
   .card-body {
-    padding: 0;               /* globales Padding überschreiben */
-    display: flex;            /* Inhalt vertikal zentrieren */
+    padding: 0;             
+    display: flex;       
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;         /* Textabschnitt beschneiden, falls zu hoch */
+    overflow: hidden;   
   }
   .steps > li { padding-left: 0; }
   .steps > li::before { left: -40px; }
@@ -236,10 +274,5 @@
     font-size: 12px;
     padding: 5px 0;
     font-weight: 600;
-  }
-  .card-title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;  /* Titel auf eine Zeile begrenzen */
   }
 }

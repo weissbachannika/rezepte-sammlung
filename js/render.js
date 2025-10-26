@@ -1,4 +1,4 @@
-import { $, state, getAllTags, matches, RECIPES } from './state.js';
+import { $, state, getAllTags, matches, matchesWith, RECIPES } from './state.js';
 import { openModal } from './modal.js';
 
 // ---- Tags UI helpers: single source of truth for collapse/expand + overflow hiding ----
@@ -72,6 +72,7 @@ function __setExpanded(on) {
     __showAllChips(list);
   }
   __updateToggleButton();
+  positionTimeFilters();
 }
 
 const isMobile = () => window.matchMedia('(max-width: 690px)').matches;
@@ -244,8 +245,107 @@ function renderCategoryBar() {
   });
 }
 
+const getPrep  = (r) => Number(r?.time?.prep ?? r?.time?.total ?? r?.totalTime ?? NaN);
+const getTotal = (r) => Number(r?.time?.total ?? r?.totalTime ?? NaN);
+function fmtMinutes(min) {
+  const n = Number(min);
+  if (!Number.isFinite(n)) return '—';
+  if (n < 60) return `${n} Min`;
+  const h = Math.floor(n / 60);
+  const m = n % 60;
+  return m ? `${h} Std ${m} Min` : `${h} Std`;
+}
+
+function renderNumericSlider({ sliderSel, labelSel, stateKey, getVal }) {
+  const slider = document.querySelector(sliderSel);
+  const label  = document.querySelector(labelSel);
+  if (!slider || !label) return;
+
+  // Schritte IMMER aus allen Rezepten
+  const steps = Array.from(
+    new Set(RECIPES.map(getVal).filter(Number.isFinite))
+  ).sort((a, b) => a - b);
+
+  const maxIdx = Math.max(steps.length - 1, 0);
+  slider.min = '0';
+  slider.max = String(maxIdx);
+  slider.step = '1';
+  slider.disabled = steps.length === 0;
+
+  // Default: größter Wert (= keine Einschränkung)
+  if (!Number.isFinite(state[stateKey])) {
+    state[stateKey] = steps.length ? steps[maxIdx] : null;
+  }
+
+  const idxFromVal = (val) => {
+    if (!steps.length || !Number.isFinite(val)) return maxIdx;
+    const i = steps.indexOf(val);
+    if (i !== -1) return i;
+    const j = steps.findIndex(x => x >= val);
+    return j === -1 ? maxIdx : j;
+  };
+  const clampIdx = (i) => Math.min(Math.max(0, i|0), maxIdx);
+
+  const curIdx = clampIdx(idxFromVal(state[stateKey]));
+  slider.value = String(curIdx);
+  label.textContent = steps.length ? fmtMinutes(steps[curIdx]) : '—';
+
+  slider.oninput = (e) => {
+    const i = clampIdx(Number(e.target.value));
+    const val = steps.length ? steps[i] : null;
+    state[stateKey] = val;
+    label.textContent = steps.length ? fmtMinutes(val) : '—';
+    renderGrid(); // Filter anwenden, Steps bleiben global
+  };
+}
+
+function renderTimeFilters() {
+  renderNumericSlider({
+    sliderSel: '#prepSlider',
+    labelSel:  '#prepSel',
+    stateKey:  'maxPrep',
+    getVal:    getPrep,
+  });
+  renderNumericSlider({
+    sliderSel: '#timeSlider',
+    labelSel:  '#timeSel',
+    stateKey:  'maxTotal',
+    getVal:    getTotal,
+  });
+}
+
+function positionTimeFilters() {
+  const wrap = document.querySelector('.time-filter-wrapper');
+  const tagsBar = document.querySelector('.tags-bar');
+  const scroller = document.querySelector('.tag-scroller');
+  const aside = document.querySelector('aside');
+  if (!wrap || !tagsBar || !scroller || !aside) return;
+
+  const isMobile = window.matchMedia('(max-width: 690px)').matches;
+
+  if (isMobile) {
+    // Mobile: Wrapper direkt NACH der gesamten Tags-Bar platzieren
+    if (tagsBar.nextElementSibling !== wrap) {
+      tagsBar.parentNode.insertBefore(wrap, tagsBar.nextSibling);
+    }
+    // Nur anzeigen, wenn die Tag-Liste ausgeklappt ist
+    const expanded = scroller.classList.contains('expanded');
+    wrap.style.display = expanded ? 'flex' : 'none';
+  } else {
+    // Desktop: oben im aside, immer sichtbar
+    if (aside.firstElementChild !== wrap) {
+      aside.insertBefore(wrap, aside.firstChild);
+    }
+    wrap.style.display = ''; // CSS übernimmt Layout
+  }
+}
+
+window.addEventListener('resize', positionTimeFilters);
+
 export function renderSidebar() {
   const tagEl = $('#tags');
+  renderTimeFilters();
+  positionTimeFilters();
   tagEl.innerHTML = '';
     
   // Always start collapsed via __updateTagsLayout below
