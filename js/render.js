@@ -33,7 +33,7 @@ function __hideOverflowingChips(listEl, scrollEl) {
     if (next <= maxW) {
       used = next;
     } else {
-      chip.style.display = 'none'; // completely hide chips that do not fully fit
+      chip.style.display = 'none'; 
     }
   }
 }

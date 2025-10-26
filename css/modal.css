@@ -223,7 +223,7 @@ li {
 
 /* Materials header style */
 #materialsBox .h {
-  font-size: 0.9rem;       /* Überschrift kleiner */
+  font-size: 0.9rem;    
   color: var(--text);
   margin-bottom: 4px;
 }
@@ -231,22 +231,23 @@ li {
 /* Materials list text */
 #modalMaterials {
   position: relative;
-  font-size: 0.8rem;       /* Text ebenfalls kleiner */
+  font-size: 0.8rem;   
   color: var(--text);
   line-height: 1.4;
 }
 
 /* Materials arrow marker (aligned with step badges) */
 #modalMaterials::before {
-  content: "→";
+  content: "";
   display: inline-block;
   vertical-align: middle;
   margin-right: 4px;
   position: static;
   transform: translateY(-1px);
-  font-size: 1em;
-  line-height: 1;
-  color: var(--subtext);
+  width: 1.3em;
+  height: 1.3em;
+  background: url("../icons/arrow_right.svg") no-repeat center center / contain;
+  filter: brightness(1);
 }
 
 /* Credits block */
@@ -259,16 +260,16 @@ li {
 }
 /* Credits arrow marker */
 #modalCredits::before {
-  content: "→";
+  content: "";
   display: inline-block;
   vertical-align: middle;
   margin-right: 4px;
   position: static;
   transform: translateY(-1px);
-  font-size: 1em;
-  line-height: 1;
-  color: var(--subtext);
-}
+  width: 1.3em;
+  height: 1.3em;
+  background: url("../icons/arrow_right.svg") no-repeat center center / contain;
+  filter: brightness(1);}
 .h.small {
   font-size: 0.85rem;
   color: #FFFFFF;
