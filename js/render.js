@@ -255,7 +255,12 @@ function fmtMinutes(min) {
   const m = n % 60;
   return m ? `${h} Std ${m} Min` : `${h} Std`;
 }
-
+function meetsTime(r) {
+  const { maxPrep, maxTotal } = state;
+  if (Number.isFinite(maxPrep))  { const p = getPrep(r);  if (!Number.isFinite(p) || p > maxPrep)  return false; }
+  if (Number.isFinite(maxTotal)) { const t = getTotal(r); if (!Number.isFinite(t) || t > maxTotal) return false; }
+  return true;
+}
 function renderNumericSlider({ sliderSel, labelSel, stateKey, getVal }) {
   const slider = document.querySelector(sliderSel);
   const label  = document.querySelector(labelSel);
@@ -295,7 +300,8 @@ function renderNumericSlider({ sliderSel, labelSel, stateKey, getVal }) {
     const val = steps.length ? steps[i] : null;
     state[stateKey] = val;
     label.textContent = steps.length ? fmtMinutes(val) : '—';
-    renderGrid(); // Filter anwenden, Steps bleiben global
+    renderSidebar();
+    renderGrid(); 
   };
 }
 
@@ -360,7 +366,7 @@ export function renderSidebar() {
     return true;
   };
 
-  const BASE = RECIPES.filter(inCategory);
+  const BASE = RECIPES.filter(inCategory).filter(meetsTime);
 
   // aktuell ausgewählte Tags als Array
   const selected = Array.from(state.tags);
@@ -481,7 +487,7 @@ function __searchTier(recipe, tokens) {
 export function renderGrid() {
   const wrap = $('#grid');
   wrap.innerHTML = '';
-  const items = RECIPES.filter(matches);
+  const items = RECIPES.filter(r => matches(r) && meetsTime(r));
   const q = (state.q || '').trim().toLowerCase();
   const tokens = q ? q.split(/\s+/).filter(Boolean) : [];
   if (tokens.length) {
