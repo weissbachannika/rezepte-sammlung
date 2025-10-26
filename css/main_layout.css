@@ -144,6 +144,10 @@ header {
   width: 95%;
   accent-color: var(--accent-3);
 }
+#prepSel, #timeSel {
+  font-weight: 450;
+  color: #FFFFFF;
+}
 
 /* TAG LIST / SIDEBAR ------------------------------------------------- */
 aside {
