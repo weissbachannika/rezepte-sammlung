@@ -223,6 +223,14 @@
   .tags-bar {
     margin-top: 0;
   }
+  .time-filter-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .time-filter-wrapper .time-filter {
+    width: 100%;
+  }
   .chip {
     font-size: 12px;
   }
