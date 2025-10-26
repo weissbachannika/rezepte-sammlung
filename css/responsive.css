@@ -137,13 +137,17 @@
 
   /* Slider: unter Tags und nur sichtbar, wenn Tag-Liste ausgeklappt ist */
   .time-filter-wrapper {
-    display: none;            /* standardmäßig verstecken */
+    display: flex;           
     margin-top: 16px;
     gap: 30px;
     justify-content: space-between;
+    align-items: stretch;
   }
   .time-filter-wrapper .time-filter {
     flex: 1;
+    display: flex;
+    flex-direction: column; /* sorgt für Titel über Slider */
+    justify-content: space-between;
   }
   .time-filter-wrapper .section-title,
   .time-filter-wrapper .time-section-title {
@@ -210,7 +214,7 @@
   }
   .section-title { 
     margin-left: 6px; 
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   } 
   aside {
     padding: 8px 8px;
@@ -226,10 +230,12 @@
   .time-filter-wrapper {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 0px;
   }
   .time-filter-wrapper .time-filter {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 15px;
   }
   .chip {
     font-size: 12px;
