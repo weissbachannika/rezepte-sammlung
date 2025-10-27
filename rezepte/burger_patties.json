@@ -1,5 +1,5 @@
 {
-  "id": "r30",
+  "id": "9",
   "file": "burger_patties.json",
   "title": "Burger",
   "tags": [
@@ -24,6 +24,7 @@
     {"section": "Für den Burger"},
     "Burger Brötchen",
     "veganer Käse",
+    "Salat",
     "Tomate",
     "Gurke",
     "(Röst)Zwiebeln",

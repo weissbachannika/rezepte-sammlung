@@ -48,7 +48,7 @@ export const recipeFileNames = [
   "nudeln_mit_gemuese-sahne-sosse.json",
   "nudelsalat.json",
   "ofengemuese.json",
-  //"olivenoel-kekse.json",
+  "olivenoel-kekse.json",
   "pancakes.json",
   "panierter_tofu.json",
   "penne_in_pikanter_gemuesesosse.json",
@@ -72,7 +72,7 @@ export const recipeFileNames = [
   "zimtwecken.json"
 ];
 
-//last id = r72
+//last id = 71
 /* 
 {
   "id": "rxy",
@@ -82,8 +82,8 @@ export const recipeFileNames = [
   ],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": ""
+    "prep": a,
+    "total": b
   },
   "amount": x,
   "ingredients": [

@@ -5,7 +5,6 @@ export async function loadRecipes() {
   // Basis ist die Seite selbst (rezepte.html)
   const base = new URL('.', location.href);
 
-  // WICHTIG: kein "../" – JSONs liegen unter <seite>/rezepte/
   const urls = recipeFileNames.map(f =>
     new URL(`./rezepte/${f}`, base).toString()
   );
