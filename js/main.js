@@ -2,9 +2,7 @@ import { $, state, setRecipes } from './state.js';
 import { loadRecipes } from './loader.js';
 import { renderAll, renderSidebar } from './render.js';
 
-// Optional: Rezepte dynamisch ergänzen (wie vorher)
 window.addRecipe = (r) => {
-  // kleiner Helper: aktuelle Liste aus window.RECIPES holen
   const list = window.RECIPES || [];
   list.push(r);
   setRecipes(list);
@@ -29,18 +27,16 @@ async function main() {
     if (qInput) qInput.blur();
   }
 
-  // Icon-Only Suche: auf Handy als Popover öffnen/schließen
   if (searchBox) {
     searchBox.addEventListener('click', (ev) => {
       if (ev.target === closeSearchBtn) return;
-      if (!isNarrow()) return;                    // Desktop: nichts ändern
-      if (ev.target === qInput) return;           // direkter Klick ins Input -> kein Toggle
+      if (!isNarrow()) return;                    
+      if (ev.target === qInput) return;         
       if (!searchBox.classList.contains('open')) {
         searchBox.classList.add('open');
         if (closeSearchBtn) closeSearchBtn.style.display = '';
         requestAnimationFrame(() => qInput && qInput.focus());
       } else {
-        // Bereits offen -> einfach Fokus setzen, nicht schließen
         requestAnimationFrame(() => qInput && qInput.focus());
       }
     });
@@ -91,7 +87,7 @@ async function main() {
     }
   });
 
-  // Hash-Filter (optional)
+  // Hash-Filter 
   try {
     if (location.hash.startsWith('#')) {
       const params = new URLSearchParams(location.hash.slice(1));
