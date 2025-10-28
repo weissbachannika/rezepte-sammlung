@@ -27,9 +27,8 @@
     "je 1 TL Paprika edelsüß und rosenscharf",
     "½ TL Kreuzkümmel",
     "ein paar frische Blätter Basilikum",
-    "Cayennepfeffer",
-    "Tikka oder Garam Masala",
-    "Maggi"
+    "Cayennepfeffer (opt.)",
+    "Tikka oder Garam Masala (opt.)"
   ],
   "steps": [
     "Gemüse schneiden: die Zwiebel, Zucchini und Aubergine in Halb- oder Viertelkreise schneiden.",
@@ -43,7 +42,7 @@
     "Wenn dann das Gemüse ganz durch ist und die Gnocchi goldbraun sind, bist du fertig :).",
     "Zum Servieren das Ratatouille in eine Schüssel oder einen tiefen Teller geben und ein paar Gnocchi als crispy Topping oben drauf."
   ],
-  "notes": "",
+  "notes": "Getrocknete Tomaten kann man da auch gut noch dazu geben.",
   "credits": "Franzi",
   "image": "./images/Ratatouille.jpg"
 }
