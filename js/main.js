@@ -1,6 +1,7 @@
 import { $, state, setRecipes } from './state.js';
 import { loadRecipes } from './loader.js';
-import { renderAll, renderSidebar } from './render.js';
+import { renderAll } from './grid.js';
+import { renderSidebar } from './sidebar.js';
 
 window.addRecipe = (r) => {
   const list = window.RECIPES || [];
