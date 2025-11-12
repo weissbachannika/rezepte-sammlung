@@ -162,6 +162,7 @@ aside {
   max-height: calc(100vh - (var(--header-top) + var(--header-h) + var(--gap)));
   height: fit-content;
   overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .section-title { 
   font-size: 13px; 
@@ -176,11 +177,13 @@ aside {
 .tag-scroller { 
   overflow-y: auto; 
   max-height: none; 
+  overscroll-behavior: contain;
 }
 .tag-list { 
   display: flex; 
   flex-wrap: wrap; 
   gap: 8px; 
+  padding-bottom: 6px;
 }
 .tags-toggle { 
   display: none; 
