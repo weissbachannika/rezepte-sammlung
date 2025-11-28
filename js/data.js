@@ -70,10 +70,11 @@ export const recipeFileNames = [
   "tortelliniauflauf.json",
   "tzatziki.json",
   "ueberbackener_lauch.json",
+  "zimtschneckenkekse.json",
   "zimtwecken.json"
 ];
 
-//last id = 72
+//last id = 73
 /* 
 {
   "id": "rxy",
