@@ -18,7 +18,7 @@
     "2 Paprika",
     "2 Dosen Kidneybohnen",
     "1 Dose Mais",
-    "85 g Soja-Granulat",
+    "85 g Soja-Granulat (opt.)",
     "3 EL Tomatenmark",
     "Sojasoße"
   ],
@@ -53,6 +53,9 @@
     { "section": "Dip" },
     "Den [Joghurt Dip](#joghurt_dip.json) anrühren."
   ],
-  "notes": "Optional alles am Ende mit Avocado und/oder Frühlingszwiebeln garnieren",
+  "notes": [
+    "Optional alles am Ende mit Avocado und/oder Frühlingszwiebeln garnieren",
+    "Statt des [Joghurt Dips](#joghurt_dip.json), kann man auch einfach nur Creme Vega nehmen"
+  ],
   "image": "./images/Loaded_suesskartoffel.jpg"
 }
