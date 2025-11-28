@@ -1,0 +1,48 @@
+{
+  "id": "72",
+  "title": "Gnocchi Pfanne",
+  "tags": [
+    "Hauptgericht", "Pasta", "Low-Effort", "Nudeln"
+  ],
+  "materials": "",
+  "time": {
+    "total": 30
+  },
+  "amount": 2,
+  "ingredients": [
+    "500 g Gnocchi",
+    "250 g Spinat (TK oder frisch)",
+    "1 Zucchini",
+    "200 ml vegane Sahne",
+    "200 g Naturtofu",
+    "100 ml Gemüsebrühe",
+    "(geröstete) Sonnenblumenkerne als Topping"
+  ],
+  "spices": [
+    "1 1/2 TL Brühepulver",
+    "1/2 TL Knoblauch",
+    "1/2 TL geräucherte Paprika",
+    "1/2 TL Paprika Edelsüß",
+    "1/2 TL geriebene Muskatnuss",
+    "2 EL Hefeflocken",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Den Tofu gut auspressen und klein schneiden (ca. 1x1x2 cm)",
+    "Den Spinat waschen und abtroßfen lassen und die Zucchini in Halbkreis-Scheiben schneiden.",
+    "In einer großen Pfanne etwas Olivenöl erhitzen und die Gnocchi darin mehrere Minuten anbraten, bis sie etwas Farbe bekommen.",
+    "Dann die Hitze etwas reduzieren und die Zucchini dazu geben und auch 3-4 Minuten mit anbraten",
+    "Dann den Spinat nach und nach dazu geben (immer erst einen Teil kleiner werden lassen, bevor man mehr dazu gibt).",
+    "Währendessen in einer zweiten kleineren Pfanne den Tofu in etwas Öl gut anbraten.",
+    "In der großen Pfanne jetzt die Sahne und Gewürze dazu geben und gut unterrühren",
+    "Wenn der Tofu von allen Seiten goldbraun ist, diesen mit der Gemüsebrühe ablöschen und solange auf hoher Hitze lassen, bis alle Flüssigkeit verkocht ist.",
+    "In der Zeit sollte auch die Sahne etwas andicken",
+    "Den Tofu dann mit in die große Pfanne geben und noch ein letztes mal abschmecken und ggf. nach würzen.",
+    "Zum Servieren das ganze mit Sonnenblumenkernen toppen."
+],
+  "notes": [
+    "Das Ganze kann man auch mit quasi jedem anderen Gemüse deiner Wahl machen."
+  ],
+  "credits": "",
+  "image": ""
+}
