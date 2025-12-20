@@ -23,6 +23,7 @@ export const recipeFileNames = [
   "gefuellte_paprika.json",
   "gemuese_curry.json",
   "gemuese_in_bechamelsosse.json",
+  "gnocchi_mit_chili_cranberry_sosse.json",
   "gnocchi_pfanne.json",
   "griechischer_salat.json",
   "guacamole.json",
@@ -74,7 +75,7 @@ export const recipeFileNames = [
   "zimtwecken.json"
 ];
 
-//last id = 73
+//last id = 74
 /* 
 {
   "id": "rxy",
