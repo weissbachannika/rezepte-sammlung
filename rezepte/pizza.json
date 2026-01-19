@@ -1,8 +1,8 @@
 {
   "id": "75",
-  "title": "Pizza (Blech)",
+  "title": "Pizza",
   "tags": ["Hauptgericht", "Backen", "Italienisch"],
-  "materials": "Große Schüssel, Holzlöffel/Teigschaber, Tuch zum abdecken",
+  "materials": "Große Schüssel, Holzlöffel/Teigschaber, Backblech, Tuch zum abdecken",
   "time": {
     "prep": 30,
     "total": 300
@@ -28,25 +28,25 @@
     "Mehl nach und nach mit Holzlöffel oder Schaber einarbeiten.",
     "Salz und Olivenöl unterkneten, bis der Teig weich und leicht klebrig ist.",
     "Teig auf einer Arbeitsfläche 5–7 Minuten glatt kneten.",
-    "30 Minuten abgedeckt bei Raumtemperatur ruhen lassen.",
+    "**30 Minuten** abgedeckt bei Raumtemperatur ruhen lassen.",
     "Teig 2 Minuten dehnen und falten, dann eine Kugel formen.",
-    "Teig 3 Stunden abgedeckt in einer leicht geölten Schüssel gehen lassen, bis er sich im Volumen verdoppelt hat.",
+    "Teig **3 Stunden** abgedeckt in einer leicht geölten Schüssel gehen lassen, bis er sich im Volumen verdoppelt hat.",
     "Teig locker rundwirken und 10 Minuten ruhen lassen.",
     "Backblech großzügig einölen (optional etwas Grieß).",
     "Teigling mit geölten Fingern von innen nach außen auf das Blech drücken, den Rand nicht platt drücken.",
     "Wenn der Teig zurückspringt, kurz ruhen lassen und dann weiter ausdehnen.",
-    "Teig auf dem Blech nochmals 20 Minuten ruhen lassen.",
+    "Teig auf dem Blech nochmals **20 Minuten** ruhen lassen.",
     "Ofen auf 250 °C Ober-/Unterhitze vorheizen.",
-    "Boden 5–6 Minuten auf der untersten Schiene vorbacken.",
-    "Blech 30–120 Minuten abgedeckt ruhen lassen.",
+    "Boden **5–6 Minuten** auf der untersten Schiene vorbacken.",
+    "Blech **30–120 Minuten** abgedeckt ruhen lassen.",
     "In der Zeit den gewünschten Belag vorbereiten und die passierten Tomaten mit Kräutern und Salz & Pfeffer würzen",
     "Boden nach Wunsch belegen.",
-    "Pizza 8–10 Minuten auf mittlerer Schiene fertig backen (optional die letzten 2 Minuten Umluft)."
+    "Pizza **8–10 Minuten** auf mittlerer Schiene fertig backen (optional die letzten 2 Minuten Umluft)."
   ],
   "notes": [
     "Pizzaboden wird unten knusprig und sehr fluffig/dick",
     "Damit der Teig nicht so stark an den Händen kleben, die etwas nass machen oder bisschen einölen",
-    "Belag Ideen: Reibe Käse, Pilze, Paprika, Zwiebeln, Mais, Spinat, Feta, (getrocknete) Tomaten, Feta, Pucola, Pesto, Salami"
+    "Belag Ideen: Reibe Käse (Simply V / VioLife, Pilze, Paprika, Zwiebeln, Mais, Spinat, Feta (Simply V), (getrocknete) Tomaten, Feta, Pucola, Pesto, Salami (Billie Green)"
   ],
   "credits": "",
   "image": ""
