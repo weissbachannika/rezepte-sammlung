@@ -1,4 +1,4 @@
-import { $, state, setRecipes } from './state.js';
+import { $, state, setRecipes, applyStateFromHash, syncHashFromState } from './state.js';
 import { loadRecipes } from './loader.js';
 import { renderAll } from './grid.js';
 import { renderSidebar } from './sidebar.js';
@@ -13,31 +13,30 @@ window.addRecipe = (r) => {
 
 async function main() {
   await loadRecipes();    // Daten holen (setzt RECIPES)
+  applyStateFromHash();
+  const qInput = $('#q');
+  if (qInput) qInput.value = state.q || '';
   renderSidebar();        // Tags aufbauen
   renderAll();            // Filterleiste + Grid
 
-  // Hash-Filter + Reopen recipe
+  document.addEventListener('filters-changed', () => {
+    renderSidebar();
+    renderAll();
+  });
+
+  // Reopen recipe from hash (#r=ID oder #recipe=ID)
   try {
-    if (location.hash.startsWith('#')) {
-      const params = new URLSearchParams(location.hash.slice(1));
-
-      const tag = params.get('tag');
-      if (tag) state.tags.add(tag);
-
-      const recipeId = params.get('r');
-      if (recipeId) {
-        // nach renderAll(), damit Grid/State initial steht
-        renderAll();
-        openModal(recipeId, { reset: true });
-      } else {
-        renderAll();
-      }
+    const params = new URLSearchParams(location.hash.slice(1));
+    const recipeId = params.get('r') || params.get('recipe');
+    if (recipeId) {
+      requestAnimationFrame(() => {
+        openModal(recipeId, { reset: true, push: false });
+      });
     }
   } catch { /* noop */ }
 
   // --- Mobile UI helpers -------------------------------------------------
   const searchBox = document.querySelector('.search');
-  const qInput = $('#q');
   const isNarrow = () => window.matchMedia('(max-width:680px)').matches;
   const closeSearchBtn = $('#closeSearch');
 
@@ -70,6 +69,7 @@ async function main() {
       if (qInput) qInput.value = '';  // Suchfeld leeren
       state.q = '';                   // Filter zurücksetzen
       renderAll(); 
+      syncHashFromState();
       closeMobileSearch();
     });
   }
@@ -99,6 +99,7 @@ async function main() {
   $('#q').addEventListener('input', (e) => {
     state.q = e.target.value.trim();
     renderAll();
+    syncHashFromState();
   });
 
   $('#q').addEventListener('keyup', (e) => {
@@ -107,16 +108,6 @@ async function main() {
       renderAll();
     }
   });
-
-  // Hash-Filter 
-  try {
-    if (location.hash.startsWith('#')) {
-      const params = new URLSearchParams(location.hash.slice(1));
-      const tag = params.get('tag');
-      if (tag) state.tags.add(tag);
-      renderAll();
-    }
-  } catch { /* noop */ }
 
   window.addEventListener('resize', () => {
     if (!isNarrow() && closeSearchBtn) {

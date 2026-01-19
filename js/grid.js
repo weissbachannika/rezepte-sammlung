@@ -1,4 +1,4 @@
-import { $, state, matches, RECIPES } from './state.js';
+import { $, state, matches, RECIPES, syncHashFromState } from './state.js';
 import { meetsTime } from './time_filters.js';
 import { openModal } from './modal.js';
 import { renderSidebar } from './sidebar.js';
@@ -22,6 +22,7 @@ function renderCategoryBar() {
       state.category = b.key;
       renderSidebar();
       renderAll();
+      syncHashFromState();
     });
     wrap.appendChild(div);
   });
