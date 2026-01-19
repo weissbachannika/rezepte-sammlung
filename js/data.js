@@ -55,6 +55,7 @@ export const recipeFileNames = [
   "panierter_tofu.json",
   "penne_in_pikanter_gemuesesosse.json",
   "pesto_schnecken.json",
+  "pizza.json",
   "ratatouille.json",
   "rice_paper_dumplings.json",
   "russischer_zupfkuchen.json",
@@ -75,7 +76,7 @@ export const recipeFileNames = [
   "zimtwecken.json"
 ];
 
-//last id = 74
+//last id = 75
 /* 
 {
   "id": "rxy",
