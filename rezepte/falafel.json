@@ -1,12 +1,12 @@
 {
-  "id": "r29",
+  "id": "18",
   "file": "falafel.json",
   "title": "Falafel",
   "tags": ["Beilage", "Hauptgericht", "Snack", "High-Protein"],
   "materials": 
     "",
   "time": {
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 10,
   "ingredients": [

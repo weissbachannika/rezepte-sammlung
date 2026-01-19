@@ -1,12 +1,12 @@
 {
-  "id": "r44",
+  "id": "17",
   "file": "erdnusssosse.json",
   "title": "Erdnusssoße",
   "tags": ["Soße", "Asiatisch", "Dip", "Low-Effort"],
   "materials": 
     "",
   "time": {
-    "total": "5 Min"
+    "total": 10
   },
   "amount": 2,
   "ingredients": [

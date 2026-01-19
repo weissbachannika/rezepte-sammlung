@@ -4,7 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Waldtraud kocht</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main_layout.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <script src="https://kit.fontawesome.com/03150081d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,7 +23,25 @@
     </header>
 
     <aside>
-      <div class="section-title">TAGS</div>
+      <div class="time-filter-wrapper">
+        <!-- Prep Zeitfilter -->
+        <div class="time-filter">
+          <div class="time-section-title">
+            <img src="./icons/chef_hat_grey.svg" alt="" width="16" height="16" style="vertical-align:-3px;">
+            ARBEITSZEIT VON <span id="prepSel">—</span>
+          </div>
+          <input id="prepSlider" type="range" min="0" value="0" aria-label="Max Arbeitszeit in Minuten">
+        </div>
+        <!-- total Zeitfilter -->
+        <div class="time-filter">
+          <div class="time-section-title">
+            <i class="fa-regular fa-alarm-clock"></i>
+            FERTIG IN <span id="timeSel">—</span>
+          </div>
+          <input id="timeSlider" type="range" min="0" value="0" aria-label="Fertig in Minuten">
+        </div>
+      </div>
+      <div class="section-title">FILTER</div>
       <div class="tags-bar">
         <div id="tagsScroll" class="tag-scroller">
           <div id="tags" class="tag-list"></div>
@@ -47,6 +67,8 @@
     </footer>
   </div>
 
+<!------------ MODAL ------------>
+
   <dialog id="recipeModal" aria-label="Rezeptdetails">
     <div class="modal-header">
       <div class="modal-title" id="modalTitle">Rezept</div>
@@ -71,10 +93,12 @@
 
         <!-- RECHTE SPALTE -->
         <div class="right-col">
-           <!-- Zeit-Chip (keine Überschrift) -->
-          <div id="timeChip" class="time-chip" aria-label="Gesamtzeit">
-            <i class="fa-solid fa-hourglass-half"></i>
-            <span id="modalTimeText"></span>
+            <!-- Zeiten -->
+          <div id="timeChip" class="time-chip" aria-label="Zeiten">
+            <img src="./icons/chef_hat_white.svg" alt="" id="prepIcon" aria-hidden="true" width="18" height="18">
+            <span id="modalPrepText"></span>
+            <i class="fa-regular fa-alarm-clock" id="totalIcon" aria-hidden="true"></i>
+            <span id="modalTotalText"></span>
           </div>
           <div class="img" id="modalImg"></div>
 

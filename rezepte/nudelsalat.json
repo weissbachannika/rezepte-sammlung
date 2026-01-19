@@ -1,12 +1,12 @@
 {
-  "id": "r35",
+  "id": "48",
   "file": "nudelsalat.json",
   "title": "Nudelsalat",
   "tags": ["Salat", "Hauptgericht", "Pasta", "Nudeln", "Sommer"],
   "materials": 
     "",
   "time": {
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 8,
   "ingredients": [

@@ -1,33 +1,31 @@
 {
-  "id": "r71",
+  "id": "27",
   "file": "gulasch.json",
   "title": "Gulasch",
   "tags": ["Hauptgericht", "Hausmannskost", "High-Protein", "Nudeln"],
   "materials": 
     "",
   "time": {
-    "total": "40 Min + 20–30 Min Kochzeit"
+    "prep": 40,
+    "total": 70
   },
   "amount": 2,
   "ingredients": [
     "70 g Sojawürfel/-streifen (getrocknet)",
+    "1 Zwiebel",
+    "1 rote Paprika",
+    "1 EL Mehl",
+    "100 ml Rotwein oder Brühe",
+    "300 ml Brühe",
+    "1 EL Öl",
     { "section": "Für die Marinade" },
     "2 EL Öl",
     "30 ml Sojasoße",
     "1 EL Tomatenmark",
     "1 EL Balsamico Aceto",
-    "1 TL Zucker",
-    { "section": "Für die Soße" },
-    "1 EL Öl",
-    "1 Zwiebel",
-    "1 rote Paprika",
-    "1 EL Mehl",
-    "100 ml Rotwein oder Brühe",
-    "300 ml Brühe"
+    "1 TL Zucker"
   ],
   "spices": [
-    "1 Knoblauchzehe",
-    "2 EL Tomatenmark",
     "1 EL Sojasoße",
     "1 TL Senf",
     "1 TL Paprikapulver",
@@ -44,7 +42,7 @@
     "Tomatenmark unterrühren und kurz anrösten.",
     "Mit Mehl bestäuben, gut vermischen und mit Rotwein ablöschen.",
     "Dann Brühe, Sojasoße, Senf und Gewürze hinzugeben.",
-    "Bei geschlossenem Deckel etwa 20–30 Minuten leicht köcheln lassen."
+    "Bei geschlossenem Deckel etwa **20–30 Minuten** leicht köcheln lassen."
   ],
   "notes": "Servieren mit angebratenen Spätzle oder Nudeln deiner Wahl",
   "credits": "[instagram: byanjushka](https://www.instagram.com/reel/CvnEm9DIe38/?igsh=MWhkZ3k1NGh6aHd5Ng==)",

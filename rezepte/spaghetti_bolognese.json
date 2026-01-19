@@ -1,5 +1,5 @@
 {
-  "id": "r8",
+  "id": "63",
   "file": "spaghetti_bolognese.json",
   "title": "Spaghetti Bolognese",
   "tags": [
@@ -7,8 +7,7 @@
   ],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 4,
   "ingredients": [

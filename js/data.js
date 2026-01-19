@@ -22,7 +22,9 @@ export const recipeFileNames = [
   "gebratener_reis.json",
   "gefuellte_paprika.json",
   "gemuese_curry.json",
-  "gemuese_in_bechamelsoße.json",
+  "gemuese_in_bechamelsosse.json",
+  "gnocchi_mit_chili_cranberry_sosse.json",
+  "gnocchi_pfanne.json",
   "griechischer_salat.json",
   "guacamole.json",
   "gulasch.json",
@@ -48,11 +50,12 @@ export const recipeFileNames = [
   "nudeln_mit_gemuese-sahne-sosse.json",
   "nudelsalat.json",
   "ofengemuese.json",
-  "olivenoel-kekse.json",
+  //"olivenoel-kekse.json",
   "pancakes.json",
   "panierter_tofu.json",
   "penne_in_pikanter_gemuesesosse.json",
   "pesto_schnecken.json",
+  "pizza.json",
   "ratatouille.json",
   "rice_paper_dumplings.json",
   "russischer_zupfkuchen.json",
@@ -69,10 +72,11 @@ export const recipeFileNames = [
   "tortelliniauflauf.json",
   "tzatziki.json",
   "ueberbackener_lauch.json",
+  "zimtschneckenkekse.json",
   "zimtwecken.json"
 ];
 
-//last id = r72
+//last id = 75
 /* 
 {
   "id": "rxy",
@@ -82,8 +86,8 @@ export const recipeFileNames = [
   ],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": ""
+    "prep": a,
+    "total": b
   },
   "amount": x,
   "ingredients": [

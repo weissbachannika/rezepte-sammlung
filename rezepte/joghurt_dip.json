@@ -1,12 +1,12 @@
 {
-  "id": "r48",
+  "id": "35",
   "file": "joghurt_dip.json",
   "title": "Joghurt Dip",
   "tags": ["Dip", "Low-Effort"],
   "materials": 
     "",
   "time": {
-    "total": "5 Min"
+    "total": 5
   },
   "amount": 6,
   "ingredients": [
@@ -25,5 +25,5 @@
   ],
   "notes": "",
   "credits": "Bella",
-  "image": ""
+  "image": "./images/Jogurtdip.jpg"
 }

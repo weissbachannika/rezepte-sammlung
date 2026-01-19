@@ -1,5 +1,5 @@
 {
-  "id": "r42",
+  "id": "6",
   "file": "bechamelsosse.json",
   "title": "Béchamelsoße",
   "tags": ["Soße", "Hausmannskost"],
@@ -8,8 +8,7 @@
     "",
 
   "time": {
-    "prep": "5 Min",
-    "total": "20 Min"
+    "total": 15
   },
   "amount": 2,
   "ingredients": [

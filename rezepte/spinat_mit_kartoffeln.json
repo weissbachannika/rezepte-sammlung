@@ -1,12 +1,11 @@
 {
-  "id": "r22",
+  "id": "64",
   "file": "spinat_mit_kartoffeln.json",
   "title": "Spinat mit Kartoffeln",
   "tags": ["Hauptgericht", "Hausmannskost", "Kartoffeln"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 3,
   "ingredients": [
@@ -39,5 +38,5 @@
     "Die Fischstäbchen kann man auch weglassen oder durch verschiedene andere Sachen ersetzen (z. B. [panierter Tofu](#panierter_tofu.json), vegane Schnitzel/Cordon Bleus, (vegane Spiegeleier), usw.)."
   ],
   "credits": "Mamsi",
-  "image": ""
+  "image": "./images/Spinat1.jpg"
 }

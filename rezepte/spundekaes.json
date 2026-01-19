@@ -1,12 +1,11 @@
 {
-  "id": "r50",
+  "id": "65",
   "file": "spundekaes.json",
   "title": "Spundekäs",
   "tags": ["Dip", "Hausmannskost", "Aufstrich", "Snack"],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "10 Min"
+    "total": 15
   },
   "amount": 6,
   "ingredients": [

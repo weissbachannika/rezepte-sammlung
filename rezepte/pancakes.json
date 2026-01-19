@@ -1,10 +1,10 @@
 {
-  "id": "r55",
+  "id": "52",
   "file": "pancakes.json",
   "title": "Pancakes",
   "tags": ["Frühstück", "Süßes", "Low-Effort"],
   "time": {
-    "total": "insg. 40 Min"
+    "total": 40
   },
   "amount": 12,
   "ingredients": [

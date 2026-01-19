@@ -1,8 +1,5 @@
-import { $, state, getAllTags, matches, RECIPES } from './state.js';
-import { openModal } from './modal.js';
+import { $ } from './state.js';
 
-// ---- Tags UI helpers: single source of truth for collapse/expand + overflow hiding ----
-// This module-scope state persists across re-renders of the tag list.
 const __tagsUI = {
   initialized: false,
   expanded: false,
@@ -33,7 +30,7 @@ function __hideOverflowingChips(listEl, scrollEl) {
     if (next <= maxW) {
       used = next;
     } else {
-      chip.style.display = 'none'; // completely hide chips that do not fully fit
+      chip.style.display = 'none'; 
     }
   }
 }
@@ -72,6 +69,7 @@ function __setExpanded(on) {
     __showAllChips(list);
   }
   __updateToggleButton();
+  positionTimeFilters();
 }
 
 const isMobile = () => window.matchMedia('(max-width: 690px)').matches;
@@ -154,6 +152,21 @@ function __initTagsUI() {
   __tagsUI.initialized = true;
 }
 
+function __updateTagsLayout(listEl) {
+  // Merke aktuelle Liste und initialisiere das UI einmalig
+  __tagsUI.list = listEl;
+  __initTagsUI();
+
+  // Anwenden des passenden Modus (mobil/desktop)
+  __applyMode();
+
+  // Wenn mobil und eingeklappt, überstehende Chips ausblenden
+  if (isMobile() && !__tagsUI.expanded) {
+    const scroll = $('#tagsScroll');
+    __hideOverflowingChips(listEl, scroll);
+  }
+}
+
 // ---- tag label helper: prevent line breaks inside hyphenated words ----
 function __renderTagLabel(label) {
   return label.replace(/-/g, '\u2011');
@@ -212,195 +225,37 @@ function __updateToggleButton() {
   }
 }
 
-function __updateTagsLayout(listEl) {
-  __initTagsUI();
-  __tagsUI.list = listEl;
-  __applyMode();
-  __updateToggleButton();
-}
-// ---- end tags helpers ----
+function positionTimeFilters() {
+  const wrap = document.querySelector('.time-filter-wrapper');
+  const tagsBar = document.querySelector('.tags-bar');
+  const scroller = document.querySelector('.tag-scroller');
+  const aside = document.querySelector('aside');
+  if (!wrap || !tagsBar || !scroller || !aside) return;
 
-function renderCategoryBar() {
-  const wrap = $('#catBar');
-  if (!wrap) return;
-  wrap.innerHTML = '';
+  const isMobile = window.matchMedia('(max-width: 690px)').matches;
 
-  const buttons = [
-    { key: 'all',    label: 'Alles' },
-    { key: 'savory', label: 'Herzhaftes' },
-    { key: 'sweet',  label: 'Süßes' },
-  ];
-
-  buttons.forEach(b => {
-    const div = document.createElement('div');
-    div.className = 'category-item' + (state.category === b.key ? ' active' : '');
-    div.textContent = b.label;
-    div.addEventListener('click', () => {
-      state.category = b.key;
-      renderSidebar();
-      renderAll();
-    });
-    wrap.appendChild(div);
-  });
-}
-
-export function renderSidebar() {
-  const tagEl = $('#tags');
-  tagEl.innerHTML = '';
-    
-  // Always start collapsed via __updateTagsLayout below
-  tagEl.classList.toggle('expanded', state.tagsExpanded);
-
-  // Basisdaten auf Kategorie einschränken
-  const inCategory = (r) => {
-    const SWEET_TAG = 'Süßes';
-    const isSweet = (r.tags || []).includes(SWEET_TAG);
-    if (state.category === 'sweet')  return isSweet;
-    if (state.category === 'savory') return !isSweet;
-    return true;
-  };
-
-  const BASE = RECIPES.filter(inCategory);
-
-  // aktuell ausgewählte Tags als Array
-  const selected = Array.from(state.tags);
-
-  // Helper: prüft, ob ein Rezept alle gegebenen Tags enthält
-  const recipeHasAll = (r, mustTags) => {
-    const rt = r.tags || [];
-    for (const tg of mustTags) if (!rt.includes(tg)) return false;
-    return true;
-  };
-
-  // Anzahl der Rezepte für:
-  // - keine Auswahl: globale Häufigkeit des Tags
-  // - mit Auswahl: bedingte Häufigkeit für (selected ∪ {tag})
-  const countFor = (tag) => {
-    if (selected.length === 0) {
-      let c = 0;
-      for (const r of BASE) if ((r.tags || []).includes(tag)) c++;
-      return c;
+  if (isMobile) {
+    // Mobile: Wrapper direkt NACH der gesamten Tags-Bar platzieren
+    if (tagsBar.nextElementSibling !== wrap) {
+      tagsBar.parentNode.insertBefore(wrap, tagsBar.nextSibling);
     }
-    const need = state.tags.has(tag) ? selected : [...selected, tag];
-    let c = 0;
-    for (const r of BASE) if (recipeHasAll(r, need)) c++;
-    return c;
-  };
-
-  // Alle bekannten Tags aufnehmen und anreichern
-  const all = getAllTags(BASE)
-    .filter(t => t !== 'Süßes')  // "Süßes" ausblenden
-    .map(t => ({
-      tag: t,
-      selected: state.tags.has(t),
-      count: countFor(t)
-  }));
-
-  // Sichtbar sind:
-  // - immer: bereits ausgewählte Tags (damit man abwählen kann)
-  // - zusätzlich: nur Tags, die mit der aktuellen Auswahl noch Treffer liefern (count > 0)
-  const visible = all.filter(x => x.selected || x.count > 0);
-
-  // Sortierung: zuerst ausgewählte Tags nach oben, dann nach count (absteigend), dann alphabetisch
-  visible.sort((a, b) => {
-    if (a.selected !== b.selected) return a.selected ? -1 : 1;
-    if (b.count !== a.count) return b.count - a.count;
-    return a.tag.localeCompare(b.tag, 'de');
-  });
-
-  // Flache Liste rendern
-  const list = document.createElement('div');
-  list.className = 'tag-list';
-  if (state.tagsExpanded) list.classList.add('expanded');
-
-  visible.forEach(({ tag: t, selected, count }) => {
-    const btn = document.createElement('button');
-    btn.className = 'chip' + (selected ? ' active' : '');
-    btn.type = 'button';
-    btn.setAttribute('aria-pressed', selected ? 'true' : 'false');
-
-    const label = __renderTagLabel(t);
-
-    btn.title = selected && state.tags.size
-      ? `${label} • ${count} Rezepte (mit aktueller Auswahl)`
-      : `${label} • ${count} Rezepte`;
-
-    if (selected) {
-      // Text + schließ-Icon als separates Span, verhindert HTML-Injection und Umbrüche
-      btn.append(document.createTextNode(label + ' '));
-      const x = document.createElement('span');
-      x.className = 'x';
-      x.textContent = '×';
-      btn.appendChild(x);
-    } else {
-      btn.textContent = label;
+    // Nur anzeigen, wenn die Tag-Liste ausgeklappt ist
+    const expanded = scroller.classList.contains('expanded');
+    wrap.style.display = expanded ? 'flex' : 'none';
+  } else {
+    // Desktop: oben im aside, immer sichtbar
+    if (aside.firstElementChild !== wrap) {
+      aside.insertBefore(wrap, aside.firstChild);
     }
-
-    btn.addEventListener('click', () => {
-      if (state.tags.has(t)) state.tags.delete(t);
-      else state.tags.add(t);
-      renderSidebar();
-      renderGrid();
-    });
-
-    list.appendChild(btn);
-  });
-
-  tagEl.appendChild(list);
-  __updateTagsLayout(list);
-  __updateToggleButton();
-}
-
-export function renderGrid() {
-  const wrap = $('#grid');
-  wrap.innerHTML = '';
-  const items = RECIPES.filter(matches);
-  if (!items.length) {
-    const empty = document.createElement('div');
-    empty.className = 'muted';
-    empty.style.gridColumn = '1 / -1';
-    empty.textContent = 'Nichts gefunden. Filter anpassen oder Suchbegriff ändern.';
-    wrap.appendChild(empty);
-    return;
+    wrap.style.display = ''; // CSS übernimmt Layout
   }
-  items.forEach(r => {
-    const card = document.createElement('article');
-    card.className = 'card';
-    card.setAttribute('tabindex', '0');
-    card.addEventListener('click', () => openModal(r.id));
-    card.addEventListener('keydown', (e) => { if (e.key === 'Enter') openModal(r.id); });
-
-    const thumb = document.createElement('div');
-    thumb.className = 'thumb';
-    if (r.image) {
-      const img = document.createElement('img');
-      img.alt = r.title; img.loading = 'lazy'; img.src = r.image;
-      thumb.appendChild(img);
-    } else {
-      thumb.textContent = 'Kein Bild';
-    }
-
-    const visibleTags = (r.tags || []).filter(t => t !== 'Süßes');
-
-    const body = document.createElement('div');
-    body.className = 'card-body';
-    const title = document.createElement('h3');
-    title.className = 'card-title';
-    title.textContent = r.title;
-    const meta = document.createElement('div');
-    meta.className = 'muted';
-    meta.textContent = (visibleTags || []).join(' • ');
-
-    body.appendChild(title);
-    body.appendChild(meta);
-    card.appendChild(thumb);
-    card.appendChild(body);
-    wrap.appendChild(card);
-  });
 }
 
-// Oben gibt es keine aktive-Filter-Liste mehr.
-export function renderAll() {
-  renderCategoryBar();
-  renderGrid();
-}
+window.addEventListener('resize', positionTimeFilters);
+
+export {
+  __renderTagLabel,
+  __updateTagsLayout,
+  __updateToggleButton,
+  positionTimeFilters
+};

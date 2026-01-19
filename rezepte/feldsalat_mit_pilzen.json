@@ -1,12 +1,12 @@
 {
-  "id": "r38",
+  "id": "19",
   "file": "feldsalat_mit_pilzen.json",
   "title": "Feldsalat mit Pilzen",
   "tags": ["Salat", "Beilage", "Vorspeise", "Low-Effort"],
   "materials": 
     "", 
   "time": {
-    "total": "15 Min"
+    "total": 15
   },
   "amount": 4,
   "ingredients": [

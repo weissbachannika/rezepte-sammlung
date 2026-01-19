@@ -1,5 +1,5 @@
 {
-  "id": "r46",
+  "id": "5",
   "file": "basilikum_pesto.json",
   "title": "Basilikum Pesto",
   "tags": [
@@ -9,7 +9,7 @@
     "Mixer/Food Processor",
 
   "time": {
-    "total": "20 Min"
+    "total": 20
   },
   "amount": 6,
   "ingredients": [

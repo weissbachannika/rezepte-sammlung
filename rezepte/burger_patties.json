@@ -1,16 +1,15 @@
 {
-  "id": "r30",
+  "id": "9",
   "file": "burger_patties.json",
   "title": "Burger",
   "tags": [
-    "Beilage", "Hauptgericht", "High-Protein"
+    "Hauptgericht", "High-Protein"
   ],
   "materials": 
     "Große Schüssel, Gabel (oder Mixer)",
 
   "time": {
-    "prep": "5 Min",
-    "total": "30 Min"
+    "total": 35
   },
   "amount": 6,
   "ingredients": [
@@ -25,6 +24,7 @@
     {"section": "Für den Burger"},
     "Burger Brötchen",
     "veganer Käse",
+    "Salat",
     "Tomate",
     "Gurke",
     "(Röst)Zwiebeln",
@@ -43,7 +43,8 @@
     "Kidneybohnen und Kichererbsen durch ein Sieb abgießen und anschließend in einer Schüssel mit einer Gabel möglichst klein drücken.",
     "Zwiebel und Knoblauch klein schneiden.",
     "Alle Zutaten zusammen in der Schüssel vermischen, bis eine einheitliche, klebrige Masse entsteht.",
-    "Aus dem “Teig” Burger Patties formen und von beiden Seiten in der Pfanne anbraten."
+    "Aus dem “Teig” Burger Patties formen und von beiden Seiten in der Pfanne anbraten.",
+    "Alles, was man auf dem Burger sonst noch haben will vorbereiten und Burger belegen."
   ],
   "notes": [
     "Das Verhältnis zwischen Kidneybohnen und Kichererbsen ist flexibel.",

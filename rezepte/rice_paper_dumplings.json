@@ -1,5 +1,5 @@
 {
-  "id": "r6",
+  "id": "57",
   "file": "rice_paper_dumplings.json",
   "title": "Rice Paper Dumplings",
   "tags": [
@@ -7,8 +7,7 @@
   ],
   "materials": "",
   "time": {
-    "prep": "",
-    "total": "45 Min"
+    "total": 45
   },
   "amount": 12,
   "ingredients": [

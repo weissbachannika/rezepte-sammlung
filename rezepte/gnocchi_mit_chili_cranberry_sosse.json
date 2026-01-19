@@ -1,0 +1,44 @@
+{
+  "id": "74",
+  "title": "Gnocchi mit Chili-Tomaten-Cranberry-Soße",
+  "tags": [
+    "Hauptgericht", "Low-Effort", "Pasta", "Nudeln"
+  ],
+  "materials": "",
+  "time": {
+    "total": 20
+  },
+  "amount": 2,
+  "ingredients": [
+    "1 Zwiebel",
+    "1–2 rote Chilis",
+    "1 Zehe Knoblauch",
+    "3 EL getrocknete Cranberries",
+    "500 g passierte Tomaten",
+    "400 g Gnocchi",
+    "Olivenöl"
+  ],
+  "spices": [
+    "3 TL getrockneter Rosmarin",
+    "1 TL Paprika edelsüß/rosenscharf",
+    "1 TL Brühepulver",
+    "1 TL Agavendicksaft oder andere Süße",
+    "10 g frischer Basilikum (opt.)",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Zwiebel würfeln, Chili entkernen und zusammen mit dem Knoblauch fein hacken",
+    "Etwas Olivenöl in einem Topf oder tiefen Pfanne erhitzen",
+    "Zwiebel für circa 1 Minute anbraten, dann die Chili und Knoblauch bei mittlerer Hitze 2–3 Minuten mit anschwitzen",
+    "Rosmarin und Cranberries dazu geben und kurz mitbraten",
+    "Mit passierten Tomaten ablöschen und alles gut mit Gewürzen deiner Wahl abschmecken",
+    "Mit geschlossenem Deckel bei niedriger Hitze circa 10 Minuten köcheln lassen",
+    "In einer seperaten Pfanne etwas Olivenöl erhitzen und die Gnocchi darin abraten, bis sie gold braun sind (5–8 Minuten)",
+    "Optional beim Servieren bisschen gehackten Basilikum drübergeben"
+  ],
+  "notes": [
+    "Die Gnocchi kann man natürlich auch in Salzwasser kochen, finde das aber persönlich mit crispy Gnocchi besser"
+  ],
+  "credits": "[eat-this.org](https://www.eat-this.org/gnocchi-mit-tomaten-cranberry-sauce/)",
+  "image": ""
+}

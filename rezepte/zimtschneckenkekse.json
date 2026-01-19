@@ -1,0 +1,45 @@
+{
+  "id": "73",
+  "title": "Zimtschneckenkekse",
+  "tags": [
+    "Süßes", "Backen", "Winter", "Low-Effort", "Kekse"
+  ],
+  "materials": "Pinsel (opt.)",
+  "time": {
+    "prep": 15,
+    "total": 30
+  },
+  "amount": 24,
+  "ingredients": [
+    { "section": "Für den Teig" },
+    "240 g Mehl",
+    "80 g Zucker",
+    "1 Pck. Vanillezucker",
+    "140 g vegane Butter",
+    "1 TL Backpulver",
+    "Priese Salz",
+    { "section": "Für die Füllung" },
+    "60 g brauner Zucker",
+    "2 TL Zimt",
+    "20 ml Pflanzenmilch"
+  ],
+  "spices": [
+    ""
+  ],
+  "steps": [
+    "Die trockenen Zutaten für den Teig miteinander vermischen und dann die Butter dazugeben und kneten, bis ein homogener Teig entsteht.",
+    "Auf einer bemehlten Arbeitsfläche den Teig zu einem Rechteck (ca. 5 mm dick) ausrollen.",
+    "Den ausgerollten Teig mit der Milch bestreichen.",
+    "Zucker und Zimt vermischen und auf den befeuchteten Teig streuen.",
+    "Den Teig aufrollen (an der langen Seite).",
+    "Die Teigrolle optional ca 1 Stunde kaltstellen, damit die Kekse ihre Form besser behalten.",
+    "Wenn die Teigrolle rausgeholt wird, den Backofen auf 160°C Umluft vorheizen.",
+    "Die Teigrolle in kanpp 1 cm dicke Scheiben schneiden und die Kekse mit etwas Abstand zueinander auf ein mit Backpapier ausgelegtes Backblech legen.",
+    "Die Kekse dann für 12 Minuten backen (sie sollen nicht wirklich braun werden und härten aus dem Ofen noch aus)."
+  ],
+  "notes": [
+    ""
+  ],
+  "credits": "[annibacktvegan](https://www.instagram.com/reel/C1G_i75qAbd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)",
+  "image": "./images/Zimtschneckenkekse.jpg"
+}

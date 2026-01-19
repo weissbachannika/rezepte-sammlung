@@ -1,12 +1,12 @@
 {
-  "id": "r47",
+  "id": "26",
   "file": "guacamole.json",
   "title": "Guacamole",
   "tags": ["Dip", "Mexikanisch", "Snack", "Low-Effort", "Snack"],
   "materials": 
     "",
   "time": {
-    "total": "10 Min"
+    "total": 10
   },
   "amount": 4,
   "ingredients": [
@@ -28,5 +28,5 @@
   ],
   "notes": "",
   "credits": "Bettina",
-  "image": ""
+  "image": "./images/Guacamole.jpg"
 }

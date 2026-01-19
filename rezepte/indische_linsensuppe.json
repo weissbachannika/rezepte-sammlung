@@ -1,5 +1,5 @@
 {
-  "id": "r3",
+  "id": "33",
   "file": "indische_linsensuppe.json",
   "title": "Indische Linsensuppe",
   "tags": [
@@ -8,13 +8,14 @@
   "materials": 
     "",
   "time": {
-    "total": "40 Min"
+    "prep": 15,
+    "total": 40
   },
   "amount": 4,
   "ingredients": [
     "1 mittelgroße gelbe Zwiebel",
     "2 Zehen Knoblauch",
-    "1x2 cm großes Stück Ingwer",
+    "2x2 cm großes Stück Ingwer",
     "250 g rote Linsen (gewaschen)",
     "1 Dose Kokosmilch",
     "400 ml Gemüsebrühe",
@@ -43,5 +44,5 @@
   ],
   "notes": "Die Suppe schmeckt am nächsten Tag vielleicht sogar noch ein bisschen besser",
   "credits": "Opa",
-  "image": "./images/Linsensuppe.jpg"
+  "image": "./images/Linsensuppe1.jpg"
 }

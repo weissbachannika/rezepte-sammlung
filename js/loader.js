@@ -1,11 +1,9 @@
 import { setRecipes } from './state.js';
-import { recipeFileNames } from './data.js';  // <-- hier kommt die Liste her
+import { recipeFileNames } from './data.js'; 
 
 export async function loadRecipes() {
-  // Basis ist die Seite selbst (rezepte.html)
   const base = new URL('.', location.href);
 
-  // WICHTIG: kein "../" – JSONs liegen unter <seite>/rezepte/
   const urls = recipeFileNames.map(f =>
     new URL(`./rezepte/${f}`, base).toString()
   );

@@ -1,5 +1,5 @@
 {
-  "id": "r4",
+  "id": "16",
   "file": "erdnuss_nudeln_mit_gemuese.json",
   "title": "Erdnuss Nudeln mit Gemüse",
   "tags": [
@@ -8,7 +8,7 @@
   "materials": 
     "", 
   "time": {
-    "total": "30 Min"
+    "total": 30
   },
   "amount": 3,
   "ingredients": [
