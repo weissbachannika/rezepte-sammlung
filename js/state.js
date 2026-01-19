@@ -121,10 +121,16 @@ export function applyStateFromHash() {
   state.tags.clear();
   for (const t of params.getAll('tag')) state.tags.add(t);
 
-  // time
-  const prep = Number(params.get('prep'));
-  state.maxPrep = Number.isFinite(prep) ? prep : state.maxPrep;
+  // time (nur setzen, wenn Parameter existiert)
+  if (params.has('prep')) {
+    const prepRaw = params.get('prep');
+    const prep = Number(prepRaw);
+    state.maxPrep = Number.isFinite(prep) ? prep : null;
+  }
 
-  const total = Number(params.get('total'));
-  state.maxTotal = Number.isFinite(total) ? total : state.maxTotal;
+  if (params.has('total')) {
+    const totalRaw = params.get('total');
+    const total = Number(totalRaw);
+    state.maxTotal = Number.isFinite(total) ? total : null;
+  }
 }

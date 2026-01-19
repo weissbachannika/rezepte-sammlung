@@ -24,6 +24,17 @@ async function main() {
     renderAll();
   });
 
+  // Reopen recipe from hash (#r=ID oder #recipe=ID)
+  try {
+    const params = new URLSearchParams(location.hash.slice(1));
+    const recipeId = params.get('r') || params.get('recipe');
+    if (recipeId) {
+      requestAnimationFrame(() => {
+        openModal(recipeId, { reset: true, push: false });
+      });
+    }
+  } catch { /* noop */ }
+
   // --- Mobile UI helpers -------------------------------------------------
   const searchBox = document.querySelector('.search');
   const isNarrow = () => window.matchMedia('(max-width:680px)').matches;
@@ -97,12 +108,6 @@ async function main() {
       renderAll();
     }
   });
-
-  try {
-    const params = new URLSearchParams(location.hash.slice(1));
-    const recipeId = params.get('recipe'); // oder 'r' – aber konsistent!
-    if (recipeId) openModal(recipeId, { reset: true });
-  } catch {}
 
   window.addEventListener('resize', () => {
     if (!isNarrow() && closeSearchBtn) {
