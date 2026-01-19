@@ -7,6 +7,24 @@ const closeBtn = $('#modalClose');
 let modalStack = [];
 let currentId = null;
 
+function __setHashParam(key, value) {
+  const params = new URLSearchParams(location.hash.replace(/^#/, ''));
+  if (value == null || value === '') params.delete(key);
+  else params.set(key, value);
+
+  const next = params.toString();
+  const hash = next ? `#${next}` : '';
+  history.replaceState(null, '', `${location.pathname}${location.search}${hash}`);
+}
+
+function setHashRecipe(id) {
+  __setHashParam('recipe', id);
+}
+
+function clearHashRecipe() {
+  __setHashParam('recipe', null);
+}
+
 // statt direkt .close():
 function handleClose() {
   if (modalStack.length > 0) {
@@ -14,6 +32,7 @@ function handleClose() {
     openModal(prevId, { /* push */ push: false }); // zurück ohne erneut zu pushen
   } else {
     currentId = null;
+    clearHashRecipe();
     unlockBodyScroll();
     modal.close();
   }
@@ -331,6 +350,7 @@ export function openModal(id, opts = {}) {
   // ensure we start at the top when switching recipes
   __resetModalScroll();
   lockBodyScroll();
+  setHashRecipe(currentId);
   modal.showModal();
   // enforce again on next frame in case layout shifts
   requestAnimationFrame(__resetModalScroll);
@@ -351,4 +371,7 @@ modal.addEventListener('click', (e) => {
   }
 });
 
-modal.addEventListener('close', unlockBodyScroll);
+modal.addEventListener('close', () => {
+  if (!modalStack.length) clearHashRecipe();
+  unlockBodyScroll();
+});
