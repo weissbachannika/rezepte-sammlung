@@ -18,11 +18,11 @@ function __setHashParam(key, value) {
 }
 
 function setHashRecipe(id) {
-  __setHashParam('recipe', id);
+  __setHashParam('r', id);
 }
 
 function clearHashRecipe() {
-  __setHashParam('recipe', null);
+  __setHashParam('r', null);
 }
 
 // statt direkt .close():
