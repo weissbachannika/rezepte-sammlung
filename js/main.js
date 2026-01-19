@@ -2,6 +2,7 @@ import { $, state, setRecipes } from './state.js';
 import { loadRecipes } from './loader.js';
 import { renderAll } from './grid.js';
 import { renderSidebar } from './sidebar.js';
+import { openModal } from './modal.js';
 
 window.addRecipe = (r) => {
   const list = window.RECIPES || [];
@@ -15,15 +16,21 @@ async function main() {
   renderSidebar();        // Tags aufbauen
   renderAll();            // Filterleiste + Grid
 
-  // Hash: recipe reopen (nachdem RECIPES geladen sind)
+  // Hash-Filter + Reopen recipe
   try {
     if (location.hash.startsWith('#')) {
       const params = new URLSearchParams(location.hash.slice(1));
-      const recipeId = params.get('recipe');
+
+      const tag = params.get('tag');
+      if (tag) state.tags.add(tag);
+
+      const recipeId = params.get('r');
       if (recipeId) {
-        // reset:true => Stack leer, direkt "dieses" Rezept
-        const { openModal } = await import('./modal.js');
+        // nach renderAll(), damit Grid/State initial steht
+        renderAll();
         openModal(recipeId, { reset: true });
+      } else {
+        renderAll();
       }
     }
   } catch { /* noop */ }
