@@ -15,6 +15,19 @@ async function main() {
   renderSidebar();        // Tags aufbauen
   renderAll();            // Filterleiste + Grid
 
+  // Hash: recipe reopen (nachdem RECIPES geladen sind)
+  try {
+    if (location.hash.startsWith('#')) {
+      const params = new URLSearchParams(location.hash.slice(1));
+      const recipeId = params.get('recipe');
+      if (recipeId) {
+        // reset:true => Stack leer, direkt "dieses" Rezept
+        const { openModal } = await import('./modal.js');
+        openModal(recipeId, { reset: true });
+      }
+    }
+  } catch { /* noop */ }
+
   // --- Mobile UI helpers -------------------------------------------------
   const searchBox = document.querySelector('.search');
   const qInput = $('#q');
