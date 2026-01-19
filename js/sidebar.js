@@ -1,4 +1,4 @@
-import { $, state, getAllTags, RECIPES } from './state.js';
+import { $, state, getAllTags, RECIPES, syncHashFromState } from './state.js';
 import { renderTimeFilters, meetsTime } from './time_filters.js';
 import {
   __renderTagLabel, __updateTagsLayout, __updateToggleButton, positionTimeFilters
@@ -104,6 +104,7 @@ export function renderSidebar() {
       else state.tags.add(t);
       renderSidebar();
       renderGrid();
+      syncHashFromState();
     });
 
     list.appendChild(btn);

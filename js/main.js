@@ -1,4 +1,4 @@
-import { $, state, setRecipes } from './state.js';
+import { $, state, setRecipes, applyStateFromHash, syncHashFromState } from './state.js';
 import { loadRecipes } from './loader.js';
 import { renderAll } from './grid.js';
 import { renderSidebar } from './sidebar.js';
@@ -13,31 +13,19 @@ window.addRecipe = (r) => {
 
 async function main() {
   await loadRecipes();    // Daten holen (setzt RECIPES)
+  applyStateFromHash();
+  const qInput = $('#q');
+  if (qInput) qInput.value = state.q || '';
   renderSidebar();        // Tags aufbauen
   renderAll();            // Filterleiste + Grid
 
-  // Hash-Filter + Reopen recipe
-  try {
-    if (location.hash.startsWith('#')) {
-      const params = new URLSearchParams(location.hash.slice(1));
-
-      const tag = params.get('tag');
-      if (tag) state.tags.add(tag);
-
-      const recipeId = params.get('r');
-      if (recipeId) {
-        // nach renderAll(), damit Grid/State initial steht
-        renderAll();
-        openModal(recipeId, { reset: true });
-      } else {
-        renderAll();
-      }
-    }
-  } catch { /* noop */ }
+  document.addEventListener('filters-changed', () => {
+    renderSidebar();
+    renderAll();
+  });
 
   // --- Mobile UI helpers -------------------------------------------------
   const searchBox = document.querySelector('.search');
-  const qInput = $('#q');
   const isNarrow = () => window.matchMedia('(max-width:680px)').matches;
   const closeSearchBtn = $('#closeSearch');
 
@@ -70,6 +58,7 @@ async function main() {
       if (qInput) qInput.value = '';  // Suchfeld leeren
       state.q = '';                   // Filter zurücksetzen
       renderAll(); 
+      syncHashFromState();
       closeMobileSearch();
     });
   }
@@ -99,6 +88,7 @@ async function main() {
   $('#q').addEventListener('input', (e) => {
     state.q = e.target.value.trim();
     renderAll();
+    syncHashFromState();
   });
 
   $('#q').addEventListener('keyup', (e) => {
@@ -108,15 +98,11 @@ async function main() {
     }
   });
 
-  // Hash-Filter 
   try {
-    if (location.hash.startsWith('#')) {
-      const params = new URLSearchParams(location.hash.slice(1));
-      const tag = params.get('tag');
-      if (tag) state.tags.add(tag);
-      renderAll();
-    }
-  } catch { /* noop */ }
+    const params = new URLSearchParams(location.hash.slice(1));
+    const recipeId = params.get('recipe'); // oder 'r' – aber konsistent!
+    if (recipeId) openModal(recipeId, { reset: true });
+  } catch {}
 
   window.addEventListener('resize', () => {
     if (!isNarrow() && closeSearchBtn) {

@@ -1,6 +1,8 @@
-import { state, RECIPES } from './state.js';
-import { renderSidebar } from './sidebar.js';
-import { renderGrid }    from './grid.js';
+import { state, RECIPES, syncHashFromState } from './state.js';
+
+function notifyFiltersChanged() {
+  document.dispatchEvent(new CustomEvent('filters-changed'));
+}
 
 const getPrep  = (r) => Number(r?.time?.prep ?? r?.time?.total ?? r?.totalTime ?? NaN);
 const getTotal = (r) => Number(r?.time?.total ?? r?.totalTime ?? NaN);
@@ -57,8 +59,8 @@ function renderNumericSlider({ sliderSel, labelSel, stateKey, getVal }) {
     const val = steps.length ? steps[i] : null;
     state[stateKey] = val;
     label.textContent = steps.length ? fmtMinutes(val) : '—';
-    renderSidebar();
-    renderGrid(); 
+    notifyFiltersChanged();
+    syncHashFromState();
   };
 }
 
