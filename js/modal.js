@@ -181,28 +181,6 @@ function setMetaName(name, content) {
   el.setAttribute('content', content || '');
 }
 
-function updateSocialPreview(recipe) {
-  const baseUrl = window.location.origin + window.location.pathname;
-  const recipeUrl = `${baseUrl}#r=${recipe.id}`;
-
-  const title = recipe.title || 'Rezept';
-  const tags = Array.isArray(recipe.tags) ? recipe.tags.join(' • ') : '';
-  const description = tags || 'Rezept auf Waldtraud kocht';
-
-  // Open Graph
-  setMetaProperty('og:title', title);
-  setMetaProperty('og:description', description);
-  setMetaProperty('og:url', recipeUrl);
-  setMetaProperty('og:type', 'article');
-
-  if (recipe.image) {
-    const absoluteImg = new URL(recipe.image, baseUrl).href;
-    setMetaProperty('og:image', absoluteImg);
-  }
-
-  // optional: auch normalen Title ändern
-  document.title = `${title} – Waldtraud kocht`;
-}
 
 // --------------- Main ---------------
 
@@ -391,7 +369,6 @@ export function openModal(id, opts = {}) {
     creditsWrap.style.display = 'none';
   }
 
-  updateSocialPreview(r);
   // ensure we start at the top when switching recipes
   __resetModalScroll();
   lockBodyScroll();
