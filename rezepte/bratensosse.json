@@ -6,13 +6,13 @@
     "Soße", "Hausmannskost"
   ],
   "materials": 
-    "Pürierstab, feines Sieb(tuch)",
+    "Pürierstab (opt), feines Sieb(tuch)",
 
   "time": {
     "prep": 60,
     "total": 90
   },
-  "amount": 4,
+  "amount": 8,
   "ingredients": [
     "2 Zwiebeln",
     "2 Möhren",
@@ -35,6 +35,7 @@
     "1 TL Zucker oder andere Süße"
   ],
   "steps": [
+    "Zwiebeln, Pilze und das Gemüse klein schneiden/hacken.",
     "In einem großen Topf Öl erhitzen und Zwiebeln, Sellerie, Möhren und Lauch kräftig anrösten (richtig dunkel anbraten).",
     "Wenn das Gemüse gut gebräunt ist, die Champignons dazugeben und weiterbraten, bis sie Wasser verlieren und ebenfalls etwas bräunen.",
     "Tomatenmark zugeben und mitrösten, bis es leicht karamellisiert (ca. 1–2 Minuten).",

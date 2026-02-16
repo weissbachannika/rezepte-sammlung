@@ -40,6 +40,7 @@ export const recipeFileNames = [
   "karamellisierte_zwiebeln_und_getrocknete_tomaten_pasta.json",
   "kartoffelpueree.json",
   "kartoffelspalten.json",
+  "knoblauchbutter.json",
   "kuerbissuppe.json",
   "lasagne.json",
   "limetten_mohnkuchen.json",
@@ -76,7 +77,7 @@ export const recipeFileNames = [
   "zimtwecken.json"
 ];
 
-//last id = 75
+//last id = 76
 /* 
 {
   "id": "rxy",

@@ -20,7 +20,7 @@
     "1 Prise Salz",
     "200 g vegane Butter",
     { "section": "Füllung" },
-    "2 Becher veganer Vanille-Skyr",
+    "800 g veganer Vanille-Skyr",
     "2 Pck. Vanillepuddingpulver",
     "200 g Zucker",
     "30 g Zitronensaft",
@@ -43,7 +43,8 @@
     "Im Ofen für circa **1 Stunde** bei 170°C Ober-/Unterhitze auf der mittleren Schiene backen.",
     "Nach dem Backen vollständig auskühlen lassen und den Kuchen erst aus der Springform nehmen, wenn er ganz kalt ist."
   ],
-  "notes": "",
+  "notes": ["Statt Vanille-Skyr kann auch anderer neutraler veganer Jogurt genommen werden",
+            "Bei einer circa 20 cm Springform, kannst du die Mengen halbieren und den Kuchen circa 10 min früher aus dem Ofen holen."],
   "credits": "[Veggie Einhorn](https://veggie-einhorn.de/veganer-russischer-zupfkuchen/)",
   "image": "./images/Zupfkuchen.jpg"
 }
