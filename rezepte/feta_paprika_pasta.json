@@ -1,0 +1,53 @@
+{
+  "id": "feta_paprika_pasta",
+  "title": "Baked-Feta-Paprika-Tomaten-Pasta",
+  "tags": [
+    "Hauptgericht", "Backen", "Low-Effort", "Nudeln", "Italienisch"
+  ],
+  "materials": "25x25 cm Auflaufform, Stabmixer", 
+  "time": {
+    "prep": 20,
+    "total": 40
+  },
+  "amount": 4,
+  "ingredients": [
+    "2 Paprikas",
+    "150 g Kirschtomaten",
+    "150 g veganer Feta (1 Block)",
+    "2 Zwiebeln",
+    "180 g getrocknete Tomaten in Öl (1 Glas)",
+    "500 g Nudeln deiner Wahl",
+    "180 g vegane Chicken Chunks (opt.)",
+    "Sonnenblumenkerne als Topping (opt.)"
+  ],
+  "spices": [
+    "2 Knoblauchzehen",
+    "2 TL Brühepulver",
+    "2 TL Italienische Kräuter (Oregano, Rosmarin, Thymian, Basilikum",
+    "1/2 TL Paprika edelsüß",
+    "1/2 TL Paprika rosenscharf",
+    "50 g Tomatenmark",
+    "3 EL Hefeflocken",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Den Ofen auf 220°C Umluft vorheizen",
+    "Die Paprikas und Kirschtomaten waschen, die Zwiebeln und Knoblauch schälen",
+    "Die Zwiebeln vierteln und die Paprikas in ganz grobe Stücke schneiden",
+    "Paprika, Kirschtomaten, Zwiebeln und Knoblauchzehen in die Auflaufform geben und mit etwas Öl von den getrockneten Tomaten, sowie Brühepulver, den Kräutern, Paprikapulver und etwas gemahlenem Pfeffer vermengen",
+    "Den Feta Block auf das Gemüse in der Auflaufform legen",
+    "Das Ganze für circa 25 Minuten im Ofen backen",
+    "Nach 10 Minuten Backzeit für die Nudeln einen Topf Wasser aufsetzten und die Nudeln wie auf der Packung angegeben kochen",
+    "Während die Nudeln kochen schonmal die getrockneten Tomaten klein schneiden",
+    "Ggf. dann in einer Pfanne mit etwas mehr von dem Öl der getrockneten Tomaten die vegaenen Chicken Chunks anbraten",
+    "Wenn die Nudeln durch sind, etwas von dem Nudelwasser auffangen und die Nudeln abgießen und in einem Nudelsieb kurz beiseite stellen",
+    "Dann das Gemüse und den Feta aus der Auflaufform zusammen mit dem Nudelwasser, Tomatenmark und Hefeflocken in den Nudeltopf (oder anderes hohes Gefäß) geben und glatt mixen",
+    "Die Soße dann noch mit Salz & Pfeffer abschmecken und alles mit den getrockneten Tomaten, Chicken Chunks und Nudlen vermischen",
+    "Auf den Tellern alles noch mit Sonnenblumenkernen und Hefeflocken toppen"
+  ],
+  "notes": [
+    ""
+  ],
+  "credits": "",
+  "image": "./images/Baked_Feta_Pasta.jpg"
+}
