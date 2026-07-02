@@ -1,0 +1,46 @@
+{
+  "id": "gnocchi_salat",
+  "title": "Crispy Gnocchi Salat",
+  "tags": [
+    "Hauptgericht", "Low-Effort", "Nudeln", "Salat", "Sommer"
+  ],
+  "materials": "",
+  "time": {
+    "total": 20
+  },
+  "amount": 3,
+  "ingredients": [
+    "500 g Gnocchi",
+    "200 g vegan Chicken Chunks (Döner Style)",
+    { "section": "Gemüse deiner Wahl, z.B.:" },
+    "Salat",
+    "Gurke",
+    "Kirschtomaten",
+    "Paprika",
+    "Avokado",
+    { "section": "Joghurt Dressing:" },
+    "200 g Soja Joghurt",
+    "2 EL Zitronensaft oder Essig",
+    "1 EL Wasser",
+    "1 TL Agavendicksaft oder andere Süße",
+    "3 TL Kräuter deiner Wahl",
+    "Salz & Pfeffer"
+  ],
+  "spices": [
+    "1 TL Paprikapulver",
+    "2 EL Sojasoße"
+  ],
+  "steps": [
+    "Das Gemüse waschen und in mundgerechte Stücke schneiden",
+    "Für das Dressing alles mit einander vermischen und abschmecken",
+    "In einer Pfanne etwas Öl erhitzen und die Gnocchi darin goldbraun braten",
+    "Währenddessen in einer zweiten Pfanne mit etwas Öl die Chicken Chunks knusprig braten",
+    "Wenn die Gnocchi von allen seiten ein bisschen Knusprig sind, diese mit etwas Paprikapulver würzen und mit einem Schuss Sojasoße ablöschen und noch 1-2 Min weiter braten",
+    "Das alles in einer großen Schüssel mit einander vermengen"
+  ],
+  "notes": [
+    "Das kann auch gut noch mit Pinien- oder Sonnenblumenkernen getopped werden"
+  ],
+  "credits": "[instagram: vikykid](https://www.instagram.com/reel/DYzfDwcNU6p/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)",
+  "image": "./images/gnocchi_salat.jpg"
+}

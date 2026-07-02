@@ -11,6 +11,7 @@ export const recipeFileNames = [
   "buttermilchkuchen_mit_mandeln.json",
   "chili_con_soja.json",
   "chocolate_chip_cookies.json",
+  "gnocchi_salat.json",
   "currywurstsosse_oma.json",
   "donauwelle.json",
   "elisenlebkuchen.json",
