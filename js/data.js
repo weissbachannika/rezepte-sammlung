@@ -49,6 +49,7 @@ export const recipeFileNames = [
   "loaded_suesskartoffel.json",
   "marinierter_spargel-erdbeer_salat.json",
   "marzipan-husarenkrapfen.json",
+  "maultaschen_pfanne.json",
   "moehrendurcheinander.json",
   "nudeln_mit_gemuese-sahne-sosse.json",
   "nudelsalat.json",
