@@ -1,0 +1,41 @@
+{
+  "id": "maultaschen_pfanne",
+  "title": "Maultaschen Pfanne",
+  "tags": [
+    "Hauptgericht", "Nudeln", "Low-Effort", "Hausmannskost", "High-Protein"
+  ],
+  "materials": "",
+  "time": {
+    "total": 25
+  },
+  "amount": 2,
+  "ingredients": [
+    "1 Pck vegane Maultaschen",
+    "1 rote Zwiebel",
+    "1 Block Räuchertofu",
+    "1 Paprika",
+    "250 ml vegane Sahne",
+    "100 ml Wasser"
+  ],
+  "spices": [
+    "2 EL Sojasoße",
+    "3 EL Hefeflocken",
+    "1 TL Brühepulver",
+    "1 TL Paprikapulver",
+    "1/2 TL Knoblauchpulver (oder eine Zehe)",
+    "1/2 TL Muskatnuss",
+    "Salz & Pfeffer"
+  ],
+  "steps": [
+    "Die Zwibel schälen und in viertel Ringe schneiden, den Tofu abtrocknen und in Würfel schneiden, die Paprika waschen, entkernen und klein schneiden und die Maultaschen in 1-2 cm dicke Streifen schneiden",
+    "In einer Pfanne Öl erhitzen und die Zwiebel und den Tofu ein paar Minuten anbraten, bis sie etwas Farbe bekommen.",
+    "Dann die Sojasoße dazu geben und danach die Paprika und Maultaschen und das wieder einige Minuten braten, bis die Paprika weicher wird UND die Maultaschen auch braun werden (wenigstens auf einer Seite).",
+    "Wenn das dann alles gut angebraten und durch ist, alles mit der Sahne und dem Wasser ablöschen und die Gewürze gut unterrühren.",
+    "Das Ganze noch einmal aufkochen und dann abschmecken und ggf. nachwürzen."
+  ],
+  "notes": [
+    "Paprika ist kein Muss, man kann das bestimmt auch mit jedem anderen Gemüse machen."
+  ],
+  "credits": "",
+  "image": "./images/Maultaschen.jpg"
+}
