@@ -11,10 +11,8 @@
   "amount": 3,
   "ingredients": [
     "500 g Tortellini",
-    "1 Zwiebel",
-    "400 g gehackte Tomaten",
-    "200 g passierte Tomaten",
-    "200 ml Hafersahne",
+    "500 g passierte Tomaten",
+    "250 ml Hafersahne",
     "150 g veganer Käse",
     "vegane Speckwürfel (opt.)"
   ],
@@ -23,16 +21,18 @@
     "Salz & Pfeffer",
     "1–3 TL italienische Kräuter deiner Wahl (Oregano, Basilikum, Rosmarin, etc.)",
     "1–2 Zehen Knoblauch",
+    "1/4 TL Muskatnuss",
     "etwas Tomatenmark (opt.)"
   ],
   "steps": [
-    "Die Zwiebel in kleine Würfel schneiden.",
-    "Die Tortellini mit den Tomaten, Sahne, Zwiebeln und ggf. Speck in eine Auflaufform geben und alles gut vermengen und würzen.",
-    "Die Tortellinis sollten alle bedeckt sein, also ggf. noch gehackte/passierte Tomaten oder Sahne nachgießen.",
-    "Die Auflaufform jetzt abdecken und bei 175°C für **erstmal 15–20 Minuten** in den Ofen.",
-    "Dann die Auflaufform kurz rausholen und den Käse drüber streuen und das Ganze dann nochmal für **15–20 Minuten** weiterbacken, dieses Mal ohne Deckel."
+    "Die Tortellini mit den Tomaten, der Sahne und ggf. Speck in eine Auflaufform geben und alles gut vermengen und würzen.",
+    "Die Tortellinis sollten alle bedeckt sein, also ggf. noch passierte Tomaten oder Sahne nachgießen.",
+    "Den Käse drüber streuen und das Ganze dann für **ca. 40 Minuten** backen, bis der Käse goldbraun ist."
   ],
-  "notes": "Wenn man den Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner",
+  "notes": [
+    "Wenn man den veganen Käse vorher mit etwas Wasser und neutralem Öl mischt, schmilzt er besser/schöner",
+    "Für die Soße kann man eigentlich Sahne und passierte oder gehackte Tomaten quasi beliebig mischen"
+  ],
   "credits": "Mamsi",
   "image": "./images/Tortelliniauflauf.jpg"
 }
