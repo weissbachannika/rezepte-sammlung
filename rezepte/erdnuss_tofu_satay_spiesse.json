@@ -1,7 +1,7 @@
 {
-  "id": "erdnuss_tofu_satay_spiesse",
-  "file": "erdnuss_tofu_satay_spiesse.json",
-  "title": "Erdnuss-Tofu-Satay-Spieße",
+  "id": "erdnuss_tofu_sate_spiesse",
+  "file": "erdnuss_tofu_sate_spiesse.json",
+  "title": "Erdnuss-Tofu-Sate-Spieße",
   "tags": ["Beilage", "Vorspeise", "Asiatisch", "High-Protein", "Backen"],
   "materials": "12 Holzspieße (20 cm), Backpinsel",
   "time": {
@@ -52,5 +52,5 @@
     "Zum Beispiel mit Reis und Gemüse servieren"
   ],
   "credits": "",
-  "image": "./images/erdnuss_tofu_satay_spiesse.jpg"
+  "image": "./images/erdnuss_tofu_sate_spiesse.jpg"
 }
