@@ -17,6 +17,7 @@ export const recipeFileNames = [
   "elisenlebkuchen.json",
   "erdnuss_nudeln_mit_gemuese.json",
   "erdnusssosse.json",
+  "erdnuss_tofu_satay_spiesse.json",
   "falafel.json",
   "feldsalat_mit_pilzen.json",
   "feta_paprika_pasta.json",

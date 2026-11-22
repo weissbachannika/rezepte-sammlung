@@ -1,0 +1,56 @@
+{
+  "id": "erdnuss_tofu_satay_spiesse",
+  "file": "erdnuss_tofu_satay_spiesse.json",
+  "title": "Erdnuss-Tofu-Satay-Spieße",
+  "tags": ["Beilage", "Vorspeise", "Asiatisch", "High-Protein", "Backen"],
+  "materials": "12 Holzspieße (20 cm), Backpinsel",
+  "time": {
+    "prep": 30,
+    "total": 90
+  },
+  "amount": 12,
+  "ingredients": [
+    "800 g fester Naturtofu",
+    "4–5 EL Speisestärke",
+    { "section": "Für die Marinade" },
+    "6 EL Sojasauce",
+    "4 EL Limetten- oder Zitronensaft",
+    "2 EL Agavendicksaft",
+    "2 EL Erdnuss- oder Sesamöl",
+    "1 TL Currypaste",
+    "1 TL gemahlener Kreuzkümmel",
+    "2 Knoblauchzehen",
+    { "section": "Für die Erdnuss-Soße" },
+    "2 gehäufte EL Erdnussbutter",
+    "100 ml Kokosmilch",
+    "4–5 EL aufgefangene Restmarinade",
+    { "section": "oder, falls nicht genug übrig:"},
+    "2 EL Sojasauce",
+    "1 EL Limetten- oder Zitronensaft",
+    "1 TL Agavendicksaft",
+    "1 EL Sesamöl",
+    "1 TL Currypulver",
+    "1/2 TL gemahlener Kreuzkümmel",
+    "1 Knoblauchzehe"
+  ],
+  "spices": [],
+  "steps": [
+    "Den Tofu aus der Packung nehmen und gut auspressen",
+    "Den Tofu dann in gleichmäßige Würfel (ca. 2,5cm) schneiden (sollten ca 48 Stk. werden).",
+    "Alle Zutaten für die Marinade in einer Box oder Schüssel mit Deckel vermischenn. Die Tofuwürfel in die Marinade tun und die Box verschließen und vorsichtig schütteln, bis sie rundum benetzt sind, und abgedeckt **mindestens 30 Minuten** im Kühlschrank ziehen lassen (oder über Nacht).",
+    "Die Holzspieße mindestens **20 Minuten** in kaltes Wasser einlegen, damit sie im Ofen nicht verbrennen. Backofen auf **200 °C Umluft** vorheizen und ein Backblech mit Backpapier auslegen.",
+    "Den Tofu aus der Box/Schüssel nehmen und die übrig gebliebene Marinade dabei auffangen.",
+    "Die Tofuwürfel in einer großen Schüssel mit Speisestärke vorsichtig schwenken, bis jeder Würfel rundum bemehlt ist.",
+    "Jeweils **4 Tofuwürfel** auf einen gewässerten Holzspieß stecken. Dabei **3–5 mm Abstand** zwischen den Würfeln lassen.",
+    "Die fertigen Spieße mit etwas Abstand nebeneinander aufs Backblech legen.",
+    "Die Spieße für **15 Minuten** bei 200 °C Umluft auf mittlerer Schiene vorbacken (nach ca. 8 Minuten einmal wenden).",
+    "Währenddessen alle Zutaten für die Erdnuss-Soße zu einer glatten, dickflüssigen Soße verrühren und nach Belieben abschmecken.",
+    "Das Blech aus dem Ofen holen, die Spieße rundherum mit einem Backpinsel oder Löffel gleichmäßig mit der Erdnuss-Soße bestreichen und weitere **8–10 Minuten** backen.",
+    "Nach dem Backen circa **10 Minuten** auf dem Blech abkühlen lassen, damit alles etwas weniger klebrig wird."
+  ],
+  "notes": [
+    "Zum Beispiel mit Reis und Gemüse servieren"
+  ],
+  "credits": "",
+  "image": "./images/erdnuss_tofu_satay_spiesse.jpg"
+}
